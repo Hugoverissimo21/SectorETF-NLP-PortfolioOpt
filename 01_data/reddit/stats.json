@@ -1,0 +1,1906 @@
+{
+    "comments/RC_2005-12": {
+        "total_messages": 1075,
+        "filtered_messages": 0
+    },
+    "comments/RC_2006-01": {
+        "total_messages": 3666,
+        "filtered_messages": 0
+    },
+    "comments/RC_2006-02": {
+        "total_messages": 9095,
+        "filtered_messages": 0
+    },
+    "comments/RC_2006-03": {
+        "total_messages": 13859,
+        "filtered_messages": 0
+    },
+    "comments/RC_2006-04": {
+        "total_messages": 19090,
+        "filtered_messages": 0
+    },
+    "comments/RC_2006-05": {
+        "total_messages": 26859,
+        "filtered_messages": 0
+    },
+    "comments/RC_2006-06": {
+        "total_messages": 29163,
+        "filtered_messages": 0
+    },
+    "comments/RC_2006-07": {
+        "total_messages": 37031,
+        "filtered_messages": 0
+    },
+    "comments/RC_2006-08": {
+        "total_messages": 50559,
+        "filtered_messages": 0
+    },
+    "comments/RC_2006-09": {
+        "total_messages": 50675,
+        "filtered_messages": 0
+    },
+    "comments/RC_2006-10": {
+        "total_messages": 54148,
+        "filtered_messages": 0
+    },
+    "comments/RC_2006-11": {
+        "total_messages": 62021,
+        "filtered_messages": 0
+    },
+    "comments/RC_2006-12": {
+        "total_messages": 61018,
+        "filtered_messages": 0
+    },
+    "comments/RC_2007-01": {
+        "total_messages": 81341,
+        "filtered_messages": 0
+    },
+    "comments/RC_2007-02": {
+        "total_messages": 95634,
+        "filtered_messages": 0
+    },
+    "comments/RC_2007-03": {
+        "total_messages": 112444,
+        "filtered_messages": 0
+    },
+    "comments/RC_2007-04": {
+        "total_messages": 126773,
+        "filtered_messages": 0
+    },
+    "comments/RC_2007-05": {
+        "total_messages": 170097,
+        "filtered_messages": 0
+    },
+    "comments/RC_2007-06": {
+        "total_messages": 178800,
+        "filtered_messages": 0
+    },
+    "comments/RC_2007-07": {
+        "total_messages": 203319,
+        "filtered_messages": 0
+    },
+    "comments/RC_2007-08": {
+        "total_messages": 225111,
+        "filtered_messages": 0
+    },
+    "comments/RC_2007-09": {
+        "total_messages": 259497,
+        "filtered_messages": 0
+    },
+    "comments/RC_2007-10": {
+        "total_messages": 274170,
+        "filtered_messages": 0
+    },
+    "comments/RC_2007-11": {
+        "total_messages": 372983,
+        "filtered_messages": 0
+    },
+    "comments/RC_2007-12": {
+        "total_messages": 363390,
+        "filtered_messages": 0
+    },
+    "comments/RC_2008-01": {
+        "total_messages": 452990,
+        "filtered_messages": 0
+    },
+    "comments/RC_2008-02": {
+        "total_messages": 441768,
+        "filtered_messages": 0
+    },
+    "comments/RC_2008-03": {
+        "total_messages": 463728,
+        "filtered_messages": 4
+    },
+    "comments/RC_2008-04": {
+        "total_messages": 468317,
+        "filtered_messages": 0
+    },
+    "comments/RC_2008-05": {
+        "total_messages": 536380,
+        "filtered_messages": 0
+    },
+    "comments/RC_2008-06": {
+        "total_messages": 577684,
+        "filtered_messages": 2
+    },
+    "comments/RC_2008-07": {
+        "total_messages": 592610,
+        "filtered_messages": 31
+    },
+    "comments/RC_2008-08": {
+        "total_messages": 595959,
+        "filtered_messages": 15
+    },
+    "comments/RC_2008-09": {
+        "total_messages": 680892,
+        "filtered_messages": 44
+    },
+    "comments/RC_2008-10": {
+        "total_messages": 789874,
+        "filtered_messages": 26
+    },
+    "comments/RC_2008-11": {
+        "total_messages": 792310,
+        "filtered_messages": 16
+    },
+    "comments/RC_2008-12": {
+        "total_messages": 850359,
+        "filtered_messages": 18
+    },
+    "comments/RC_2009-01": {
+        "total_messages": 1051649,
+        "filtered_messages": 20
+    },
+    "comments/RC_2009-02": {
+        "total_messages": 944711,
+        "filtered_messages": 27
+    },
+    "comments/RC_2009-03": {
+        "total_messages": 1048643,
+        "filtered_messages": 33
+    },
+    "comments/RC_2009-04": {
+        "total_messages": 1094599,
+        "filtered_messages": 20
+    },
+    "comments/RC_2009-05": {
+        "total_messages": 1201257,
+        "filtered_messages": 26
+    },
+    "comments/RC_2009-06": {
+        "total_messages": 1258750,
+        "filtered_messages": 35
+    },
+    "comments/RC_2009-07": {
+        "total_messages": 1470290,
+        "filtered_messages": 24
+    },
+    "comments/RC_2009-08": {
+        "total_messages": 1750688,
+        "filtered_messages": 46
+    },
+    "comments/RC_2009-09": {
+        "total_messages": 2032276,
+        "filtered_messages": 31
+    },
+    "comments/RC_2009-10": {
+        "total_messages": 2242017,
+        "filtered_messages": 21
+    },
+    "comments/RC_2009-11": {
+        "total_messages": 2207444,
+        "filtered_messages": 10
+    },
+    "comments/RC_2009-12": {
+        "total_messages": 2560510,
+        "filtered_messages": 13
+    },
+    "comments/RC_2010-01": {
+        "total_messages": 2884096,
+        "filtered_messages": 18
+    },
+    "comments/RC_2010-02": {
+        "total_messages": 2687779,
+        "filtered_messages": 45
+    },
+    "comments/RC_2010-03": {
+        "total_messages": 3228254,
+        "filtered_messages": 22
+    },
+    "comments/RC_2010-04": {
+        "total_messages": 3209898,
+        "filtered_messages": 54
+    },
+    "comments/RC_2010-05": {
+        "total_messages": 3267363,
+        "filtered_messages": 74
+    },
+    "comments/RC_2010-06": {
+        "total_messages": 3532867,
+        "filtered_messages": 143
+    },
+    "comments/RC_2010-07": {
+        "total_messages": 4032737,
+        "filtered_messages": 122
+    },
+    "comments/RC_2010-08": {
+        "total_messages": 4247982,
+        "filtered_messages": 123
+    },
+    "comments/RC_2010-09": {
+        "total_messages": 4704069,
+        "filtered_messages": 162
+    },
+    "comments/RC_2010-10": {
+        "total_messages": 5032368,
+        "filtered_messages": 227
+    },
+    "comments/RC_2010-11": {
+        "total_messages": 5689002,
+        "filtered_messages": 146
+    },
+    "comments/RC_2010-12": {
+        "total_messages": 5972642,
+        "filtered_messages": 123
+    },
+    "comments/RC_2011-01": {
+        "total_messages": 6603329,
+        "filtered_messages": 529
+    },
+    "comments/RC_2011-02": {
+        "total_messages": 6363114,
+        "filtered_messages": 354
+    },
+    "comments/RC_2011-03": {
+        "total_messages": 7556165,
+        "filtered_messages": 865
+    },
+    "comments/RC_2011-04": {
+        "total_messages": 7571398,
+        "filtered_messages": 1275
+    },
+    "comments/RC_2011-05": {
+        "total_messages": 8803949,
+        "filtered_messages": 1995
+    },
+    "comments/RC_2011-06": {
+        "total_messages": 9766511,
+        "filtered_messages": 2910
+    },
+    "comments/RC_2011-07": {
+        "total_messages": 10557466,
+        "filtered_messages": 3421
+    },
+    "comments/RC_2011-08": {
+        "total_messages": 12316144,
+        "filtered_messages": 6270
+    },
+    "comments/RC_2011-09": {
+        "total_messages": 12150412,
+        "filtered_messages": 5487
+    },
+    "comments/RC_2011-10": {
+        "total_messages": 13470278,
+        "filtered_messages": 6587
+    },
+    "comments/RC_2011-11": {
+        "total_messages": 13621533,
+        "filtered_messages": 7744
+    },
+    "comments/RC_2011-12": {
+        "total_messages": 14509469,
+        "filtered_messages": 7010
+    },
+    "comments/RC_2012-01": {
+        "total_messages": 16350205,
+        "filtered_messages": 9161
+    },
+    "comments/RC_2012-02": {
+        "total_messages": 16015695,
+        "filtered_messages": 12428
+    },
+    "comments/RC_2012-03": {
+        "total_messages": 17881943,
+        "filtered_messages": 13700
+    },
+    "comments/RC_2012-04": {
+        "total_messages": 19044534,
+        "filtered_messages": 12364
+    },
+    "comments/RC_2012-05": {
+        "total_messages": 20388260,
+        "filtered_messages": 15187
+    },
+    "comments/RC_2012-06": {
+        "total_messages": 21897913,
+        "filtered_messages": 12493
+    },
+    "comments/RC_2012-07": {
+        "total_messages": 24087517,
+        "filtered_messages": 13990
+    },
+    "comments/RC_2012-08": {
+        "total_messages": 25703326,
+        "filtered_messages": 14086
+    },
+    "comments/RC_2012-09": {
+        "total_messages": 23419524,
+        "filtered_messages": 11496
+    },
+    "comments/RC_2012-10": {
+        "total_messages": 24788236,
+        "filtered_messages": 13548
+    },
+    "comments/RC_2012-11": {
+        "total_messages": 24648302,
+        "filtered_messages": 13968
+    },
+    "comments/RC_2012-12": {
+        "total_messages": 26080276,
+        "filtered_messages": 11979
+    },
+    "comments/RC_2013-01": {
+        "total_messages": 30365867,
+        "filtered_messages": 19427
+    },
+    "comments/RC_2013-02": {
+        "total_messages": 27213960,
+        "filtered_messages": 14538
+    },
+    "comments/RC_2013-03": {
+        "total_messages": 30771274,
+        "filtered_messages": 14771
+    },
+    "comments/RC_2013-04": {
+        "total_messages": 33259557,
+        "filtered_messages": 15175
+    },
+    "comments/RC_2013-05": {
+        "total_messages": 33126225,
+        "filtered_messages": 20311
+    },
+    "comments/RC_2013-06": {
+        "total_messages": 32648247,
+        "filtered_messages": 17245
+    },
+    "comments/RC_2013-07": {
+        "total_messages": 34922133,
+        "filtered_messages": 20288
+    },
+    "comments/RC_2013-08": {
+        "total_messages": 34766579,
+        "filtered_messages": 18035
+    },
+    "comments/RC_2013-09": {
+        "total_messages": 31990369,
+        "filtered_messages": 18051
+    },
+    "comments/RC_2013-10": {
+        "total_messages": 35940040,
+        "filtered_messages": 25072
+    },
+    "comments/RC_2013-11": {
+        "total_messages": 37396497,
+        "filtered_messages": 24795
+    },
+    "comments/RC_2013-12": {
+        "total_messages": 39810216,
+        "filtered_messages": 25239
+    },
+    "comments/RC_2014-01": {
+        "total_messages": 42420655,
+        "filtered_messages": 33933
+    },
+    "comments/RC_2014-02": {
+        "total_messages": 38703362,
+        "filtered_messages": 29549
+    },
+    "comments/RC_2014-03": {
+        "total_messages": 42459956,
+        "filtered_messages": 25527
+    },
+    "comments/RC_2014-04": {
+        "total_messages": 42440735,
+        "filtered_messages": 21353
+    },
+    "comments/RC_2014-05": {
+        "total_messages": 42514094,
+        "filtered_messages": 18706
+    },
+    "comments/RC_2014-06": {
+        "total_messages": 41990650,
+        "filtered_messages": 18118
+    },
+    "comments/RC_2014-07": {
+        "total_messages": 46868899,
+        "filtered_messages": 21750
+    },
+    "comments/RC_2014-08": {
+        "total_messages": 46990813,
+        "filtered_messages": 22494
+    },
+    "comments/RC_2014-09": {
+        "total_messages": 44992201,
+        "filtered_messages": 23142
+    },
+    "comments/RC_2014-10": {
+        "total_messages": 47497520,
+        "filtered_messages": 27122
+    },
+    "comments/RC_2014-11": {
+        "total_messages": 46118074,
+        "filtered_messages": 24917
+    },
+    "comments/RC_2014-12": {
+        "total_messages": 48807699,
+        "filtered_messages": 29127
+    },
+    "comments/RC_2015-01": {
+        "total_messages": 53851542,
+        "filtered_messages": 34188
+    },
+    "comments/RC_2015-02": {
+        "total_messages": 48342747,
+        "filtered_messages": 33205
+    },
+    "comments/RC_2015-03": {
+        "total_messages": 54564441,
+        "filtered_messages": 33654
+    },
+    "comments/RC_2015-04": {
+        "total_messages": 55005780,
+        "filtered_messages": 33090
+    },
+    "comments/RC_2015-05": {
+        "total_messages": 54504410,
+        "filtered_messages": 37687
+    },
+    "comments/RC_2015-06": {
+        "total_messages": 54258492,
+        "filtered_messages": 32606
+    },
+    "comments/RC_2015-07": {
+        "total_messages": 58451788,
+        "filtered_messages": 47184
+    },
+    "comments/RC_2015-08": {
+        "total_messages": 58075327,
+        "filtered_messages": 61471
+    },
+    "comments/RC_2015-09": {
+        "total_messages": 55574825,
+        "filtered_messages": 48809
+    },
+    "comments/RC_2015-10": {
+        "total_messages": 59494045,
+        "filtered_messages": 48071
+    },
+    "comments/RC_2015-11": {
+        "total_messages": 57117500,
+        "filtered_messages": 50318
+    },
+    "comments/RC_2015-12": {
+        "total_messages": 58523312,
+        "filtered_messages": 52998
+    },
+    "comments/RC_2016-01": {
+        "total_messages": 61991732,
+        "filtered_messages": 81152
+    },
+    "comments/RC_2016-02": {
+        "total_messages": 59189875,
+        "filtered_messages": 70340
+    },
+    "comments/RC_2016-03": {
+        "total_messages": 63918864,
+        "filtered_messages": 64925
+    },
+    "comments/RC_2016-04": {
+        "total_messages": 64271256,
+        "filtered_messages": 81496
+    },
+    "comments/RC_2016-05": {
+        "total_messages": 65212004,
+        "filtered_messages": 72734
+    },
+    "comments/RC_2016-06": {
+        "total_messages": 65867743,
+        "filtered_messages": 83779
+    },
+    "comments/RC_2016-07": {
+        "total_messages": 66974735,
+        "filtered_messages": 92912
+    },
+    "comments/RC_2016-08": {
+        "total_messages": 69654819,
+        "filtered_messages": 87750
+    },
+    "comments/RC_2016-09": {
+        "total_messages": 67024973,
+        "filtered_messages": 83622
+    },
+    "comments/RC_2016-10": {
+        "total_messages": 71826553,
+        "filtered_messages": 73658
+    },
+    "comments/RC_2016-11": {
+        "total_messages": 71022319,
+        "filtered_messages": 85724
+    },
+    "comments/RC_2016-12": {
+        "total_messages": 72942967,
+        "filtered_messages": 90912
+    },
+    "comments/RC_2017-01": {
+        "total_messages": 78946585,
+        "filtered_messages": 105183
+    },
+    "comments/RC_2017-02": {
+        "total_messages": 70609487,
+        "filtered_messages": 114146
+    },
+    "comments/RC_2017-03": {
+        "total_messages": 79723106,
+        "filtered_messages": 129334
+    },
+    "comments/RC_2017-04": {
+        "total_messages": 77478009,
+        "filtered_messages": 95736
+    },
+    "comments/RC_2017-05": {
+        "total_messages": 79810360,
+        "filtered_messages": 106487
+    },
+    "comments/RC_2017-06": {
+        "total_messages": 79901711,
+        "filtered_messages": 124348
+    },
+    "comments/RC_2017-07": {
+        "total_messages": 81798725,
+        "filtered_messages": 111780
+    },
+    "comments/RC_2017-08": {
+        "total_messages": 84658503,
+        "filtered_messages": 115100
+    },
+    "comments/RC_2017-09": {
+        "total_messages": 83165192,
+        "filtered_messages": 99057
+    },
+    "comments/RC_2017-10": {
+        "total_messages": 85828912,
+        "filtered_messages": 116886
+    },
+    "comments/RC_2017-11": {
+        "total_messages": 84965681,
+        "filtered_messages": 113190
+    },
+    "comments/RC_2017-12": {
+        "total_messages": 85973810,
+        "filtered_messages": 116425
+    },
+    "comments/RC_2018-01": {
+        "total_messages": 91558594,
+        "filtered_messages": 146485
+    },
+    "comments/RC_2018-02": {
+        "total_messages": 86467179,
+        "filtered_messages": 162875
+    },
+    "comments/RC_2018-03": {
+        "total_messages": 96490262,
+        "filtered_messages": 166971
+    },
+    "comments/RC_2018-04": {
+        "total_messages": 98101232,
+        "filtered_messages": 158173
+    },
+    "comments/RC_2018-05": {
+        "total_messages": 100109100,
+        "filtered_messages": 166475
+    },
+    "comments/RC_2018-06": {
+        "total_messages": 100009462,
+        "filtered_messages": 203871
+    },
+    "comments/RC_2018-07": {
+        "total_messages": 108151359,
+        "filtered_messages": 213507
+    },
+    "comments/RC_2018-08": {
+        "total_messages": 107330940,
+        "filtered_messages": 268612
+    },
+    "comments/RC_2018-09": {
+        "total_messages": 104473929,
+        "filtered_messages": 283491
+    },
+    "comments/RC_2018-10": {
+        "total_messages": 112346556,
+        "filtered_messages": 342713
+    },
+    "comments/RC_2018-11": {
+        "total_messages": 112573001,
+        "filtered_messages": 245066
+    },
+    "comments/RC_2018-12": {
+        "total_messages": 121953600,
+        "filtered_messages": 321792
+    },
+    "comments/RC_2019-01": {
+        "total_messages": 129386587,
+        "filtered_messages": 322521
+    },
+    "comments/RC_2019-02": {
+        "total_messages": 120645639,
+        "filtered_messages": 237983
+    },
+    "comments/RC_2019-03": {
+        "total_messages": 137650471,
+        "filtered_messages": 276792
+    },
+    "comments/RC_2019-04": {
+        "total_messages": 138473643,
+        "filtered_messages": 391969
+    },
+    "comments/RC_2019-05": {
+        "total_messages": 142463421,
+        "filtered_messages": 349826
+    },
+    "comments/RC_2019-06": {
+        "total_messages": 134172939,
+        "filtered_messages": 325623
+    },
+    "comments/RC_2019-07": {
+        "total_messages": 145965083,
+        "filtered_messages": 326735
+    },
+    "comments/RC_2019-08": {
+        "total_messages": 146854393,
+        "filtered_messages": 475908
+    },
+    "comments/RC_2019-09": {
+        "total_messages": 137540219,
+        "filtered_messages": 357527
+    },
+    "comments/RC_2019-10": {
+        "total_messages": 145909884,
+        "filtered_messages": 419784
+    },
+    "comments/RC_2019-11": {
+        "total_messages": 138512489,
+        "filtered_messages": 391461
+    },
+    "comments/RC_2019-12": {
+        "total_messages": 146012313,
+        "filtered_messages": 330557
+    },
+    "comments/RC_2020-01": {
+        "total_messages": 153498208,
+        "filtered_messages": 599069
+    },
+    "comments/RC_2020-02": {
+        "total_messages": 148386817,
+        "filtered_messages": 1169053
+    },
+    "comments/RC_2020-03": {
+        "total_messages": 166266315,
+        "filtered_messages": 2892203
+    },
+    "comments/RC_2020-04": {
+        "total_messages": 178511581,
+        "filtered_messages": 2167502
+    },
+    "comments/RC_2020-05": {
+        "total_messages": 189993779,
+        "filtered_messages": 1755567
+    },
+    "comments/RC_2020-06": {
+        "total_messages": 187914434,
+        "filtered_messages": 2028816
+    },
+    "comments/RC_2020-07": {
+        "total_messages": 194244994,
+        "filtered_messages": 1701135
+    },
+    "comments/RC_2020-08": {
+        "total_messages": 196099301,
+        "filtered_messages": 1536445
+    },
+    "comments/RC_2020-09": {
+        "total_messages": 182549761,
+        "filtered_messages": 1577806
+    },
+    "comments/RC_2020-10": {
+        "total_messages": 186583890,
+        "filtered_messages": 1333831
+    },
+    "comments/RC_2020-11": {
+        "total_messages": 186083723,
+        "filtered_messages": 1689891
+    },
+    "comments/RC_2020-12": {
+        "total_messages": 191317162,
+        "filtered_messages": 1982183
+    },
+    "comments/RC_2021-01": {
+        "total_messages": 210496207,
+        "filtered_messages": 8486906
+    },
+    "comments/RC_2021-02": {
+        "total_messages": 193510365,
+        "filtered_messages": 7168479
+    },
+    "comments/RC_2021-03": {
+        "total_messages": 207454415,
+        "filtered_messages": 4522038
+    },
+    "comments/RC_2021-04": {
+        "total_messages": 204573086,
+        "filtered_messages": 1879606
+    },
+    "comments/RC_2021-05": {
+        "total_messages": 217655366,
+        "filtered_messages": 1561124
+    },
+    "comments/RC_2021-06": {
+        "total_messages": 208027069,
+        "filtered_messages": 2363153
+    },
+    "comments/RC_2021-07": {
+        "total_messages": 210955954,
+        "filtered_messages": 1262609
+    },
+    "comments/RC_2021-08": {
+        "total_messages": 225681244,
+        "filtered_messages": 1159308
+    },
+    "comments/RC_2021-09": {
+        "total_messages": 220086513,
+        "filtered_messages": 1133472
+    },
+    "comments/RC_2021-10": {
+        "total_messages": 227527379,
+        "filtered_messages": 1063368
+    },
+    "comments/RC_2021-11": {
+        "total_messages": 228289963,
+        "filtered_messages": 1241665
+    },
+    "comments/RC_2021-12": {
+        "total_messages": 235807471,
+        "filtered_messages": 1194534
+    },
+    "comments/RC_2022-01": {
+        "total_messages": 256766679,
+        "filtered_messages": 1605413
+    },
+    "comments/RC_2022-02": {
+        "total_messages": 219927645,
+        "filtered_messages": 1345143
+    },
+    "comments/RC_2022-03": {
+        "total_messages": 236554668,
+        "filtered_messages": 1297971
+    },
+    "comments/RC_2022-04": {
+        "total_messages": 231188077,
+        "filtered_messages": 1274528
+    },
+    "comments/RC_2022-05": {
+        "total_messages": 230492108,
+        "filtered_messages": 1490269
+    },
+    "comments/RC_2022-06": {
+        "total_messages": 218842949,
+        "filtered_messages": 1293061
+    },
+    "comments/RC_2022-07": {
+        "total_messages": 242504279,
+        "filtered_messages": 1229898
+    },
+    "comments/RC_2022-08": {
+        "total_messages": 247215325,
+        "filtered_messages": 1853547
+    },
+    "comments/RC_2022-09": {
+        "total_messages": 234131223,
+        "filtered_messages": 1345769
+    },
+    "comments/RC_2022-10": {
+        "total_messages": 237365072,
+        "filtered_messages": 1306619
+    },
+    "comments/RC_2022-11": {
+        "total_messages": 229478878,
+        "filtered_messages": 1115911
+    },
+    "comments/RC_2022-12": {
+        "total_messages": 238862690,
+        "filtered_messages": 1030078
+    },
+    "comments/RC_2023-01": {
+        "total_messages": 253577512,
+        "filtered_messages": 1010554
+    },
+    "comments/RC_2023-02": {
+        "total_messages": 221285501,
+        "filtered_messages": 899554
+    },
+    "comments/RC_2023-03": {
+        "total_messages": 240661398,
+        "filtered_messages": 1055833
+    },
+    "comments/RC_2023-04": {
+        "total_messages": 233853959,
+        "filtered_messages": 711497
+    },
+    "comments/RC_2023-05": {
+        "total_messages": 239038612,
+        "filtered_messages": 753554
+    },
+    "comments/RC_2023-06": {
+        "total_messages": 227684217,
+        "filtered_messages": 726591
+    },
+    "comments/RC_2023-07": {
+        "total_messages": 245135943,
+        "filtered_messages": 690039
+    },
+    "comments/RC_2023-08": {
+        "total_messages": 259403102,
+        "filtered_messages": 716825
+    },
+    "comments/RC_2023-09": {
+        "total_messages": 258302394,
+        "filtered_messages": 599419
+    },
+    "comments/RC_2023-10": {
+        "total_messages": 262580601,
+        "filtered_messages": 668369
+    },
+    "comments/RC_2023-11": {
+        "total_messages": 250870354,
+        "filtered_messages": 610243
+    },
+    "comments/RC_2023-12": {
+        "total_messages": 257335305,
+        "filtered_messages": 631623
+    },
+    "comments/RC_2024-01": {
+        "total_messages": 284287892,
+        "filtered_messages": 768807
+    },
+    "comments/RC_2024-02": {
+        "total_messages": 265476379,
+        "filtered_messages": 1012851
+    },
+    "comments/RC_2024-03": {
+        "total_messages": 282728171,
+        "filtered_messages": 1076312
+    },
+    "comments/RC_2024-04": {
+        "total_messages": 273520750,
+        "filtered_messages": 914068
+    },
+    "comments/RC_2024-05": {
+        "total_messages": 272949064,
+        "filtered_messages": 871244
+    },
+    "comments/RC_2024-06": {
+        "total_messages": 270923855,
+        "filtered_messages": 750465
+    },
+    "comments/RC_2024-07": {
+        "total_messages": 291803957,
+        "filtered_messages": 790657
+    },
+    "comments/RC_2024-08": {
+        "total_messages": 302122905,
+        "filtered_messages": 979105
+    },
+    "comments/RC_2024-09": {
+        "total_messages": 290240425,
+        "filtered_messages": 623687
+    },
+    "comments/RC_2024-10": {
+        "total_messages": 304069293,
+        "filtered_messages": 676918
+    },
+    "comments/RC_2024-11": {
+        "total_messages": 301824580,
+        "filtered_messages": 747792
+    },
+    "comments/RC_2024-12": {
+        "total_messages": 299938269,
+        "filtered_messages": 762045
+    },
+    "comments/RC_2025-01": {
+        "total_messages": 332166587,
+        "filtered_messages": 937689
+    },
+    "comments/RC_2025-02": {
+        "total_messages": 304401351,
+        "filtered_messages": 1020100
+    },
+    "comments/RC_2025-03": {
+        "total_messages": 325815738,
+        "filtered_messages": 1217180
+    },
+    "comments/RC_2025-04": {
+        "total_messages": 310487808,
+        "filtered_messages": 1858829
+    },
+    "comments/RC_2025-05": {
+        "total_messages": 325185575,
+        "filtered_messages": 1046904
+    },
+    "comments/RC_2025-06": {
+        "total_messages": 321676470,
+        "filtered_messages": 801085
+    },
+    "submissions/RS_2005-06": {
+        "total_messages": 103,
+        "filtered_messages": 0
+    },
+    "submissions/RS_2005-07": {
+        "total_messages": 1079,
+        "filtered_messages": 0
+    },
+    "submissions/RS_2005-08": {
+        "total_messages": 2069,
+        "filtered_messages": 0
+    },
+    "submissions/RS_2005-09": {
+        "total_messages": 2449,
+        "filtered_messages": 0
+    },
+    "submissions/RS_2005-10": {
+        "total_messages": 3498,
+        "filtered_messages": 0
+    },
+    "submissions/RS_2005-11": {
+        "total_messages": 3699,
+        "filtered_messages": 0
+    },
+    "submissions/RS_2005-12": {
+        "total_messages": 5356,
+        "filtered_messages": 0
+    },
+    "submissions/RS_2006-01": {
+        "total_messages": 8048,
+        "filtered_messages": 0
+    },
+    "submissions/RS_2006-02": {
+        "total_messages": 9501,
+        "filtered_messages": 0
+    },
+    "submissions/RS_2006-03": {
+        "total_messages": 12525,
+        "filtered_messages": 0
+    },
+    "submissions/RS_2006-04": {
+        "total_messages": 12556,
+        "filtered_messages": 0
+    },
+    "submissions/RS_2006-05": {
+        "total_messages": 14701,
+        "filtered_messages": 0
+    },
+    "submissions/RS_2006-06": {
+        "total_messages": 16942,
+        "filtered_messages": 0
+    },
+    "submissions/RS_2006-07": {
+        "total_messages": 24026,
+        "filtered_messages": 0
+    },
+    "submissions/RS_2006-08": {
+        "total_messages": 40750,
+        "filtered_messages": 0
+    },
+    "submissions/RS_2006-09": {
+        "total_messages": 54043,
+        "filtered_messages": 0
+    },
+    "submissions/RS_2006-10": {
+        "total_messages": 38333,
+        "filtered_messages": 0
+    },
+    "submissions/RS_2006-11": {
+        "total_messages": 36824,
+        "filtered_messages": 0
+    },
+    "submissions/RS_2006-12": {
+        "total_messages": 36434,
+        "filtered_messages": 0
+    },
+    "submissions/RS_2007-01": {
+        "total_messages": 43725,
+        "filtered_messages": 0
+    },
+    "submissions/RS_2007-02": {
+        "total_messages": 47317,
+        "filtered_messages": 0
+    },
+    "submissions/RS_2007-03": {
+        "total_messages": 58642,
+        "filtered_messages": 0
+    },
+    "submissions/RS_2007-04": {
+        "total_messages": 61544,
+        "filtered_messages": 0
+    },
+    "submissions/RS_2007-05": {
+        "total_messages": 65098,
+        "filtered_messages": 0
+    },
+    "submissions/RS_2007-06": {
+        "total_messages": 62693,
+        "filtered_messages": 0
+    },
+    "submissions/RS_2007-07": {
+        "total_messages": 73248,
+        "filtered_messages": 0
+    },
+    "submissions/RS_2007-08": {
+        "total_messages": 84952,
+        "filtered_messages": 0
+    },
+    "submissions/RS_2007-09": {
+        "total_messages": 91294,
+        "filtered_messages": 0
+    },
+    "submissions/RS_2007-10": {
+        "total_messages": 101633,
+        "filtered_messages": 0
+    },
+    "submissions/RS_2007-11": {
+        "total_messages": 106868,
+        "filtered_messages": 0
+    },
+    "submissions/RS_2007-12": {
+        "total_messages": 111193,
+        "filtered_messages": 0
+    },
+    "submissions/RS_2008-01": {
+        "total_messages": 142310,
+        "filtered_messages": 0
+    },
+    "submissions/RS_2008-02": {
+        "total_messages": 147834,
+        "filtered_messages": 0
+    },
+    "submissions/RS_2008-03": {
+        "total_messages": 168227,
+        "filtered_messages": 31
+    },
+    "submissions/RS_2008-04": {
+        "total_messages": 167472,
+        "filtered_messages": 15
+    },
+    "submissions/RS_2008-05": {
+        "total_messages": 177022,
+        "filtered_messages": 1
+    },
+    "submissions/RS_2008-06": {
+        "total_messages": 190682,
+        "filtered_messages": 8
+    },
+    "submissions/RS_2008-07": {
+        "total_messages": 218092,
+        "filtered_messages": 16
+    },
+    "submissions/RS_2008-08": {
+        "total_messages": 212552,
+        "filtered_messages": 25
+    },
+    "submissions/RS_2008-09": {
+        "total_messages": 256268,
+        "filtered_messages": 35
+    },
+    "submissions/RS_2008-10": {
+        "total_messages": 282974,
+        "filtered_messages": 55
+    },
+    "submissions/RS_2008-11": {
+        "total_messages": 272505,
+        "filtered_messages": 66
+    },
+    "submissions/RS_2008-12": {
+        "total_messages": 283915,
+        "filtered_messages": 60
+    },
+    "submissions/RS_2009-01": {
+        "total_messages": 331060,
+        "filtered_messages": 46
+    },
+    "submissions/RS_2009-02": {
+        "total_messages": 329042,
+        "filtered_messages": 52
+    },
+    "submissions/RS_2009-03": {
+        "total_messages": 362805,
+        "filtered_messages": 65
+    },
+    "submissions/RS_2009-04": {
+        "total_messages": 357107,
+        "filtered_messages": 71
+    },
+    "submissions/RS_2009-05": {
+        "total_messages": 355193,
+        "filtered_messages": 64
+    },
+    "submissions/RS_2009-06": {
+        "total_messages": 383969,
+        "filtered_messages": 79
+    },
+    "submissions/RS_2009-07": {
+        "total_messages": 427135,
+        "filtered_messages": 159
+    },
+    "submissions/RS_2009-08": {
+        "total_messages": 435860,
+        "filtered_messages": 151
+    },
+    "submissions/RS_2009-09": {
+        "total_messages": 443037,
+        "filtered_messages": 185
+    },
+    "submissions/RS_2009-10": {
+        "total_messages": 461702,
+        "filtered_messages": 88
+    },
+    "submissions/RS_2009-11": {
+        "total_messages": 452320,
+        "filtered_messages": 76
+    },
+    "submissions/RS_2009-12": {
+        "total_messages": 492225,
+        "filtered_messages": 108
+    },
+    "submissions/RS_2010-01": {
+        "total_messages": 549007,
+        "filtered_messages": 86
+    },
+    "submissions/RS_2010-02": {
+        "total_messages": 506868,
+        "filtered_messages": 90
+    },
+    "submissions/RS_2010-03": {
+        "total_messages": 602586,
+        "filtered_messages": 126
+    },
+    "submissions/RS_2010-04": {
+        "total_messages": 617302,
+        "filtered_messages": 233
+    },
+    "submissions/RS_2010-05": {
+        "total_messages": 515637,
+        "filtered_messages": 283
+    },
+    "submissions/RS_2010-06": {
+        "total_messages": 478396,
+        "filtered_messages": 153
+    },
+    "submissions/RS_2010-07": {
+        "total_messages": 504098,
+        "filtered_messages": 126
+    },
+    "submissions/RS_2010-08": {
+        "total_messages": 537480,
+        "filtered_messages": 160
+    },
+    "submissions/RS_2010-09": {
+        "total_messages": 600209,
+        "filtered_messages": 236
+    },
+    "submissions/RS_2010-10": {
+        "total_messages": 630298,
+        "filtered_messages": 215
+    },
+    "submissions/RS_2010-11": {
+        "total_messages": 674615,
+        "filtered_messages": 206
+    },
+    "submissions/RS_2010-12": {
+        "total_messages": 729840,
+        "filtered_messages": 244
+    },
+    "submissions/RS_2011-01": {
+        "total_messages": 837995,
+        "filtered_messages": 428
+    },
+    "submissions/RS_2011-02": {
+        "total_messages": 822302,
+        "filtered_messages": 358
+    },
+    "submissions/RS_2011-03": {
+        "total_messages": 976817,
+        "filtered_messages": 368
+    },
+    "submissions/RS_2011-04": {
+        "total_messages": 971371,
+        "filtered_messages": 360
+    },
+    "submissions/RS_2011-05": {
+        "total_messages": 1081578,
+        "filtered_messages": 508
+    },
+    "submissions/RS_2011-06": {
+        "total_messages": 1153048,
+        "filtered_messages": 465
+    },
+    "submissions/RS_2011-07": {
+        "total_messages": 1264991,
+        "filtered_messages": 535
+    },
+    "submissions/RS_2011-08": {
+        "total_messages": 1448347,
+        "filtered_messages": 725
+    },
+    "submissions/RS_2011-09": {
+        "total_messages": 1482575,
+        "filtered_messages": 544
+    },
+    "submissions/RS_2011-10": {
+        "total_messages": 1590673,
+        "filtered_messages": 686
+    },
+    "submissions/RS_2011-11": {
+        "total_messages": 1634431,
+        "filtered_messages": 965
+    },
+    "submissions/RS_2011-12": {
+        "total_messages": 1772219,
+        "filtered_messages": 1013
+    },
+    "submissions/RS_2012-01": {
+        "total_messages": 1981577,
+        "filtered_messages": 1368
+    },
+    "submissions/RS_2012-02": {
+        "total_messages": 1961817,
+        "filtered_messages": 1464
+    },
+    "submissions/RS_2012-03": {
+        "total_messages": 2158965,
+        "filtered_messages": 1491
+    },
+    "submissions/RS_2012-04": {
+        "total_messages": 2279491,
+        "filtered_messages": 1344
+    },
+    "submissions/RS_2012-05": {
+        "total_messages": 2293901,
+        "filtered_messages": 1612
+    },
+    "submissions/RS_2012-06": {
+        "total_messages": 2393973,
+        "filtered_messages": 1046
+    },
+    "submissions/RS_2012-07": {
+        "total_messages": 2663529,
+        "filtered_messages": 1073
+    },
+    "submissions/RS_2012-08": {
+        "total_messages": 2782752,
+        "filtered_messages": 1176
+    },
+    "submissions/RS_2012-09": {
+        "total_messages": 2568109,
+        "filtered_messages": 960
+    },
+    "submissions/RS_2012-10": {
+        "total_messages": 2776156,
+        "filtered_messages": 1100
+    },
+    "submissions/RS_2012-11": {
+        "total_messages": 2706118,
+        "filtered_messages": 1102
+    },
+    "submissions/RS_2012-12": {
+        "total_messages": 2735743,
+        "filtered_messages": 1045
+    },
+    "submissions/RS_2013-01": {
+        "total_messages": 3134862,
+        "filtered_messages": 1470
+    },
+    "submissions/RS_2013-02": {
+        "total_messages": 2886631,
+        "filtered_messages": 1397
+    },
+    "submissions/RS_2013-03": {
+        "total_messages": 3201525,
+        "filtered_messages": 1391
+    },
+    "submissions/RS_2013-04": {
+        "total_messages": 3376188,
+        "filtered_messages": 1423
+    },
+    "submissions/RS_2013-05": {
+        "total_messages": 3261976,
+        "filtered_messages": 1826
+    },
+    "submissions/RS_2013-06": {
+        "total_messages": 3189490,
+        "filtered_messages": 1456
+    },
+    "submissions/RS_2013-07": {
+        "total_messages": 3374406,
+        "filtered_messages": 1775
+    },
+    "submissions/RS_2013-08": {
+        "total_messages": 3315090,
+        "filtered_messages": 1775
+    },
+    "submissions/RS_2013-09": {
+        "total_messages": 3121163,
+        "filtered_messages": 1601
+    },
+    "submissions/RS_2013-10": {
+        "total_messages": 3467225,
+        "filtered_messages": 2062
+    },
+    "submissions/RS_2013-11": {
+        "total_messages": 3522378,
+        "filtered_messages": 2139
+    },
+    "submissions/RS_2013-12": {
+        "total_messages": 3801410,
+        "filtered_messages": 2253
+    },
+    "submissions/RS_2014-01": {
+        "total_messages": 4145541,
+        "filtered_messages": 3084
+    },
+    "submissions/RS_2014-02": {
+        "total_messages": 3946491,
+        "filtered_messages": 3042
+    },
+    "submissions/RS_2014-03": {
+        "total_messages": 4209109,
+        "filtered_messages": 3016
+    },
+    "submissions/RS_2014-04": {
+        "total_messages": 4115035,
+        "filtered_messages": 2344
+    },
+    "submissions/RS_2014-05": {
+        "total_messages": 4162070,
+        "filtered_messages": 1986
+    },
+    "submissions/RS_2014-06": {
+        "total_messages": 4092661,
+        "filtered_messages": 2065
+    },
+    "submissions/RS_2014-07": {
+        "total_messages": 4502441,
+        "filtered_messages": 2334
+    },
+    "submissions/RS_2014-08": {
+        "total_messages": 4596551,
+        "filtered_messages": 2420
+    },
+    "submissions/RS_2014-09": {
+        "total_messages": 4567136,
+        "filtered_messages": 2723
+    },
+    "submissions/RS_2014-10": {
+        "total_messages": 4831580,
+        "filtered_messages": 2806
+    },
+    "submissions/RS_2014-11": {
+        "total_messages": 4735396,
+        "filtered_messages": 2388
+    },
+    "submissions/RS_2014-12": {
+        "total_messages": 4984013,
+        "filtered_messages": 2609
+    },
+    "submissions/RS_2015-01": {
+        "total_messages": 5465910,
+        "filtered_messages": 2709
+    },
+    "submissions/RS_2015-02": {
+        "total_messages": 5069813,
+        "filtered_messages": 2703
+    },
+    "submissions/RS_2015-03": {
+        "total_messages": 5611145,
+        "filtered_messages": 2752
+    },
+    "submissions/RS_2015-04": {
+        "total_messages": 5605306,
+        "filtered_messages": 2769
+    },
+    "submissions/RS_2015-05": {
+        "total_messages": 5757886,
+        "filtered_messages": 2811
+    },
+    "submissions/RS_2015-06": {
+        "total_messages": 5948530,
+        "filtered_messages": 2735
+    },
+    "submissions/RS_2015-07": {
+        "total_messages": 5945498,
+        "filtered_messages": 3828
+    },
+    "submissions/RS_2015-08": {
+        "total_messages": 6173540,
+        "filtered_messages": 4464
+    },
+    "submissions/RS_2015-09": {
+        "total_messages": 6176407,
+        "filtered_messages": 3491
+    },
+    "submissions/RS_2015-10": {
+        "total_messages": 6310673,
+        "filtered_messages": 3766
+    },
+    "submissions/RS_2015-11": {
+        "total_messages": 6113675,
+        "filtered_messages": 3677
+    },
+    "submissions/RS_2015-12": {
+        "total_messages": 6322479,
+        "filtered_messages": 3489
+    },
+    "submissions/RS_2016-01": {
+        "total_messages": 6877510,
+        "filtered_messages": 5127
+    },
+    "submissions/RS_2016-02": {
+        "total_messages": 7146932,
+        "filtered_messages": 4551
+    },
+    "submissions/RS_2016-03": {
+        "total_messages": 6901239,
+        "filtered_messages": 4697
+    },
+    "submissions/RS_2016-04": {
+        "total_messages": 6922510,
+        "filtered_messages": 6004
+    },
+    "submissions/RS_2016-05": {
+        "total_messages": 7277166,
+        "filtered_messages": 5148
+    },
+    "submissions/RS_2016-06": {
+        "total_messages": 7188762,
+        "filtered_messages": 6166
+    },
+    "submissions/RS_2016-07": {
+        "total_messages": 7369835,
+        "filtered_messages": 6619
+    },
+    "submissions/RS_2016-08": {
+        "total_messages": 7591689,
+        "filtered_messages": 6736
+    },
+    "submissions/RS_2016-09": {
+        "total_messages": 7437862,
+        "filtered_messages": 6486
+    },
+    "submissions/RS_2016-10": {
+        "total_messages": 8286759,
+        "filtered_messages": 5489
+    },
+    "submissions/RS_2016-11": {
+        "total_messages": 8660144,
+        "filtered_messages": 6864
+    },
+    "submissions/RS_2016-12": {
+        "total_messages": 8921474,
+        "filtered_messages": 4747
+    },
+    "submissions/RS_2017-01": {
+        "total_messages": 9218513,
+        "filtered_messages": 6628
+    },
+    "submissions/RS_2017-02": {
+        "total_messages": 8588120,
+        "filtered_messages": 6978
+    },
+    "submissions/RS_2017-03": {
+        "total_messages": 9616340,
+        "filtered_messages": 7590
+    },
+    "submissions/RS_2017-04": {
+        "total_messages": 9211051,
+        "filtered_messages": 6207
+    },
+    "submissions/RS_2017-05": {
+        "total_messages": 9498553,
+        "filtered_messages": 6901
+    },
+    "submissions/RS_2017-06": {
+        "total_messages": 9597725,
+        "filtered_messages": 7753
+    },
+    "submissions/RS_2017-07": {
+        "total_messages": 9989122,
+        "filtered_messages": 7060
+    },
+    "submissions/RS_2017-08": {
+        "total_messages": 10424133,
+        "filtered_messages": 7730
+    },
+    "submissions/RS_2017-09": {
+        "total_messages": 9787604,
+        "filtered_messages": 6449
+    },
+    "submissions/RS_2017-10": {
+        "total_messages": 10281718,
+        "filtered_messages": 8485
+    },
+    "submissions/RS_2017-11": {
+        "total_messages": 10377379,
+        "filtered_messages": 8425
+    },
+    "submissions/RS_2017-12": {
+        "total_messages": 10567492,
+        "filtered_messages": 7334
+    },
+    "submissions/RS_2018-01": {
+        "total_messages": 11306843,
+        "filtered_messages": 9373
+    },
+    "submissions/RS_2018-02": {
+        "total_messages": 10567231,
+        "filtered_messages": 10452
+    },
+    "submissions/RS_2018-03": {
+        "total_messages": 12022694,
+        "filtered_messages": 10027
+    },
+    "submissions/RS_2018-04": {
+        "total_messages": 11997150,
+        "filtered_messages": 8884
+    },
+    "submissions/RS_2018-05": {
+        "total_messages": 12079652,
+        "filtered_messages": 9852
+    },
+    "submissions/RS_2018-06": {
+        "total_messages": 11904498,
+        "filtered_messages": 12563
+    },
+    "submissions/RS_2018-07": {
+        "total_messages": 13305762,
+        "filtered_messages": 12187
+    },
+    "submissions/RS_2018-08": {
+        "total_messages": 13408255,
+        "filtered_messages": 14210
+    },
+    "submissions/RS_2018-09": {
+        "total_messages": 13107215,
+        "filtered_messages": 13424
+    },
+    "submissions/RS_2018-10": {
+        "total_messages": 13975028,
+        "filtered_messages": 14075
+    },
+    "submissions/RS_2018-11": {
+        "total_messages": 13862155,
+        "filtered_messages": 9318
+    },
+    "submissions/RS_2018-12": {
+        "total_messages": 14894452,
+        "filtered_messages": 10324
+    },
+    "submissions/RS_2019-01": {
+        "total_messages": 16445391,
+        "filtered_messages": 10324
+    },
+    "submissions/RS_2019-02": {
+        "total_messages": 15743620,
+        "filtered_messages": 7781
+    },
+    "submissions/RS_2019-03": {
+        "total_messages": 18412519,
+        "filtered_messages": 8405
+    },
+    "submissions/RS_2019-04": {
+        "total_messages": 18310157,
+        "filtered_messages": 9436
+    },
+    "submissions/RS_2019-05": {
+        "total_messages": 19456493,
+        "filtered_messages": 9191
+    },
+    "submissions/RS_2019-06": {
+        "total_messages": 19731676,
+        "filtered_messages": 8581
+    },
+    "submissions/RS_2019-07": {
+        "total_messages": 20768578,
+        "filtered_messages": 9288
+    },
+    "submissions/RS_2019-08": {
+        "total_messages": 21927461,
+        "filtered_messages": 13151
+    },
+    "submissions/RS_2019-09": {
+        "total_messages": 20713273,
+        "filtered_messages": 8587
+    },
+    "submissions/RS_2019-10": {
+        "total_messages": 21695713,
+        "filtered_messages": 8711
+    },
+    "submissions/RS_2019-11": {
+        "total_messages": 21243315,
+        "filtered_messages": 11728
+    },
+    "submissions/RS_2019-12": {
+        "total_messages": 21217847,
+        "filtered_messages": 10321
+    },
+    "submissions/RS_2020-01": {
+        "total_messages": 21989643,
+        "filtered_messages": 16809
+    },
+    "submissions/RS_2020-02": {
+        "total_messages": 22242008,
+        "filtered_messages": 36192
+    },
+    "submissions/RS_2020-03": {
+        "total_messages": 26577226,
+        "filtered_messages": 64584
+    },
+    "submissions/RS_2020-04": {
+        "total_messages": 28501627,
+        "filtered_messages": 41385
+    },
+    "submissions/RS_2020-05": {
+        "total_messages": 28297185,
+        "filtered_messages": 32895
+    },
+    "submissions/RS_2020-06": {
+        "total_messages": 27557757,
+        "filtered_messages": 38863
+    },
+    "submissions/RS_2020-07": {
+        "total_messages": 28436736,
+        "filtered_messages": 32808
+    },
+    "submissions/RS_2020-08": {
+        "total_messages": 28883496,
+        "filtered_messages": 33771
+    },
+    "submissions/RS_2020-09": {
+        "total_messages": 27814712,
+        "filtered_messages": 33140
+    },
+    "submissions/RS_2020-10": {
+        "total_messages": 28659441,
+        "filtered_messages": 25275
+    },
+    "submissions/RS_2020-11": {
+        "total_messages": 28002626,
+        "filtered_messages": 38292
+    },
+    "submissions/RS_2020-12": {
+        "total_messages": 29695450,
+        "filtered_messages": 46065
+    },
+    "submissions/RS_2021-01": {
+        "total_messages": 32704571,
+        "filtered_messages": 566573
+    },
+    "submissions/RS_2021-02": {
+        "total_messages": 31147947,
+        "filtered_messages": 436654
+    },
+    "submissions/RS_2021-03": {
+        "total_messages": 33006103,
+        "filtered_messages": 143686
+    },
+    "submissions/RS_2021-04": {
+        "total_messages": 31616206,
+        "filtered_messages": 61848
+    },
+    "submissions/RS_2021-05": {
+        "total_messages": 36310673,
+        "filtered_messages": 55348
+    },
+    "submissions/RS_2021-06": {
+        "total_messages": 34118481,
+        "filtered_messages": 106054
+    },
+    "submissions/RS_2021-07": {
+        "total_messages": 28922711,
+        "filtered_messages": 40195
+    },
+    "submissions/RS_2021-08": {
+        "total_messages": 28384220,
+        "filtered_messages": 33677
+    },
+    "submissions/RS_2021-09": {
+        "total_messages": 27316260,
+        "filtered_messages": 32697
+    },
+    "submissions/RS_2021-10": {
+        "total_messages": 28567813,
+        "filtered_messages": 33189
+    },
+    "submissions/RS_2021-11": {
+        "total_messages": 29048277,
+        "filtered_messages": 37279
+    },
+    "submissions/RS_2021-12": {
+        "total_messages": 29863861,
+        "filtered_messages": 28695
+    },
+    "submissions/RS_2022-01": {
+        "total_messages": 32091070,
+        "filtered_messages": 33149
+    },
+    "submissions/RS_2022-02": {
+        "total_messages": 29843162,
+        "filtered_messages": 22939
+    },
+    "submissions/RS_2022-03": {
+        "total_messages": 32677372,
+        "filtered_messages": 24224
+    },
+    "submissions/RS_2022-04": {
+        "total_messages": 33002461,
+        "filtered_messages": 24083
+    },
+    "submissions/RS_2022-05": {
+        "total_messages": 34838318,
+        "filtered_messages": 25922
+    },
+    "submissions/RS_2022-06": {
+        "total_messages": 34395243,
+        "filtered_messages": 20497
+    },
+    "submissions/RS_2022-07": {
+        "total_messages": 37222497,
+        "filtered_messages": 19857
+    },
+    "submissions/RS_2022-08": {
+        "total_messages": 38178282,
+        "filtered_messages": 51061
+    },
+    "submissions/RS_2022-09": {
+        "total_messages": 35115349,
+        "filtered_messages": 24816
+    },
+    "submissions/RS_2022-10": {
+        "total_messages": 35685153,
+        "filtered_messages": 27001
+    },
+    "submissions/RS_2022-11": {
+        "total_messages": 33166596,
+        "filtered_messages": 21593
+    },
+    "submissions/RS_2022-12": {
+        "total_messages": 35865148,
+        "filtered_messages": 21240
+    },
+    "submissions/RS_2023-01": {
+        "total_messages": 36090941,
+        "filtered_messages": 21832
+    },
+    "submissions/RS_2023-02": {
+        "total_messages": 33928903,
+        "filtered_messages": 18828
+    },
+    "submissions/RS_2023-03": {
+        "total_messages": 39724726,
+        "filtered_messages": 20834
+    },
+    "submissions/RS_2023-04": {
+        "total_messages": 52094224,
+        "filtered_messages": 14849
+    },
+    "submissions/RS_2023-05": {
+        "total_messages": 38450420,
+        "filtered_messages": 16152
+    },
+    "submissions/RS_2023-06": {
+        "total_messages": 42820922,
+        "filtered_messages": 14060
+    },
+    "submissions/RS_2023-07": {
+        "total_messages": 45437960,
+        "filtered_messages": 14811
+    },
+    "submissions/RS_2023-08": {
+        "total_messages": 46212450,
+        "filtered_messages": 15089
+    },
+    "submissions/RS_2023-09": {
+        "total_messages": 42881758,
+        "filtered_messages": 12777
+    },
+    "submissions/RS_2023-10": {
+        "total_messages": 40431726,
+        "filtered_messages": 12764
+    },
+    "submissions/RS_2023-11": {
+        "total_messages": 38107467,
+        "filtered_messages": 13012
+    },
+    "submissions/RS_2023-12": {
+        "total_messages": 39245797,
+        "filtered_messages": 15079
+    },
+    "submissions/RS_2024-01": {
+        "total_messages": 41263034,
+        "filtered_messages": 18125
+    },
+    "submissions/RS_2024-02": {
+        "total_messages": 39030731,
+        "filtered_messages": 24678
+    },
+    "submissions/RS_2024-03": {
+        "total_messages": 41926097,
+        "filtered_messages": 27839
+    },
+    "submissions/RS_2024-04": {
+        "total_messages": 40715240,
+        "filtered_messages": 19082
+    },
+    "submissions/RS_2024-05": {
+        "total_messages": 39884567,
+        "filtered_messages": 25264
+    },
+    "submissions/RS_2024-06": {
+        "total_messages": 38429821,
+        "filtered_messages": 19924
+    },
+    "submissions/RS_2024-07": {
+        "total_messages": 40932609,
+        "filtered_messages": 17857
+    },
+    "submissions/RS_2024-08": {
+        "total_messages": 41497995,
+        "filtered_messages": 21213
+    },
+    "submissions/RS_2024-09": {
+        "total_messages": 38603093,
+        "filtered_messages": 14655
+    },
+    "submissions/RS_2024-10": {
+        "total_messages": 38990206,
+        "filtered_messages": 16888
+    },
+    "submissions/RS_2024-11": {
+        "total_messages": 38025803,
+        "filtered_messages": 22005
+    },
+    "submissions/RS_2024-12": {
+        "total_messages": 38192053,
+        "filtered_messages": 21523
+    },
+    "submissions/RS_2025-01": {
+        "total_messages": 39909709,
+        "filtered_messages": 20710
+    },
+    "submissions/RS_2025-02": {
+        "total_messages": 36176028,
+        "filtered_messages": 17429
+    },
+    "submissions/RS_2025-03": {
+        "total_messages": 39643365,
+        "filtered_messages": 15361
+    },
+    "submissions/RS_2025-04": {
+        "total_messages": 38781238,
+        "filtered_messages": 23808
+    },
+    "submissions/RS_2025-05": {
+        "total_messages": 40568999,
+        "filtered_messages": 15639
+    },
+    "submissions/RS_2025-06": {
+        "total_messages": 40421082,
+        "filtered_messages": 13766
+    }
+}

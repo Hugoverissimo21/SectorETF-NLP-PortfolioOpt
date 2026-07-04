@@ -1,0 +1,19 @@
+{
+  "_meta": {
+    "description": "30-Day Median Bid/Ask Spread: The median bid-ask spread is calculated by identifying national best bid and national best offer (NBBO) for each Fund as of the end of each 10 second interval during each trading day of the last 30 calendar days and dividing the difference between each such bid and offer by the midpoint of the NBBO. The median of those values is identified and posted on each business day.",
+    "source": "https://www.ssga.com/us/en/intermediary",
+    "last_updated": "2026-02-07",
+    "potential_problem": "This won't include scenarios like crisis-widening, market impact from large trades, slippage from volatility, etc."
+  },
+  "XLB": 0.0002,
+  "XLC": 0.0001,
+  "XLE": 0.0002,
+  "XLF": 0.0002,
+  "XLI": 0.0001,
+  "XLK": 0.0001,
+  "XLP": 0.0001,
+  "XLRE": 0.0002,
+  "XLU": 0.0002,
+  "XLV": 0.0001,
+  "XLY": 0.0001
+}
