@@ -1,0 +1,116 @@
+{
+  "rank": 0,
+  "best_value": 0.02363075011676985,
+  "best_params": {
+    "lookback": 5,
+    "hidden_size": 64,
+    "num_layers": 2,
+    "dropout": 0.19447258278462698,
+    "bidirectional": 0,
+    "encoder_proj": 0,
+    "asset_mixer_layers": 1,
+    "asset_mixer_heads": 2,
+    "fusion_hidden": 64,
+    "use_residual_fusion": 0,
+    "scheduler": "none",
+    "learning_rate": 0.00077015534214114,
+    "weight_decay": 7.514776692299852e-06,
+    "batch_size": 64,
+    "max_epochs": 40,
+    "patience": 7,
+    "min_epochs": 5,
+    "grad_clip": 2.0,
+    "loss_name": "huber",
+    "huber_delta": 0.005,
+    "min_delta": 0.0
+  },
+  "best_user_attrs": {
+    "all_scores": [
+      0.054498218102955555,
+      0.015529064011921969,
+      0.017711480411276074,
+      -0.0023577397320777944,
+      0.01308161926041404,
+      0.028845619737140206,
+      0.034387770294669676,
+      0.02481492021455407,
+      0.026165798750074847
+    ],
+    "mean_ic": 0.02363075011676985,
+    "mean_rmse": 0.01396637037396431,
+    "merged_config": {
+      "rank": 0,
+      "tech_picks": {
+        "Price": "log_ret_1d",
+        "OHLC": [
+          "Open",
+          "High",
+          "Low"
+        ],
+        "Trend": "SMA63",
+        "Momentum": "RSI",
+        "Volume": "Volume",
+        "Volatility": [
+          "BBLower",
+          "BBUpper"
+        ],
+        "Market": "VIXIndexClose"
+      },
+      "per_asset_feats": [
+        "log_ret_1d",
+        "Open",
+        "High",
+        "Low",
+        "SMA63",
+        "RSI",
+        "Volume",
+        "BBLower",
+        "BBUpper"
+      ],
+      "reddit_sentiment_cols": [
+        "reddit_threshold0.75_balance"
+      ],
+      "news_sentiment_cols": [
+        "news_threshold0.50_balance_ratio",
+        "news_threshold0.50_balance_ratio_roll22"
+      ],
+      "merged_sentiment_cols": [
+        "reddit_threshold0.75_balance",
+        "news_threshold0.50_balance_ratio",
+        "news_threshold0.50_balance_ratio_roll22"
+      ],
+      "reddit_nan_strategy": "zero_fill",
+      "news_nan_strategy": "zero_fill",
+      "reddit_trial_number": 5,
+      "reddit_ic": 0.03669245377983234,
+      "news_trial_number": 7,
+      "news_ic": 0.026332134239890635
+    },
+    "news_nan_strategy": "zero_fill",
+    "news_sentiment_cols": [
+      "news_threshold0.50_balance_ratio",
+      "news_threshold0.50_balance_ratio_roll22"
+    ],
+    "reddit_nan_strategy": "zero_fill",
+    "reddit_sentiment_cols": [
+      "reddit_threshold0.75_balance"
+    ],
+    "tech_picks": {
+      "Price": "log_ret_1d",
+      "OHLC": [
+        "Open",
+        "High",
+        "Low"
+      ],
+      "Trend": "SMA63",
+      "Momentum": "RSI",
+      "Volume": "Volume",
+      "Volatility": [
+        "BBLower",
+        "BBUpper"
+      ],
+      "Market": "VIXIndexClose"
+    }
+  },
+  "n_trials": 18
+}

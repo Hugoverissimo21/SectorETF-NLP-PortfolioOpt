@@ -1,0 +1,95 @@
+{
+  "rank": 2,
+  "best_value": 0.04130253218086295,
+  "best_params": {
+    "sentiment_threshold": "0.90",
+    "sentiment_live_group": "count_positive+count_negative",
+    "sentiment_hist_group": "balance_ratio_variation1+balance_ratio_variation5",
+    "reddit_nan_strategy": "zero_fill",
+    "lookback": 22,
+    "hidden_size": 64,
+    "num_layers": 1,
+    "dropout": 0.2488334869429616,
+    "bidirectional": 1,
+    "encoder_proj": 64,
+    "asset_mixer_layers": 1,
+    "asset_mixer_heads": 1,
+    "fusion_hidden": 64,
+    "use_residual_fusion": 1,
+    "scheduler": "plateau",
+    "learning_rate": 0.0017882730258486097,
+    "weight_decay": 1.360675935826365e-06,
+    "batch_size": 32,
+    "max_epochs": 30,
+    "patience": 5,
+    "min_epochs": 8,
+    "grad_clip": 2.0,
+    "loss_name": "huber",
+    "huber_delta": 0.005,
+    "min_delta": 0.0
+  },
+  "best_user_attrs": {
+    "all_scores": [
+      0.07161266197875055,
+      0.04930580661191699,
+      0.07708802468278302,
+      0.04747105697918055,
+      0.027919499518301017,
+      0.02052594981325447,
+      0.04497463225531697,
+      0.011545529018132595,
+      0.021279628770130378
+    ],
+    "base_trial_number": 44,
+    "frozen_feats": [
+      "log_ret_1d",
+      "Open",
+      "High",
+      "Low",
+      "SMA63",
+      "RSI",
+      "Volume",
+      "BBLower",
+      "BBUpper"
+    ],
+    "frozen_picks": {
+      "Price": "log_ret_1d",
+      "OHLC": [
+        "Open",
+        "High",
+        "Low"
+      ],
+      "Trend": "SMA63",
+      "Momentum": "RSI",
+      "Volume": "Volume",
+      "Volatility": [
+        "BBLower",
+        "BBUpper"
+      ],
+      "Market": "VIXIndexClose"
+    },
+    "mean_ic": 0.04130253218086295,
+    "mean_rmse": 0.013973065548472934,
+    "reddit_nan_strategy": "zero_fill",
+    "sentiment_picks": {
+      "threshold": "0.90",
+      "live_key": "count_positive+count_negative",
+      "hist_key": "balance_ratio_variation1+balance_ratio_variation5",
+      "live_indicators": [
+        "count_positive",
+        "count_negative"
+      ],
+      "hist_indicators": [
+        "balance_ratio_variation1",
+        "balance_ratio_variation5"
+      ],
+      "sentiment_cols": [
+        "reddit_threshold0.90_count_positive",
+        "reddit_threshold0.90_count_negative",
+        "reddit_threshold0.90_balance_ratio_variation1",
+        "reddit_threshold0.90_balance_ratio_variation5"
+      ]
+    }
+  },
+  "n_trials": 30
+}

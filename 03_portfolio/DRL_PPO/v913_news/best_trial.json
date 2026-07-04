@@ -1,0 +1,86 @@
+{
+  "best_value": 0.9923572081370181,
+  "best_params": {
+    "sentiment_threshold": "0.75",
+    "sentiment_live_group": "count_positive+count_negative",
+    "sentiment_hist_group": "balance_ratio_variation1+balance_ratio_variation5",
+    "news_nan_strategy": "carry_forward",
+    "gamma": 0.9431893637247757,
+    "gae_lambda": 0.8887543727465631,
+    "learning_rate": 0.01394,
+    "clip_range": 0.07573465136007863,
+    "n_epochs": 7,
+    "n_steps_v2": 252,
+    "batch_size_v2": 252,
+    "target_kl": 0.022238597544596506,
+    "ent_coef": 0.019205,
+    "vf_coef": 0.837379198496256,
+    "max_grad_norm": 0.5860432156594848,
+    "dsr_eta": 0.005,
+    "dsr_warmup_steps": 126,
+    "reward_scale_net": 50.0,
+    "reward_scale_dsr": 20.0,
+    "dsr_clip": 20.0,
+    "lookback": 22,
+    "encoder_width": 32,
+    "log_std_init": -0.31620855704280293
+  },
+  "best_user_attrs": {
+    "all_scores": [
+      2.460580947001096,
+      2.474206302713193,
+      2.4432640898027733,
+      -0.24687844982015816,
+      -0.23474442519293182,
+      -0.2740974087860296,
+      0.7701786093360997,
+      0.7707268536031819,
+      0.7679783545759387
+    ],
+    "feat_names": [
+      "log_ret_1d",
+      "SMA252",
+      "RSI",
+      "Volume",
+      "5dayVolatility",
+      "news_threshold0.75_count_positive",
+      "news_threshold0.75_count_negative",
+      "news_threshold0.75_balance_ratio_variation1",
+      "news_threshold0.75_balance_ratio_variation5",
+      "_NEWS_NAN"
+    ],
+    "frozen_picks": {
+      "Price": "log_ret_1d",
+      "OHLC": [],
+      "Trend": "SMA252",
+      "Momentum": "RSI",
+      "Volume": "Volume",
+      "Volatility": "5dayVolatility",
+      "Market": "VIXIndexClose"
+    },
+    "has_market": 1,
+    "lookback": 22,
+    "news_nan_strategy": "carry_forward",
+    "sentiment_picks": {
+      "threshold": "0.75",
+      "live_key": "count_positive+count_negative",
+      "hist_key": "balance_ratio_variation1+balance_ratio_variation5",
+      "live_indicators": [
+        "count_positive",
+        "count_negative"
+      ],
+      "hist_indicators": [
+        "balance_ratio_variation1",
+        "balance_ratio_variation5"
+      ],
+      "sentiment_cols": [
+        "news_threshold0.75_count_positive",
+        "news_threshold0.75_count_negative",
+        "news_threshold0.75_balance_ratio_variation1",
+        "news_threshold0.75_balance_ratio_variation5"
+      ]
+    },
+    "total_timesteps": 1000000
+  },
+  "n_trials": 31
+}

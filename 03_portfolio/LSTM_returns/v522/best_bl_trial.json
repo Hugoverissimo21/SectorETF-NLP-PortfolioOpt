@@ -1,0 +1,16 @@
+{
+  "best_value": 0.940093311808254,
+  "best_params": {
+    "tau": 0.009510532256672425,
+    "risk_aversion": 0.8390272887381997,
+    "omega_scale": 0.014515267011988636,
+    "max_weight": 0.23533261367386724,
+    "long_only": 1,
+    "top_n": 3
+  },
+  "best_user_attrs": {
+    "mean_val_sharpe": 0.940093311808254
+  },
+  "n_trials": 7,
+  "single_seed_used": 123123
+}

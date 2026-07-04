@@ -1,0 +1,42 @@
+{
+  "block1": {
+    "n_days": 250,
+    "mean_daily": 0.0011244928182433372,
+    "ann_return": 0.3273878448022547,
+    "ann_vol": 0.17342239653513808,
+    "sharpe": 1.6339999668953102,
+    "cum_return": 0.3048196239391652,
+    "max_drawdown": -0.11000741071189157
+  },
+  "block2": {
+    "n_days": 250,
+    "mean_daily": 0.001542405938381291,
+    "ann_return": 0.4746001205440449,
+    "ann_vol": 0.2869480333115227,
+    "sharpe": 1.354552920215039,
+    "cum_return": 0.41195628067688506,
+    "max_drawdown": -0.2562431886655989
+  },
+  "combined": {
+    "n_days": 500,
+    "mean_daily": 0.0013334493783123142,
+    "ann_return": 0.39906674455625457,
+    "ann_vol": 0.23710388811100855,
+    "sharpe": 1.4172236736049613,
+    "cum_return": 0.8423482631713577,
+    "max_drawdown": -0.2562431886655988
+  },
+  "sentiment_picks": {
+    "threshold": "0.50",
+    "live_key": "balance_ratio",
+    "hist_key": "none",
+    "live_indicators": [
+      "balance_ratio"
+    ],
+    "hist_indicators": [],
+    "sentiment_cols": [
+      "reddit_threshold0.50_balance_ratio"
+    ]
+  },
+  "reddit_nan_strategy": "carry_forward"
+}

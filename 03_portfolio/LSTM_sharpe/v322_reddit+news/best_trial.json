@@ -1,0 +1,51 @@
+{
+  "best_value": 1.0162690929884932,
+  "best_params": {
+    "lookback": 10,
+    "hidden_size": 128,
+    "num_layers": 1,
+    "dropout": 0.16800780815633784,
+    "bidirectional": 1,
+    "encoder_proj": 32,
+    "asset_mixer_layers": 2,
+    "asset_mixer_heads": 4,
+    "fusion_hidden": 128,
+    "weight_mode": "softmax",
+    "learning_rate": 0.0005686659085452694,
+    "weight_decay": 0.0007694272863805249,
+    "batch_size": 32,
+    "max_epochs": 20,
+    "patience": 7,
+    "min_epochs": 5,
+    "grad_clip": 0.5,
+    "scheduler": "plateau",
+    "sharpe_eps": 1e-06,
+    "min_delta": 0.0001
+  },
+  "frozen_config": {
+    "per_asset_feats": [
+      "log_ret_1d",
+      "Open",
+      "High",
+      "Low",
+      "ADX",
+      "CCI",
+      "VolumeVariation",
+      "BBLower",
+      "BBUpper"
+    ],
+    "news_sentiment_cols": [
+      "news_threshold0.90_balance",
+      "news_threshold0.90_balance_ratio_variation1",
+      "news_threshold0.90_balance_ratio_variation5"
+    ],
+    "news_nan_strategy": "mask_asset",
+    "reddit_sentiment_cols": [
+      "reddit_threshold0.50_balance_ratio"
+    ],
+    "reddit_nan_strategy": "carry_forward",
+    "news_sharpe": 1.219354881436584,
+    "reddit_sharpe": 1.146738311758029
+  },
+  "n_trials": 17
+}

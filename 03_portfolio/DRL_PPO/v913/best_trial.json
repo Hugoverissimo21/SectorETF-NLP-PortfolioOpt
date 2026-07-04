@@ -1,0 +1,70 @@
+{
+  "best_value": 1.0912000401151485,
+  "best_params": {
+    "use_ohlc": 0,
+    "pick_Trend": "SMA252",
+    "pick_Momentum": "RSI",
+    "pick_Volume": "Volume",
+    "pick_Volatility": "5dayVolatility",
+    "use_market": 1,
+    "gamma": 0.9826432003246864,
+    "gae_lambda": 0.8765705374361354,
+    "learning_rate": 0.00011441787672296719,
+    "clip_range": 0.1879102651459205,
+    "n_epochs": 7,
+    "n_steps_v2": 756,
+    "batch_size_v2": 126,
+    "target_kl": 0.02060771931167674,
+    "ent_coef": 0.03161722114282835,
+    "vf_coef": 0.10143568667337341,
+    "max_grad_norm": 1.578329692202482,
+    "dsr_eta": 0.003968,
+    "dsr_warmup_steps": 0,
+    "reward_scale_net": 50.0,
+    "reward_scale_dsr": 5.0,
+    "dsr_clip": 20.0,
+    "lookback": 60,
+    "encoder_width": 64,
+    "log_std_init": -0.8585521255799138
+  },
+  "best_user_attrs": {
+    "all_scores": [
+      2.4654312993480585,
+      2.4310203046375305,
+      2.4847433971704125,
+      -0.22818740217799072,
+      -0.1593160324296393,
+      -0.2666551410059407,
+      0.7598074378673044,
+      0.753001690988149,
+      1.5809548066384518
+    ],
+    "feat_names": [
+      "log_ret_1d",
+      "SMA252",
+      "RSI",
+      "Volume",
+      "5dayVolatility"
+    ],
+    "feature_set": {
+      "Price": "log_ret_1d",
+      "OHLC": [],
+      "Trend": "SMA252",
+      "Momentum": "RSI",
+      "Volume": "Volume",
+      "Volatility": "5dayVolatility",
+      "Market": "VIXIndexClose"
+    },
+    "has_market": 1,
+    "lookback": 60,
+    "per_asset_feats": [
+      "log_ret_1d",
+      "SMA252",
+      "RSI",
+      "Volume",
+      "5dayVolatility"
+    ],
+    "total_timesteps": 1000000
+  },
+  "n_trials": 69
+}

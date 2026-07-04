@@ -1,0 +1,87 @@
+{
+  "rank": 1,
+  "best_value": 0.03331212201250973,
+  "best_params": {
+    "sentiment_threshold": "0.00",
+    "sentiment_live_group": "balance_ratio",
+    "sentiment_hist_group": "balance_ratio_roll3",
+    "news_nan_strategy": "zero_fill",
+    "lookback": 10,
+    "hidden_size": 64,
+    "num_layers": 1,
+    "dropout": 0.1041581217327352,
+    "bidirectional": 0,
+    "encoder_proj": 64,
+    "asset_mixer_layers": 1,
+    "asset_mixer_heads": 4,
+    "fusion_hidden": 0,
+    "use_residual_fusion": 0,
+    "scheduler": "none",
+    "learning_rate": 0.00035792006031571533,
+    "weight_decay": 1.442203194464619e-05,
+    "batch_size": 32,
+    "max_epochs": 40,
+    "patience": 7,
+    "min_epochs": 5,
+    "grad_clip": 2.0,
+    "loss_name": "mse",
+    "huber_delta": 0.005,
+    "min_delta": 0.0
+  },
+  "best_user_attrs": {
+    "all_scores": [
+      0.003912122294546861,
+      -0.00881706679431956,
+      0.0010273168809410563,
+      0.004089629170109392,
+      0.01241482135061661,
+      0.04121776051218024,
+      0.0875591675641838,
+      0.06697110236197165,
+      0.0914342447723575
+    ],
+    "base_trial_number": 35,
+    "frozen_feats": [
+      "log_ret_1d",
+      "Open",
+      "High",
+      "Low",
+      "SMA63",
+      "RSI",
+      "Volume",
+      "5dayVolatility"
+    ],
+    "frozen_picks": {
+      "Price": "log_ret_1d",
+      "OHLC": [
+        "Open",
+        "High",
+        "Low"
+      ],
+      "Trend": "SMA63",
+      "Momentum": "RSI",
+      "Volume": "Volume",
+      "Volatility": "5dayVolatility",
+      "Market": "VIXIndexClose"
+    },
+    "mean_ic": 0.03331212201250973,
+    "mean_rmse": 0.014622927436398135,
+    "news_nan_strategy": "zero_fill",
+    "sentiment_picks": {
+      "threshold": "0.00",
+      "live_key": "balance_ratio",
+      "hist_key": "balance_ratio_roll3",
+      "live_indicators": [
+        "balance_ratio"
+      ],
+      "hist_indicators": [
+        "balance_ratio_roll3"
+      ],
+      "sentiment_cols": [
+        "news_threshold0.00_balance_ratio",
+        "news_threshold0.00_balance_ratio_roll3"
+      ]
+    }
+  },
+  "n_trials": 29
+}

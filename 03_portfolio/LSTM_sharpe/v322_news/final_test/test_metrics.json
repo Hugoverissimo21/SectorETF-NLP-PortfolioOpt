@@ -1,0 +1,47 @@
+{
+  "block1": {
+    "n_days": 250,
+    "mean_daily": 0.0006587513541453518,
+    "ann_return": 0.1805148857036767,
+    "ann_vol": 0.10672819702661798,
+    "sharpe": 1.5554028445100312,
+    "cum_return": 0.17232463219781247,
+    "max_drawdown": -0.09238042719989936
+  },
+  "block2": {
+    "n_days": 241,
+    "mean_daily": 0.0008628159540191416,
+    "ann_return": 0.24276144263337085,
+    "ann_vol": 0.20697867968197747,
+    "sharpe": 1.0504928369767557,
+    "cum_return": 0.2066794465198898,
+    "max_drawdown": -0.14842950785802322
+  },
+  "combined": {
+    "n_days": 491,
+    "mean_daily": 0.0007589134082585561,
+    "ann_return": 0.21066966169104084,
+    "ann_vol": 0.16379844922557896,
+    "sharpe": 1.1675701435840635,
+    "cum_return": 0.4146200383220866,
+    "max_drawdown": -0.14842950785802322
+  },
+  "sentiment_picks": {
+    "threshold": "0.90",
+    "live_key": "balance",
+    "hist_key": "balance_ratio_variation1+balance_ratio_variation5",
+    "live_indicators": [
+      "balance"
+    ],
+    "hist_indicators": [
+      "balance_ratio_variation1",
+      "balance_ratio_variation5"
+    ],
+    "sentiment_cols": [
+      "news_threshold0.90_balance",
+      "news_threshold0.90_balance_ratio_variation1",
+      "news_threshold0.90_balance_ratio_variation5"
+    ]
+  },
+  "news_nan_strategy": "mask_asset"
+}

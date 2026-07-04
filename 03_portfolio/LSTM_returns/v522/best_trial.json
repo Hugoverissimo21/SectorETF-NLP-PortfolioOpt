@@ -1,0 +1,76 @@
+{
+  "best_value": 0.037692655825013216,
+  "best_params": {
+    "use_ohlc": 1,
+    "pick_Trend": "SMA63",
+    "pick_Momentum": "RSI",
+    "pick_Volume": "Volume",
+    "pick_Volatility": "BBands",
+    "use_market": 1,
+    "lookback": 5,
+    "hidden_size": 64,
+    "num_layers": 2,
+    "dropout": 0.05480952404235955,
+    "bidirectional": 0,
+    "encoder_proj": 64,
+    "asset_mixer_layers": 0,
+    "asset_mixer_heads": 1,
+    "fusion_hidden": 128,
+    "use_residual_fusion": 0,
+    "scheduler": "none",
+    "learning_rate": 0.0011125261954819216,
+    "weight_decay": 0.0008343546979225448,
+    "batch_size": 128,
+    "max_epochs": 30,
+    "patience": 5,
+    "min_epochs": 5,
+    "grad_clip": 1.0,
+    "loss_name": "mse",
+    "huber_delta": 0.02,
+    "min_delta": 0.0
+  },
+  "best_user_attrs": {
+    "all_scores": [
+      0.03976797501380593,
+      0.01564972946087296,
+      0.032107523236740286,
+      0.04802924584152721,
+      -0.0005697885903425792,
+      0.05936799932971382,
+      0.04191734071684963,
+      0.029353367517267515,
+      0.07361050989868416
+    ],
+    "feature_set": {
+      "Price": "log_ret_1d",
+      "OHLC": [
+        "Open",
+        "High",
+        "Low"
+      ],
+      "Trend": "SMA63",
+      "Momentum": "RSI",
+      "Volume": "Volume",
+      "Volatility": [
+        "BBLower",
+        "BBUpper"
+      ],
+      "Market": "VIXIndexClose"
+    },
+    "mean_ic": 0.037692655825013216,
+    "mean_rmse": 0.013922910516460737,
+    "note": "Model trained/evaluated on spread-adjusted y_model; BL/backtest uses raw y_raw.",
+    "per_asset_feats": [
+      "log_ret_1d",
+      "Open",
+      "High",
+      "Low",
+      "SMA63",
+      "RSI",
+      "Volume",
+      "BBLower",
+      "BBUpper"
+    ]
+  },
+  "n_trials": 50
+}

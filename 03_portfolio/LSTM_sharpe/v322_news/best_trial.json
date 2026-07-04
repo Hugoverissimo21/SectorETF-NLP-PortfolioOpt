@@ -1,0 +1,78 @@
+{
+  "best_value": 1.219354881436584,
+  "best_params": {
+    "sentiment_threshold": "0.90",
+    "sentiment_live_group": "balance",
+    "sentiment_hist_group": "balance_ratio_variation1+balance_ratio_variation5",
+    "news_nan_strategy": "mask_asset",
+    "lookback": 10,
+    "hidden_size": 64,
+    "num_layers": 1,
+    "dropout": 0.074387380164053,
+    "bidirectional": 1,
+    "encoder_proj": 32,
+    "asset_mixer_layers": 0,
+    "asset_mixer_heads": 4,
+    "fusion_hidden": 0,
+    "weight_mode": "softmax",
+    "learning_rate": 0.0003006331398245004,
+    "weight_decay": 0.00048181632198001083,
+    "batch_size": 32,
+    "max_epochs": 40,
+    "patience": 5,
+    "min_epochs": 5,
+    "grad_clip": 2.0,
+    "scheduler": "plateau",
+    "sharpe_eps": 1e-06,
+    "min_delta": 0.0001
+  },
+  "best_user_attrs": {
+    "all_sharpes": [
+      2.8899710960991607,
+      2.4603070069852406,
+      2.668226013764747,
+      0.2857193753705836,
+      -0.05474216482923454,
+      0.1598357204832385,
+      0.9059891067600387,
+      0.8604870553833733,
+      0.7984007229121086
+    ],
+    "frozen_picks": {
+      "Price": "log_ret_1d",
+      "OHLC": [
+        "Open",
+        "High",
+        "Low"
+      ],
+      "Trend": "ADX",
+      "Momentum": "CCI",
+      "Volume": "VolumeVariation",
+      "Volatility": [
+        "BBLower",
+        "BBUpper"
+      ],
+      "Market": null
+    },
+    "mean_sharpe": 1.219354881436584,
+    "news_nan_strategy": "mask_asset",
+    "sentiment_picks": {
+      "threshold": "0.90",
+      "live_key": "balance",
+      "hist_key": "balance_ratio_variation1+balance_ratio_variation5",
+      "live_indicators": [
+        "balance"
+      ],
+      "hist_indicators": [
+        "balance_ratio_variation1",
+        "balance_ratio_variation5"
+      ],
+      "sentiment_cols": [
+        "news_threshold0.90_balance",
+        "news_threshold0.90_balance_ratio_variation1",
+        "news_threshold0.90_balance_ratio_variation5"
+      ]
+    }
+  },
+  "n_trials": 29
+}

@@ -1,0 +1,52 @@
+{
+  "block1": {
+    "n_days": 250,
+    "mean_daily": 0.0011244192183801794,
+    "ann_return": 0.32736325340021644,
+    "ann_vol": 0.17341497093675723,
+    "sharpe": 1.6339629819800368,
+    "cum_return": 0.3047973044840755,
+    "max_drawdown": -0.11000640177995957
+  },
+  "block2": {
+    "n_days": 241,
+    "mean_daily": 0.0007805215507355437,
+    "ann_return": 0.21727494617956555,
+    "ann_vol": 0.18934747386563414,
+    "sharpe": 1.0387856081192526,
+    "cum_return": 0.18663173379210862,
+    "max_drawdown": -0.1594377866447685
+  },
+  "combined": {
+    "n_days": 491,
+    "mean_daily": 0.000955622196175786,
+    "ann_return": 0.2721416283383049,
+    "ann_vol": 0.18143066535826835,
+    "sharpe": 1.3273213376623012,
+    "cum_return": 0.5483138876672105,
+    "max_drawdown": -0.1594377866447676
+  },
+  "frozen_config": {
+    "per_asset_feats": [
+      "log_ret_1d",
+      "Open",
+      "High",
+      "Low",
+      "ADX",
+      "CCI",
+      "VolumeVariation",
+      "BBLower",
+      "BBUpper"
+    ],
+    "news_sentiment_cols": [
+      "news_threshold0.90_balance",
+      "news_threshold0.90_balance_ratio_variation1",
+      "news_threshold0.90_balance_ratio_variation5"
+    ],
+    "news_nan_strategy": "mask_asset",
+    "reddit_sentiment_cols": [
+      "reddit_threshold0.50_balance_ratio"
+    ],
+    "reddit_nan_strategy": "carry_forward"
+  }
+}

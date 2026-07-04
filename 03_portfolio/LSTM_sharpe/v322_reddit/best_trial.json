@@ -1,0 +1,73 @@
+{
+  "best_value": 1.146738311758029,
+  "best_params": {
+    "sentiment_threshold": "0.50",
+    "sentiment_live_group": "balance_ratio",
+    "sentiment_hist_group": "none",
+    "reddit_nan_strategy": "carry_forward",
+    "lookback": 5,
+    "hidden_size": 128,
+    "num_layers": 1,
+    "dropout": 0.16124441726801436,
+    "bidirectional": 0,
+    "encoder_proj": 0,
+    "asset_mixer_layers": 1,
+    "asset_mixer_heads": 4,
+    "fusion_hidden": 128,
+    "weight_mode": "softmax",
+    "learning_rate": 0.0011357360151591658,
+    "weight_decay": 4.840084040187321e-05,
+    "batch_size": 64,
+    "max_epochs": 20,
+    "patience": 7,
+    "min_epochs": 5,
+    "grad_clip": 0.5,
+    "scheduler": "none",
+    "sharpe_eps": 1e-08,
+    "min_delta": 0.0
+  },
+  "best_user_attrs": {
+    "all_sharpes": [
+      2.667356578605717,
+      2.0282415048640323,
+      1.9146046128824323,
+      0.25432182230782907,
+      1.32668767877838,
+      -0.6874562576854795,
+      1.2820557201669207,
+      0.7215556397892654,
+      0.8132775061131634
+    ],
+    "frozen_picks": {
+      "Price": "log_ret_1d",
+      "OHLC": [
+        "Open",
+        "High",
+        "Low"
+      ],
+      "Trend": "ADX",
+      "Momentum": "CCI",
+      "Volume": "VolumeVariation",
+      "Volatility": [
+        "BBLower",
+        "BBUpper"
+      ],
+      "Market": null
+    },
+    "mean_sharpe": 1.146738311758029,
+    "reddit_nan_strategy": "carry_forward",
+    "sentiment_picks": {
+      "threshold": "0.50",
+      "live_key": "balance_ratio",
+      "hist_key": "none",
+      "live_indicators": [
+        "balance_ratio"
+      ],
+      "hist_indicators": [],
+      "sentiment_cols": [
+        "reddit_threshold0.50_balance_ratio"
+      ]
+    }
+  },
+  "n_trials": 29
+}

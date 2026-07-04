@@ -1,0 +1,78 @@
+{
+  "best_value": 0.9927891801048617,
+  "best_params": {
+    "gamma": 0.9206359889578853,
+    "gae_lambda": 0.8264652339166583,
+    "learning_rate": 0.00142,
+    "clip_range": 0.11326420677782995,
+    "n_epochs": 5,
+    "n_steps_v2": 756,
+    "batch_size_v2": 126,
+    "target_kl": 0.007352085316715773,
+    "ent_coef": 0.07158,
+    "vf_coef": 0.2857835060111237,
+    "max_grad_norm": 0.9373586779493277,
+    "dsr_eta": 0.01,
+    "dsr_warmup_steps": 126,
+    "reward_scale_net": 200.0,
+    "reward_scale_dsr": 10.0,
+    "dsr_clip": 10.0,
+    "lookback": 22,
+    "encoder_width": 32,
+    "log_std_init": -1.3364518558103948
+  },
+  "best_user_attrs": {
+    "all_scores": [
+      2.4550486168051355,
+      2.4524080665660177,
+      2.4584626419253754,
+      -0.2400183345646298,
+      -0.23968290890829294,
+      -0.2529184101122786,
+      0.7633757641116403,
+      0.7679342333403094,
+      0.7704929517804792
+    ],
+    "feat_names": [
+      "log_ret_1d",
+      "SMA252",
+      "RSI",
+      "Volume",
+      "5dayVolatility",
+      "news_threshold0.75_count_positive",
+      "news_threshold0.75_count_negative",
+      "news_threshold0.75_balance_ratio_variation1",
+      "news_threshold0.75_balance_ratio_variation5",
+      "_NEWS_NAN",
+      "reddit_threshold0.75_balance_ratio",
+      "reddit_threshold0.75_balance_ratio_t-1",
+      "reddit_threshold0.75_balance_ratio_t-5",
+      "_REDDIT_NAN"
+    ],
+    "frozen_picks": {
+      "Trend": "SMA252",
+      "Momentum": "RSI",
+      "Volume": "Volume",
+      "Volatility": "5dayVolatility",
+      "Market": "VIXIndexClose"
+    },
+    "lookback": 22,
+    "news_nan_strategy": "carry_forward",
+    "news_sentiment_cols": [
+      "news_threshold0.75_count_positive",
+      "news_threshold0.75_count_negative",
+      "news_threshold0.75_balance_ratio_variation1",
+      "news_threshold0.75_balance_ratio_variation5"
+    ],
+    "news_source_trial": 18,
+    "reddit_nan_strategy": "zero_fill",
+    "reddit_sentiment_cols": [
+      "reddit_threshold0.75_balance_ratio",
+      "reddit_threshold0.75_balance_ratio_t-1",
+      "reddit_threshold0.75_balance_ratio_t-5"
+    ],
+    "reddit_source_trial": 22,
+    "total_timesteps": 1000000
+  },
+  "n_trials": 29
+}

@@ -1,0 +1,73 @@
+{
+  "best_value": 1.0898964289187227,
+  "best_params": {
+    "use_ohlc": 1,
+    "pick_Trend": "ADX",
+    "pick_Momentum": "CCI",
+    "pick_Volume": "VolumeVariation",
+    "pick_Volatility": "BBands",
+    "use_market": 0,
+    "lookback": 10,
+    "hidden_size": 128,
+    "num_layers": 1,
+    "dropout": 0.15383045414131452,
+    "bidirectional": 0,
+    "encoder_proj": 0,
+    "asset_mixer_layers": 1,
+    "asset_mixer_heads": 1,
+    "fusion_hidden": 0,
+    "weight_mode": "softmax",
+    "learning_rate": 0.0004233809589388462,
+    "weight_decay": 2.5768517198402005e-06,
+    "batch_size": 32,
+    "max_epochs": 40,
+    "patience": 5,
+    "min_epochs": 5,
+    "grad_clip": 2.0,
+    "scheduler": "none",
+    "sharpe_eps": 1e-08,
+    "min_delta": 0.0
+  },
+  "best_user_attrs": {
+    "all_sharpes": [
+      2.1644227467084165,
+      1.7346938730836552,
+      1.9636176603092323,
+      0.6050360257734191,
+      -0.19189014859002776,
+      0.07532942330172385,
+      1.4302681372125352,
+      0.8179195841957039,
+      1.2096705582738456
+    ],
+    "feature_set": {
+      "Price": "log_ret_1d",
+      "OHLC": [
+        "Open",
+        "High",
+        "Low"
+      ],
+      "Trend": "ADX",
+      "Momentum": "CCI",
+      "Volume": "VolumeVariation",
+      "Volatility": [
+        "BBLower",
+        "BBUpper"
+      ],
+      "Market": null
+    },
+    "mean_sharpe": 1.0898964289187227,
+    "per_asset_feats": [
+      "log_ret_1d",
+      "Open",
+      "High",
+      "Low",
+      "ADX",
+      "CCI",
+      "VolumeVariation",
+      "BBLower",
+      "BBUpper"
+    ]
+  },
+  "n_trials": 70
+}
