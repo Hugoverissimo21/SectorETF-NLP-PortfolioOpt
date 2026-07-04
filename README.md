@@ -22,7 +22,7 @@ frameworks — institutional news mainly improves risk control, retail social
 media correlates more with return generation, and their combination yields
 the most balanced risk-return profile.
 
-📄 **[thesis.pdf](thesis.pdf)** · 🎞️ **[slides.pdf](slides.pdf)**
+📄 **[thesis.pdf](https://hugoverissimo21.github.io/SectorETF-NLP-PortfolioOpt/thesis.pdf)** · 🎞️ **[slides.pdf](https://hugoverissimo21.github.io/SectorETF-NLP-PortfolioOpt/slides.pdf)**
 
 ## Pipeline
 
