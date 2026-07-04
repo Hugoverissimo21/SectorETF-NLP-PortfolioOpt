@@ -1,0 +1,550 @@
+\chapter{Theoretical Background and Hypotheses}
+\label{chapter:sota}
+
+\begin{introduction}
+\begin{flushright}
+``I want you to deal with your problems by becoming rich!''
+\end{flushright}
+
+\vspace{0.5em}
+
+This chapter surveys the theoretical and empirical foundations of the study. It reviews portfolio optimization paradigms, from classical mean-variance frameworks to deep learning and reinforcement learning approaches, examines price and return prediction methods with a focus on sentiment-enriched models, and surveys the Financial NLP literature on narrative analysis across data sources and methodologies. The chapter concludes by formalizing the four hypotheses that guide the empirical investigation.
+\end{introduction}
+
+
+
+Portfolio optimization is a central problem in quantitative finance and asset management, concerned with the allocation of capital across a set of financial instruments to balance expected returns and risk. The problem is typically formulated under a variety of constraints, reflecting both investor preferences and practical limitations. Over time, portfolio optimization has expanded from its original theoretical formulations into a broad research field that integrates statistical modeling, optimization theory, and computational methods~\cite{41bf8, 3ac6b}.
+
+In practice, constructing robust portfolios is complicated by the intrinsic properties of financial markets. Asset returns are noisy, highly volatile, and non-stationary, while key inputs such as expected returns, volatilities, and correlations must be estimated from limited historical data. Estimation errors, together with market frictions such as transaction costs, liquidity constraints, and rebalancing limitations, often lead to a substantial gap between theoretical optimality and realized performance~\cite{41bf8}.
+
+These difficulties become more pronounced in portfolios with many assets or structured investment universes, such as sector ETFs. Sector ETFs provide diversified exposure to specific segments of the economy and offer a transparent and interpretable investment structure. However, they are also characterized by strong and time-varying interdependencies, driven by macroeconomic conditions, business cycles, and market-wide shocks. Effectively modeling these dynamics requires approaches that can capture both temporal behavior and cross-asset relationships \cite{ALOMARI2024210}.
+
+The following sections present a structured review of the main paradigms in portfolio optimization, together with complementary research areas that are closely related to these paradigms, namely returns prediction and sentiment analysis. Each section summarizes the core methodological approaches and highlights representative contributions from the literature. Particular emphasis is placed on methods that are especially relevant for sector-level portfolio allocation, despite the fact that this setting remains relatively underexplored in existing research.
+
+\section{Portfolio Optimization}
+\label{section:portfolio_optimization}
+
+Portfolio optimization methodologies range from classical frameworks based on market variables such as prices, returns, and covariance structures to more recent data-driven and reinforcement learning approaches that aim to capture nonlinear dynamics and adapt to evolving market conditions. In parallel, insights from behavioral finance introduce investor sentiment and financial narratives as additional sources of information. Rather than replacing traditional market-based models, sentiment-oriented approaches often extend them, giving rise to two complementary paradigms: purely market-driven models and hybrid frameworks that integrate market data with behavioral signals.
+% LINKS PARTILHADOS PELA MM
+% https://link.springer.com/article/10.1007/s10115-025-02475-6
+% https://link.springer.com/article/10.1007/s11156-024-01309-w
+% https://link.springer.com/article/10.1007/s10462-022-10273-7
+% https://link.springer.com/article/10.1007/s00181-022-02300-x
+% https://www.pspress.org/index.php/tcsm/article/view/176
+% https://www.emerald.com/qrfm/article/18/1/209/1255636
+% https://www.tandfonline.com/doi/full/10.1080/15427560.2024.2365723
+% https://www.tandfonline.com/doi/full/10.1080/15427560.2025.2566736
+% https://onlinelibrary.wiley.com/doi/full/10.1002/pa.2752
+
+
+Despite significant progress, the literature does not converge toward a single dominant portfolio optimization framework. Existing approaches differ markedly in their underlying assumptions, objective functions, model structures, and evaluation methodologies, resulting in a highly heterogeneous body of work. This lack of consensus motivates a structured and comparative review of the principal portfolio optimization paradigms.
+
+A structured summary of the most relevant studies discussed throughout this section, including their methodological approaches, asset universes, and reported Sharpe ratios, is provided in Table~\ref{tab:literature_review} at the end of the section.
+
+\subsection{Models and Methodological Paradigms}
+
+\subsubsection{Classical Optimization Frameworks}
+
+Traditional portfolio optimization methods range from very simple allocation rules to more formal mathematical optimization frameworks. These approaches are typically static, relying on historical estimates of asset returns and risks. They form the foundation of most quantitative asset allocation methodologies.
+
+One of the simplest portfolio construction strategies is equal-weighting (EW), in which capital is allocated evenly across all assets~\cite{a2240}. Although this approach is often described as naive because it ignores differences in expected returns, risk, and asset correlations, it is widely used as a benchmark in empirical research. Its key advantage is that it does not rely on estimated parameters, thereby avoiding estimation error, which often undermines more complex optimization methods. Equal-weighting belongs to a broader class of heuristic allocation rules: inverse-volatility weighting (where assets with lower volatility receive higher weights), capped-weight portfolios (where maximum limits are imposed on individual asset weights), and other rule-based diversification strategies that prioritize robustness and ease of implementation under parameter uncertainty.
+
+The most influential optimization-based framework is mean-variance optimization (MVO), originally proposed by Markowitz~\cite{Markowitz1952} in his seminal 1952 work, thereby underscoring the long-standing nature of this problem within the field of quantitative finance. In this setting, portfolio selection is formulated as a quadratic optimization problem that balances expected return against risk, where risk is measured by the variance of portfolio returns. A standard formulation minimizes portfolio variance subject to an expected return no less than \(\mu^*\):
+\[
+\min_{\mathbf{w}} \; \mathbf{w}^\top \Sigma \mathbf{w}
+\quad \text{s.t.} \quad
+\mathbf{w}^\top \boldsymbol{\mu} \geq \mu^*, 
+\quad \mathbf{w}^\top \mathbf{1} = 1,
+\]
+where $\mathbf{w}$ denotes the vector of portfolio weights, $\boldsymbol{\mu}$ the vector of expected asset returns, and $\Sigma$ the return covariance matrix. Special cases of this framework include the global minimum-variance portfolio (which removes the expected return constraint and minimizes variance subject only to full investment) and constrained variants (which impose additional restrictions such as non-negativity of weights to prevent short selling or bounds to limit leverage and concentration). While MVO provides a clear normative framework for portfolio choice, it is notoriously sensitive to estimation error, particularly in expected returns.
+
+Building on the MVO framework, the Capital Asset Pricing Model (CAPM), introduced by Sharpe~\cite{Sharpe1964}, adopts an equilibrium perspective in which expected asset returns are governed by their sensitivity to systematic market risk. Under assumptions of frictionless markets, homogeneous expectations, and rational investors, CAPM establishes the market portfolio as mean-variance efficient and provides a theoretically grounded benchmark for both asset pricing and portfolio construction. In practice, however, its restrictive assumptions and the well-documented empirical instability of expected return estimates constrain its usefulness as a standalone portfolio selection tool. To address these limitations, Black and Litterman~\cite{BlackLitterman1992} proposed a Bayesian framework that anchors optimization in CAPM equilibrium-implied returns as a prior, then systematically updates these estimates by blending in investor views while explicitly modeling uncertainty in both sources of information. This principled integration of market-implied and subjective inputs substantially reduces the sensitivity of optimal portfolios to estimation error, yielding allocations that are more stable, diversified, and economically interpretable than those produced by unconstrained mean-variance optimization.
+
+\subsubsection{Prediction-Based Portfolio Optimization}
+\label{section:portfolio_optimization:prediction_based}
+
+Prediction-based portfolio optimization refers to approaches in which explicit forecasts of future returns, risks, or market states are first generated and then translated into portfolio allocation decisions through an optimization or decision rule. In this sense, classical methods such as MVO can already be viewed as an early form of prediction-based optimization, as they rely on estimates of expected returns and covariances. However, modern approaches significantly extend this paradigm by leveraging richer predictive models, alternative data sources, and adaptive optimization mechanisms to address non-stationarity, estimation error, and market frictions.
+
+A first stream of the literature seeks to enhance traditional optimization frameworks by incorporating more accurate return forecasts. In this context, sector-level predictability is analyzed by Bessler and Wolff~\cite{83780}, while stock-level predictability is addressed by Yang \emph{et~al.}~\cite{4061c}, where predictive models are employed to generate expected returns that are subsequently used as inputs to constrained portfolio optimization procedures. In the work by Bessler and Wolff~\cite{83780}, return forecasts derived from macroeconomic, fundamental, and technical variables are incorporated as views in an out-of-sample Black-Litterman framework, allowing the optimization process to explicitly account for forecast uncertainty. The results show that even modest sector-level predictability can lead to significant improvements in risk-adjusted performance relative to passive and historical-average-based allocations. Similarly Yang \emph{et~al.}~\cite{4061c} combine machine-learning-based return prediction with sector-neutral selection and classical optimization, finding that minimum-variance portfolios prove more robust than equally weighted alternatives under noisy forecasts.
+
+A closely related line of work emphasizes adaptive and regime-aware forecasting within a forecast-then-optimize pipeline. Rather than assuming stationary return dynamics, Zhang \emph{et~al.}~\cite{4e332} explicitly model market volatility regimes and sectoral heterogeneity. Sector- and regime-specific predictive models are trained to forecast short-horizon returns, which are then translated into portfolio weights using regime-conditioned mean-variance optimization. Empirical results demonstrate that regime awareness significantly improves both predictive accuracy and portfolio robustness, particularly during high-volatility periods, where traditional and regime-agnostic methods tend to fail.
+
+Another stream of research extends prediction-based optimization by incorporating alternative and non-price information, such as investor sentiment. The multimodal sentiment-aware (MuSA) framework proposed by Li \emph{et~al.}~\cite{de270} augments price-based return predictions with sentiment signals extracted from textual data. Rather than directly optimizing on sentiment forecasts, the authors introduce a Portfolio Aggregator that combines price- and sentiment-derived weights using confidence scores to mitigate the impact of noisy sentiment inputs. The resulting MuSA model consistently outperforms both classical portfolio selection algorithms and recent deep reinforcement learning-based approaches across both Dow Jones Industrial Average (DJIA) and Standard \& Poor's 500 (S\&P~500) Index datasets, demonstrating that complementary predictive signals can enhance allocation decisions when integrated in a controlled manner.
+
+Finally, some studies translate predictions into rule-based trading or allocation decisions rather than explicit portfolio optimization. In the study by Su and Deng~\cite{34309}, short-horizon price forecasts are used to define trading rules for ETFs, with decisions based on predicted price movements and multi-step forecast averages. Although these strategies do not directly solve a portfolio optimization problem, they illustrate how predictive signals can be converted into economically meaningful investment decisions, particularly when realistic transaction costs and market frictions are accounted for.
+
+Taken together, these works illustrate a clear evolution from static, historically estimated optimization methods toward forecast-driven, adaptive portfolio construction frameworks. Modern prediction-based approaches do not replace classical portfolio theory but rather build upon it by injecting forward-looking information into well-established optimization structures. As a result, portfolio performance increasingly depends on the quality, structure, and uncertainty of the predictive models used to generate inputs, making the exploration of forecasting techniques a central component of modern portfolio optimization research.
+
+% \cite{83780} examines whether U.S. sector-level equity returns are predictable and whether such predictability can be translated into economically meaningful gains in portfolio allocation. Unlike much of the prior literature that focuses on the aggregate stock market, the authors argue that sectors respond differently over the business cycle. Using monthly U.S. data from 1973 to 2013 for six equity sectors (from Thomson Reuters Datastream), the authors analyze return predictability based on fundamental and interest-related variables, macroeconomic variables, and technical indicators. The resulting return forecasts are then used as views in an out-of-sample Black-Litterman optimization, which explicitly accounts for forecast uncertainty when determining portfolio weights. The study finds that sector returns are more predictable than aggregate market returns, particularly when using multivariate models that combine information across predictors. Portfolios constructed with forecast-based Black-Litterman optimization significantly outperform passive market portfolios, equally weighted portfolios, and allocations based on historical average returns in terms of risk-adjusted performance. While the authors caution that such gains may diminish as strategies become widely adopted, the results demonstrate that even modest sector-level predictability can yield substantial portfolio benefits.
+
+% \cite{4061c} designs a practical, adaptive stock recommendation system for constructing a long-only, sector-neutral S\&P~500 portfolio using fundamental financial data, addressing the instability of fixed-factor and single-model strategies. Using a rolling-window framework with 4-10 years of quarterly training data and one-year out-of-sample tests (rebalanced quarterly with reporting lags), the model employs 20 fundamental ratios to predict forward returns and rank stocks, selecting the top 20\% within each sector. Portfolio weights are determined via equally weighted, mean-variance, and minimum-variance approaches under realistic constraints, including long-only positions, no leverage, full investment, and a 5\% maximum weight per stock, with transaction costs of 0.1\% per trade. Backtests from 1995-2017 show that all strategies outperform the S\&P~500 in cumulative returns and Sharpe ratio. While equally weighted portfolios deliver the highest raw returns, they suffer from higher volatility and drawdowns. The minimum-variance portfolio proves most robust, achieving the best risk-adjusted performance, lower volatility, and smaller drawdowns by combining machine-learning-based stock selection with disciplined portfolio optimization and risk management based on volatility and Sharpe ratio rather than return maximization alone.
+
+% \cite{4e332} aims to address the poor robustness of traditional and machine-learning-based portfolio optimization methods in non-stationary financial markets characterized by shifting volatility regimes and sectoral heterogeneity. The objective of the study is to develop a regime-aware, interpretable, and deployable portfolio optimization framework that explicitly accounts for volatility regimes and sector-specific return dynamics, thereby improving predictive accuracy, risk management, and real-world portfolio performance. The authors propose RegimeFolio, a modular forecast-then-optimize framework with three integrated components. First, daily market conditions are segmented into low, medium, and high volatility regimes using a transparent rolling-tercile classification of the Chicago Board Option Exchange Volatility Index. Second, sector- and regime-specific ensemble forecasting models (Random Forest and Gradient Boosting) are trained to predict next-day returns, capturing heterogeneous sector responses within each volatility state (using technical, momentum, marco and risk indicators). Third, forecasts are translated into portfolio weights using a regime-conditioned mean-variance optimization approach. Risk is estimated using a Ledoit-Wolf shrinkage covariance matrix, which provides more stable correlation estimates than raw historical data, especially during turbulent markets. The optimization is subject to realistic portfolio constraints (long-only, diversification, turnover limits). The framework is evaluated using a walk-forward backtesting protocol on 34 large-cap U.S. equities across 7 sectors from 2020-2024, with ablation studies isolating the impact of regime awareness and sector specialization. Empirical results show that RegimeFolio substantially outperforms both traditional benchmarks and regime-agnostic ML baselines. The strategy achieves a 137\% cumulative return, compared to 73.8\% for the S\&P~500, with a Sharpe ratio of 1.17 and a 12 percentage-point reduction in maximum drawdown (agains S\&P~500). Forecasting performance gains are most pronounced during high-volatility (crisis) regimes, where RegimeFolio generates positive returns while the benchmark suffers losses. Results confirm that removing either volatility conditioning or sector-specific modeling leads to significant performance degradation, demonstrating that explicit regime modeling and sectoral specialization are both essential for robustness and superior risk-adjusted returns.
+
+% \cite{4e332} aims to address the poor robustness of traditional and machine-learning-based portfolio optimization methods in non-stationary financial markets characterized by shifting volatility regimes and sectoral heterogeneity. The objective of the study is to develop a regime-aware, interpretable, and deployable portfolio optimization framework that explicitly accounts for volatility regimes and sector-specific return dynamics, thereby improving predictive accuracy, risk management, and real-world portfolio performance. The authors propose RegimeFolio, a modular forecast-then-optimize framework with three integrated components. First, daily market conditions are segmented into low, medium, and high volatility regimes using a transparent rolling-tercile classification of the Chicago Board Option Exchange Volatility Index. Second, sector- and regime-specific ensemble forecasting models (Random Forest and Gradient Boosting) are trained to predict next-day returns, capturing heterogeneous sector responses within each volatility state (using technical, momentum, marco and risk indicators). Third, forecasts are translated into portfolio weights using a regime-conditioned mean-variance optimization approach. Risk is estimated using a Ledoit-Wolf shrinkage covariance matrix, which provides more stable correlation estimates than raw historical data, especially during turbulent markets. The optimization is subject to realistic portfolio constraints (long-only, diversification, turnover limits). The framework is evaluated using a walk-forward backtesting protocol on 34 large-cap U.S. equities across 7 sectors from 2020-2024, with ablation studies isolating the impact of regime awareness and sector specialization. Empirical results show that RegimeFolio substantially outperforms both traditional benchmarks and regime-agnostic ML baselines. The strategy achieves a 137\% cumulative return, compared to 73.8\% for the S\&P~500, with a Sharpe ratio of 1.17 and a 12 percentage-point reduction in maximum drawdown (agains S\&P~500). Forecasting performance gains are most pronounced during high-volatility (crisis) regimes, where RegimeFolio generates positive returns while the benchmark suffers losses. Results confirm that removing either volatility conditioning or sector-specific modeling leads to significant performance degradation, demonstrating that explicit regime modeling and sectoral specialization are both essential for robustness and superior risk-adjusted returns.
+
+% \cite{de270} proposes a multimodal and sentiment-aware trading system for portfolio optimization, which integrates both price-derived signals and sentiment analysis. The core idea is to enhance traditional price-based portfolio allocation by incorporating investor sentiment, thus allowing the system to nudge allocation decisions based on market mood, while still grounding the strategy in price behavior. This is achieved by combining weights derived from price prediction models with sentiment-derived signals (they call Portfolio Aggregator), which are weighted by their confidence scores to avoid overreacting to noisy sentiment inputs. For benchmarking, the authors evaluate their approach against a suite of established portfolio optimization methods. These include classic algorithms such as Best Constant Rebalanced Portfolio (BCRP), Online Moving Average Reversion (OLMAR), Passive Aggressive Mean Reversion (PAMR), CORN, and Robust Median Reversion (RMR). Additionally, the system is compared to several recent deep reinforcement learning DRL-based strategies, including Deep Portfolio Management (DPM), Portfolio Policy Network (PPN), and Relation-Aware Transformer (RAT). Across all comparisons, their proposed MuSA (Multimodal Sentiment-Aware) model consistently delivers better performance. Experimental results on both the DJIA and S\&P~500 datasets show that the MuSA system, whether using Deterministic Critic (DC) or Twin Delayed Deep Deterministic Policy Gradient (TD3) as the underlying price model, achieves superior annualized returns and Sharpe ratios relative to the baselines. For instance, MuSA-TD3 achieves an annualized return (AR) of approximately 18\% with a Sharpe ratio of 0.67 on the DJIA dataset, surpassing the benchmarks while maintaining comparable or even lower levels of maximum drawdown.
+
+% \cite{34309} proposes two strategies for trading ETFs, not exacly portfolio optimization, but decision related. strategy one is if predicted price is higher than current price, buy the stock, else sell it. strategy two is if the average of predicted prices from t to t+5 is higher than the current price and the predicted price for t+1 is at least 0.1\% higher than the current price. they also take into account trading commission, SEC fee and FINRA fee, which is important to close the gap with real world results. Strategy one results in profit without any bechmark but when puts into pratcie in daily (instad of minute-level) data it loses money. Strategy two, beckmarked against the natural growth of each etf (buy and hold strategy), results in almost every ETF having a significant increase in returns.
+
+\subsubsection{Deep Learning-Based Portfolio Optimization}
+
+Advances in deep learning have significantly expanded the methodological toolkit available for portfolio optimization, particularly in settings characterized by high dimensionality, non-stationarity, and complex temporal dependencies, such as financial markets. In contrast to traditional optimization frameworks, which typically rely on explicit estimates of expected returns and covariance matrices, these deep learning-based approaches aim to learn optimal allocation policies directly from data, often in an end-to-end or sequential decision-making setting.
+
+Within this paradigm, two main methodological branches have emerged in the literature: Deep Reinforcement Learning (DRL) and end-to-end objective-driven deep learning. While both leverage deep neural networks, they differ fundamentally in how the portfolio decision problem is formulated and optimized.
+
+In this setting, DRL formulates portfolio optimization as a sequential decision-making problem, in which a trading agent interacts with a financial market environment over time, observing market states, taking allocation actions, and receiving rewards linked to portfolio performance. The objective is to learn a policy that maximizes cumulative (risk-adjusted) rewards. The problem is modeled as a Markov Decision Process (MDP)\footnote{Financial markets do not satisfy the Markov property in a strict sense due to latent factors and regime shifts. The MDP formulation should therefore be interpreted as an approximation enabled by informative state representations.}~\cite{f9c49, d943c}
+\[
+\left(\mathcal{S}, \mathcal{A}, \mathcal{P}, \mathcal{R}, \gamma\right),
+\]
+where the state $s_t \in \mathcal{S}$ summarizes market information (such as returns, technical indicators, etc.) and current portfolio characteristics (such as portfolio weights), the action $a_t \in \mathcal{A}$ represents portfolio weights (or rebalancing decisions) subject to investment constraints, $P(s_{t+1} \mid s_t, a_t)$ is the (unknown) state transition dynamics of the market, the reward $r_t = \mathcal{R}(s_t, a_t)$ reflects portfolio performance (often incorporating risk penalties and transaction costs), and $\gamma \in (0,1]$ is the discount factor (capturing the trade-off between immediate and future rewards).
+
+The objective is to learn a parameterized policy $\pi_\theta(a_t \mid s_t)$, either directly or implicitly via a learned value function, represented by a deep neural network, that maximizes the expected cumulative discounted reward:
+\[
+\max_{\theta} \; \mathbb{E}_{\pi_\theta} \left[ \sum_{t=0}^{T} \gamma^{t} r_t \right].
+\]
+
+Several studies have demonstrated the effectiveness of DRL-based portfolio optimization in practice. For example, Sood \emph{et al.}~\cite{0df79} and Oza \emph{et al.}~\cite{70996} apply DRL techniques to portfolio allocation problems and show that such methods can learn adaptive strategies that outperform traditional benchmarks.
+
+Sood \emph{et al.}~\cite{0df79}, a study conducted by the Artificial Intelligence Research group at J.P.~Morgan Chase \& Co., provides a systematic and practical comparison between DRL-based portfolio optimization and the classical Mean-Variance Optimization (MVO) framework. Both approaches share the common objective of maximizing risk-adjusted returns, measured through the Sharpe ratio, in daily trading across multiple U.S. equity sector indices. The proposed DRL approach employs a model-free policy-gradient method based on Proximal Policy Optimization (PPO), which directly parameterizes the portfolio allocation policy and emphasizes training stability through constrained updates. The agent's state representation includes historical asset log-returns, current portfolio weights, and market volatility indicators, while the action space consists of long-only, fully invested portfolio weight vectors. Policy updates are driven by maximizing the Differential Sharpe Ratio, enabling direct optimization of risk-adjusted performance in an online learning setting. Empirical results show that the DRL strategy consistently outperforms MVO across most performance metrics, while also exhibiting lower portfolio turnover.
+
+Oza \emph{et al.}~\cite{70996} explore the application of four DRL algorithms to portfolio optimization for global market index ETFs. The evaluated architectures include Deep Q-Networks (DQN) and Double Dueling Deep Q-Networks (D3QN), which learn portfolio decisions implicitly via action-value functions (by estimating the expected return of each action), as well as PPO and Asynchronous Advantage Actor-Critic (A3C), which explicitly optimize parameterized policies (direct mappings from states to actions) using policy gradient methods. The agents are trained using feature sets that include historical prices, technical indicators, and volatility measures. Results show that DQN and PPO achieve the best performance across different market indices, leading the authors to conclude that DRL is a powerful approach for ETF-based portfolio optimization.
+
+In contrast to DRL approaches, end-to-end objective-driven deep learning methods treat portfolio optimization as a direct mapping from historical market data to portfolio weights. Rather than modeling market interaction as a sequential decision process with explicit states, actions, and rewards, these approaches treat portfolio construction as a differentiable optimization problem, in which a deep neural network parameterizes the allocation rule and is trained to maximize a predefined portfolio-level objective.
+
+The framework proposed by Zhang \emph{et al.}~\cite{984be} exemplifies this approach by directly maximizing the Sharpe ratio using a deep neural network, bypassing intermediate steps such as return forecasting or covariance estimation. The model takes as input a multivariate time-series formed by concatenating historical prices and returns for a small set of ETFs representing major asset classes (equities, bonds, commodities, and volatility instruments) over a fixed 50-day lookback window. A single-layer LSTM processes this input to capture temporal dependencies and cross-asset interactions, producing portfolio weights that are used to compute realized portfolio returns. The maximization of the Sharpe ratio over the training window serves directly as the objective function. Empirical results demonstrate that this approach consistently outperforms classical benchmarks, remains robust to transaction costs and volatility targeting, and adapts dynamically to periods of market stress. The authors argue that traditional two-step pipelines are fundamentally misaligned with the final investment objective and are prone to compounding estimation errors.
+
+Another notable contribution in this setting is provided by Lin \emph{et al.}~\cite{e6ca3}, who extend the end-to-end objective-driven paradigm by incorporating temporal, cross-asset, and textual information into a unified deep architecture that directly learns portfolio weights by optimizing a differentiable Sharpe ratio loss (maximizing risk-adjusted returns). The architecture combines Long Short-Term Memory (LSTM) networks and Graph Attention Networks (GATs). A shared LSTM first encodes each stock's recent time-series dynamics using asset-level features (returns, volatility, and momentum) together with sentiment indicators extracted from financial news. These temporal embeddings are then fed into a GAT module that captures inter-asset dependencies. The graph structure can be defined using static relationships (e.g., long-run correlations) or dynamic relationships derived from sector affiliations and short-term return or sentiment correlations. This mechanism refines asset representations by modeling how information propagates across related securities, ultimately producing long-short portfolio weights. Empirical evaluation on a subset of S\&P~500 stocks shows that LSTM-GAT models consistently outperform traditional benchmarks. In particular, incorporating sentiment features, dynamic graphs, and dimensionality reduction techniques such as Principal Component Analysis (PCA) further improves volatility control and reduces drawdowns.
+
+Both DRL and end-to-end objective-driven deep learning approaches offer compelling alternatives to traditional portfolio optimization methods. DRL approaches are particularly suited to dynamic, sequential decision-making problems in which transaction costs, path dependency, and regime shifts play a central role. End-to-end deep learning methods, in contrast, offer a conceptually simpler framework by directly optimizing risk-adjusted performance objectives while relying on fewer explicit modeling assumptions.
+
+Across these approaches, a common motivation is the ability of deep learning models to capture complex inter-asset relationships, evolving correlations, and non-stationary market dynamics that challenge classical optimization techniques.
+
+% \cite{e6ca3} aims to improve portfolio optimization by replacing the traditional two-step process of forecasting returns and then applying mean-variance optimization with an end-to-end deep learning approach that directly learns portfolio weights. The authors seek to reduce instability caused by forecast errors while better capturing real market structure by jointly modeling temporal price dynamics, inter-asset relationships, and investor sentiment from financial news. The proposed framework combines LSTM networks to model time-series features, Graph Attention Networks (GATs) to capture static and dynamic relationships among stocks, and sentiment features extracted from financial news. For each asset, a shared Long Short-Term Memory (LSTM) network processes a rolling lookback window (30 trading days) of standardized asset-level features, including log returns, volatility measures, momentum indicators (e.g., MACD), and aggregated news sentiment statistics. The LSTM outputs a latent embedding that encodes each stock's recent temporal dynamics. These embeddings are then passed into a Graph Attention Network (GAT), which performs attention-based message passing across assets using an adjacency matrix derived from either a static or dynamic graph. The static graph is constructed from long-run correlations of daily log returns, while the dynamic graph is updated weekly using sector membership and short-horizon correlations in both returns and sentiment. The GAT learns attention weights that determine how much information each asset incorporates from its neighbors, producing refined cross-asset representations. These representations are mapped through a linear layer with a tanh activation to generate raw portfolio weights, which are normalized to sum to one (allowing long and short positions). Model parameters across the LSTM and GAT components are trained jointly by minimizing a differentiable negative Sharpe ratio loss, enabling direct optimization of risk-adjusted portfolio performance. Portfolio weights are produced directly by the model and trained end-to-end using a Sharpe ratio-based loss function, avoiding the traditional two-step process of forecasting returns followed by optimization. The approach is evaluated on 9 stocks from the S\&P~500 across six sectors from 2021-2025 and compared against equal-weight and CAPM-MVO benchmarks. Results show that all LSTM-GAT variants (baseline, adding 5day rollng window, adding sentiment features, adding dynamic graphs updated weekly, and then using PCA retaing 6 features out of 12) outperform the benchmarks, with the sentiment-enhanced model achieving the best performance (about 31\% annualized return and a Sharpe ratio of 1.15). Dynamic graphs and PCA-based dimensionality reduction further improve volatility and drawdown control, demonstrating that combining temporal, relational, and sentiment information yields more robust and risk-adjusted portfolio performance. (Features are presented in the appendix of the paper.)
+
+% \cite{0df79} aims to provide a fair and practical comparison between Deep Reinforcement Learning (DRL) and the classical Mean-Variance Optimization (MVO) framework for portfolio allocation. Because applications of Deep Reinforcement Learning (DRL) have shown promising results when used to optimize portfolio allocation by training model-free agents on historical market data, its main objective is to assess whether a model-free DRL agent can outperform a widely used professional benchmark when both are aligned around the same goal: maximizing risk-adjusted returns, measured by the Sharpe ratio. The DRL methodology employs a model-free policy-gradient approach based on Proximal Policy Optimization (PPO), where the agent is trained in a market replay environment that simulates daily trading across multiple U.S. equity sector indices. The environment is formulated as a continuous-action Markov Decision Process, in which the agent observes a state composed of historical asset log-returns, current portfolio weights, and market volatility indicators, and outputs long-only, fully invested portfolio weight vectors at each timestep. Policy updates are driven by maximizing the Differential Sharpe Ratio, enabling direct optimization of risk-adjusted returns in an online learning setting, with the agent outputting portfolio weights daily based on observed market conditions. Empirical results from ten out-of-sample backtests (2012-2021) show that the DRL approach significantly outperforms MVO across most metrics, including higher annual returns, a Sharpe ratio nearly twice as large, lower volatility, and more stable returns over time. Additionally, the DRL strategy exhibits lower portfolio turnover, suggesting better robustness and lower potential transaction costs in real-world deployment compared to MVO.
+
+% \cite{70996} explores the application of deep reinforcement learning (DRL) in portfolio optimization, specifically targeting global market index ETFs such as the TSEC Weighted Index, Shanghai Composite, S\&P~500, and Nasdaq 100 between 2018 and 2023. It compares the performance of four DRL algorithms: Deep Q-Network (DQN), Double Dueling Deep Q-Network (D3QN), Proximal Policy Optimization (PPO), and Asynchronous Advantage Actor-Critic (A3C), using features inferred from the context, including historical prices, technical indicators, and volatility measures. The DRL agents are evaluated primarily through Mean Squared Error (MSE), revealing that DQN performs best on the TSEC Index and S\&P~500, while PPO excels on the Shanghai Composite and Nasdaq 100. Visual tools like Efficient Frontiers, risk-return plots, heatmaps, and allocation pie charts illustrate the effectiveness of DRL in portfolio construction. Although no direct comparison is made with traditional financial methods, the study concludes that DRL offers superior adaptability, risk management, and dynamic learning capabilities, making it a powerful alternative for ETF-based portfolio optimization.
+
+% \cite{984be} develops a portfolio optimization framework that directly maximizes the Sharpe ratio using deep learning, rather than relying on intermediate steps such as forecasting expected returns or estimating covariances. The authors argue that traditional forecasting-based approaches are misaligned with the ultimate portfolio objective and may fail to deliver optimal risk-adjusted performance. To address this, they focus on constructing a diversified, long-only portfolio using a small set of highly liquid ETFs representing major asset classes (stocks, bonds, commodities, and volatility), with the aim of achieving robust performance across different market regimes. Methodologically, the model takes as input a concatenated feature tensor across all assets, where each asset contributes historical closing prices and daily returns over a fixed 50-day lookback window, resulting in a multivariate time-series input. This input is processed by a single-layer LSTM with 64 hidden units, which is used to capture temporal dependencies and cross-asset interactions while mitigating overfitting through parameter sharing. The LSTM output is passed to a fully connected layer with a softmax activation, enforcing long-only portfolio constraints and ensuring weights are non-negative and sum to one. Portfolio returns are computed using the predicted weights and realized asset returns, and the Sharpe ratio over the training window is used as the objective function, with gradients computed analytically and optimized via gradient ascent using the Adam optimizer. Empirical results show that this architecture consistently achieves superior Sharpe and Sortino ratios compared to classical benchmarks, even after accounting for transaction costs and volatility targeting, and adapts dynamically to market stress by reallocating toward lower-risk assets (COVID19 example). (training scheme is also mentioned)
+
+% \subsubsection{Large Language Models for Portfolio Decision Support}
+
+% \cite{81a62} evaluates how well large language models (LLMs) generalize numerical reasoning versus visual (geometric) numerical representations. To achieve this, the authors introduce the Agent Trading Arena, a closed-loop, zero-sum stock trading simulation where LLM-based agents compete by making buy/sell decisions. Asset prices emerge solely from agent interactions, eliminating predefined optimal strategies and external knowledge. Agents receive either textual numerical data (e.g., prices and volumes in text) or visual numerical data (e.g., K-line charts and plots). Experiments across multiple LLMs show that agents relying on textual numerical inputs consistently underperform, tending to focus on local values, recent data, and absolute numbers rather than relationships and long-term trends. In contrast, agents using visual numerical inputs achieve significantly higher returns, win rates, and Sharpe ratios, demonstrating stronger geometric reasoning. Combining visual and textual inputs yields the best overall performance, and adding the reflection module further amplifies gains, especially for visually grounded agents. These findings are validated both in the simulated arena and on real NASDAQ stock data, leading to the central conclusion that LLMs reason more effectively with visual (geometric) numerical representations than with text-based (algebraic) ones.
+
+% \cite{315e0} explores the integration of LLMs into portfolio optimization. Traditional mean-variance optimization models are sensitive to input assumptions, and the Black-Litterman model addresses this by incorporating investor views. However, defining these views remains challenging. This study proposes a method to integrate LLM-generated views into the Black-Litterman framework. The authors utilize LLMs (namely LLaMA-3.1-8B, Gemma-7B, Qwen-2-7B, and GPT-4o-mini) to estimate expected stock returns based on historical prices and company metadata, incorporating uncertainty through the variance (asking the LLMs 30 times the predicted prices) in predictions. They conduct a backtest of the LLM-optimized portfolios from 2024 to 2025, rebalancing biweekly using the previous two weeks of price data. The results, based in Sharpe, CAGR, MDD and others metrics show that the best portfolio for most of the metrics would be Equal-Weight intead of the LLM-based portfolios. From this paper the use of Black-Litterman model and the benchmark against Equal-Weight and Mean-Variance-Optimization (MVO) should be retained.
+
+% \subsubsection{Others Approaches}
+
+% \cite{2ead1} studies online portfolio selection with the goal of exploiting sector-level structure in financial markets while controlling transaction costs. Instead of selecting stocks independently, the algorithm groups stocks into pre-defined market sectors (9 GICS sectors) and encourages group sparsity, meaning that at any given time the portfolio concentrates on only a few high-performing sectors. At the same time, the method promotes lazy updates, so the portfolio changes gradually rather than rebalancing aggressively every day, which helps reduce transaction costs. The resulting problem is a non-smooth, constrained online optimization task, where portfolios must lie on the probability simplex and be updated sequentially without relying on probabilistic assumptions about market behavior. To efficiently solve this problem, the paper proposes Online Lazy Updates with Group Sparsity (OLU-GS), an algorithm based on a primal-dual Alternating Direction Method of Multipliers (ADMM). Theoretical analysis shows that OLU-GS achieves sub-linear regret compared to both fixed and shifting benchmarks. Each day, the algorithm adjusts the portfolio based only on how stocks performed the previous day, without knowing future price movements. Rather than choosing individual stocks independently, it allocates wealth across a small number of sectors (such as technology, utilities, or healthcare), reflecting the empirical observation that only a few sectors tend to outperform at any given time. In each period, the investor selects a portfolio, weights over stocks that sum to one, before the market reveals the multiplicative price changes. The portfolio's return is the weighted average of these changes, and wealth grows multiplicatively over time, with performance measured by cumulative logarithmic returns. Because the market is observed sequentially and strong probabilistic assumptions are unreliable, this is an online learning problem: the portfolio must be updated using only past information, while remaining competitive with the best fixed (sector-structured) strategy in hindsight. Empirical results on long-term NYSE and S\&P~500 datasets demonstrate that the method consistently outperforms standard baselines such as Buy-and-Hold strategies, even under transaction costs. Importantly, the learned portfolios exhibit intuitive behavior, dynamically shifting investments across sectors, favoring defensive sectors during downturns and cyclical sectors during bull markets, highlighting both the practical effectiveness and interpretability of the approach.
+
+\begin{table}[ht]
+\centering
+\caption{Overview of selected prior studies on portfolio optimization, including study period, research objective, methodology, asset universe, and Sharpe ratio (SR).}
+\label{tab:literature_review}
+\begin{tabular}{|>{\centering\arraybackslash}m{2cm}|
+                >{\centering\arraybackslash}m{4.2cm}|
+                >{\centering\arraybackslash}m{4cm}|
+                >{\centering\arraybackslash}m{2cm}|
+                >{\centering\arraybackslash}m{1cm}|}
+\hline
+\textbf{Study} & \textbf{Research Objective} &  \textbf{Methodological Approach} & \textbf{Assets} & \textbf{SR}  \\
+\hline
+
+Li \emph{et~al.} (2025)~\cite{de270}, 2010--2020
+  & Improve risk-adjusted performance through fusion of sentiment and price-based signals
+  & LLM-enhanced DRL portfolio allocation
+  & Constituents of the S\&P~500$^{\dagger}$ and DJIA$^{\ddagger}$
+  & \makecell{0.77$^{\dagger}$,\\0.67$^{\ddagger}$} \\
+\hline
+
+Sood \emph{et al.} (2023)~\cite{0df79}, 2006--2021
+  & Demonstrate the superiority of DRL relative to classical MVO under long-only constraints
+  & DRL-PPO$^{\dagger}$ vs.\ MVO$^{\ddagger}$ focusing on SR maximization
+  & S\&P~500 sector indices
+  & \makecell{1.17$^{\dagger}$,\\0.68$^{\ddagger}$} \\
+\hline
+
+Bessler and Wolff (2024)~\cite{83780}, 1974--2013
+  & Enhance sector allocation via structured predictive return modeling
+  & Predict-then-optimize framework using structured return forecasts and BL allocation
+  & 6 U.S.\ equity sectors
+  & 1.03 \\
+\hline
+
+Yang \emph{et~al.} (2025)~\cite{4061c}, 1990--2017
+  & Improve cross-sectional stock selection and portfolio efficiency
+  & Machine learning-based return prediction combined with mean-variance$^{\dagger}$ and minimum-variance$^{\ddagger}$ optimization
+  & S\&P~500 constituent stocks
+  & \makecell{0.69$^{\dagger}$,\\ 0.92$^{\ddagger}$} \\
+\hline
+
+Zhang \emph{et~al.} (2025)~\cite{4e332}, 2020--2024
+  & Improve SR and reduce drawdowns via volatility regime conditioning
+  & Regime-aware predict-then-optimize framework with mean-variance allocation
+  & 34 U.S.\ large-cap equities
+  & 1.17 \\
+\hline
+
+Oza \emph{et al.} (2024)~\cite{70996}, 2018--2023
+  & Evaluate DRL allocation strategies across different market regimes
+  & Comparative analysis of value-based and policy-gradient deep reinforcement learning methods
+  & Major global equity indices
+  & -- \\
+\hline
+
+Zhang \emph{et al.} (2020)~\cite{984be}, 2011--2020
+  & Direct maximization of SR via gradient-based optimization
+  & End-to-end differentiable portfolio learning using LSTM networks
+  & Equity, fixed income, commodities, volatility indices
+  & 1.86 \\
+\hline
+
+Lin \emph{et al.} (2025)~\cite{e6ca3}, 2021--2025
+  & Model temporal dynamics, inter-asset dependencies, and sentiment features with direct portfolio weight optimization
+  & End-to-end differentiable LSTM-GAT integrating correlation graphs and financial news sentiment
+  & 9 S\&P~500 constituent stocks
+  & 1.15 \\
+\hline
+
+\end{tabular}
+\caption*{\footnotesize
+Note: Sharpe ratios are not directly comparable across studies, as they differ in annualization convention, risk-free rate specification, asset universe, and treatment of transaction costs. Multiple Sharpe ratios within the same study denote alternative experimental configurations (e.g. model variants or asset universes).
+}
+\end{table}
+
+
+
+
+\subsection{Benchmark Strategies}
+
+To ensure a fair and comprehensive evaluation, portfolio optimization methods are commonly compared against a set of benchmark strategies representing passive investment, naive allocation rules, and established optimization-based approaches. These benchmarks serve as reference points to assess whether a proposed method delivers improvements beyond simple diversification, market exposure, or classical portfolio construction techniques. Table~\ref{tab:benchmark_strategies} summarizes the benchmark strategies most frequently used in the literature reviewed in this work.
+
+\begin{table}[ht]
+\centering
+\caption{Most common benchmark strategies used in portfolio optimization literature.}
+\label{tab:benchmark_strategies}
+\begin{tabular}{|p{3cm} | p{9.3cm} | p{2cm}|}
+\hline
+\textbf{Benchmark} & \textbf{Description} & \textbf{Used In} \\
+\hline
+
+Equal-Weight (EW)
+& Portfolio allocating equal weights to all assets, independent of risk or return estimates
+& \cite{e6ca3, 83780, 4e332} \\
+\hline
+Mean-Variance Optimization (MVO)
+& Classical Markowitz portfolio minimizing variance for a given expected return
+& \cite{0df79, e6ca3} \\
+\hline
+Market
+& Passive investment in a broad market benchmark or its associated tradable proxy, representing the overall performance of the reference market relevant to the asset universe (e.g., S\&P~500 for U.S. equities)
+& \cite{de270, 4e332, 4061c, 83780, 34309} \\
+
+\hline
+\end{tabular}
+\end{table}
+
+\subsection{Performance Metrics}
+
+Across the portfolio optimization literature, performance is predominantly evaluated using a combination of return, risk, and risk-adjusted metrics. The most reported indicators include cumulative returns (or cumulative wealth), volatility, Sharpe ratio, and maximum drawdown. These metrics jointly assess profitability, stability, and downside risk, enabling fair comparison across strategies. Table~\ref{tab:portfolio_optimization_metrics} summarizes these core performance metrics, along with their definitions, mathematical formulations, and representative studies in which they are employed.
+
+\begin{table}[ht]
+\centering
+\caption{Most common performance metrics used in portfolio optimization literature.}
+\label{tab:portfolio_optimization_metrics}
+\begin{tabular}{|l | p{4cm} | l | p{3.5cm}|}
+\hline
+\textbf{Metric} & \textbf{Description} & \textbf{Formula} & \textbf{Used In} \\
+\hline
+
+Cumulative Return 
+& Total portfolio growth over the evaluation period 
+& $\prod_{t=1}^{T}(1 + r_t) - 1$
+& \cite{e6ca3, 4e332, 4061c, 34309, 83780} \\
+\hline
+
+Volatility 
+& Dispersion of portfolio returns 
+& $\sqrt{\mathrm{Var}(R_p)}$
+& \cite{e6ca3, 0df79, 83780, 4061c} \\
+\hline
+
+Sharpe Ratio 
+& Risk-adjusted return relative to volatility 
+& $\frac{\mathbb{E}[R_p - R_f]}{\sigma_p}$
+& \cite{de270, e6ca3, 0df79, 4061c, 70996, 83780, 4e332, 984be} \\
+\hline
+
+Maximum Drawdown 
+& Largest peak-to-trough portfolio loss 
+& $\max_{t}\!\left(\frac{P_{\text{peak}} - P_t}{P_{\text{peak}}}\right)$
+& \cite{de270, e6ca3, 4061c, 0df79, 4e332, 984be} \\
+\hline
+
+\end{tabular}
+\caption*{\footnotesize
+Note: $r_t$ denotes the portfolio return at time $t$; $T$ is the total number of periods;
+$R_p$ is the portfolio return; $R_f$ is the risk-free rate;
+$\sigma_p$ is the portfolio return standard deviation;
+$P_t$ is the portfolio value at time $t$; $P_{\text{peak}}$ is the historical peak portfolio value.
+}
+\end{table}
+
+\subsection{Limitations and Open Challenges}
+
+Despite substantial progress, many portfolio optimization approaches continue to face significant limitations that restrict their real-world applicability.
+
+A primary challenge arises from the non-stationary nature of financial markets. Regime shifts, structural breaks, and evolving market dynamics induce persistent concept drift, which undermines the stability and reliability of data-driven models. During crises or other structural changes, previously learned policies and parameter estimates can become invalid, making effective detection and adaptation switching models essential~\cite{nopaper01}.
+
+Another well-recognized limitation lies in the simplified treatment of market frictions. Transaction costs, liquidity constraints, and market impact are often neglected or modeled under simplifying assumptions, creating a simulation-reality gap that may lead to overstated backtest performance~\cite{73ef4}. Consequently, strategies that appear profitable under frictionless assumptions often do not translate as expected to real-world trading.
+
+A key methodological challenge in deep portfolio learning lies in the instability of the optimization objective and the overall complexity of the learning problem. Reward functions based on financial metrics, such as the Sharpe ratio, are highly sensitive to volatility estimation errors and return noise, which can lead reinforcement learning agents to exploit training artifacts rather than learn economically robust risk-adjusted strategies, thereby degrading out-of-sample performance. Additionally, high-dimensional state and action spaces, large data requirements, and substantial computational costs increase training instability and hyperparameter sensitivity, while limiting scalability, reproducibility, and practical deployment~\cite{03d81}.
+
+Finally, neural network-based portfolio policies raise significant interpretability and governance concerns. The black-box nature of these models complicates risk attribution, model validation, and oversight, posing challenges for regulatory transparency and slowing institutional adoption~\cite{891a2}.
+
+Taken together, these challenges outline the central open problem in portfolio learning: designing decision systems that remain robust under distributional shift, operate under realistic market frictions, learn from low signal-to-noise data, and provide interpretable and governable decision processes, a combination that current approaches have yet to achieve simultaneously.
+
+
+\section{Returns Prediction}
+\label{section:returns_prediction}
+
+Returns prediction and portfolio optimization are conceptually distinct problems, yet they are tightly coupled in practice, as presented in Section~\ref{section:portfolio_optimization:prediction_based}. Many portfolio construction strategies, whether classical or learning-based, depend implicitly or explicitly on forecasts of future returns, prices, or market directions. In such settings, prediction models serve as upstream components whose outputs are transformed into allocation decisions through optimization rules, trading heuristics, or policy learning mechanisms. Consequently, the effectiveness of prediction-based portfolio optimization depends not only on the allocation framework itself, but also on the structure, horizon, and robustness of the underlying predictive signals.
+
+A structured summary of the most relevant studies discussed throughout this section, including their methodological approaches, prediction horizons, asset classes, and reported performance metrics, is provided in Table~\ref{tab:literature_review_prediction} at the end of the section.
+
+While some studies directly target return prediction, for example Bessler and Wolff~\cite{83780}, who forecast U.S. sector-level equity returns for portfolio construction, most of the literature focuses on price prediction as a proxy for returns prediction. This choice is motivated by the direct relationship between prices and returns,
+\[
+R_t = \frac{P_t - P_{t-1}}{P_{t-1}},
+\]
+where $R_t$ is the return at time $t$, and $P_t$ and $P_{t-1}$ are the prices at times $t$ and $t-1$, respectively. In practice, both approaches rely on highly similar methodologies, input features, and evaluation protocols, making the distinction between price and return prediction secondary to the modeling framework employed.
+
+Recent literature has extensively explored the use of textual sentiment information combined with market data to improve the prediction of financial asset prices and movements. Across different markets, assets, and prediction horizons, these studies consistently show that sentiment extracted from news articles or social media provides complementary information to historical price data and technical indicators.
+
+Several works focus on equity markets and indices, integrating sentiment with traditional financial indicators. Yan \emph{et al.}~\cite{9c443} study constituents of the SSE 50 index and incorporate sentiment indicators together with price-based features and valuation ratios. Kim \emph{et al.}~\cite{339f6} analyze short-term movements of the S\&P~500 index, showing that sentiment remains informative even during periods of heightened volatility such as the COVID-19 pandemic and the Russia-Ukraine conflict. At the firm level, Lee and Anderl~\cite{93d76} examine major New York Stock Exchange (NYSE)-listed energy companies and demonstrate that business news sentiment, both at headline and content level, significantly enhances stock price prediction compared to using market data alone. Broader index-level forecasting is also explored by Li \emph{et al.}~\cite{de270}, who study the DJIA and S\&P~500 using an event-based perspective to capture meaningful price movements.
+
+Other studies investigate different asset classes and temporal resolutions. Farimani \emph{et al.}~\cite{a2e88} apply sentiment-aware prediction to foreign exchange and cryptocurrency markets, combining news sentiment with technical indicators for real-time price forecasting. Su and Deng~\cite{34309} focus on high-frequency ETF data, integrating minute-level market information with aggregated daily Twitter sentiment to predict next-minute prices. These works highlight the adaptability of sentiment-based approaches across both traditional and emerging financial markets.
+
+The literature also explores varied prediction targets and horizons. Frederick-Preece and Abbas~\cite{2b4c0} examine short- and medium-term stock movement prediction over multiple horizons (one day, one week, and three weeks), showing that jointly predicting multiple future periods improves performance. Cestari and Formentin~\cite{d892a} take a similar approach to directional return prediction on the S\&P~500, instead of predicting exact prices, and stress the value of pre-market sentiment, weekly trends, and seasonal patterns.
+
+From a methodological perspective, the literature converges on deep learning models as the primary tools for capturing the temporal structure of financial and sentiment data. Recurrent neural networks are widely used, with Long Short-Term Memory (LSTM) architectures being the dominant choice in the literature~\cite{9c443, 339f6, 93d76, a2e88, 34309}. Their popularity stems from their ability to model sequential dependencies while maintaining stable training behavior over long sequences. Originally introduced by Hochreiter and Schmidhuber \cite{LSTM1997}, LSTM networks extend standard recurrent neural networks by addressing the vanishing gradient problem through a memory cell that determines what information to retain across time steps, enabling the model to capture both short- and long-term dependencies.
+
+Information flow within the memory cell is regulated by gating mechanisms, namely the input gate, forget gate, and output gate. These gates control how new information is incorporated, how past information is retained or discarded, and how much of the internal state is exposed to the output at each time step. Due to these properties, LSTM-based models are well suited for financial prediction tasks, making them effective upstream models for transforming heterogeneous temporal inputs, such as prices, technical indicators, and sentiment features, into predictive signals for subsequent portfolio allocation.
+
+At the same time, the growing availability of large-scale financial data and advances in sequence modeling have motivated comparisons between LSTM-based approaches and alternative modeling frameworks. More recent contributions evaluate LSTMs alongside traditional econometric methods and newer deep learning architectures. In particular, Osman and Otaibi~\cite{ac95c}, and Mozaffari and Zhang~\cite{b58bb} report that Transformer-based models generally outperform LSTM, Autoregressive Integrated Moving Average (ARIMA) (a classical statistical model) and Prophet (a decomposable forecasting model developed by Meta) models, although LSTMs remain competitive by offering a favorable balance between predictive accuracy and computational efficiency.
+
+Overall, empirical evidence suggests a broad consensus that LSTM-based architectures represent a robust and practical baseline for financial return prediction, particularly in prediction-based portfolio optimization frameworks where robustness, stability, and computational efficiency are often more critical than marginal gains in pointwise forecasting accuracy.
+
+\begin{table}[ht]
+\centering
+\caption{Overview of selected prior studies on return and price prediction, summarizing research objectives, methodological approaches, prediction horizons, asset classes, and reported performance metrics.}
+\label{tab:literature_review_prediction}
+\begin{tabular}{|>{\centering\arraybackslash}m{1.5cm}|
+                >{\centering\arraybackslash}m{3cm}|
+                >{\centering\arraybackslash}m{3cm}|
+                >{\centering\arraybackslash}m{2cm}|
+                >{\centering\arraybackslash}m{2cm}|
+                >{\centering\arraybackslash}m{1.5cm}|}
+\hline
+\textbf{Study} & \textbf{Research Objective} & \textbf{Methodological Approach} & \textbf{Prediction Horizon} & \textbf{Assets} & \textbf{Results} \\
+\hline
+
+Farimani \emph{et al.} (2022)~\cite{a2e88}
+  & Assess impact of news sentiment and technical indicators on price prediction
+  & LSTM using sentiment and market indicators
+  & 1-hour
+  & Forex and cryptocurrency pairs
+  & MAPE from 0.122 to 67.949 \\
+\hline
+Su and Deng (2024)~\cite{34309}
+  & Assess LSTM and BiLSTM effectiveness in predicting ETF prices
+  & BiLSTM and LSTM models
+  & 1-minute
+  & 41 multi-asset class ETFs
+  & MAPE from 0.010530 to 0.017449 \\
+\hline
+Yan \emph{et al.} (2023)~\cite{9c443}
+  & Study stock price forecasting using news sentiment extraction
+  & ARIMA$^{\ddagger}$ vs. LSTM without$^{\dagger}$ and with$^{\dagger\dagger}$ sentiment
+  & 1-day
+  & SSE 50 constituents
+  & RMSE: 1.107488$^{\ddagger}$, 0.539953$^{\dagger}$, 0.192691$^{\dagger\dagger}$ \\
+\hline
+Frederick-Preece and Abbas (2024)~\cite{2b4c0}
+  & Stock prediction via sentiment analysis on Google PSE data
+  & Neural networks with multi-time series outputs
+  & 1-day, 1-week, and 3-weeks
+  & 20 stocks
+  & MSE from 44.9837 to 135.5796 \\
+\hline
+\end{tabular}
+\caption*{\footnotesize
+Note: Reported performance metrics are not directly comparable across studies due to differences in datasets, evaluation setups, and scaling of error measures. Among the reported metrics, only MAPE (Mean Absolute Percentage Error) is scale independent. Other metrics (e.g., RMSE (Root Mean Squared Error) and MSE (Mean Squared Error)) are presented for within-study comparisons of model variants. Superscripts $^{\dagger}$, $^{\dagger\dagger}$, and $^{\ddagger}$ denote alternative experimental configurations within the same study.
+}
+\end{table}
+
+% \cite{83780} predicts U.S. sector-level equity returns in order to construct an optimized portfolio within a Black-Litterman framework. For the return forecasting, using monthly U.S. data from 1973 to 2013 for six equity sectors (from Thomson Reuters Datastream), the authors analyze return predictability based on fundamental and interest-related variables, macroeconomic variables, and technical indicators. They evaluate both univariate predictive regressions and a broad set of multivariate forecasting models, including OLS, regularized regressions (LASSO), principal components, forecast combinations, and the three-pass regression filter (target-relevant factors). Forecast performance is assessed strictly out of sample using MSFE-based statistics, but no benchmarks is done. The study finds that sector returns are more predictable than aggregate market returns.
+
+% \cite{9c443} uses a LSTM neural network model to predict stock price movements of SSE 50 constituents. As features they use sentiment indicator, closing price, price movements, P/E ratio, and P/B ratio of the constituents. They benchmark agains an ARIMA model and a basic LSTM model without sentiment features, with the LSTM with sentiment features reaching the best results in both 3:2 and 4:1 train:test splits. 4:1 test splits reached an R squared of around 0.98, MAE 0.16 and RMSE 0.19, while in the 3:2 split the R squared was around 0.64, MAE 0.57 and RMSE 0.88.
+
+% \cite{2b4c0} uses inputs such as sentiment, sentiment score, number of articles published, and stock open-close values to predict stock movements after 1 day, 1 week, and 3 weeks, with neural network architecture of two fully connected layers with 64 and 32 neurons (using ReLU activation) and a final layer corresponding to the output. The results present the that the best results are with the use of FinBERT for sentiment analysis, with the prediction of all three timeframes (MSE around 45), with the second best being FinBERT fine-tuned with also the three timeframes (MSE 49), the third best being FinBERT with 1 day prediction (MSE 60), followed by Flair (other used model by the authors) with 1 day prediction (MSE 65).
+
+% \cite{a2e88} uses a deep recurrent neural network (RNN), specifically LSTM layers, for feature extraction, followed by a dense layer for real-time price regression of currency pairs in foreign exchange and cryptocurrency markets in a hourly timeframe. The model is trained on a custom financial news corpus, which is aligned with market data using timestamps. It incorporates technical indicators (Close Price, Volume, Exponential Moving Average, Moving Average Convergence Divergence, On Balance Volume, Bollinger Bands, Stochastic, Awesome Oscillator, Williams, Relative Strength Index, Accumulation/Distribution Index, and Average True Range) and news sentiment scores for enhanced prediction. During the fusion phase, the model concatenates all prepared features (news sentiment and technical indicators) within a defined delay window, which are then input into the LSTM layers. The authours present an analysis of information gain and L squared norm to present the relevance of the features. As all the models used the same architecture, and the only difference was the sentiment analysis method, the results show that FinBERT outperforms the other methods (Loughran Donald dictionary, Glove embeddings and DistilBERT) in both Forex and Cryptocurrency markets, by a significant margin, with the test loss MAPE, in the forex market varying between 0.122 and 0.307, while in the cryptocurrency market, represented by the BTC/USDT pair, being 67.947.
+
+% \cite{339f6} employed the Long Short-Term Memory (LSTM) methodology, a type of recurrent neural network well-suited for time-series forecasting, to predict short-term movements in the S\&P~500 index from 2018 to 2022. Given the high volatility of financial markets, short-term forecasting was prioritized, as price changes are typically more pronounced and less predictable over longer horizons. The LSTM model was trained using historical stock price data, including Open, High, Low, Close, Adj Close, and Volume, along with estimated news sentiment scores. Hyperparameters were optimized using random search. The predictive performance of two LSTM models (one with sentiment scores and one without) was evaluated using Mean Squared Error (MSE), Root Mean Squared Error (RMSE), Mean Absolute Error (MAE), and R-squared. Results showed that incorporating sentiment scores significantly improved prediction accuracy, with the model achieving an MSE of 0.0016, RMSE of 0.0407, MAE of 0.0313, and R2 of 0.8950. In contrast, the model without sentiment scores had higher error rates: MSE of 0.0026, RMSE of 0.0513, MAE of 0.0394, and a lower R2 of 0.8339. Additionally, the models were tested during volatile periods such as the COVID-19 pandemic and the onset of the Russia-Ukraine war. Even in these turbulent times, the sentiment-enhanced LSTM model maintained strong performance, closely matching its overall metrics and demonstrating robustness under stress conditions.
+
+% \cite{d892a} treats prediction as a return sign prediction task: i.e. predicting whether the return on SPY (the S\&P~500 ETF) is positive or negative on a given day (rather than predicting exact price). They start with daily-level features derived from sentiment (tweets) and market data, such as previous day return, pre, intra, and post-market sentiment, weekly sentiment scores to capture seasonal effects, and some technical indicators that are commonly used in literature, without specification. They use SVM along with Bayesian-optimized Recursive Feature Elimination (BO-RFE) for feature selection. The BO-RFE with the top 5 features (f1-score of around 0.70) outperfoms the Literature (0.62) but the BO-RFE with 2 features (0.58) is below the Literature (with 10 features). The most relevant features are previous day return, pre-market sentiment, previous week intra and post-market sentiment and the seasonal behavior of previous week negative sentiment.
+
+% \cite{34309} uses a LSTM and BiLSTM model to predict the next-minute price of ETFs (2019-2020) based on historical price data and daily Twitter sentiment scores, as a proxy for trading strategies. They use a rolling window of different sizes (40 and 60 minutes). Depending on the etf the optimal windows size varies. The features include minute-level open, close, high, low, and volume data for the ETFs, as well as daily Twitter sentiment scores (aggregated by company).
+
+% \cite{de270} creates a forecasting system to predict future trends of financial assets using historical price data. It leverages two advanced methodologies to model asset behavior: an enhanced Directional-Change (DC) approach and a Deep Reinforcement Learning (DRL) algorithm known as Twin Delayed Deep Deterministic Policy Gradient (TD3). The DC method identifies significant price movements based on events rather than fixed time intervals, capturing meaningful trend reversals. In this study, it is extended to support multi-asset analysis, enabling simultaneous forecasting across multiple financial instruments. In contrast, the TD3 algorithm offers a data-driven, adaptive learning framework that models complex, nonlinear patterns in historical price trajectories. By learning from past market behavior, it generates informed predictions that guide portfolio allocation decisions. Both methods are tested using historical data from the DJIA and S\&P~500 indices (2010-2020), demonstrating the system's capacity to extract and utilize deep price movement patterns for dynamic and responsive market forecasting. This is a proxy for portfolio optimization (the only results presented).
+
+% \cite{93d76} uses sentiment extracted from general business news to improve short-term stock price prediction in the energy sector. Using nearly 10 years of data (2013-2022) from seven major NYSE-listed energy companies, the authors combine stock market data with sentiment features derived from business news published by major global outlets. Price prediction is performed primarily with a Long Short-Term Memory (LSTM) neural network, with XGBoost used as a robustness check. Multiple feature sets are compared, including stock data, headline sentiment, and content sentiment. Adding business news sentiment significantly improves stock price prediction accuracy compared to using stock data alone. The most effective configuration combines stock price features with sentiment from news content, while headline sentiment provides weaker and often insignificant improvements.
+
+% \cite{ac95c} evaluates stock price prediction models by comparing deep learning approaches (LSTM, Transformer, and hybrid architectures) with traditional econometric models (ARIMA and VAR) using daily S\&P~500 data from 2015-2020, including the COVID-19 crisis period. Bayesian hyperparameter optimization is used and performance is using RMSE, MAE, MAPE, and directional accuracy. Results show that deep learning models significantly outperform econometric methods, with the Transformer achieving the best overall performance (RMSE = 41.87, directional accuracy = 69.1\%) and demonstrating strong robustness during the COVID-19 crisis. LSTM models perform slightly worse (RMSE = 43.25) than Transformers but offer a more favorable balance between accuracy and computational efficiency, while attention analysis reveals that Transformers capture both short- and long-term dependencies more effectively than sequential models.
+
+% \cite{b58bb} compares LSTM, Facebook Prophet, and Transformer models for stock price prediction using AAL and AAME stocks over the period 2013-2023. Among the three approaches, the Transformer model achieves the best performance, followed by LSTM, while Facebook Prophet shows the worst performance. Transformer processes normalized historical features (open, high, and low prices) to predict closing prices and is trained using the Adam optimizer with mean squared error loss. In terms of performance, the Transformer achieves MAE = 0.0793 and RMSE = 0.0923 for AAL, and MAE = 0.0826 and RMSE = 0.1085 for AAME, outperforming LSTM (e.g., AAL MAE = 0.2890)
+
+\section{Narrative Analysis}
+\label{section:sentiment_analysis}
+
+As the studies on portfolio optimization (Section~\ref{section:portfolio_optimization}) and returns prediction (Section~\ref{section:returns_prediction}) demonstrate, text-extracted features such as sentiment and other narrative-based indicators can provide valuable complementary information to traditional market data. This section reviews the main textual data sources and methodological approaches in the literature on narrative analysis for financial applications, highlighting how unstructured text is transformed into economically meaningful signals.
+
+A structured summary of the most relevant studies discussed throughout this section, including their methodological approaches, textual data sources, and reported results  regarding the contribution of sentiment features, is provided in Table~\ref{tab:literature_review_sentiment} at the end of the section.
+
+A first stream of research leverages social media data from platforms such as StockTwits and X (formerly Twitter), as well as finance-focused Reddit discussions, to extract sentiment indicators for financial analysis.
+Studies such as those by Cestari and Formentin~\cite{d892a}, together with Steinert and Altmann~\cite{a12be}, employ StockTwits messages for equity return prediction, taking advantage of the high-frequency, sentiment-rich nature of the data, though these sources also introduce noise and user biases.
+Similarly, the work by Su and Deng~\cite{34309} aggregates daily company-level tweets from X to construct sentiment signals for minute-level ETF price forecasting, highlighting the potential of user-generated content to deliver high-resolution market insights.
+Reddit subreddits such as r/investing, r/stocks, and r/wallstreetbets are also widely analyzed \cite{5530e, cc28c, da676}, and for example, Reichenbach and Walther~\cite{cc28c} find that stocks recommended on these forums often generate higher raw returns but entail substantially higher risk, resulting in weak risk-adjusted performance, with cumulative prospect theory explaining the appeal of their lottery-like payoffs.
+Despite the heterogeneous quality of user-generated content, social media remains a valuable source due to its immediacy and its ability to capture real-time investor sentiment.
+
+Financial news continues to represent one of the most authoritative sources for sentiment analysis in downstream financial applications.
+For instance, Lee and Anderl~\cite{93d76} leverage general business news to enhance short-term stock price prediction in the energy sector, showing that sentiment extracted from full articles outperforms headline-based measures.
+Extending sentiment analysis to a different linguistic and market context, Yan \emph{et~al.}~\cite{9c443} analyzes Chinese financial commentary from the Oriental Fortune platform, applying a Naive Bayes classifier with TF-IDF features to produce daily sentiment indicators.
+A broader and more automated news collection strategy is proposed by Frederick-Preece and Abbas~\cite{2b4c0}, where Google's Programmable Search Engine is used to gather large-scale financial articles.
+Among more traditional outlets, Kim \emph{et~al.}~\cite{339f6} derive sentiment scores from New York Times summaries to compute daily sentiment indexes, while Liu \emph{et~al.}~\cite{2a15b} integrate real-time sentiment sourced from the Wall Street Journal, Barron's, Benzinga, MarketWatch, and Dow Jones. Together, these studies highlight the value of curated journalistic content for capturing market-relevant narrative structures.
+
+A third category of data originates from global news databases, with GDELT playing a prominent role.
+Donkelaar~\cite{286a4} uses GDELT's organization-linked fields to quantify sentiment and news volume for S\&P~500 companies, integrating these features with market and macroeconomic indicators. Results indicate that while sentiment can improve predictive accuracy, its impact is highly heterogeneous across industries and firms.
+More sophisticated narrative constructions are examined in the work by Zheng and Lucey~\cite{4e6ff}, where the authors draw on GDELT's event-level metadata, including environmental sentiment, and media confidence, to explain movements in clean energy indices.
+Similarly, Blanqué \emph{et~al.}~\cite{0f204} propose a formal framework for assessing the informational content of narrative features, specifically thematic volume, tone, and count-weighted tone, and demonstrates that these measures provide incremental explanatory power over traditional macroeconomic models of S\&P~500 returns.
+Together, these works position GDELT as a rich repository for narrative-based financial analysis, enabling thematic and geopolitical dimensions of news to be incorporated into market models.
+
+Some contributions extend sentiment analysis into portfolio construction directly rather than predicting returns via sentiment features. The MuSA framework, introduced by Li \emph{et~al.}~\cite{de270}, integrates news-based sentiment with an entropy-based mechanism that weights news sources by their historical reliability in predicting market movements. By incorporating confidence-weighted sentiment into portfolio allocation, the authors report improved performance relative to sentiment-agnostic benchmarks, demonstrating that sentiment can serve as a meaningful signal within decision-support systems as well as forecasting models.
+
+Across recent studies in financial NLP, the dominant methodological trend is the adoption of transformer-based language models. Among these, Bidirectional Encoder Representations from Transformers (BERT), a model developed by Google, has played a foundational role. BERT leverages the transformer architecture, originally proposed as an encoder-decoder framework, adopting only its encoder component, which consists of stacked layers, each built from multi-head self-attention mechanisms and position-wise feedforward networks. The self-attention mechanism allows the model to compute pairwise interactions between all tokens in a sequence, capturing long-range dependencies efficiently. Positional encodings, which are added to the input embeddings, provide information about token order. Unlike earlier models that read text strictly left-to-right or right-to-left, BERT conditions on both left and right context at every layer, producing deep, bidirectional contextualized representations of text. This bidirectional conditioning enables the model to capture nuanced meaning and complex semantic relationships across a wide range of textual contexts \cite{34hf8}.
+
+While BERT excels at general language understanding, challenges can arise when it is applied to domain-specific text, particularly in areas characterized by specialized vocabulary and stylistic conventions. Financial text, for instance, contains company-specific terms, earnings-call language, and extensive financial jargon. To address these challenges, FinBERT was developed as a domain-specific adaptation of BERT for financial language understanding. Building on BERT's pretraining, FinBERT underwent further pretraining on large-scale financial corpora, including financial news articles, web-crawled finance content, and finance-focused forums. It was subsequently fine-tuned for financial sentiment analysis \cite{rjhc3}, enabling strong performance on downstream financial NLP tasks. Empirical studies consistently show that FinBERT outperforms both lexicon-based methods and general-purpose BERT architectures in financial sentiment classification, even when trained on relatively small labeled datasets. Its effectiveness has made it one of the most widely applied model in the financial NLP literature, as evidenced by its adoption in numerous studies~\cite{d892a, 339f6, 34309, de270, 5530e, 93d76}.
+
+Although FinBERT dominates the field, alternative transformer models have also been explored. For example, Frederick-Preece and Abbas~\cite{2b4c0} also evaluate Flair models built on DistilBERT and RoBERTa embeddings, achieving notable improvements by correcting for the prevalence of neutral labels. At the frontier of large-scale language models, Steinert and Altmann~\cite{a12be} compare GPT-4 with BERT in the context of StockTwits-based stock prediction for Apple and Tesla. Based on the Generative Pre-trained Transformer (GPT) architecture, GPT-4 is capable of assessing both sentiment and the strategic implications of textual content, outperforming BERT in most cases. However, its higher computational cost and dependence on prompt design remain practical limitations.
+
+% While most of the literature focuses on extracting sentiment or narrative tone, a related and relevant stream of research applies financial NLP to text-based economic classification tasks. In this setting, the objective is not polarity detection but the identification of documents' or firms' sectoral affiliation, which is particularly pertinent in multi-sector contexts.
+% For instance, Fechner \emph{et~al.}~\cite{136d2} classify German industrial sectors using textual descriptions aligned with the WZ08 industry taxonomy, combining sector-specific keywords, Wikipedia content, and job advertisements with manually curated labels, and fine-tuning German BERT-based models for domain adaptation.
+% Similarly, Yang \emph{et~al.}~\cite{bab42} address the classification of legal articles into industrial sectors using textual features derived from TF-IDF representations and topic embeddings based on Word2Vec, evaluating several traditional machine learning algorithms and finding Regularized Greedy Forests to perform best.
+% In a financial market setting, Rizinski \emph{et~al.}~\cite{558b2} conduct a large-scale comparative study on the automatic assignment of publicly traded companies to GICS sectors using business descriptions from WRDS. Their analysis benchmarks BERT-based architectures against SVM models and shows that enriching label representations with TF-IDF sector keywords improves performance. They further explore synthetic data generated with large language models to simulate low-resource environments.
+% While these studies do not model sentiment directly, they demonstrate the broader capacity of textual representations and transformer-based architectures to extract economically meaningful structure from financial and business language, reinforcing the role of NLP as a general tool for structured information extraction in finance.
+
+Overall, empirical findings across the literature suggest that text-derived indicators can enhance financial modeling. Studies such as those by Li \emph{et~al.}~\cite{de270}, Cestari and Formentin~\cite{d892a}, Blanqué \emph{et~al.}~\cite{0f204}, among others, show that features extracted from textual data, including sentiment, tone, and narrative characteristics, improve predictive accuracy or explanatory power across different horizons and markets. Despite the rapid evolution of NLP architectures, systematic comparisons across alternative text-based modeling approaches remain scarce, and extraction performance is often not reported, particularly when textual features serve as intermediate inputs rather than the primary object of analysis. These gaps limit the ability to assess the robustness and generalizability of text-derived signals, especially given that their effectiveness varies across firms, industries, and time periods, indicating that their predictive or explanatory value is inherently context-dependent rather than universal. Moreover, research explicitly modeling narrative structures, such as thematic prominence or event-level characteristics, remains relatively limited, although the findings of Zheng and Lucey~\cite{4e6ff} and Blanqué \emph{et~al.}~\cite{0f204} highlight the potential of moving beyond simple polarity-based measures.
+
+\begin{table}[ht]
+\centering
+\caption{Overview of selected prior studies on narrative analysis, summarizing research objectives, methodological approaches, sources of textual data, and reported results regarding the contribution of sentiment features to financial prediction tasks.}
+\label{tab:literature_review_sentiment}
+\begin{tabular}{|>{\centering\arraybackslash}m{1.6cm}|
+                >{\centering\arraybackslash}m{4.5cm}|
+                >{\centering\arraybackslash}m{3cm}|
+                >{\centering\arraybackslash}m{1.7cm}|
+                >{\centering\arraybackslash}m{2.4cm}|}
+\hline
+\textbf{Study} & \textbf{Research Objective} & \textbf{Methodological Approach} & \textbf{Source} & \textbf{Results} \\
+\hline
+
+Steinert and Altmann (2023)~\cite{a12be}
+  & Measure how sentiment extracted from financial microblogs predicts same-day stock price movements
+  & BERT and GPT-4 for sentiment extraction
+  & Stocktwits
+  & GPT-4 outperforms BERT \\
+\hline
+Lee and Anderl (2025)~\cite{93d76}
+  & Investigate whether business news sentiment can serve as market indicator when integrated into LSTM-based forecasting models
+  & FinBERT integrated with LSTM forecasting
+  & News articles from 10 major publishers
+  & Sentiment improves prediction accuracy \\
+\hline
+Kim \emph{et~al.} (2023)~\cite{339f6}
+  & Examine the effect of human sentiment expressed in text data on stock price movements
+  & FinBERT sentiment analysis
+  & The New York Times
+  & Sentiment improves forecasts \\
+\hline
+Zheng and Lucey (2025)~\cite{4e6ff}
+  & Examine the relationship between media sentiment variables and the S\&P Global Clean Energy Index
+  & Multivariate regression (GDELT drawn features)
+  & GDELT Database
+  & Significant predictive relationship \\
+\hline
+Frederick-Preece and Abbas (2024)~\cite{2b4c0}
+  & Assess whether Google Search-derived news sentiment improves stock price prediction
+  & FinBERT and Flair sentiment analysis
+  & Google Programmable Search Engine
+  & Sentiment models outperform baseline \\
+
+\hline
+\end{tabular}
+\caption*{\footnotesize
+Note: The majority of financial sentiment analysis literature, particularly in portfolio optimization and price or return prediction, relies on out-of-the-box pre-trained models. While many studies report that sentiment enrichment improves predictive performance, they typically do not evaluate model outputs against expert-labelled ground truth.
+}
+\end{table}
+
+% \cite{9c443}, with the objective of convert news text into sentiment indicators in order to enhance stock price prediticion, uses a Naive Bayes sentiment classifier to classify news articles from Oriental
+% Fortune's financial commentary bar (China?), quantifying the news sentiment of each trading day. TF-IDF is used to extract features from the text. The dataset for training and test was built by the authors manually labelling 1400 articles as positive or negative, and got an accuracy of around 89\%.
+
+% \cite{d892a} classifies StockTwits tweets based on the sentiment as positive, negative or neutral using FinBERT, a financial domain-adapted version of BERT, in order to use the sentiment as feature for predicting financial returns of SPY ETF (tied to the S\&P~500 index). It computes a sentiment score, based on the number of positive and negative posts, for both intra-market and post-market time. The authors, in order to predict the return of the ETF at the time t, test the relevance of the use of the pre-market sentiment score, the intra-market sentiment score and the post-market sentiment score for the time t-1 and t-7, to capture both short-term and seasonal effects. By using a Bayesian-optimized Recursive Feature Elimination they test the relevance of the features, reaching a substantial performance enhancement by using only 5 features instead of the 10 they mention are used in literature they benchmark againts. They show the relevance of sentiment features extracted via FinBERT but without comparing with other sentiment analysis methods.
+
+% \cite{2b4c0} introduces a novel data collection method using Google's programmable search engine (PSE) to compile a comprehensive dataset of stock-related news. The authors then employ FinBERT as baseline and to classify the dataset to train Flair with embeddings from DistilBERT and RoBERTa. The idea of this Flair model is to create a bias agains the neutral class, favouring positive or negative sentiment when neutral values dominate. The best Flair model uses DistilBERT embeddings and achieves an F1-score of around 0.75.
+
+% \cite{a2e88} explores whether mood time-series derived from textual sentiment analysis can enhance the predictive power of traditional technical indicators in Forex and Cryptocurrency markets. It's objective is to integrate sentiment (mood) and market data in a temporal model, for the sentiment part they use FinBERT but also benchmark against Loughran Donald dictionary, Glove embeddings and DistilBERT, but with FinBERT reaching the best result for price predictions. No sentiment only analysis is done.
+
+% \cite{339f6} investigates the impact of human sentiment on stock movements  (S\&P~500) using a mathematical framework applied to text data. Specifically, they extract news summary data from The New York Times (2018-2022) and employ FinBERT, a domain-specific BERT model for financial language, to compute daily sentiment scores. Daily sentiment score is calculated as the probability of each class multiplied by a representative value (1 for positive, -1 for negative, 0 for neutral). The results show that incorporating FinBERT-derived sentiment improves the predictive performance of a standalone model for the S\&P~500, even though only FinBERT is tested.
+
+% \cite{a12be} compares GPT-4 and BERT in predicting same-day stock price movements of Apple and Tesla in 2017 using Stocktwits messages. Sentiment scores (1=positive to 5=negative) were averaged daily and normalized by subtracting 3 (neutral). While BERT captured only sentiment, GPT-4 assessed both sentiment and whether a message implied an advantage or disadvantage for the company. GPT-4 outperformed BERT in five of six months and both models exceeded a naive buy-and-hold strategy, showing the value of social sentiment. However, GPT-4's higher costs and need for prompt tuning present practical trade-offs. No sentiment analysis benchmarks alone were done, but the outperformance in price prediction is a good indicator of the quality of the sentiment analysis.
+
+% \cite{34309} in order to predict minute-level prices of ETFs (2019-2020), uses sentiment scores from Twitter. They use a fine-tuned (using a labeled dataset of financial documents) FinBERT model on daily Twitter comments, grouped by company, using the corresponding news API. Pre-market and after-hours data were filtered out. No missing values were found after inspection. No sentiment results are presented.
+
+% \cite{de270} proposes MuSA, a sentiment analysis framework for financial news, which integrates large language models (LLMs) like FinBERT to classify sentiment (positive, neutral, negative) from news articles collected across various media sources. To ensure sentiment relevance, it introduces an entropy-based confidence learning mechanism that evaluates each source's reliability by comparing historical sentiment signals to actual market movements. Less reliable sources are downweighted. Using this confidence-weighted sentiment, a weighted-sum method enhances portfolio construction, favoring sentiment from more trustworthy sources to improve investment decisions. The framework is evaluated using historical data from the DJIA and S\&P~500 indexes (2010 to 2020), demonstrating improved performance when incorporating this sentiment-driven approach. This is a proxy for portfolio optimization (the only results presented).
+
+% \cite{286a4} investigates whether news sentiment data from GDELT can enhance the forecasting of stock movements for 15 S\&P~500 companies across five sectors (healthcare, banking, technology, oil energy, and airlines) over the period 2013 to 2019. Three categories of features were used: company data (open, high, low, close prices, trading volume, and dividend payouts), economic indicators (S\&P~500 prices, PMI index, and CBOE VIX), and sentiment data derived from GDELT (filtered the ORGANIZATIONS column which contains the company name and from there: mean TONE score per day, count of news per day, country-level mean TONE based on LOCATION). On average, incorporating sentiment data slightly improved model accuracy and robustness, as indicated by a lower standard deviation in accuracy scores. The results show that while news sentiment can enhance the predictive performance, but its impact varies significantly across industries and individual companies. The author bases his methodology on \cite{c1dde}.
+
+% \cite{4e6ff} is where sentiment analysis is used to assess the impact of media tone and confidence on the performance of the SP Global Clean Energy Index, with the index itself serving as the price-based dependent variable. The authors extract a range of novel sentiment-driven factors from the GDELT 2.0 Event Database (including global news confidence levels, environmental sentiment, media coverage intensity, and the ratio of environmental to total news reporting) focusing particularly on U.S. and Chinese media. Political sentiment is quantified using the Goldstein scale, computed from news reports on U.S.-China interactions over the past five years, to capture the daily tone of international events. To evaluate the effect of these sentiment variables on clean energy stock prices, the authors use econometric modeling with the SP Global Clean Energy Index as the outcome variable. They apply machine learning techniques like Isolation Forest for variable selection and Extreme Bounds Analysis (EBA) to test robustness across specifications. Their results show that media sentiment, confidence, and environmental focus are among the most consistent and significant predictors of index movements, suggesting that positive media coverage contributes directly to price dynamics by increasing transparency, investor attention, and demand for clean energy assets.
+
+% \cite{0f204} investigates how narrative signals derived from GDELT can enhance the modeling of U.S. equity markets, specifically the S\&P~500, beyond what traditional macroeconomic models can achieve. By filtering GDELT data for U.S.-specific entries between 2019 and 2022, the authors extract three key metrics per theme: Volume (frequency of mentions), Tone (average sentiment), and Count Weighted Tone (the product of volume and tone, capturing both prominence and sentiment of a topic). The authors construct a formal informational content framework that compares standard macroeconomic models of S\&P~500 returns to those augmented with GDELT-based variables. The results demonstrate that GDELT signals provide significant incremental explanatory power, as measured by improvements in R squared, and help capture shifts in market sentiment not reflected in macro data alone. Importantly, the narrative aggregation approach also improves diversification of information sources: while macro indicators may plateau in predictive value, dynamic shifts in media-driven narratives (captured by GDELT) offer fresh, orthogonal insights. The framework thus formalizes and quantifies how transforming raw qualitative news flow into structured quantitative signals can meaningfully inform financial market behavior.
+
+% \cite{5530e} uses popular subreddits such as r/investing, r/stocks, and r/wallstreetbets, to develop an event-focused stock-prediction model that uses sentiment from popular subreddits and other media sources to detect differences between retail and Wall Street sentiment and improve forecasts of volatility and earnings-related market moves. \cite{5530e} leverages these discussions to build event-driven prediction models that compare retail sentiment with traditional media, improving forecasts of volatility and earnings-related market reactions.
+
+% \cite{cc28c} The paper shows that stocks recommended on major Reddit forums like r/investing, r/stocks, and r/wallstreetbets produce higher returns but much higher risk, resulting in poor risk-adjusted performance and no meaningful long-term alpha. However, when evaluated through cumulative prospect theory, the Reddit portfolio appears more attractive than the market, suggesting that investors drawn to meme-stock style, lottery-like payoffs may find these recommendations appealing despite their unfavorable traditional risk-return profile.
+
+% \section{Sector Classification}
+% \label{section:sector_classification}
+
+% \cite{136d2} classifies German Industrical Sectors from German Textual Data. they rely on german industrical classification WZ08, de forma semelhante ao GICS, com industria e sub-industrias. eles usam keywords descritivas dos setores, juntamente com dados da wikipedia e job applications, com labels feitas manualmente, como dados de treino e teste. usaram over-sample de classes minoritarias e under-sample de maioritarias para chegar a um threshold de equilibrio. depois treinam e usam BERT-based models, nomedamente bert-base-german-cased e agne/jobBERT-de. tanto a classificacao de dados de descricoes de setores como da wikipedia tiveram bons resultados (acuracias superiores a 95\%), mas nenhum dos modelos foi capaz de classificar de forma satifisatoria as job-applications (acuracia de 72\%).
+
+% \cite{bab42} classifica artigos legais com base em 6 setores industriais, tendo estes setores sido escolhidos por serem os mais populares (representando aproximandamente 78\%) nos artigos legais em análise, nomeadamente, Financial Services, Health, Techonology, Property, Energy and Insurance. Estes setores, acabam por representar um pequeno subconjunto dos setores GICS. Algumas coorrencias de setores acontecem nor artigos, apesar de raras (~12\%). Quanto à metodologia, as features são baseadas no texto do artigo (tf-idf) e no tópico do mesmo (word2vec), sendo este provided pelo editor do artigo. Os modelos de ML usados foram XGB, CBT, RF and LR e CNNs, etc., havendo uma feature selection com base na importancia das features e tbm é posta em pratica 10-fold cross validation para evitar overfitting. Os resultados apresentam de maneira geral, para todos os modelos, um F1-score médio a rondar os 82\%, com um destaque para o modelo RGF, sendo, de forma não muito significativa, superior com todas as features e com features selecionadas.
+
+% \cite{558b2} conducts a comprehensive comparative analysis of various natural language processing (NLP) models for the task of automatic classification of publicly traded companies into Global Industry Classification Standard (GICS) sectors, based on their textual descriptions. The classification is performed at the sector level, encompassing 11 distinct categories defined by GICS. The primary dataset used in this study is sourced from the Wharton Research Data Services (WRDS), which provides textual business descriptions of publicly traded companies. The main models evaluated include a zero-shot classifier based on the {valhalla/distilbart-mnli-12-3}, a supervised multi-class classifier comparing BERT-base-uncased and RoBERTa-base models, and a One-vs-Rest (OvR) setup with models such as support vector machines. For zero-shot classification, the authors improve baseline performance by enriching the label prompts with TF-IDF keywords representing each sector. They also explore synthetic data generated with ChatGPT to simulate low-resource settings and assess model robustness. In terms of results, the OvR model with {all-mpnet-base-v2} embeddings and RBF kernel achieves the highest performance, with a weighted F1-score of 0.80. The multi-class classifier performs similarly with also a F1 score of 0.80, which represents the highest across all experiments. The zero-shot model reaches about 0.64 F1 after prompt enrichment, up from 0.56 without it. Removing company names from input texts lowers performance across all models, showing that named entities carry useful signals. Models trained on synthetic ChatGPT data perform modestly, suggesting potential for augmentation but not full substitution of real data (ainda tem mais conteudo se for preciso).
+
+% \cite{66128} focus in uncover hidden risk factors through text analysis. It applies the dynamic variant of the Latent Dirichlet allocation LDA, to annual and quarterlu reports of companies to find a topic distribution for each stock. This is then interpreted as the risk factor partition and is then transformed into a standart pure risk factors. They say: It is remarkable that these implicit indices mirror to a large degree artificially constructed indices created using explicit methodologies. It thus allow us to create a more realistic image of the changing industrial structure. (melhorar e tentar rever no q nos interessa, nomeadamente o usar LDA para classificar setores)
+
+\section{Hypotheses}
+\label{sec:sota_hypothesis}
+
+Building on the literature reviewed, four hypotheses are formulated to guide the empirical investigation of this study. These hypotheses address the comparative performance of different portfolio optimization paradigms, the incremental value of NLP-derived sentiment features, the distinct contributions of news and social media sentiment, and the potential complementarity of combining multiple sentiment sources.
+
+\paragraph{H\textsubscript{1}: Absence of a dominant optimization paradigm} No single portfolio optimization paradigm consistently outperforms all others across evaluation metrics. Each framework is expected to exhibit similar performance in terms of risk-adjusted returns, with differences in risk-return profiles reflecting the inherent trade-offs and assumptions of each approach. This hypothesis is supported as the literature on portfolio optimization does not show a clear consensus on a state-of-the-art approach.
+
+\paragraph{H\textsubscript{2}: Incremental value of NLP-derived sentiment} NLP-derived sentiment features provide incremental value over technical market features alone in GICS sector ETF portfolio optimization, as measured by out-of-sample Sharpe ratio. While the literature consistently documents sentiment-driven performance gains across diverse asset classes~\cite{e6ca3, de270, 0f204}, evidence at the sector ETF level remains scarce, making this the central empirical question of the study.
+
+%\paragraph{H\textsubscript{3}: Differential contribution of news and social media sentiment} News- and social media-derived sentiment are expected to contribute to portfolio performance in qualitatively distinct ways, with news sentiment primarily enhancing risk control, manifested in lower volatility and shallower drawdowns, while social media sentiment is more likely to drive return generation at the expense of higher risk exposure. This asymmetry stems from structural differences between the two sources: institutional news content is generally more conservative, contextually grounded, and informative regarding fundamental developments~\cite{93d76, 0f204}, whereas social media environments are characterized by speculative behavior, retail investor herding, and heightened short-term reactivity~\cite{cc28c, 34309}. Consequently, these sources are likely to encode different types of market-relevant information, leading to qualitatively distinct effects when incorporated into portfolio optimization models.
+% \paragraph{H\textsubscript{3}: Differential contribution of news and social media sentiment} News- and social media-derived sentiment are expected to contribute to portfolio performance in qualitatively distinct ways. This potential asymmetry may arise from structural differences between the two sources: institutional news content is generally more conservative, contextually grounded, and informative regarding fundamental developments~\cite{93d76, 0f204}, whereas social media environments are characterized by speculative behavior, retail investor herding, and heightened short-term reactivity~\cite{cc28c, 34309}. As a result, these sources may encode different types of market-relevant information, which could lead to distinct effects when incorporated into portfolio optimization models.
+\paragraph{H\textsubscript{3}: Differential contribution of news and social media sentiment} News- and social media-derived sentiment contribute to portfolio performance in qualitatively distinct ways resulting from structural differences between the two sources: institutional news content is generally more conservative, contextually grounded, and informative regarding fundamental developments~\cite{93d76, 0f204}, whereas social media environments are characterized by speculative behavior, retail investor herding, and heightened short-term reactivity~\cite{cc28c, 34309}. As a result, these sources encode different types of market-relevant information, leading to distinct effects when incorporated into portfolio optimization models.
+
+\paragraph{H\textsubscript{4}: Complementarity of combined sentiment sources} Combining news and social media sentiment yields a risk-return profile superior to either source in isolation. Following directly from H\textsubscript{3}, if the two sources encode distinct market-relevant information, their fusion should therefore improve both the return and risk dimensions of portfolio performance.%, exhibiting lower downside risk than the social media-only model and higher returns than the news-only model

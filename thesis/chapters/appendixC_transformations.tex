@@ -1,0 +1,275 @@
+\chapter{Feature Engineering and Preprocessing}
+\label{chap:features_transformations}
+
+
+\begin{introduction}
+This appendix documents the details of the feature engineering and transformation processes applied to all technical and sentiment-based features used as inputs to the portfolio optimization frameworks. The specific transformations applied to each variable are described, along with the rationale for their selection based on statistical properties and economic interpretation.
+\end{introduction}
+
+
+The choice of feature transformations is particularly important given the learning frameworks adopted in this work, namely Proximal Policy Optimization (PPO) for reinforcement learning and recurrent neural networks based on Long Short-Term Memory (LSTM) architectures. These models are known to be sensitive to the scale, distribution, and temporal stability of input features. In particular, PPO relies on stable gradient updates and well-behaved state representations, while LSTMs require consistent input distributions over time to effectively capture temporal dependencies. Features with heavy tails, non-stationary levels, or inconsistent scaling can lead to unstable training dynamics, poor convergence, or suboptimal policy learning \cite{8944624, engstrom2020implementationmattersdeeppolicy}.
+
+Rather than applying a single global normalization to all features, this work adopts a feature-specific transformation strategy: each variable is transformed according to its statistical properties and economic interpretation \cite{tran2021bilinearinputnormalizationneural, e23111546, cucuringu2025forecastingintradayvolumeequity}. All transformation parameters are estimated exclusively on the training split and then applied to the validation and test splits without re-estimation, ensuring no look-ahead bias.
+
+As part of the transformation process, all features, unless otherwise mentioned, are standardized using a robust $z$-score incorporating winsorization to mitigate the influence of outliers. Values are first clipped at the 1st and 99th percentiles of the training distribution, then standardized via median and median absolute deviation (MAD):
+\[
+    x' = \text{clip}(x,\,\hat{q}_{0.01},\,\hat{q}_{0.99}), \qquad
+    z = \frac{x' - \widetilde{x}}{1.4826\cdot\widetilde{|x' - \widetilde{x}|}},
+\]
+where $\widetilde{x}$ is the sample median and $1.4826$ makes the MAD a consistent estimator of $\sigma$ under normality. This robust approach is preferred over mean/standard-deviation normalization given the heavy tails and extreme values common in financial data.
+
+
+\section{Technical Features}
+\label{sec:features_technical}
+
+This section describes the set of technical features derived from market price and volume data, based on the reviewed literature \cite{339f6, 93d76, 9c443, 03d81, a2e88, 0df79, ALOMARI2024210}. Unless stated otherwise in the individual descriptions below, all features are subject to the robust $z$-score transformation described above prior to being passed as model inputs. Table~\ref{tab:appC_technical} summarizes each feature alongside its computation and transformation rationale.
+
+The notation used throughout is as follows. $P_t$ denotes the adjusted closing price on day $t$; $O_t$, $H_t$, $L_t$ denote the adjusted open, high, and low prices on day $t$; $V_t$ denotes the daily traded volume; $\overline{x}_{[w]}$ denotes the simple moving average of $x$ over a window of $w$ trading days; and $\mathrm{EWM}(x, s)$ denotes an exponential weighted moving average with span $s$.
+
+\begin{longtable}{@{}p{3.7cm} p{11.3cm}@{}}
+\caption{Summary of technical features: definitions, formulas, and preprocessing transformations.}
+\label{tab:appC_technical} \\
+\toprule
+\textbf{Feature} & \textbf{Computation / Transformation} \\
+\midrule
+\endfirsthead
+\multicolumn{2}{c}{\footnotesize\textit{(continued)}} \\
+\toprule
+\textbf{Feature} & \textbf{Computation / Transformation} \\
+\midrule
+\endhead
+\bottomrule
+\multicolumn{2}{r}{\footnotesize\textit{(continued on next page)}} \\
+\endfoot
+\bottomrule
+\endlastfoot
+
+\multicolumn{2}{@{}l}{\small\textit{--- Price ---}} \\[2pt]
+
+\texttt{Close}
+& One-day logarithmic return of the adjusted closing price:
+  \[r_t = \log\!\left(\frac{P_t}{P_{t-1}}\right)\]
+  Captures daily relative price changes rather than absolute levels, while removing non-stationarity inherent in raw prices. \\[10pt]
+
+\multicolumn{2}{@{}l}{\small\textit{--- OHLC ---}} \\[2pt]
+
+\texttt{Open}
+& Logarithmic ratio of adjusted open to adjusted close:
+  \[\log\!\left(\frac{O_t}{P_t}\right)\]
+  Expresses the opening price as a deviation from the day's close, removing price-level effects. \\[6pt]
+
+\texttt{High}
+& Logarithmic ratio of adjusted high to adjusted close:
+  \[\log\!\left(\frac{H_t}{P_t}\right)\]
+  Captures the intraday upside range relative to the closing price. \\[6pt]
+
+\texttt{Low}
+& Logarithmic ratio of adjusted low to adjusted close:
+  \[\log\!\left(\frac{L_t}{P_t}\right)\]
+  Captures the intraday downside range relative to the closing price. \\[10pt]
+
+\multicolumn{2}{@{}l}{\small\textit{--- Trend ---}} \\[2pt]
+
+\texttt{5d\_SMA}
+& Logarithmic ratio of closing price to its 5-day simple moving average:
+  \[\log\!\left(\frac{P_t}{\overline{P}_{[5]}}\right)\]
+  A positive value indicates the price is above its recent short-term average (bullish). \\[6pt]
+
+\texttt{22d\_SMA}
+& Logarithmic ratio of closing price to its 22-day simple moving average:
+  \[\log\!\left(\frac{P_t}{\overline{P}_{[22]}}\right)\]
+  Approximately one-month trend deviation. \\[6pt]
+
+\texttt{63d\_SMA}
+& Logarithmic ratio of closing price to its 63-day simple moving average:
+  \[\log\!\left(\frac{P_t}{\overline{P}_{[63]}}\right)\]
+  Approximately one-quarter trend deviation. \\[6pt]
+
+\texttt{126d\_SMA}
+& Logarithmic ratio of closing price to its 126-day simple moving average:
+  \[\log\!\left(\frac{P_t}{\overline{P}_{[126]}}\right)\]
+  Approximately one-semester trend deviation. \\[6pt]
+
+\texttt{252d\_SMA}
+& Logarithmic ratio of closing price to its 252-day simple moving average:
+  \[\log\!\left(\frac{P_t}{\overline{P}_{[252]}}\right)\]
+  Approximately one-year trend deviation. \\[6pt]
+
+\texttt{MACD}
+& Difference between a 12-day and a 26-day exponential moving average of the closing price:
+  \[\mathrm{EWM}(P, 12) - \mathrm{EWM}(P, 26)\]
+  Captures momentum shifts via the convergence and divergence of two trend-following averages. This feature also appears in the momentum group owing to its sensitivity to recent price changes. \\[6pt]
+
+\texttt{ADX}
+& Average Directional Index with period 14, computed using TA-Lib\footnote{\url{https://ta-lib.org}}. Measures the strength of a price trend regardless of direction, ranging from 0 (no trend) to 100 (strong trend). As ADX is defined on $[0,100]$ and is empirically well-distributed over that range, it is linearly rescaled to $[-1,1]$ via $x' = (x - 50)/50$ instead of the robust $z$-score. \\[10pt]
+
+\multicolumn{2}{@{}l}{\small\textit{--- Momentum ---}} \\[2pt]
+
+\texttt{RSI}
+& Relative Strength Index with period 14:
+  \[\mathrm{RSI} = 100 - \frac{100}{1 + \mathrm{RS}},\]
+  where $\mathrm{RS}$ is the ratio of mean gains to mean losses over 14 days. Values above 70 typically indicate overbought conditions, and values below 30 indicate oversold. As RSI is defined on $[0,100]$ by construction and is empirically well-distributed over that range, it is linearly rescaled to $[-1,1]$ via $x' = (x - 50)/50$ instead of the robust $z$-score. \\[6pt]
+
+\texttt{MACD}
+& Moving Average Convergence Divergence, as defined in the trend group above, is also listed here as a momentum indicator. Its dual classification reflects the fact that MACD simultaneously tracks the direction of the trend and its rate of change, making it sensitive to both medium-term trends and short-term momentum shifts. \\[6pt]
+
+\texttt{CCI}
+& Commodity Channel Index with period 14:
+  \[\mathrm{CCI} = \frac{M_t - \overline{M}_{[14]}}{0.015 \cdot \mathrm{MAD}(M, 14)},\]
+  where $M_t = (H_t + L_t + P_t)/3$ is the typical price. Measures how far the price is from its statistical mean. Although CCI has conventional thresholds at $\pm100$, it is unbounded in practice and can reach extreme values. \\[10pt]
+
+\multicolumn{2}{@{}l}{\small\textit{--- Volume ---}} \\[2pt]
+
+\texttt{Volume}
+& Daily total traded volume $V_t$. Due to the heavy-tailed and large-magnitude nature of raw volume, a signed logarithmic compression is applied first: $x'' = \mathrm{sign}(x)\,\log(1+|x|)$, which reduces skew while preserving the sign and handling zero values. The compressed values are then standardized with the robust $z$-score. \\[6pt]
+
+\texttt{OBV}
+& On-Balance Volume. Cumulates volume in the direction of daily price movement:
+  \[\mathrm{OBV}_t = \mathrm{OBV}_{t-1} + \begin{cases} V_t & \text{if } P_t > P_{t-1} \\ -V_t & \text{if } P_t < P_{t-1} \\ 0 & \text{otherwise} \end{cases}\]
+  Reflects buying and selling pressure via volume flow. As with raw volume, signed logarithmic compression ($x'' = \mathrm{sign}(x)\,\log(1+|x|)$) is applied before the robust $z$-score to handle the large cumulative magnitudes. \\[6pt]
+
+\texttt{ADI}
+& Accumulation/Distribution Indicator represented using the Chaikin Oscillator (fast/slow EMA periods 3/10), computed with TA-Lib. The indicator combines price range and trading volume to estimate buying and selling pressure. Signed logarithmic compression ($x'' = \mathrm{sign}(x)\,\log(1+|x|)$) is applied before the robust $z$-score to manage the skewed distribution of the series. \\[6pt]
+
+\texttt{Volume\_PctChange}
+& Day-over-day percentage change in trading volume:
+  \[\frac{V_t - V_{t-1}}{V_{t-1}}\]
+  Captures sudden surges or drops in market participation. Signed logarithmic compression ($x'' = \mathrm{sign}(x)\,\log(1+|x|)$) is applied before the robust $z$-score to reduce the influence of extreme spikes common in volume percentage changes. \\[10pt]
+
+\multicolumn{2}{@{}l}{\small\textit{--- Volatility ---}} \\[2pt]
+
+\texttt{BBUpper} \& \texttt{BBLower}
+& Upper and lower Bollinger Bands with a 20-day simple moving average and a bandwidth of $\pm 2$ standard deviations:
+  \[\mathrm{BB}_{\mathrm{upper/lower}} = \overline{P}_{[20]} \pm 2\,\sigma_{[20]}\]
+  Each band is used as a separate feature. They indicate price extremes relative to recent volatility. \\[6pt]
+
+\texttt{5d\_Vol}
+& Rolling standard deviation of adjusted closing prices over 5 trading days:
+  \[\sigma_{[5]} = \sqrt{\frac{1}{5}\sum_{i=0}^{4}(P_{t-i} - \overline{P}_{[5]})^2}\]
+  Short-term realized volatility proxy. \\[6pt]
+
+\texttt{22d\_Vol}
+& Rolling standard deviation of adjusted closing prices over 22 trading days ($\approx$1 month). \\[6pt]
+
+\texttt{63d\_Vol}
+& Rolling standard deviation of adjusted closing prices over 63 trading days ($\approx$1 quarter). \\[6pt]
+
+\texttt{Vol\_Ratio}
+& Ratio of 63-day to 22-day realized volatility:
+  \[\frac{\sigma_{[63]}}{\sigma_{[22]}}\]
+  Values above 1 indicate that long-term volatility exceeds short-term volatility, suggesting a calming recent regime, and values below 1 indicate a recently elevated volatility regime. \\[10pt]
+
+\multicolumn{2}{@{}l}{\small\textit{--- Market ---}} \\[2pt]
+
+\texttt{VIX\_Close}
+& Daily logarithmic return of the CBOE Volatility Index closing level:
+  \[\log\!\left(\frac{\mathrm{VIX}_t}{\mathrm{VIX}_{t-1}}\right)\]
+  The VIX is derived from S\&P~500 options and reflects implied 30-day volatility. Using log returns rather than the raw level removes the non-stationarity of the index and captures changes in market-wide risk perception. \\[6pt]
+
+\bottomrule
+\end{longtable}
+
+
+\section{Sentiment-Based Features}
+\label{sec:features_sentiment}
+
+This section describes the set of sentiment-based features derived from each of the two external sources, GDELT and Reddit. For each asset and each day, sentiment features are computed independently per source, yielding two parallel sets of the features described below. The robust $z$-score transformation described at the outset of this appendix is applied to all features prior to model input, with the sole exception being \texttt{is\_missing}, a binary indicator passed to the model without any transformation. Table~\ref{tab:appC_sentiment} summarizes each feature alongside its computation and transformation rationale.
+
+The notation used throughout is as follows. $\mathcal{D}_t$ denotes the set of documents for a given asset on day $t$ passing the confidence threshold; $\#\mathrm{Pos}_t = |\{d \in \mathcal{D}_t : \hat{y}_d = \mathrm{pos}\}|$ and $\#\mathrm{Neg}_t = |\{d \in \mathcal{D}_t : \hat{y}_d = \mathrm{neg}\}|$ denote the count of positively and negatively classified documents; $c_d^{+}$ and $c_d^{-}$ denote the positive and negative confidence scores of document $d$; and $N_t = \#\mathrm{Pos}_t + \#\mathrm{Neg}_t$ is the total count of polar documents for day $t$.
+
+\begin{longtable}{@{}p{3.7cm} p{11.3cm}@{}}
+\caption{Summary of sentiment features: definitions, aggregation logic, and preprocessing transformations.}
+\label{tab:appC_sentiment} \\
+\toprule
+\textbf{Feature} & \textbf{Computation / Transformation} \\
+\midrule
+\endfirsthead
+\multicolumn{2}{c}{\footnotesize\textit{(continued)}} \\
+\toprule
+\textbf{Feature} & \textbf{Computation / Transformation} \\
+\midrule
+\endhead
+\bottomrule
+\multicolumn{2}{r}{\footnotesize\textit{(continued on next page)}} \\
+\endfoot
+\bottomrule
+\endlastfoot
+
+\multicolumn{2}{@{}l}{\small\textit{--- Live (current-day sentiment) ---}} \\[2pt]
+
+\texttt{balance}
+& Net confidence-weighted sentiment signal:
+  \[\mathrm{balance}_t = \sum_{d \in \mathcal{D}_t} c_d^{+} - \sum_{d \in \mathcal{D}_t} c_d^{-}\]
+  Large positive values indicate strong bullish sentiment, and negative values indicate bearish sentiment. Robust $z$-score is applied to center and scale the distribution. \\[6pt]
+
+\texttt{balance\_ratio}
+& Normalized net sentiment:
+  \[\mathrm{BR}_t = \begin{cases} \dfrac{\#\mathrm{Pos}_t - \#\mathrm{Neg}_t}{N_t} & \text{if } N_t > 0 \\ 0 & \text{otherwise} \end{cases}\]
+  Represents the directional imbalance between positive and negative documents, independent of total volume. Bounded in $[-1,1]$ by construction, but empirically concentrated near zero, so robust $z$-score is applied to center and scale the observed variation. \\[6pt]
+
+\texttt{countPos}
+& Number of documents classified as positive above the confidence threshold:
+  \[\#\mathrm{Pos}_t\]
+  Reflects the absolute bullish activity volume for the asset on day $t$. \\[6pt]
+
+\texttt{countNeg}
+& Number of documents classified as negative above the confidence threshold:
+  \[\#\mathrm{Neg}_t\]
+  Reflects the absolute bearish activity volume for the asset on day $t$. \\[6pt]
+
+\texttt{ratioPos}
+& Fraction of polar documents classified as positive:
+  \[\mathrm{ratioPos}_t = \begin{cases} \dfrac{\#\mathrm{Pos}_t}{N_t} & \text{if } N_t > 0 \\ 0 & \text{otherwise} \end{cases}\]
+  Bounded in $[0,1]$ by construction, complemented by \texttt{ratioNeg}. As with \texttt{balance\_ratio}, robust $z$-score is applied because the empirical distribution is heavily concentrated near zero rather than spread uniformly over $[0,1]$. \\[6pt]
+
+\texttt{ratioNeg}
+& Fraction of polar documents classified as negative:
+  \[\mathrm{ratioNeg}_t = \begin{cases} \dfrac{\#\mathrm{Neg}_t}{N_t} & \text{if } N_t > 0 \\ 0 & \text{otherwise} \end{cases}\]
+  Bounded in $[0,1]$ by construction, complemented by \texttt{ratioPos}. Same transformation rationale as \texttt{ratioPos}. \\[10pt]
+
+\multicolumn{2}{@{}l}{\small\textit{--- Historical (lagged and rolling sentiment) ---}} \\[2pt]
+
+\texttt{BR\_Rolling3}
+& 3-day rolling mean of the daily balance ratio:
+  \[\frac{1}{3}\sum_{k=0}^{2}\mathrm{BR}_{t-k}\]
+  Short-term persistence of sentiment over the past three trading days, capturing weekend and holiday sentiment that would otherwise be excluded from the live indicator. \\[6pt]
+
+\texttt{BR\_Rolling5}
+& 5-day rolling mean of the daily balance ratio:
+  \[\frac{1}{5}\sum_{k=0}^{4}\mathrm{BR}_{t-k}\]
+  Medium-term sentiment trend over approximately one trading week. \\[6pt]
+
+\texttt{BR\_Rolling22}
+& 22-day rolling mean of the daily balance ratio:
+  \[\frac{1}{22}\sum_{k=0}^{21}\mathrm{BR}_{t-k}\]
+  Approximate monthly sentiment trend, capturing longer-term sentiment patterns. \\[6pt]
+
+\texttt{BR\_Lag1}
+& Balance ratio lagged by one trading day:
+  \[\mathrm{BR}_{t-1}\]
+  Provides the most recent prior-day sentiment signal. \\[6pt]
+
+\texttt{BR\_Lag5}
+& Balance ratio lagged by five trading days:
+  \[\mathrm{BR}_{t-5}\]
+  Captures the sentiment state from one trading week prior. \\[6pt]
+
+\texttt{BR\_Var1}
+& Day-over-day change in the balance ratio:
+  \[\mathrm{BR}_t - \mathrm{BR}_{t-1}\]
+  Reflects short-term momentum or reversal in sentiment. \\[6pt]
+
+\texttt{BR\_Var5}
+& Five-day change in the balance ratio:
+  \[\mathrm{BR}_t - \mathrm{BR}_{t-5}\]
+  Medium-term directional shift in sentiment over one trading week. \\[10pt]
+
+\multicolumn{2}{@{}l}{\small\textit{--- Availability ---}} \\[2pt]
+
+\texttt{is\_missing}
+& Binary indicator for missing source data on day $t$:
+  \[\mathrm{is\_missing}_t = \begin{cases} 1 & \text{if no source data available} \\ 0 & \text{otherwise} \end{cases}\]
+  No transformation is applied. The feature is passed to the model as a binary input directly, allowing it to distinguish genuine neutral sentiment from days with absent coverage. \\[6pt]
+
+\bottomrule
+\end{longtable}

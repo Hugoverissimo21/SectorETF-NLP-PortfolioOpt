@@ -1,0 +1,143 @@
+\chapter{GDELT Filtering Inputs}
+
+
+\begin{introduction}
+This appendix documents the inputs to the sector-level filtering procedure applied to the GDELT GKG dataset, as described in Section~\ref{subsec:gdelt_data}. It reports the term-based dictionaries used to identify sector-relevant news content and the source-level filters used to restrict the corpus to U.S.-based outlets.
+\end{introduction}
+
+
+As discussed in Section~\ref{subsec:gdelt_data}, the GDELT GKG dataset contains a vast volume of news data, necessitating systematic filtering to both extract sector-specific financial information and substantially reduce the volume of data processed, thereby limiting the associated computational burden. The filtering procedure consists of two main steps, the outputs of which fully determine the sector classification process:
+
+\paragraph{Term-based filtering} This step involves constructing dictionaries of sector-relevant terms. Candidate terms were generated using large language models (LLMs), which produced up to ten representative terms for each GICS sub-industry description\footnote{\url{https://www.msci.com/documents/1296102/29559863/GICS_structure_and_definitions_effective_close_of_March_17_2023.xlsx}}. These terms were subsequently lemmatized and aggregated at the sector level. The 30 most frequent lemmas per sector were retained as filtering terms, as they capture the core semantic content associated with each sector in the GDELT quotations. The final set of filtering terms is reported in Table~\ref{tab:per_sector_filter_words}.
+
+\paragraph{Source-level filtering} This step involves identifying news sources with substantial coverage of U.S. financial markets. A random 10\% sample of the GDELT GKG dataset was used to compute the frequency of sector-relevant news items by source. Sources were then ranked according to their contribution to sector-specific coverage, and only those cumulatively accounting for approximately 10\% of total sector-related news volume were retained. The resulting source lists are reported in Table~\ref{tab:per_sector_filter_sources}.
+
+
+\begin{longtable}{@{}p{2.5cm} | p{12.6cm}@{}}
+\caption{Sector-specific filtering terms. The table reports the 30 lemmatized keywords used to identify sector-relevant news content in the GDELT GKG dataset, following the procedure described in Section~\ref{subsec:gdelt_data}. Filtering is applied to the \texttt{Quotations} field after lemmatization.}
+\label{tab:per_sector_filter_words} \\
+
+\toprule
+\textbf{Sector} & \textbf{Words} \\
+\midrule
+\endfirsthead
+
+\multicolumn{2}{c}{\footnotesize\textit{(continued)}} \\
+\toprule
+\textbf{Sector} & \textbf{Words} \\
+\midrule
+\endhead
+
+\midrule
+\multicolumn{2}{r}{\footnotesize\textit{(continued on next page)}} \\
+\endfoot
+
+\bottomrule
+\endlastfoot
+
+Energy
+& gas, oil, service, well, energy, equipment, fuel, rig, product, consumable, contractor, supply, completion, crude, shipping, coal, mining, production, commodity, reserve, price, environment, regulation, generation, steel, metallurgy, exploration, refine, marketing, transportation \\
+
+Materials
+& mining, chemical, gold, metal, product, production, industrial, container, material, extraction, gas, silver, industry, ore, packaging, paint, copper, resource, diversify, wood, investment, glass, paper, cardboard, specialty, coal, commodity, plastic, fiber, mineral \\
+
+Industrials
+& service, equipment, industrial, construction, heavy, industry, management, machinery, business, air, transportation, security, electrical, passenger, commercial, support, power, office, freight, cargo, build, control, electronic, product, agricultural, travel, component, medium, wire, space \\
+
+Consumer $\ $ Discretionary
+& home, retail, service, consumer, store, product, food, auto, appliance, manufacturer, part, footwear, car, vehicle, electronic, improvement, sale, supply, automotive, education, sport, household, residential, accessory, fashion, game, online, shoe, tool, garden \\
+
+Consumer $\ $ Staples
+& food, product, beverage, retail, store, household, beer, distribution, wholesale, care, production, consumer, supply, grocery, paper, staple, dairy, beauty, personal, tobacco, market, crop, liquor, malt, spirit, competition, distributor, chain, water, drink \\
+
+Health Care
+& care, health, service, healthcare, it, medical, product, support, supply, equipment, device, drug, provider, hospital, facility, software, research, genetic, patient, lab, pharmacy, system, eye, datum, clinical, trial, manage, plan, therapeutic, development \\
+
+Financials
+& insurance, service, bank, financial, mortgage, banking, investment, corporate, management, diversify, brokerage, commercial, health, security, fund, loan, regional, custody, fee, asset, credit, finance, travel, money, risk, underwriting, claim, policy, stake, life \\
+
+Information Technology
+& software, electronic, equipment, service, technology, infrastructure, system, business, information, datum, it, semiconductor, solar, cloud, component, industry, network, outsource, process, manufacturer, consulting, management, power, computer, application, consumer, market, communication, automation, circuit \\
+
+Communication Services
+& service, medium, content, interactive, network, transmission, distribution, entertainment, digital, cable, provider, radio, home, educational, print, company, business, datum, television, programming, station, satellite, sub, internet, video, subscription, telecommunication, mobile, software, platform \\
+
+Utilities
+& energy, power, gas, water, utility, distribution, infrastructure, market, generation, transmission, nuclear, renewable, electricity, producer, solar, pipeline, trading, risk, merchant, independent, fuel, maintenance, diversify, geothermal, wind, treatment, demand, grid, regulation, deregulation \\
+
+Real Estate
+& real, estate, property, reit, development, management, market, type, company, commercial, office, industrial, service, investment, housing, center, income, asset, trust, residential, rental, sale, leasing, healthcare, distribution, land, project, broker, appraiser, brokerage \\
+
+\bottomrule
+\end{longtable}
+
+
+
+\begin{longtable}{@{}p{2.5cm} | p{12.6cm}@{}}
+\caption{Sector-specific news sources. The table reports the complete list of sources retained for each sector after applying the source-level filtering procedure described in Section~\ref{subsec:gdelt_data}. Source names correspond to the \texttt{SourceCommonName} field in the GDELT GKG dataset.}
+\label{tab:per_sector_filter_sources} \\
+
+\toprule
+\textbf{Sector} & \textbf{Sources} \\
+\midrule
+\endfirsthead
+
+\multicolumn{2}{c}{\footnotesize\textit{(continued)}} \\
+\toprule
+\textbf{Sector} & \textbf{Sources} \\
+\midrule
+\endhead
+
+\midrule
+\multicolumn{2}{r}{\footnotesize\textit{(continued on next page)}} \\
+\endfoot
+
+\bottomrule
+\endlastfoot
+
+Energy
+& yahoo.com, msn.com, iheart.com, gwdtoday.com, prnewswire.com, reuters.com, 4-traders.com, forbes.com, jdsupra.com, thevillagessuntimes.com, marketwatch.com, washingtonpost.com, lidtime.com, prweb.com \\
+
+Materials
+& yahoo.com, prnewswire.com, msn.com, openpr.com, iheart.com, 4-traders.com, marketwatch.com, reuters.com \\
+
+Industrials
+& yahoo.com, msn.com, iheart.com, prnewswire.com, reuters.com, 4-traders.com, openpr.com, jdsupra.com, gwdtoday.com \\
+
+Consumer $\ $ Discretionary
+& yahoo.com, iheart.com, msn.com, euronews.com, prnewswire.com, gwdtoday.com, 4-traders.com, reuters.com, forbes.com, jdsupra.com, thevillagessuntimes.com \\
+
+Consumer $\ $ Staples
+& yahoo.com, openpr.com, msn.com, prnewswire.com, iheart.com, marketwatch.com, 4-traders.com \\
+
+Health Care
+& yahoo.com, iheart.com, msn.com, reuters.com, prnewswire.com, washingtonpost.com, thevillagessuntimes.com, foxnews.com, euronews.com, nytimes.com, forbes.com, sfgate.com, lidtime.com, 4-traders.com, go.com, fait-religieux.com, breitbart.com, chron.com \\
+
+Financials
+& yahoo.com, msn.com, iheart.com, prnewswire.com, reuters.com, 4-traders.com, jdsupra.com, marketwatch.com, washingtonpost.com, gwdtoday.com, forbes.com, thevillagessuntimes.com, tmcnet.com \\
+
+Information Technology
+& yahoo.com, iheart.com, msn.com, prnewswire.com, openpr.com, reuters.com, marketwatch.com, 4-traders.com, washingtonpost.com, thevillagessuntimes.com, forbes.com, foxnews.com \\
+
+Communication Services
+& yahoo.com, iheart.com, msn.com, prnewswire.com, gwdtoday.com \\
+
+Utilities
+& yahoo.com, openpr.com, msn.com, prnewswire.com, reuters.com, marketwatch.com, iheart.com, 4-traders.com \\
+
+Real Estate
+& yahoo.com, prnewswire.com, msn.com, openpr.com, iheart.com, 4-traders.com, marketwatch.com, reuters.com \\
+
+\bottomrule
+\end{longtable}
+
+
+
+
+
+
+
+
+
+
+

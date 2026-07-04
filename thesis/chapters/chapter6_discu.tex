@@ -1,0 +1,206 @@
+\chapter{Discussion}
+\label{chapter:discussion}
+
+
+\begin{introduction}
+\begin{flushright}
+``Gotta pump those numbers up. Those are rookie numbers.''
+\end{flushright}
+
+\vspace{0.5em}
+
+% This chapter interprets and contextualizes the empirical results of Chapter~\ref{chapter:empirical_results}. An intra-study analysis first compares frameworks and sentiment variants against one another, evaluating each of the four study hypotheses. An inter-study analysis then benchmarks the configurations against comparable works in the literature. The chapter closes with an account of the principal limitations and directions for future research.
+This chapter interprets and contextualizes the empirical results of Chapter~\ref{chapter:empirical_results}. An intra-study analysis first compares frameworks and sentiment variants against one another, evaluating each of the four study hypotheses. An inter-study analysis then benchmarks the configurations against comparable works in the literature. The chapter then reflects on the policy and practical implications of the findings, and closes with an account of the principal limitations and directions for future research.
+\end{introduction}
+
+
+% The empirical results presented in Chapter~\ref{chapter:empirical_results} are only as valuable as the interpretation placed upon them. Their interpretation is therefore critical: it is through discussion that raw performance figures are translated into insight, that the proposed frameworks are evaluated against the hypotheses motivating this work, and that their place within the broader landscape of quantitative portfolio optimization research is established. With this in mind, the discussion is organized into three parts. The intra-study section identifies consistent patterns across models and sentiment variants, examines the return-risk trade-offs that emerge, and evaluates which hypotheses the findings support or refute. The inter-study section then situates the best-performing configurations against comparable works in the literature, revealing how the proposed frameworks behave relative to the state of the art. The chapter closes with an acknowledgment of the principal limitations of this work and the directions they naturally suggest for future research.
+The empirical results presented in Chapter~\ref{chapter:empirical_results} are only as valuable as the interpretation placed upon them. Their interpretation is therefore critical: it is through discussion that raw performance figures are translated into insight, that the proposed frameworks are evaluated against the hypotheses motivating this work, and that their place within the broader landscape of quantitative portfolio optimization research is established. With this in mind, the discussion is organized into four parts. The intra-study section identifies consistent patterns across models and sentiment variants, examines the return-risk trade-offs that emerge, and evaluates which hypotheses the findings support or refute. The inter-study section then situates the best-performing configurations against comparable works in the literature, revealing how the proposed frameworks behave relative to the state of the art. The policy and practical implications section draws on these results to reflect on what they suggest for model development, regulation, and deployment in practice. The chapter closes with an acknowledgment of the principal limitations of this work and the directions they naturally suggest for future research.
+
+
+\section{Intra-Study Results Discussion}
+\label{sec:intra}
+
+To begin the intra-study discussion, it is useful to survey the full performance landscape before examining individual configurations in detail. Fig.~\ref{fig:model_performance_radar} and Table~\ref{tab:combined_metrics} jointly provide this overview, reporting the performance of all portfolio optimization approaches across four evaluation metrics: cumulative return, volatility, Sharpe ratio, and maximum drawdown. The S\&P~500 index is included among the benchmarks as a standard market proxy, owing to its broad representation of the U.S.\ equity market and its direct relationship with the assets under study.
+
+The radar chart (Fig.~\ref{fig:model_performance_radar}) visualizes the full comparison through a normalized representation: min-max scaling is applied across all metrics so that they are on a common scale from 0 to 1. Volatility is negated prior to scaling so for every metric, a higher value corresponds to better performance. The left panel of the figure groups models by sentiment variant, and the right panel groups them by model class.
+
+\begin{figure}[ht]
+    \centering
+    \includegraphics[width=\textwidth]{figs/model_performance_radar.png}
+    \caption{Normalized radar chart comparing EW, S\&P~500 (SP500), MVO--CAPM (MVO), DRL--PPO (PPO), LSTM--BL (BL), and LSTM--SR (SR) approaches across their variants, if applicable (Technical (T), GDELT (G), Reddit (R), and GDELT+Reddit (G+R)), on cumulative return, negated volatility, Sharpe ratio, and maximum drawdown.}
+    \label{fig:model_performance_radar}
+\end{figure}
+
+The tabular comparison (Table~\ref{tab:combined_metrics}) reports the raw metric values for each model and variant, with annotations to highlight the best-performing configurations. The best value per column (variant) is underlined, so the best approach is highlighted, while the best value per row (approach) is bolded, so the best variant is highlighted.
+
+\begin{table}[ht]
+\centering
+\caption{Intra-study performance comparison across approaches and variants for the test period (2023-07-01 to 2025-06-30).}
+\label{tab:combined_metrics}
+\renewcommand{\arraystretch}{1.2}
+\begin{tabular}{|l | c c c c|}
+\hline
+\texttt{approach\textbackslash variant} & \textbf{Technical} & \textbf{GDELT} & \textbf{Reddit} & \textbf{GDELT+Reddit} \\
+\hline\hline
+\multicolumn{5}{|l|}{\textit{Cumulative return} $\uparrow$} \\
+\hline
+EW              & $1.315$                      & --                          & --                               & --      \\
+S\&P~500      & $1.394$                      & --                          & --                               & --      \\
+MVO--CAPM       & $1.380$                      & --                          & --                               & --      \\
+DRL--PPO        & $1.371$                      & $1.424$                     & $1.538$                          & $\underline{\mathbf{1.596}}$ \\
+LSTM--BL        & $1.347$                      & $1.360$                     & $\mathbf{1.481}$                 & $1.416$ \\
+LSTM--SR        & $\underline{1.471}$          & $\underline{1.447}$         & $\underline{\mathbf{1.855}}$     & $1.580$ \\
+\hline\hline
+\multicolumn{5}{|l|}{\textit{Volatility} $\downarrow$} \\
+\hline
+S\&P~500      & $0.161$                      & --                          & --                               & --      \\
+EW              & $\underline{0.137}$          & --                          & --                               & --      \\
+MVO--CAPM       & $0.146$                      & --                          & --                               & --      \\
+DRL--PPO        & $0.147$                      & $\mathbf{0.140}$            & $0.151$                          & $0.162$ \\
+LSTM--BL        & $0.143$                      & $\underline{0.139}$         & $\underline{\mathbf{0.134}}$     & $\underline{0.138}$ \\
+LSTM--SR        & $0.197$                      & $\mathbf{0.164}$            & $0.238$                          & $0.181$ \\
+\hline\hline
+\multicolumn{5}{|l|}{\textit{Sharpe ratio} $\uparrow$} \\
+\hline
+S\&P~500      & $0.803$                      & --                          & --                               & --      \\
+EW              & $0.704$                      & --                          & --                               & --      \\
+MVO--CAPM       & $\underline{0.835}$          & --                          & --                               & --      \\
+DRL--PPO        & $0.809$                      & $\underline{0.976}$         & $1.173$                          & $\underline{\mathbf{1.222}}$ \\
+LSTM--BL        & $0.765$                      & $0.817$                     & $\mathbf{1.164}$                 & $0.967$ \\
+LSTM--SR        & $0.829$                      & $0.907$                     & $\underline{\mathbf{1.212}}$     & $1.081$ \\
+\hline\hline
+\multicolumn{5}{|l|}{\textit{Max drawdown} $\uparrow$} \\
+\hline
+S\&P~500      & $-0.189$                     & --                          & --                               & --       \\
+EW              & $-0.153$                     & --                          & --                               & --       \\
+MVO--CAPM       & $-0.188$                     & --                          & --                               & --       \\
+DRL--PPO        & $-0.152$                     & $\underline{\mathbf{-0.116}}$ & $-0.147$                       & $-0.130$ \\
+LSTM--BL        & $\underline{-0.149}$         & $-0.159$                    & $\underline{\mathbf{-0.097}}$    & $\underline{-0.117}$ \\
+LSTM--SR        & $-0.238$                     & $\mathbf{-0.149}$           & $-0.257$                         & $-0.161$ \\
+\hline
+\end{tabular}
+\caption*{\footnotesize
+Note: Symbols $\uparrow$ and $\downarrow$ indicate the preferred direction of each metric (higher or lower, respectively), and \underline{underline} and \textbf{bold} mark the best approach per variant and the best variant per approach, respectively.
+}
+\end{table}
+
+
+\subsection{Analysis of Variant Performance}
+\label{sec:intra_variant}
+
+Before examining sentiment-augmented configurations, it is instructive to consider the technical-only variant alongside the three classic benchmarks: the equally-weighted portfolio~(EW), the S\&P~500 index, and the mean-variance optimizer with CAPM priors~(MVO--CAPM). As shown in Table~\ref{tab:combined_metrics}, when restricted to price-based signals, the three proposed frameworks perform in a range broadly comparable to these benchmarks, with Sharpe ratios of $0.765$--$0.829$, confirming that technical features alone do not confer a systematic advantage over classical allocation strategies. This serves as a meaningful sanity check and motivates the introduction of sentiment augmentation.
+
+A consistent pattern emerges across all three frameworks: augmenting the technical baseline with any sentiment source improves the Sharpe ratio, thereby supporting the core hypothesis that NLP-derived sentiment features provide incremental value beyond price-based signals. As visible in the left panel of Fig.~\ref{fig:model_performance_radar}, the sentiment-augmented variants (GDELT, Reddit, and GDELT+Reddit) generally extend the polygon outward relative to the Technical variant, with the most pronounced expansions in the Sharpe ratio, cumulative return, and maximum drawdown axes. The nature and magnitude of the improvement, however, depend substantially on the sentiment source, and the gains in return are not always matched by commensurate improvements in risk metrics, mainly due to increased volatility.
+
+\paragraph{GDELT-based (news) sentiment} The GDELT variant excels primarily in risk management. Relative to the technical baseline, it achieves improved or comparable volatility and maximum drawdown across all frameworks while also sustaining moderate but consistent return gains, for example, DRL--PPO improves its cumulative return from $1.371$ to $1.424$ and its Sharpe ratio from $0.809$ to $0.976$. This behavior is consistent with the generally more conservative and contextual nature of institutional news: GDELT-derived signals tend to be less reactive and speculative than social-media content, yielding a lower but more controlled performance uplift. This pattern is observed despite the inherent limitations of GDELT, including its non-financial focus and the use of quotes rather than full articles for sentiment extraction, which may attenuate the signal. The radar chart reflects this profile, with GDELT variants consistently scoring higher on the volatility and maximum drawdown polygons.
+
+\paragraph{Reddit-based (social media) sentiment} The Reddit variant consistently delivers the largest improvements in cumulative return and Sharpe ratio across frameworks, albeit at the cost of higher volatility compared to the GDELT and technical variants in most frameworks. This trade-off is clearly illustrated in the radar chart, where the Reddit dimension extends furthest along both the return and Sharpe axes. The LSTM--SR framework, in particular, exhibits a pronounced increase in returns under Reddit sentiment, but also records the highest volatility and maximum drawdown among all configurations. This performance profile is consistent with the nature of Reddit-derived signals: content from communities such as \texttt{r/wallstreetbets} is characterized by intense engagement, speculative behavior, and potential herding dynamics, which can amplify short-term sector rotation signals while simultaneously introducing noise and elevated tail risk. Accordingly, the Reddit variant can be characterized as the most aggressive configuration examined.
+
+\paragraph{GDELT+Reddit-based (combined) sentiment} The GDELT+Reddit variant occupies an intermediate position: for both LSTM--BL and LSTM--SR, the combined variant achieves improved returns-based metrics (cumulative return, Sharpe ratio) relative to the GDELT variant, while also improving risk-based metrics relative to the Reddit variant, suggesting that the two sentiment sources are complementary rather than redundant. For DRL--PPO, the combined variant achieves an improved Sharpe ratio, the highest across all configurations, of $1.222$, while keeping comparable volatility and drawdown to the remaining variants. The radar chart confirms that the GDELT+Reddit axes is more balanced than either the Reddit or GDELT axes individually, with a more even extension across all four metric dimensions.
+
+\paragraph{Feature selection patterns across frameworks} Examining the selected configurations across the frameworks, no fully robust patterns emerge, but some tendencies are worth noting. The technical feature sets center on OHLC prices, a moving average, RSI, volume, Bollinger Bands, and the VIX, providing a stable price-based foundation, though with some variability across implementations. In the sentiment features, GDELT selections consistently include a historical representative feature (short- to medium-term horizon), suggesting that news sentiment is better captured through its recent trajectory. Reddit selections, by contrast, favor contemporaneous indicators and at most short-term lags, indicating that retail investor sentiment is most informative in the present moment or with minimal delay. Regarding confidence thresholds, news features span the full range (0.00--0.90) with no convergence, while Reddit thresholds cluster around 0.75, suggesting that a moderate confidence filter is more consistently appropriate for social-media content. Taken together, GDELT provides a stabilizing, trajectory-based signal with model-dependent sensitivity to noise, while Reddit contributes a more consistent, level-driven signal anchored in current sentiment dynamics.
+
+\paragraph{Summary} These analyses offer qualitative support for two hypotheses. GDELT primarily drives risk reduction while Reddit primarily drives return enhancement, consistent with the intuition that institutional news content is inherently conservative whereas social media discourse tends toward speculation, suggesting that the two sources make differential contributions to portfolio performance. This distinction is further corroborated by the feature selection patterns: GDELT captures a historical, trajectory-based signal, while Reddit captures a contemporaneous, level-based signal subject to more conservative confidence thresholds to mitigate noise. The combined variant, in turn, exhibits a hybrid risk-return profile relative to the single-source variants, improving drawdown and volatility against Reddit while yielding a stronger Sharpe ratio and higher cumulative return against GDELT, in most frameworks, consistent with the hypothesis that GDELT and Reddit carry distinct and additive informational content rather than redundant signals. Taken together, these findings suggest that integrating multiple sentiment sources yields a more robust and balanced performance profile than relying on any single source, as the complementary strengths of each offset the weaknesses of the other.
+
+
+\subsection{Analysis of Framework Performance}
+\label{sec:intra_framework}
+
+Within the Technical variant, MVO--CAPM achieves the highest Sharpe ratio ($0.835$) alongside one of the lowest volatilities ($0.146$), affirming the effectiveness of mean-variance optimization in a technical-only setting. Nevertheless, performance across all approaches within this variant remains broadly comparable (Table~\ref{tab:combined_metrics}), suggesting the absence of a dominant optimization paradigm, consistent with the stated hypothesis. This observation is further corroborated by the right panel of Fig.~\ref{fig:model_performance_radar}, which seems to reveal only a weakness in the LSTM--SR framework with respect to volatility.
+
+\paragraph{DRL--PPO (reinforcement learning agent)} The DRL--PPO agent achieves the highest overall Sharpe ratio ($1.222$ under the combined GDELT+Reddit variant), a result that may be partly attributed to its superior ability to leverage GDELT-based sentiment signals (consistently recording the best or near-best metrics within that variant compared to the remaining frameworks). It also proves to be the framework that most effectively exploits the incremental information provided by the combined sentiment features. This suggests that its policy learning mechanism is well-suited to integrating noisy, high-dimensional sentiment signals into the decision-making process, naturally treating sentiment as a dynamic market state variable and enabling the agent to learn non-linear, context-dependent responses to sentiment shifts over time.
+
+\paragraph{LSTM--BL (predict-then-optimize)} The two-stage pipeline, in which an ensemble of LSTM models provides return forecasts fed into a Black-Litterman allocation, produces the most conservative results. The Black-Litterman framework's reliance on equilibrium priors acts as a regularizer, dampening the influence of noisy individual forecasts and limiting the impact of any single model's sentiment signal. This conservatism is reflected in the consistently low maximum drawdowns of this class, most notably, LSTM--BL with Reddit-based sentiment achieves a Sharpe ratio of $1.164$, while keeping the best maximum drawdown ($-0.097$) of any configuration. This suggests that the ensemble's diversification benefits, combined with the Black-Litterman framework's risk-averse nature, yield a robust strategy that prioritizes capital preservation over aggressive return-seeking.
+
+\paragraph{LSTM--SR (end-to-end optimization)} Directly optimizing the Sharpe ratio during training, under the Reddit variant, yields the highest overall cumulative return ($1.855$), but also the highest volatility ($0.238$) and maximum drawdown ($-0.257$) across all configurations. This reflects a known risk of ratio-metric optimization: strategies that maximize average risk-adjusted returns can exhibit high variance and suffer during adverse market periods, making the mentioned configuration the most aggressive of those studied.
+
+\paragraph{Summary} The analyses offer partial support for the absence of a dominant paradigm hypothesis. While no single framework achieves consistent superiority across all metrics, confirming that no universal paradigm exists, the picture becomes more nuanced when specific performance dimensions are prioritized. DRL--PPO and LSTM--SR demonstrate a recurring edge in return-related metrics, whereas LSTM--BL proves more reliable in risk control. This suggests that framework dominance is not absolute but rather context-dependent, with different frameworks better aligned with distinct investment objectives, risk tolerances, and investor profiles. Importantly, the complementary nature of these strengths' points toward a broader implication: ensemble or hybrid approaches that strategically integrate multiple frameworks may capture the advantages of each, offering a more robust and adaptive solution than any single paradigm alone.
+
+
+\section{Inter-Study Benchmarking}
+\label{sec:inter}
+
+Comparing portfolio optimization results across independent studies is inherently difficult owing to differences in asset universe, sample period, risk-free rate convention, transaction cost treatment, leverage assumptions, and reported metrics. Rather than abandon cross-study comparison on these grounds, this section applies a structured standardization procedure designed to render comparisons as meaningful as possible. Specifically, only studies covering U.S.\ equity markets were selected so that the S\&P~500 index could serve as a common market reference, only the best-reported models from each paper were retained and only if they outperformed the paper's own benchmarks, and all metric values were converted to percentage deviations relative to the S\&P~500 baseline, a normalization that simultaneously encodes direction of effect and mitigates the distorting influence of differences in sample period. For papers that did not report market-level metrics, the corresponding S\&P~500 statistics were computed from raw index data over the study's sample period using the 1-month U.S.\ Treasury Bill yield as a risk-free rate proxy, consistent with the convention adopted throughout this study. This assumption may slightly overestimate the Sharpe ratios of those studies, as some authors define the risk-free rate as zero.
+
+The resulting comparison is presented in Table~\ref{tab:portfolio_optimization_results}, with columns reporting percentage deviations from the S\&P~500 baseline in annualized return~(AR), Sharpe ratio~(SR), volatility~(VOL), and maximum drawdown~(MDD).
+
+\paragraph{Return-based metrics} The best-performing configurations proposed in this study, in particular, LSTM--SR with Reddit-based features ($+107.7\%$ AR, $+50.9\%$ SR) and DRL--PPO with GDELT and Reddit-based features ($+48.2\%$ AR, $+52.2\%$ SR), are competitive with most results in the literature, though the most aggressive literature benchmarks, such as Zhang \emph{et~al.}~\cite{984be} ($+232.3\%$ AR, $+224.3\%$ SR) and Lin \emph{et~al.}~\cite{e6ca3} with news ($+130.7\%$ AR, $+123.3\%$ SR), remain substantially higher. These gaps are partly attributable to differences in sample period, leverage, and trading frequency, and direct numerical comparisons should therefore be interpreted with caution. Among other reviewed approaches that better match the present study's setup (e.g., daily rebalancing, similar asset universe), the proposed approaches broadly match or exceed reference points such as Sood \emph{et~al.}~\cite{0df79} ($+36.1\%$ SR for a DRL--PPO agent on S\&P~500 sector indices) and Zhang \emph{et~al.}~\cite{4e332} ($+77.3\%$ SR for a regime-aware optimizer).
+
+\paragraph{Risk-focused metrics} A notable distinction from much of the reviewed literature arises when examining risk-focused metrics. The majority of literature approaches achieve substantial improvements in annualized return and Sharpe ratio relative to the market benchmark, yet demonstrate limited or no improvement in volatility and maximum drawdown. In contrast, the proposed approaches, while delivering more modest return gains than several literature methods, exhibit more consistent risk control relative to the S\&P~500 across a range of configurations. This suggests that the developed frameworks, particularly DRL--PPO and LSTM--SR, possess a comparative strength in downside risk management. The LSTM--BL framework performs even more strongly along this dimension, as anticipated given the earlier analysis of its risk-return profile, placing it broadly in line with the better-performing approaches in the literature with respect to risk containment (namely, the approach of Zhang \emph{et~al.}~\cite{984be}).
+
+\begin{table}[ht]
+\centering
+\caption{Cross-study performance comparison relative to the market baseline (S\&P~500).}
+\label{tab:portfolio_optimization_results}
+\renewcommand{\arraystretch}{1.2}
+\begin{tabular}{|l | l | c | c | c | c|}
+\hline
+\textbf{Framework} & \textbf{Variant} & \textbf{AR} & \textbf{SR} & \textbf{VOL} & \textbf{MDD} \\
+\hline\hline
+\multicolumn{6}{|l|}{\textit{Baselines}} \\
+\hline
+EW               & --          & $-19.4$ & $-12.3$ & $14.9$ & $19.0$ \\
+S\&P~500       & --          & $0.0$   & $0.0$   & $0.0$  & $0.0$  \\
+MVO--CAPM        & --          & $-3.4$  & $4.0$   & $9.3$  & $0.5$  \\
+\hline\hline
+\multicolumn{6}{|l|}{\textit{Proposed Frameworks}} \\
+\hline
+DRL--PPO     & --              & $-5.6$  & $0.7$   & $8.7$  & $19.6$ \\
+LSTM--BL     & --              & $-11.5$ & $-4.7$  & $11.2$ & $21.2$ \\
+LSTM--SR     & --              & $18.6$  & $3.2$   & $-22.4$& $-25.6$\\
+DRL--PPO     & GDELT           & $7.3$   & $21.5$  & $13.0$ & $38.6$ \\
+LSTM--BL     & GDELT           & $-8.3$  & $1.7$   & $13.7$ & $15.9$ \\
+LSTM--SR     & GDELT           & $12.8$  & $12.9$  & $-1.8$ & $21.2$ \\
+DRL--PPO     & Reddit          & $34.5$  & $46.1$  & $6.2$  & $22.2$ \\
+LSTM--BL     & Reddit          & $21.0$  & $45.0$  & $16.8$ & $48.7$ \\
+LSTM--SR     & Reddit          & $107.7$ & $50.9$  & $-47.8$& $-36.0$\\
+DRL--PPO     & GDELT+Reddit    & $48.2$  & $52.2$  & $-0.6$ & $31.2$ \\
+LSTM--BL     & GDELT+Reddit    & $5.3$   & $20.4$  & $14.3$ & $38.1$ \\
+LSTM--SR     & GDELT+Reddit    & $44.5$  & $34.6$  & $-12.4$& $14.8$ \\
+\hline\hline
+\multicolumn{6}{|l|}{\textit{Literature}} \\
+\hline
+Bessler and Wolff~\cite{83780}, 1989--2013        & Macro    & $39.1$  & $110.9$ & $24.6$  & --      \\
+*Zhang \emph{et~al.}~\cite{984be}, 2011--2020     & --       & $232.3$ & $224.3$ & $2.9$   & $69.9$  \\
+*Sood \emph{et~al.}~\cite{0df79}, 2012--2021      & --       & $-14.3$ & $36.1$  & --      & $2.8$   \\
+*Li \emph{et~al.}~\cite{de270}, 2017--2020        & News     & $138.0$ & $92.7$  & --      & $0.6$   \\
+Zhang \emph{et~al.}~\cite{4e332}, 2020--2024      & Macro    & $61.5$  & $77.3$  & --      & $28.9$  \\
+*Lin \emph{et~al.}~\cite{e6ca3}, 2024--2025       & --       & $85.4$  & $84.5$  & $-44.3$ & $-23.5$ \\
+*Lin \emph{et~al.}~\cite{e6ca3}, 2024--2025       & News     & $130.7$ & $123.3$ & $-49.2$ & $-16.7$ \\
+\hline
+\end{tabular}
+\caption*{\footnotesize
+Note: All values are expressed as percentage deviations from the S\&P~500 benchmark. A positive value indicates improvement over the market, while a negative value indicates underperformance. An asterisk~($*$) denotes that S\&P~500 market statistics were computed within this study, as the original paper did not report them. The Variant column reports any additional signal beyond technical indicators.
+}
+\end{table}
+
+
+\section{Policy and Practical Implications}
+\label{sec:policy_implications}
+ 
+The findings of this study carry implications that extend beyond the methodological, touching on how sentiment-driven financial models might be responsibly designed, deployed, and governed in practice.
+ 
+A first implication concerns data sourcing strategy. The evidence that GDELT and Reddit provide distinct yet complementary informational signals underscores the limitations of relying on a single textual source. As established in the intra-study analysis, institutional news sentiment contributes primarily to risk reduction, while social-media sentiment enhances return potential at the cost of increased noise exposure. This asymmetry suggests that financial institutions and framework developers should prioritize multi-source sentiment integration over single-source pipelines.
+ 
+A second implication relates to model selection and evaluation practice. The analyses confirm that no single modeling paradigm (whether DRL--PPO, LSTM--BL, or LSTM--SR) consistently dominates across all performance dimensions. Each framework exhibits strengths aligned with specific investment objectives, with some excelling in return generation while others provide superior risk control. This reinforces the need for context-dependent model selection and motivates the development of evaluation standards that account for multiple performance dimensions simultaneously, including volatility, drawdown, Sharpe ratio, and cumulative return. The complementary nature of the three frameworks also points toward the potential value of ensemble or hybrid architectures capable of combining their respective strengths across varying market conditions.
+ 
+A third implication concerns regulatory oversight. Given the heightened susceptibility of social-media sentiment to manipulation, rapid narrative shifts, and systematic noise, there is a reasonable case for regulatory bodies to consider minimum validation and noise-reduction standards for the use of such data in algorithmic trading contexts. Periodic audits, anomaly detection mechanisms, and documented filtering procedures could help safeguard market integrity without foreclosing innovation in sentiment-driven modeling.
+ 
+These considerations are relevant to a broad set of stakeholders. Asset managers and quantitative hedge funds may leverage the demonstrated complementarities between sentiment sources and modeling frameworks to refine portfolio construction and risk management. Institutional investors with long-horizon mandates may benefit from the stabilizing effects of multi-source sentiment integration. Researchers and developers of financial artificial intelligence systems may use these results to motivate further exploration of ensemble architectures and cross-source sentiment fusion. Finally, market surveillance teams may find value in understanding the differential behaviors of institutional versus social-media sentiment, particularly for the detection of manipulation or sentiment-driven anomalies.
+ 
+Taken together, these considerations underscore the importance of diversification, both in data sources and in modeling paradigms, as a foundational principle for the next generation of sentiment-aware financial systems.
+
+
+\section{Limitations and Future Directions}
+\label{sec:limitations_future}
+
+The results reported in this study are subject to a few methodological constraints that affect the robustness and generalizability of the findings. At the same time, several of these constraints point naturally to concrete extensions and improvements that could be pursued in future work. The following paragraphs discuss the key limitations of the current frameworks and outline potential avenues for enhancement.
+
+\paragraph{Data sourcing and coverage} On the news side, GDELT is not specifically designed as a financial corpus. Its quotations field, which is used here as the main filter and sentiment source, may exclude a significant share of sector-relevant information contained in full news articles. In addition, the keyword-based sector classification applied in this study, although carefully designed, remains subject to misclassification errors and the potential exclusion of relevant content. These limitations may weaken the estimated contribution of GDELT-derived sentiment. Using or complementing this dataset with a dedicated financial news source would likely improve the signal-to-noise ratio of the news sentiment measure. On the social media side, expanding the retail sentiment signal beyond Reddit to include platforms such as X or StockTwits would increase coverage. Moreover, incorporating post-level engagement metrics, such as upvotes and comment counts, could help filter out low-quality content while emphasizing more influential posts, thereby enhancing the overall quality of the Reddit-based sentiment sign
+
+\paragraph{Feature engineering} A principled multi-source feature selection procedure, such as empirical aggregation, could replace the current sequential ablation approach with a jointly optimized alternative, making the framework more robust. Macroeconomic variables, such as interest rates, inflation expectations, and credit spreads, could further enrich the input space, improving the models' ability to respond to regime changes and positioning the framework more directly alongside macro-aware approaches in the literature.
+
+\paragraph{Sector universe and generalizability} All results are limited to the 11 GICS sectors represented by the Select Sector SPDR ETFs tracking the S\&P~500 constituents. Extending the framework to alternative sector classification schemes, or to a broader universe that includes additional sectors such as defense and aerospace, whose relevance has increased in light of recent geopolitical developments, would allow for a more direct assessment of the generalizability of the findings across different market structures. In addition, expanding the analysis beyond the U.S. equity market to include other geographic regions, such as European or emerging market equities, would further test the robustness of the results and provide insights into how sentiment dynamics vary across different institutional and macroeconomic environments.
+
+\paragraph{Refit cadence and regime adaptability} Annual model refitting is an empirically motivated practical compromise but may be too infrequent to capture fast-moving regime changes within a given year. Adopting an approach in which the refit cadence is itself treated as a hyperparameter, or is coupled to a regime-detection mechanism, could reduce the risk of frameworks becoming stale during high-volatility episodes and would constitute a natural extension of the present study. The potential of such a regime-detection mechanism is demonstrated by Zhang \emph{et~al.}~\cite{4e332} in the context of a forecast-then-optimize pipeline.

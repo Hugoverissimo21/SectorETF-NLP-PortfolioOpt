@@ -1,0 +1,303 @@
+\chapter{Per-Framework Hyperparameters}
+\label{chap:hyperparameters}
+
+\begin{introduction}
+This appendix documents the full hyperparameter search spaces used by each framework evaluated in this study. Feature-selection choices are excluded here and discussed separately in Section~\ref{sec:4variants}.
+\end{introduction}
+
+Hyperparameter choices directly affect both predictive performance and risk-adjusted returns across all frameworks: an inappropriate learning rate can prevent an LSTM from converging, a poorly chosen lookback window can cause an MVO portfolio to react to noise, and an excessive entropy coefficient can lead a PPO agent to over-explore. Reporting the full search spaces serves two purposes: it allows assessment of whether the optimization was sufficiently comprehensive, and it ensures reproducibility.
+
+To search these spaces efficiently, all frameworks were tuned using Optuna\footnote{\url{https://pypi.org/project/optuna}}'s Tree-structured Parzen Estimator (TPE) sampler~\cite{optuna}. TPE models two densities at each iteration: $\ell(x)$ over high-performing configurations and $g(x)$ over the rest, sampling new candidates by maximizing $\ell(x)/g(x)$. This focuses search on promising regions while maintaining exploration and is considerably more sample-efficient than grid or random search (an important property given the large search space of the DRL--PPO and LSTM frameworks). In all cases, the optimization objective is the mean performance across walk-forward cross-validation folds and random seeds, promoting robustness over any single fold. The Sharpe ratio is used as the optimization metric for all frameworks except LSTM--BL's return predictor, which is tuned on mean Spearman IC.
+
+Each table below reports the parameter name, a description of its role, and its search space. Continuous ranges are denoted $[a,b]$ (log-uniform where appropriate) and discrete sets as $\{v_1, v_2, \ldots\}$. Parameters are grouped thematically within each table.
+
+It is worth noting that the feature-selection hyperparameters, which govern the choice of input features fed to each model, are not included in these tables, in order to simplify the presentation and avoid redundancy, as they are common across all frameworks. Instead, they are discussed in Section~\ref{sec:4variants}, due to their central role in the experimental design and the fact that they are not specific to any single framework.
+
+\section{MVO--CAPM}
+
+The MVO--CAPM is the simplest framework in terms of search space, with only three hyperparameters governing the estimation window, rebalancing frequency, and covariance regularization. Table~\ref{tab:hp_mvo_capm} lists the corresponding search space.
+
+\begin{longtable}{@{}p{3.7cm} p{7.5cm} p{3.3cm}@{}}
+\caption{Hyperparameters optimized for the MVO--CAPM framework using expanding-window walk-forward cross-validation.}
+\label{tab:hp_mvo_capm} \\
+\toprule
+\textbf{Hyperparameter} & \textbf{Description} & \textbf{Search Space} \\
+\midrule
+\endfirsthead
+
+\multicolumn{3}{c}{\footnotesize\textit{(continued)}} \\
+\toprule
+\textbf{Hyperparameter} & \textbf{Description} & \textbf{Search Space} \\
+\midrule
+\endhead
+
+\bottomrule
+\multicolumn{3}{r}{\footnotesize\textit{(continued on next page)}} \\
+\endfoot
+
+\bottomrule
+\endlastfoot
+ 
+\texttt{lookback\_label} & Length of the rolling historical window used to estimate CAPM inputs (expected returns $\mu$ and covariance matrix $\Sigma$) at each rebalancing date, in days. & $\{5,\;22,\;63,\;126,\;$ $252,\;504,\;756\}$ \\[6pt]
+ 
+\texttt{rebalance\_freq} & Frequency at which the portfolio is reoptimized and rebalanced, with transaction costs being applied at each rebalance. & $\{\text{daily},\ \text{weekly},$ $\text{biweekly},\text{monthly},$ $\text{quarterly}\}$ \\[6pt]
+ 
+\texttt{cov\_ridge} & Ridge regularization constant added to the diagonal of the sample covariance matrix before inversion, ensuring it remains positive definite. & $[10^{-8},\;10^{-1}]$ \\
+ 
+\bottomrule
+\end{longtable}
+
+
+\section{DRL--PPO}
+
+The DRL--PPO framework has one of the largest search spaces of all frameworks, spanning 19 parameters across three groups: core RL algorithm knobs, reward-shaping coefficients, and network architecture choices. Table~\ref{tab:hp_drl_ppo} lists the full search space.
+
+\begin{longtable}{@{}p{3.7cm} p{7.5cm} p{3.3cm}@{}}
+\caption{Hyperparameters optimized for the DRL--PPO framework using expanding-window walk-forward cross-validation.}
+\label{tab:hp_drl_ppo} \\
+\toprule
+\textbf{Hyperparameter} & \textbf{Description} & \textbf{Search Space} \\
+\midrule
+\endfirsthead
+
+\multicolumn{3}{c}{\footnotesize\textit{(continued)}} \\
+\toprule
+\textbf{Hyperparameter} & \textbf{Description} & \textbf{Search Space} \\
+\midrule
+\endhead
+
+\bottomrule
+\multicolumn{3}{r}{\footnotesize\textit{(continued on next page)}} \\
+\endfoot
+
+\bottomrule
+\endlastfoot
+ 
+\multicolumn{3}{@{}l}{\small\textit{--- Core PPO Hyperparameters ---}} \\[2pt]
+ 
+\texttt{gamma} & Discount factor for future rewards, controlling how far ahead the agent plans. & $[0.90,\,0.999]$ \\[4pt]
+ 
+\texttt{gae\_lambda} & GAE smoothing parameter that trades off bias vs.\ variance in advantage estimates. & $[0.80,\,0.98]$ \\[4pt]
+ 
+\texttt{learning\_rate} & Step size for the Adam optimizer applied to both actor and critic networks. & $[10^{-5},\,2\times10^{-3}]$ \\[4pt]
+ 
+\texttt{clip\_range} & PPO clipping coefficient $\varepsilon$ that limits the policy update ratio $r_t(\theta)$ per gradient step. & $[0.05,\,0.20]$ \\[4pt]
+ 
+\texttt{n\_epochs} & Number of gradient update passes over each collected rollout buffer before discarding the data. & $\{3,4,\ldots,10\}$ \\[4pt]
+ 
+\texttt{n\_steps} & Number of environment steps collected per rollout before each update (must be divisible by \texttt{batch\_size}). & $\{252, 504, 756\}$ \\[4pt]
+ 
+\texttt{batch\_size} & Mini-batch size for each stochastic gradient step. Subsets are constrained to divide evenly into \texttt{n\_steps}. & $\{63,84,126,$ $168,189,252,378,$ $504,756\}$ \\[4pt]
+ 
+\texttt{target\_kl} & Early-exit threshold on the approximate KL divergence. PPO stops updating if KL exceeds this per epoch. & $[0.003,\,0.03]$ \\[4pt]
+ 
+\texttt{ent\_coef} & Entropy bonus coefficient. Higher values encourage more exploratory (higher-entropy) policies. & $[10^{-5},\,5\times10^{-2}]$ \\[4pt]
+ 
+\texttt{vf\_coef} & Weight of the value-function (critic) loss in the combined PPO objective. & $[0.1,\,1.0]$ \\[4pt]
+ 
+\texttt{max\_grad\_norm} & Global gradient norm clipping threshold applied before each parameter update. & $[0.3,\,2.0]$ \\[6pt]
+ 
+\multicolumn{3}{@{}l}{\small\textit{--- Reward Shaping Hyperparameters ---}} \\[2pt]
+ 
+\texttt{dsr\_eta} & Exponential decay rate for the DSR running statistics, approximating a rolling window of $1/\eta$ steps. & $\{1/252,\;0.005,\;0.01,\;$ $0.02\}$ \\[4pt]
+ 
+\texttt{dsr\_warmup\_steps} & Number of initial environment steps during which the agent is rewarded on net returns before switching to DSR. & $\{0,\;126,\;252,\;504\}$ \\[4pt]
+ 
+\texttt{reward\_scale\_net} & Scalar multiplier applied to net-return rewards during the warm-up phase. & $\{50.0,\;100.0,\;200.0\}$ \\[4pt]
+ 
+\texttt{reward\_scale\_dsr} & Scalar multiplier applied to DSR rewards after the warm-up phase ends. & $\{5.0,\;10.0,\;20.0\}$ \\[4pt]
+ 
+\texttt{dsr\_clip} & Symmetric clipping bound applied to the DSR reward signal to prevent gradient explosions. & $\{5.0,\;10.0,\;20.0\}$ \\[6pt]
+ 
+\multicolumn{3}{@{}l}{\small\textit{--- Architecture Hyperparameters ---}} \\[2pt]
+ 
+\texttt{lookback} & Number of past trading days included in each observation window fed to the encoder. & $\{5,\;22,\;63\}$ \\[4pt]
+ 
+\texttt{encoder\_width} & Hidden dimension of the per-asset MLP encoder and the shared MLP head after pooling. & $\{32,\;64,\;128,\;256\}$ \\[4pt]
+ 
+\texttt{log\_std\_init} & Initial value of the log-standard-deviation for the Gaussian action distribution. & $[-1.5,\;0.5]$ \\[6pt]
+
+\bottomrule
+\end{longtable}
+
+\section{LSTM--BL}
+
+The LSTM--BL framework is tuned in two sequential Optuna studies. The first optimizes the LSTM return predictor (Table~\ref{tab:hp_lstm_bl_lstm}), with the objective of maximizing mean Spearman IC across walk-forward folds and random seeds. The second study, run after the predictor ensemble is fixed, tunes the Black-Litterman portfolio optimizer (Table~\ref{tab:hp_lstm_bl_bl}), whose objective is mean Sharpe ratio across the same walk-forward folds.
+
+This happens because the Black-Litterman optimizer relies on the return predictor to generate the views that feed into the portfolio optimization, therefore the optimizer's performance is conditional on a specific predictor ensemble. Tuning them jointly would require a nested optimization loop, which would be computationally prohibitive given the size of the search spaces and the need for walk-forward cross-validation. By tuning them sequentially, a strong predictor ensemble can be identified first, and then the BL parameters can be optimized to best leverage those views. This approach is a practical compromise that allows for effective tuning of both components without incurring an unmanageable computational cost.
+
+\begin{longtable}{@{}p{3.7cm} p{7.5cm} p{3.3cm}@{}}
+\caption{Hyperparameters optimized for the LSTM return predictor in the LSTM--BL framework using expanding-window walk-forward cross-validation.}
+\label{tab:hp_lstm_bl_lstm} \\
+\toprule
+\textbf{Hyperparameter} & \textbf{Description} & \textbf{Search Space} \\
+\midrule
+\endfirsthead
+
+\multicolumn{3}{c}{\footnotesize\textit{(continued)}} \\
+\toprule
+\textbf{Hyperparameter} & \textbf{Description} & \textbf{Search Space} \\
+\midrule
+\endhead
+
+\bottomrule
+\multicolumn{3}{r}{\footnotesize\textit{(continued on next page)}} \\
+\endfoot
+
+\bottomrule
+\endlastfoot
+ 
+\multicolumn{3}{@{}l}{\small\textit{--- Architecture Hyperparameters ---}} \\[2pt]
+ 
+\texttt{lookback} & Number of past trading days in each input sequence fed to the recurrent encoder. & $\{5,\;10,\;22\}$ \\[4pt]
+ 
+\texttt{hidden\_size} & Hidden state dimension of the LSTM encoder, shared across all layers. & $\{32,\;64,\;128\}$ \\[4pt]
+ 
+\texttt{num\_layers} & Number of stacked LSTM layers in the recurrent encoder. & $\{1,\;2\}$ \\[4pt]
+ 
+\texttt{dropout} & Dropout probability applied between LSTM layers (only active when \texttt{num\_layers} $> 1$). & $[0.0,\;0.3]$ \\[4pt]
+ 
+\texttt{bidirectional} & Whether to use a bidirectional LSTM, doubling the effective hidden dimension passed downstream. & $\{0,\;1\}$ (bool) \\[4pt]
+ 
+\texttt{encoder\_proj} & Output dimension of a linear projection applied after the LSTM, with 0 disabling the projection layer. & $\{0,\;32,\;64\}$ \\[4pt]
+ 
+\texttt{asset\_mixer\_layers} & Number of Transformer-style cross-asset attention layers applied after per-asset encoding. & $\{0,\;1,\;2\}$ \\[4pt]
+ 
+\texttt{asset\_mixer\_heads} & Number of attention heads in each asset-mixer layer. & $\{1,\;2,\;4\}$ \\[4pt]
+ 
+\texttt{fusion\_hidden} & Hidden dimension of the MLP that fuses per-asset embeddings with the market signal, with 0 using a direct linear projection. & $\{0,\;64,\;128\}$ \\[4pt]
+ 
+\texttt{use\_residual\_fusion} & Whether to add a residual skip connection around the fusion MLP. & $\{0,\;1\}$ (bool) \\[6pt]
+ 
+\multicolumn{3}{@{}l}{\small\textit{--- Training Hyperparameters ---}} \\[2pt]
+ 
+\texttt{learning\_rate} & Step size for the Adam optimizer. & $[10^{-4},\;2\times10^{-3}]$ \\[4pt]
+ 
+\texttt{weight\_decay} & L2 regularization coefficient in the Adam optimizer. & $[10^{-6},\;10^{-3}]$ \\[4pt]
+ 
+\texttt{batch\_size} & Number of training windows per gradient step. & $\{32,\;64,\;128\}$ \\[4pt]
+ 
+\texttt{max\_epochs} & Maximum number of full passes over the training set. & $\{20,\;30,\;40\}$ \\[4pt]
+ 
+\texttt{patience} & Number of validation epochs without improvement before early stopping triggers. & $\{5,\;7\}$ \\[4pt]
+ 
+\texttt{min\_epochs} & Minimum number of epochs that must complete before early stopping is allowed. & $\{5,\;8\}$ \\[4pt]
+ 
+\texttt{grad\_clip} & Global gradient norm clipping threshold applied before each parameter update. & $\{0.5,\;1.0,\;2.0\}$ \\[4pt]
+ 
+\texttt{scheduler} & Learning-rate schedule: \texttt{none} keeps the rate fixed; \texttt{plateau} reduces it on validation stagnation. & $\{\text{none},\;\text{plateau}\}$ \\[4pt]
+ 
+\texttt{loss\_name} & Supervised loss function used to train the return predictor. & $\{\text{mse},\;\text{huber}\}$ \\[4pt]
+ 
+\texttt{huber\_delta} & Threshold parameter of the Huber loss, which is irrelevant when \texttt{loss\_name} $=$ \texttt{mse}. & $\{0.005,\;0.01,\;0.02\}$ \\[4pt]
+ 
+\texttt{min\_delta} & Minimum absolute improvement in validation IC required to reset the early-stopping patience counter. & $\{0.0,\;10^{-5}\}$ \\[6pt]
+
+\bottomrule
+\end{longtable}
+
+
+\begin{longtable}{@{}p{3.7cm} p{7.5cm} p{3.3cm}@{}}
+\caption{Hyperparameters optimized for the Black-Litterman portfolio optimizer in the LSTM--BL framework using expanding-window walk-forward cross-validation.}
+\label{tab:hp_lstm_bl_bl} \\
+\toprule
+\textbf{Hyperparameter} & \textbf{Description} & \textbf{Search Space} \\
+\midrule
+\endfirsthead
+
+\multicolumn{3}{c}{\footnotesize\textit{(continued)}} \\
+\toprule
+\textbf{Hyperparameter} & \textbf{Description} & \textbf{Search Space} \\
+\midrule
+\endhead
+
+\bottomrule
+\multicolumn{3}{r}{\footnotesize\textit{(continued on next page)}} \\
+\endfoot
+
+\bottomrule
+\endlastfoot
+ 
+\texttt{tau} & Scalar that scales the uncertainty of the prior (equilibrium) returns relative to the covariance matrix. Smaller values give more weight to the market prior. & $[10^{-3},\;0.5]$ \\[4pt]
+ 
+\texttt{risk\_aversion} & Risk-aversion coefficient $\lambda$ in the mean-variance objective. Higher values penalize portfolio variance more strongly. & $[0.5,\;10.0]$ \\[4pt]
+ 
+\texttt{cov\_lookback} & Length of the rolling historical window used to estimate the sample covariance matrix $\Sigma$ fed to the mean-variance optimizer, in trading days. & $\{63,\;126,\;252,\;504\}$ \\[4pt]
+
+\texttt{omega\_scale} & Scalar multiplier applied to the view uncertainty matrix $\Omega$, controlling how much the optimizer trusts the LSTM ensemble views relative to the prior. & $[0.01,\;2.0]$ \\[4pt]
+
+\texttt{top\_k} & Number of top-ranked LSTM trials (by validation IC) whose predictions are averaged to form the ensemble view. & $\{3,\;5,\;10\}$ \\
+ 
+\bottomrule
+\end{longtable}
+
+\section{LSTM--SR}
+
+Unlike the LSTM--BL framework, which follows a sequential predict-then-optimize pipeline, the LSTM--SR framework is trained end-to-end to directly maximize a differentiable Sharpe ratio objective, outputting portfolio weights in a single unified step. This design eliminates the need for a separate portfolio optimization stage, as the network learns to map return signals directly to allocations that optimize risk-adjusted performance. The search space is structurally similar to the LSTM predictor in LSTM--BL, owing to the shared recurrent encoder design, and, consequently, a single Optuna study suffices. Table~\ref{tab:hp_lstm_sr} lists the full set of tuned hyperparameters.
+
+\begin{longtable}{@{}p{3.7cm} p{7.5cm} p{3.3cm}@{}}
+\caption{Hyperparameters optimized for the LSTM--SR framework using expanding-window walk-forward cross-validation.}
+\label{tab:hp_lstm_sr} \\
+\toprule
+\textbf{Hyperparameter} & \textbf{Description} & \textbf{Search Space} \\
+\midrule
+\endfirsthead
+
+\multicolumn{3}{c}{\footnotesize\textit{(continued)}} \\
+\toprule
+\textbf{Hyperparameter} & \textbf{Description} & \textbf{Search Space} \\
+\midrule
+\endhead
+
+\bottomrule
+\multicolumn{3}{r}{\footnotesize\textit{(continued on next page)}} \\
+\endfoot
+
+\bottomrule
+\endlastfoot
+ 
+\multicolumn{3}{@{}l}{\small\textit{--- Architecture Hyperparameters ---}} \\[2pt]
+ 
+\texttt{lookback} & Number of past trading days included in each input sequence fed to the recurrent encoder. & $\{5,\;10,\;22\}$ \\[4pt]
+ 
+\texttt{hidden\_size} & Hidden state dimension of the LSTM encoder, shared across all layers. & $\{32,\;64,\;128\}$ \\[4pt]
+ 
+\texttt{num\_layers} & Number of stacked LSTM layers in the recurrent encoder. & $\{1,\;2\}$ \\[4pt]
+ 
+\texttt{dropout} & Dropout probability applied between LSTM layers (only active when \texttt{num\_layers} $> 1$). & $[0.0,\;0.3]$ \\[4pt]
+ 
+\texttt{bidirectional} & Whether to use a bidirectional LSTM, doubling the effective hidden dimension passed downstream. & $\{0,\;1\}$ (bool) \\[4pt]
+ 
+\texttt{encoder\_proj} & Output dimension of a linear projection applied after the LSTM, with 0 disabling the projection layer. & $\{0,\;32,\;64\}$ \\[4pt]
+ 
+\texttt{asset\_mixer\_layers} & Number of Transformer-style attention layers used to mix information across assets after per-asset encoding. & $\{0,\;1,\;2\}$ \\[4pt]
+ 
+\texttt{asset\_mixer\_heads} & Number of attention heads in each asset-mixer layer. & $\{1,\;2,\;4\}$ \\[4pt]
+ 
+\texttt{fusion\_hidden} & Hidden dimension of the MLP that fuses per-asset embeddings with the market signal, with 0 using a direct linear projection. & $\{0,\;64,\;128\}$ \\[4pt]
+ 
+\multicolumn{3}{@{}l}{\small\textit{--- Training Hyperparameters ---}} \\[2pt]
+ 
+\texttt{learning\_rate} & Step size for the Adam optimizer. & $[10^{-4},\;2\times10^{-3}]$ \\[4pt]
+ 
+\texttt{weight\_decay} & L2 regularization coefficient applied via Adam's \texttt{weight\_decay} argument. & $[10^{-6},\;10^{-3}]$ \\[4pt]
+ 
+\texttt{batch\_size} & Number of training windows per gradient step. & $\{32,\;64,\;128\}$ \\[4pt]
+ 
+\texttt{max\_epochs} & Maximum number of full passes over the training set before halting. & $\{20,\;30,\;40\}$ \\[4pt]
+ 
+\texttt{patience} & Number of validation epochs without improvement before early stopping is triggered. & $\{5,\;7\}$ \\[4pt]
+ 
+\texttt{min\_epochs} & Minimum number of epochs that must complete before early stopping is allowed to fire. & $\{5,\;8\}$ \\[4pt]
+ 
+\texttt{grad\_clip} & Global gradient norm clipping threshold applied before each parameter update. & $\{0.5,\;1.0,\;2.0\}$ \\[4pt]
+ 
+\texttt{scheduler} & Learning-rate schedule: \texttt{none} keeps the rate fixed; \texttt{plateau} reduces it on validation stagnation. & $\{\text{none},\;\text{plateau}\}$ \\[4pt]
+ 
+\texttt{sharpe\_eps} & Small constant added to the standard deviation in the Sharpe ratio loss to prevent division by zero. & $\{10^{-6},\;10^{-8}\}$ \\[4pt]
+ 
+\texttt{min\_delta} & Minimum absolute improvement in validation Sharpe required to reset the early-stopping patience counter. & $\{0.0,\;10^{-4}\}$ \\[6pt]
+ 
+
+\bottomrule
+\end{longtable}
