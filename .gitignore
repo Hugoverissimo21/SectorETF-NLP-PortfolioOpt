@@ -1,0 +1,45 @@
+# ---------------------------------------------------------------- python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+.ipynb_checkpoints/
+
+# ---------------------------------------------------------------- os / ide
+.DS_Store
+.idea/
+.vscode/
+.claude/
+
+# ---------------------------------------------------------------- secrets
+# copy src/secrets_example.py to src/secrets.py and fill in your keys
+src/secrets.py
+
+# ---------------------------------------------------------------- local archive
+# retired artifacts kept on disk, never pushed
+local_archive/*
+!local_archive/.gitkeep
+
+# ---------------------------------------------------------------- large data
+# kept on disk for the pipeline; see README "Data availability" for how to
+# obtain or rebuild each of these
+01_data/reddit/reddit.parquet
+!01_data/reddit/reddit_SAMPLE.parquet
+01_data/processed/reddit_0.parquet
+!01_data/processed/reddit_0_SAMPLE.parquet
+01_data/news/10-K/*.json
+!01_data/news/10-K/0000001800.json
+
+# ---------------------------------------------------------------- model weights
+# rebuild via the corresponding training notebooks (see 02_sentiment/README)
+02_sentiment/news/vf2_tfidf_embeddings/final_model.pt
+02_sentiment/news/vf2_sector_embeddings/final_model.pt
+02_sentiment/reddit/final_run_v4_h5a8a3d210b/final_model/model.safetensors
+
+# ---------------------------------------------------------------- latex build
+thesis/build/
+*.synctex.gz
+*.aux
+*.fdb_latexmk
+*.fls
