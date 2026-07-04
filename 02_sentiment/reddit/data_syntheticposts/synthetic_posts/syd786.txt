@@ -1,0 +1,23 @@
+[POST]
+Title:
+Data Center Worker AMA: Power, Cooling, and Reality
+Body:
+I work in facilities supporting large-scale compute. Not speaking for any employer.
+
+What stands out is how much physical infrastructure sits behind ‘cloud’ experiences. Power constraints, cooling systems, land use, and local regulations all shape expansion timelines.
+
+Users see instant services; operators see zoning meetings and transformer upgrades.
+
+Just a reminder that digital growth still depends on very analog constraints.
+
+[COMMENTS]
+Comment 1:
+People forget the internet runs on electricity and concrete.
+Comment 2:
+Local permitting can delay projects for years.
+Comment 3:
+Energy costs alone can change deployment strategies.
+Comment 4:
+‘The cloud is just someone else’s computer’ never gets old.
+Comment 5:
+Physical limits rarely show up in valuation models.

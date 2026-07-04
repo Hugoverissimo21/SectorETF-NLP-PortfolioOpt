@@ -1,0 +1,19 @@
+[POST]
+Title:
+Acceleration Risk & The 'Regulated Utility' Redemption Trap
+Body:
+Watching everyone pile into these high-debt 'safety' plays while ignoring the acceleration clauses in the underlying paper. Most of these names are levered 5:1 with Tier 2 debt that has 'make-whole' provisions triggered by credit downgrades. 
+
+If the ROE (Return on Equity) doesn't clear the new WACC (Weighted Average Cost of Capital) floor, we're looking at forced deleveraging. You're selling puts at 18x forward earnings on a sector that can literally be called away at par if the regulatory commission flips. If trading halts for a mandatory redemption, your ITM options are basically settlement-only ghosts. The 'guaranteed' dividend is just a liability on a crumbling balance sheet at this point.
+
+[COMMENTS]
+Comment 1:
+The AFUDC accounting is hiding the fact that FCF is deep in the red. It's a paper gain until the redemption notice hits.
+Comment 2:
+Imagine being short vol on a sector with a 65% debt-to-cap ratio in a 'higher for longer' regime. True WSB behavior.
+Comment 3:
+Once the acceleration clause triggers, the 'equity' is just a rounding error for the bondholders. Good luck with those puts.
+Comment 4:
+Cash-settlement on a halted ticker is a nightmare. You're effectively locked into the redemption value minus the premium decay.
+Comment 5:
+Regulatory lag is the real 'accelerator.' If they don't get the rate hike, the debt covenants break. Simple math.

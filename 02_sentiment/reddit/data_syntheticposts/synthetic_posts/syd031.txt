@@ -1,0 +1,19 @@
+[POST]
+Title:
+The "Pick and Shovel" play of the 2020s is literally just a wall outlet.
+Body:
+We’ve all spent the last two years arguing over which GPU manufacturer is going to win the AI wars or which EV startup isn’t going to go bankrupt. But we are completely ignoring the physical reality of the situation: The grid is full.
+
+For the first time in nearly 20 years, we aren't looking at flat electricity demand. We are looking at a vertical line. Between AI data centers that consume more power than mid-sized European nations, the massive "reshoring" of heavy manufacturing, and the steady march toward total electrification, the "boring" utility sector has quietly become the ultimate bottleneck.
+
+The hyperscalers (Google, Amazon, Microsoft) are no longer just buying software—they are quite literally hunting for megawatts. They are signing 20-year deals just to guarantee a connection. When the biggest companies in the world are desperate for a commodity that only a few regulated monopolies can provide, you don't need a PhD in economics to see where the pricing power is shifting.
+
+This isn’t about chasing a 100x moonshot; it’s about a structural reset. We are entering a $1 trillion infrastructure supercycle through 2029. In a market full of "vaporware" and speculative multiples, owning the companies that own the wires and the generation is the most rational move for the back half of 2026.
+
+[COMMENTS]
+Comment 1:
+Finally, some sanity. Everyone wants to own the "brain" (AI), but nobody wants to own the "stomach" (Power). If the stomach doesn't eat, the brain doesn't think. The queue for grid interconnection in some regions is now 5+ years long. That kind of scarcity creates a massive moat for anyone who already has the assets in the ground.
+Comment 2:
+"Utilities are the new Tech." I remember getting roasted for saying this in 2023. Now that the "widows and orphans" sector is putting up 20% EPS growth because regulators are finally green-lighting massive rate-base expansions, suddenly it’s a "growth play." I’ll take my 3% dividend and 10% capital appreciation all day while the rest of you sweat over NVIDIA’s quarterly guidance.
+Comment 3:
+It’s the Jevons Paradox in real-time. As AI makes computing more "efficient," we aren't using less power—we’re using exponentially more of it because it’s now more valuable. The grid is the ultimate toll booth. You can build the fastest car in the world, but if the bridge is closed, you aren't going anywhere.

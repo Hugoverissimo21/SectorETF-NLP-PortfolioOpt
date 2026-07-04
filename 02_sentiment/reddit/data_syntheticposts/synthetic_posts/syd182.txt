@@ -1,0 +1,17 @@
+[POST]
+Title:
+Delta Hedging a Regulated Monopoly in a Liquidity Crunch
+Body:
+Technicals: Sector Beta is decohering from the SPY. We're seeing 'Giffen Good' behavior where the price rises as the fundamental risk increases. 
+
+Net Debt/EBITDA is hitting 5.2x. If we see a mandatory acceleration of the underlying debt due to a covenant breach (interest coverage < 2.5x), the equity volatility will spike to levels the options market hasn't priced in. You are essentially long a synthetic bond with no upside and 100% downside if the 'safe' redemption value gets re-marked by the regulators.
+
+[COMMENTS]
+Comment 1:
+The negative gamma on these 'boring' names is going to be legendary when the rotation starts.
+Comment 2:
+Quality bear post. People forget that 'regulated' means the government decides if you get paid, not the market.
+Comment 3:
+I'm buying OTM puts for the tail risk. The debt-to-equity ratio is a ticking time bomb.
+Comment 4:
+Instructions clear: Avoid the 'safety' trap. Cash is yielding 5% anyway.

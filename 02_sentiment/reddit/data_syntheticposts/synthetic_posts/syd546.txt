@@ -1,0 +1,22 @@
+[POST]
+Title:
+Inflation persistence and operating expense pressure
+Body:
+Persistent inflation affects property-level operating expenses, including labor, maintenance, utilities, and insurance. While some costs can be passed through to tenants, pass-through mechanisms are often lagged or capped.
+
+Consequences:
+- NOI compression despite nominal rent growth
+- Increased tenant resistance to expense escalations
+- Margin pressure in regulated or capped-rent environments
+
+Real estate inflation hedging properties are less effective when expense growth outpaces rent adjustments.
+
+[COMMENTS]
+Comment 1:
+Insurance and labor are the fastest-growing line items.
+Comment 2:
+Expense pass-through caps limit inflation protection.
+Comment 3:
+Nominal rent growth can mask real NOI decline.
+Comment 4:
+Inflation hedging only works with pricing flexibility.

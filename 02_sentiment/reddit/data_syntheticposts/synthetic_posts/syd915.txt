@@ -1,0 +1,15 @@
+[POST]
+Title:
+5g hype vs actual revenue
+Body:
+remember when 5g was supposed to unlock new revenue streams? most consumers just get slightly faster speeds and pay the same price.
+
+[COMMENTS]
+Comment 1:
+exactly. speed ≠ monetization.
+Comment 2:
+enterprise use cases are slow to scale.
+Comment 3:
+capex already spent though.
+Comment 4:
+private networks might help eventually.

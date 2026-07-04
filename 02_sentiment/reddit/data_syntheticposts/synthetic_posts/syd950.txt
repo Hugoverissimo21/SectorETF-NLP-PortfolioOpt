@@ -1,0 +1,17 @@
+[POST]
+Title:
+Enterprise 5G may bypass traditional carriers
+Body:
+Large enterprises are increasingly exploring private 5G networks to control performance, security, and costs. This trend could disintermediate traditional carriers from high-margin enterprise services.
+
+While still early, the direction of travel suggests long-term pressure on enterprise ARPU.
+
+[COMMENTS]
+Comment 1:
+Disintermediation risk is real.
+Comment 2:
+Carriers may become infrastructure wholesalers.
+Comment 3:
+Enterprise margins were the bright spot.
+Comment 4:
+Private networks are gaining traction.

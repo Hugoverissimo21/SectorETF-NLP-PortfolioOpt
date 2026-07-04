@@ -1,0 +1,33 @@
+[POST]
+Title:
+Modeling User Engagement Decay Curves in Large Digital Networks
+Body:
+When projecting long-term cash flows for large digital networks, engagement durability becomes a central modeling variable.
+
+One approach is to apply cohort-based decay curves:
+
+- Initial adoption spike
+- Stabilization phase
+- Gradual engagement taper
+
+However, product iteration, new formats, and ecosystem expansion can reset or flatten decay curves.
+
+Key modeling questions:
+
+• What is the steady-state engagement level?
+• How sensitive is ARPU to marginal engagement changes?
+• Do new features extend cohort lifecycles?
+
+Small changes in decay assumptions can materially impact terminal value estimates.
+
+[COMMENTS]
+Comment 1:
+Cohort analysis is essential for realistic projections.
+Comment 2:
+Terminal value is highly sensitive to engagement assumptions.
+Comment 3:
+Feature rollouts can reset decay curves.
+Comment 4:
+Steady-state engagement is the hardest input to estimate.
+Comment 5:
+Most models oversimplify user lifecycle dynamics.

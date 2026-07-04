@@ -1,0 +1,26 @@
+[POST]
+Title:
+Underground Cabling Projects Expanding Beyond High-Risk Zones
+Body:
+Programs to relocate overhead lines underground are expanding into regions previously considered low risk, driven by reliability goals and urban density.
+
+**Drivers:**
+
+• Increased cost of outages.
+• Insurance pressures tied to extreme weather.
+• Urban planning constraints.
+
+Formal interpretation: preventative resilience spending tends to be durable.
+Informal interpretation: nobody likes their power going out, and cities are finally acting like it.
+
+Draw your own conclusions.
+
+[COMMENTS]
+Comment 1:
+Reliability spending rarely reverses once adopted.
+Comment 2:
+Insurance incentives can accelerate infrastructure upgrades.
+Comment 3:
+Urban density makes underground solutions more compelling.
+Comment 4:
+Outage costs are more visible than ever.

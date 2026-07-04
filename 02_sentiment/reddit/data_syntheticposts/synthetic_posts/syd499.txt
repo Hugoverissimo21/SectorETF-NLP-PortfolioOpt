@@ -1,0 +1,20 @@
+[POST]
+Title:
+Habit Formation and Demand Persistence in Essential Consumption
+Body:
+Behavioral economics suggests that habit formation contributes to demand persistence in routine consumption categories. Once purchasing patterns are established, consumers exhibit inertia unless disrupted by significant price shocks or availability constraints.
+
+This behavioral stickiness can:
+- Reduce short-term demand volatility
+- Support baseline volume forecasts
+- Increase the effectiveness of shelf placement and default options
+
+Has anyone integrated behavioral persistence coefficients into demand models for these categories?
+
+[COMMENTS]
+Comment 1:
+Most models assume it implicitly, but explicit coefficients could improve accuracy.
+Comment 2:
+Price shocks are the primary habit-breaking mechanism.
+Comment 3:
+Interesting angle — blends behavioral econ with forecasting.

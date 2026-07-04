@@ -1,0 +1,17 @@
+[POST]
+Title:
+Question: how do you evaluate pricing power in essential goods?
+Body:
+Pricing power seems different in essential categories compared to discretionary ones.
+
+Companies can raise prices, but consumers react quickly by switching brands or channels. So the real test might be whether volume holds and how fast competitors respond.
+
+Curious how others measure pricing success here — volume retention, margin expansion, or promo dependency?
+
+[COMMENTS]
+Comment 1:
+Volume retention is the first check for me.
+Comment 2:
+If promo frequency rises after a price increase, that’s telling.
+Comment 3:
+Competitor response time is an underrated metric.

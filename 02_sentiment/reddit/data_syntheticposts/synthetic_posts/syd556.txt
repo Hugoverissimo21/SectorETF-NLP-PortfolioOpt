@@ -1,0 +1,22 @@
+[POST]
+Title:
+Pricing architecture as a strategic lever
+Body:
+Companies in essential goods categories often deploy multi-tier pricing architectures (premium, mid-tier, value) to capture a broad spectrum of consumer budgets.
+
+Benefits include:
+- Retaining consumers during economic stress
+- Facilitating trade-down without category exit
+- Supporting overall volume stability
+
+This flexibility can mitigate demand shocks during downturns.
+
+[COMMENTS]
+Comment 1:
+Good-better-best pricing keeps consumers in the funnel.
+Comment 2:
+Trade-down within brand portfolios is a defensive moat.
+Comment 3:
+Value tiers protect volume.
+Comment 4:
+Pricing architecture is strategic, not tactical.

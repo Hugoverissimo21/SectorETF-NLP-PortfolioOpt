@@ -1,0 +1,26 @@
+[POST]
+Title:
+Streaming economics still don’t make sense to me
+Body:
+I keep trying to understand the long-term profitability of streaming-heavy companies in Communication Services, and the math feels off.
+
+• Content spend keeps rising to retain subscribers.
+• Hit-driven economics make revenue unpredictable.
+• Password sharing crackdowns risk user backlash.
+• Bundling may slow churn but reduces pricing transparency.
+
+The industry spent years training consumers to expect cheap, abundant content. Reversing that expectation without losing users seems incredibly difficult.
+
+Unless content costs stabilize or consolidation reduces competition, margins could stay under pressure for years.
+
+Is the market too optimistic about eventual operating leverage here?
+
+[COMMENTS]
+Comment 1:
+They burned cash for growth and now the bill is due.
+Comment 2:
+Bundling just hides churn — it doesn’t fix the underlying demand problem.
+Comment 3:
+Consumers were spoiled. Raising prices now is like pulling teeth.
+Comment 4:
+Operating leverage only works if costs stop rising… which they haven’t.

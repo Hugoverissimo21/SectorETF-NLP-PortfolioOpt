@@ -1,0 +1,38 @@
+[POST]
+Title:
+data center power demand: overhyped or just early?
+Body:
+bear take:
+• efficiency gains reduce load growth
+• hyperscale builds could slow
+
+bull take:
+• compute demand still rising
+• power contracts getting longer
+• site selection driven by grid access
+
+truth probably somewhere in between
+
+but the contracts keep getting signed…
+
+[COMMENTS]
+Comment 1:
+efficiency gains never fully offset growth.
+Comment 2:
+longer contracts = confidence in usage.
+Comment 3:
+compute demand has survived every cycle so far.
+Comment 4:
+grid access being a constraint is a big signal.
+Comment 5:
+hyperscale spending pauses, not disappears.
+Comment 6:
+energy demand follows digital demand.
+Comment 7:
+bear case is timing, not collapse.
+Comment 8:
+contracts don’t lie.
+Comment 9:
+power is now a strategic input.
+Comment 10:
+hard to call it overhyped when capacity is scarce.

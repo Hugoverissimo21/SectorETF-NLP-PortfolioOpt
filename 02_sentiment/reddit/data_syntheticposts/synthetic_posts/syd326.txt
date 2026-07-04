@@ -1,0 +1,21 @@
+[POST]
+Title:
+Grid-Scale Storage Procurement Moving From Pilot to Programmatic
+Body:
+Procurement patterns for grid-scale storage are evolving from pilot projects to multi-year deployment programs in several regions.
+
+Notable developments:
+
+• Standardized procurement frameworks emerging.
+• Storage included in long-term capacity planning.
+• Integration with renewable generation becoming routine.
+
+When technologies transition from pilot phases to programmatic deployment, adoption curves often become more predictable.
+
+[COMMENTS]
+Comment 1:
+Programmatic procurement signals institutional commitment.
+Comment 2:
+Standardization typically lowers costs and accelerates deployment.
+Comment 3:
+Integration into capacity planning suggests permanence rather than experimentation.

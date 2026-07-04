@@ -1,0 +1,21 @@
+[POST]
+Title:
+Long-Term Power Purchase Agreements Becoming Standard for Data Facilities
+Body:
+Large-scale data facilities increasingly rely on long-term power purchase agreements (PPAs) to secure reliable energy supply and cost predictability.
+
+Key observations:
+
+• Contract durations extending beyond a decade.
+• Co-location with generation assets becoming more common.
+• Power availability influencing site selection decisions.
+
+The growing prevalence of long-term agreements suggests that energy supply is being treated as a strategic input rather than a variable operating cost.
+
+[COMMENTS]
+Comment 1:
+Long-term PPAs indicate confidence in sustained demand.
+Comment 2:
+Energy availability is becoming a primary siting factor.
+Comment 3:
+Strategic inputs tend to receive priority in capital planning.

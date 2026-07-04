@@ -1,0 +1,27 @@
+[POST]
+Title:
+Network Effects vs Multi-Homing: Stress Testing Platform Moats
+Body:
+A common assumption in platform economics is that network effects create durable competitive advantages. However, multi-homing behavior may weaken these effects.
+
+Consider:
+
+• Users often maintain multiple accounts across similar services
+• Switching costs may be low at the technical level
+• Differentiation shifts toward content, community, or creator ecosystems
+
+Stress testing moats requires evaluating whether network effects are exclusive or overlapping.
+
+Are we overestimating platform lock-in in a multi-homing world?
+
+[COMMENTS]
+Comment 1:
+Multi-homing weakens but doesn’t eliminate network effects.
+Comment 2:
+Creator ecosystems are the new moat.
+Comment 3:
+Technical switching is easy; social switching is not.
+Comment 4:
+Overlap reduces pricing power.
+Comment 5:
+Lock-in is behavioral, not technical.

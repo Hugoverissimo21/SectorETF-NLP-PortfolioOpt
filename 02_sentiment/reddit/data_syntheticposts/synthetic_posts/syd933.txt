@@ -1,0 +1,15 @@
+[POST]
+Title:
+are we overestimating data growth monetization?
+Body:
+data usage is skyrocketing, but consumers expect unlimited plans at flat prices. traffic up, revenue flat.
+
+[COMMENTS]
+Comment 1:
+bit growth ≠ revenue growth.
+Comment 2:
+pricing models outdated.
+Comment 3:
+network strain increasing.
+Comment 4:
+returns not scaling.

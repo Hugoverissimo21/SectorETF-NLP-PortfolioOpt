@@ -1,0 +1,34 @@
+[POST]
+Title:
+Subscriber Growth vs. Profitability: A Tradeoff in Communication Services
+Body:
+A lot of companies in this sector still emphasize subscriber growth as a key metric, but I’m questioning how meaningful that is without corresponding profitability.
+
+Growth at any cost can lead to:
+
+• Heavy promotional discounts
+• Elevated content spending to attract users
+• Increased customer acquisition costs
+• Higher churn once promotions end
+
+At some point, the market may start rewarding sustainable cash flow over headline subscriber numbers.
+
+Do you think the sector is approaching that inflection point, or is scale still the dominant strategy?
+
+[COMMENTS]
+Comment 1:
+Scale still matters. Fixed costs are huge, so you need a massive base to amortize them.
+Comment 2:
+We’ve already seen the shift toward profitability. Investors aren’t rewarding growth without earnings anymore.
+Comment 3:
+Churn after promo periods is brutal. Those subs were never loyal to begin with.
+Comment 4:
+This feels like the airline industry playbook: fill seats first, figure out profits later.
+Comment 5:
+I work in customer analytics — promo-driven users have 2–3x higher cancellation rates.
+Comment 6:
+Not everything needs to be profitable immediately. Ecosystem lock-in has long-term value.
+Comment 7:
+Short answer: yes, the market is getting tired of vanity metrics.
+Comment 8:
+Long answer: depends on interest rates and access to cheap capital.

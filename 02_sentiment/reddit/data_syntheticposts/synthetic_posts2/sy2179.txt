@@ -1,0 +1,17 @@
+[POST]
+Title:
+Supply chain resilience comes at a cost
+Body:
+To avoid disruptions, companies are diversifying suppliers and increasing inventory buffers. While this improves reliability, it ties up capital and reduces efficiency.
+
+Resilience is necessary — but expensive.
+
+[COMMENTS]
+Comment 1:
+Safety stock reduces returns.
+Comment 2:
+Redundancy adds overhead.
+Comment 3:
+Efficiency vs. resilience tradeoff.
+Comment 4:
+Working capital is rising.

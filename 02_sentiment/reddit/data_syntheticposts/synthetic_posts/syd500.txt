@@ -1,0 +1,20 @@
+[POST]
+Title:
+Working Capital Dynamics in High-Turnover Consumption Categories
+Body:
+High inventory turnover in essential consumption categories can support efficient working capital cycles, but this is heavily influenced by retailer payment terms and promotional cycles.
+
+Key considerations:
+- Inventory turns vs safety stock requirements
+- Receivables duration tied to large retail partners
+- Promotional builds that temporarily inflate inventory
+
+From a cash flow modeling perspective, how do you adjust working capital assumptions during periods of elevated promotional activity?
+
+[COMMENTS]
+Comment 1:
+Promo periods often require temporary working capital expansion.
+Comment 2:
+Retailer payment terms are a hidden source of financing risk.
+Comment 3:
+Turnover metrics can look strong while cash conversion weakens.

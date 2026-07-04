@@ -1,0 +1,20 @@
+[POST]
+Title:
+Private Label Penetration: Share Shift vs Category Health
+Body:
+Private label penetration is often interpreted as a proxy for consumer weakness; however, in essential goods categories it may primarily represent intra-category share reallocation rather than demand destruction.
+
+Key analytical distinctions:
+- Category volume stability vs branded share erosion
+- Retailer margin optimization via owned brands
+- Consumer surplus capture through price-tier migration
+
+What frameworks do you use to separate structural share shifts from cyclical trade-down effects?
+
+[COMMENTS]
+Comment 1:
+Panel data with income segmentation helps isolate cyclical vs structural shifts.
+Comment 2:
+Retailer margin incentives are a huge driver of private label expansion.
+Comment 3:
+Important nuance — share loss ≠ category contraction.

@@ -1,0 +1,17 @@
+[POST]
+Title:
+Automation investments may not deliver expected savings
+Body:
+Staples companies are investing heavily in automation to offset labor costs. However, high upfront capital expenditures and integration challenges can delay returns.
+
+Efficiency gains may take longer to materialize than projected.
+
+[COMMENTS]
+Comment 1:
+Capex payback periods are uncertain.
+Comment 2:
+Integration risks are real.
+Comment 3:
+Tech projects often run over budget.
+Comment 4:
+Savings aren’t guaranteed.

@@ -1,0 +1,31 @@
+[POST]
+Title:
+Why Communication Services could be a value trap disguised as ‘defensive growth’
+Body:
+Seeing a lot of narratives framing Communication Services as a stable long-term hold, but the underlying dynamics look more like a slow value trap.
+
+Key issues I’m watching:
+
+• Revenue concentration: Many firms rely heavily on a single revenue stream (ads, subscriptions, licensing). Lack of diversification makes them fragile in downturns.
+
+• Subscription fatigue: Consumers are hitting limits on how many services they’ll pay for. Churn is rising, and promotional pricing is masking weak retention.
+
+• Pricing power erosion: Competition is intense and switching costs are low. Users can cancel in seconds and move to alternatives.
+
+• Capital intensity: Maintaining infrastructure, content libraries, and platform development requires continuous heavy spending.
+
+• International growth risks: Emerging markets growth comes with lower ARPU, currency risk, and regulatory uncertainty.
+
+To me, this looks like a sector where reported user numbers can grow while actual profitability deteriorates.
+
+Anyone else think the market is underestimating long-term margin compression here?
+
+[COMMENTS]
+Comment 1:
+Subscription fatigue is real. I canceled 3 services this year alone.
+Comment 2:
+People forget ARPU in emerging markets is a fraction of US levels. Growth there doesn’t translate to profits.
+Comment 3:
+Low switching costs = no moat. That’s the core problem.
+Comment 4:
+Not bearish enough IMO — content costs alone make the model questionable long term.

@@ -1,0 +1,25 @@
+[POST]
+Title:
+Is Convenience Becoming the Primary Competitive Moat?
+Body:
+In Communication Services, features often converge quickly. What seems to persist is convenience: seamless logins, cross-device continuity, integrated billing, and frictionless sharing.
+
+Users rarely articulate this, but friction appears to be a major driver of platform loyalty.
+
+If convenience is the moat, smaller players may struggle not because of inferior products, but because they can’t reduce friction at scale.
+
+Does this align with what others are seeing in user behavior?
+
+[COMMENTS]
+Comment 1:
+Friction is invisible until you remove it — then users never go back.
+Comment 2:
+Convenience is expensive to build and maintain.
+Comment 3:
+This is why ecosystems matter more than standalone apps.
+Comment 4:
+Users say they care about price, but they behave like they care about ease.
+Comment 5:
+Cross-device continuity is underrated.
+Comment 6:
+Moat = saved passwords and one-click payments 😂

@@ -1,0 +1,15 @@
+[POST]
+Title:
+Electric vehicle adoption adding incremental load growth
+Body:
+The expansion of electric vehicle charging infrastructure is increasing electricity demand. Utilities benefit from higher load factors and improved utilization of existing assets.
+
+This incremental demand supports long-term revenue growth.
+
+[COMMENTS]
+Comment 1:
+Load growth without massive new customers is ideal.
+Comment 2:
+Off-peak charging improves efficiency.
+Comment 3:
+EV adoption is still early.

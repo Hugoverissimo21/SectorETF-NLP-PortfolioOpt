@@ -1,0 +1,36 @@
+[POST]
+Title:
+Regulatory Risk in Communication Services Is No Longer Abstract
+Body:
+It seems like regulatory pressure on Communication Services firms is shifting from a background risk to an active operational constraint.
+
+Areas of concern include:
+
+- Data privacy compliance costs
+- Content moderation requirements
+- Antitrust scrutiny in digital advertising markets
+- Spectrum allocation and licensing restrictions
+
+These factors can affect not just fines and legal costs, but also product design, targeting capabilities, and expansion strategies.
+
+Markets tend to underprice slow-moving regulatory impacts because they don’t show up immediately in earnings.
+
+Is regulatory drag now a permanent discount factor for the sector?
+
+[COMMENTS]
+Comment 1:
+Absolutely. Compliance teams are growing faster than engineering teams in some firms.
+Comment 2:
+Regulation creates barriers to entry though — incumbents may actually benefit.
+Comment 3:
+From an EU perspective, the rules are only getting stricter.
+Comment 4:
+Markets ignore regulation until a headline hits. Then everyone pretends it was obvious.
+Comment 5:
+Antitrust risk is real, but breakups don’t always destroy shareholder value.
+Comment 6:
+This is why geographic diversification matters.
+Comment 7:
+Hot take: regulation is the new moat.
+Comment 8:
+Cold take: regulation is the new cost center.

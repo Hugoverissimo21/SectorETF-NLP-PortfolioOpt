@@ -1,0 +1,15 @@
+[POST]
+Title:
+Energy price volatility complicating cost structures
+Body:
+Unpredictable energy costs are making it difficult for materials producers to manage margins. Many contracts lag spot prices, creating mismatches between input costs and selling prices.
+
+This dynamic may pressure profitability even if demand remains stable.
+
+[COMMENTS]
+Comment 1:
+Lag effects can be brutal.
+Comment 2:
+Hedging helps but isn’t perfect.
+Comment 3:
+Volatility cuts both ways.

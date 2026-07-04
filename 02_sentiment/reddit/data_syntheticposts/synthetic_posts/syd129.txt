@@ -1,0 +1,17 @@
+[POST]
+Title:
+Deconstructing the 'Defensive' Rally: Why Unit Volume Dispersion Signals a Peak
+Body:
+While the headline revenue figures for the major household essential conglomerates remain robust, a closer look at the micro-data reveals a troubling trend: negative unit volume growth. For the past three quarters, top-line growth has been almost exclusively driven by price realization (CPI-pass throughs). 
+
+However, we are now seeing 'elasticity breakage.' In several key categories—specifically shelf-stable organics and premium cleaning agents—price hikes are no longer offsetting the decline in volume. As consumers migrate toward private-label alternatives (down-trading), the fixed-cost absorption for these major brands worsens. If unit volumes continue to contract at a 2-3% clip, the current 28x forward earnings multiples are fundamentally unsustainable. We are likely entering a period of significant margin compression as 'price over volume' strategy reaches its logical limit.
+
+[COMMENTS]
+Comment 1:
+The inventory turnover ratios are the real red flag. Warehousing costs are scaling because the high-margin premium stock isn't moving.
+Comment 2:
+Agreed. The 'safety' narrative has ignored the fact that brand equity is eroding in real-time as the price gap between generic and name-brand widens.
+Comment 3:
+Do you think the recent stabilization in raw material inputs will provide enough of a tailwind to offset the volume loss?
+Comment 4:
+Unlikely. Marketing spend is actually increasing to fight the private-label surge, which further eats into the EBIT margins.

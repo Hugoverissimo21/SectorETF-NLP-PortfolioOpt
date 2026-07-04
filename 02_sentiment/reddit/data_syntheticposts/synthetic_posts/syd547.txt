@@ -1,0 +1,22 @@
+[POST]
+Title:
+Demographic shifts and long-term demand dispersion
+Body:
+Aging populations and shifting migration patterns are creating divergent demand profiles across property types and geographies.
+
+Examples:
+- Aging demographics increasing demand for senior housing
+- Slower population growth reducing demand in certain secondary markets
+- Remote work enabling geographic dispersion
+
+Long-term demand forecasts must account for demographic momentum rather than relying solely on historical absorption trends.
+
+[COMMENTS]
+Comment 1:
+Demographics move slowly but dominate long-term outcomes.
+Comment 2:
+Migration trends can reverse faster than expected.
+Comment 3:
+Secondary markets are most vulnerable to population stagnation.
+Comment 4:
+Remote work reshaped geographic demand.

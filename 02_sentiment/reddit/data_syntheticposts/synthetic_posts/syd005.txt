@@ -1,0 +1,27 @@
+[POST]
+Title:
+Is the "Efficiency Paradox" making the grid the only rational long-term play?
+Body:
+I’ve been looking at the IEA’s 2026 revised outlook and some of the recent PJM interconnection queue data, and I think we’re missing the forest for the trees.
+
+For a decade, we’ve operated on the assumption that efficiency gains (LEDs, better insulation, efficient appliances) would offset population growth, keeping total load growth near 0%. We’re now seeing the total collapse of that "flat-line" thesis.
+
+It’s not just about one specific sub-sector or new technology. It’s the structural re-electrification of the entire economy. We are seeing:
+
+Industrial Onshoring: New domestic manufacturing for semiconductors and batteries requires massive, 24/7 "firm" power that weather-dependent sources can’t handle alone.
+
+The Capacity Bottleneck: It takes roughly 5–7 years to bring significant new transmission lines online, but demand is scaling in 18-month cycles.
+
+Valuation Normalization: Historically, these companies traded as bond proxies. But when you look at the 2026–2027 EPS guidance, many are moving into high-single-digit or even double-digit growth territory.
+
+We’ve reached a point where the "juice" is the primary constraint on GDP growth. In a world where every company is trying to scale compute-heavy or energy-intensive operations, the provider of the fundamental utility becomes the ultimate gatekeeper.
+
+I’m moving a significant portion of my "growth" bucket into the infrastructure providers that actually own the physical rights-of-way and the baseload generation. It’s not flashy, but the math on the supply/demand gap is starting to look inevitable.
+
+[COMMENTS]
+Comment 1:
+The PJM capacity auction results from last year were the "canary in the coal mine." Prices jumped nearly 800% in some regions. That isn't a glitch; it’s a signal that the margin of safety in the grid is gone. If you own the companies that actually have "iron in the ground," you’re sitting on the most valuable real estate of the decade.
+Comment 2:
+Agree. Everyone is focused on the front-end interface of the modern economy, but they forget it's all built on 50-year-old copper and transformers. The CAPEX cycle we’re entering is unprecedented. $1 trillion in grid upgrades through 2029? That’s not a "defensive" sector anymore; that’s a massive infrastructure build-out.
+Comment 3:
+This is basically the "Jevons Paradox" in real-time. The more efficient we make our digital and industrial processes, the more of those processes we run, which ultimately drives total energy consumption higher. The "boring" utility stocks are the only ones with a moat that can't be disrupted by a new software update.

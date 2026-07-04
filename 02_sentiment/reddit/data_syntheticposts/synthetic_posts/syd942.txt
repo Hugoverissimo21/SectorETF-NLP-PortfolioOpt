@@ -1,0 +1,25 @@
+[POST]
+Title:
+Communication Services Bear Case: Capital Intensity With Diminishing Returns
+Body:
+I’ve been revisiting the communication services sector from a long-term capital allocation perspective, and the structural issues are hard to ignore.
+
+At its core, this sector is defined by massive, recurring capital expenditures: spectrum auctions, fiber deployment, 5G densification, data centers, content production, and platform moderation infrastructure. Unlike traditional growth sectors, much of this spending is defensive — required just to maintain competitiveness rather than expand margins.
+
+The monetization side is far less certain. Consumers expect faster speeds and more content at flat or declining real prices. Unlimited data plans decouple usage growth from revenue growth, while subscription fatigue limits pricing power in streaming. Advertising-driven platforms face signal loss from privacy regulations and platform changes that reduce targeting efficiency.
+
+Meanwhile, balance sheets remain heavily leveraged after a decade of cheap debt. Refinancing in a higher-rate environment increases interest expense precisely when revenue growth is slowing.
+
+The result: a sector with tech-like valuations at times, utility-like constraints in practice, and macro sensitivity that investors consistently underestimate.
+
+[COMMENTS]
+Comment 1:
+This nails the reinvestment treadmill problem.
+Comment 2:
+Unlimited data plans were great for consumers, terrible for ARPU growth.
+Comment 3:
+The debt overhang is the part most retail ignores.
+Comment 4:
+Feels like returns on capital will stay compressed for years.
+Comment 5:
+Still massive cash flows, but growth quality is questionable.

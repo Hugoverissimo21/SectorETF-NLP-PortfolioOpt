@@ -1,0 +1,15 @@
+[POST]
+Title:
+private networks could bypass telcos
+Body:
+large enterprises deploying private 5G networks reduce reliance on traditional carriers.
+
+[COMMENTS]
+Comment 1:
+disintermediation risk.
+Comment 2:
+enterprise ARPU threatened.
+Comment 3:
+niche but growing.
+Comment 4:
+telcos adapting slowly.

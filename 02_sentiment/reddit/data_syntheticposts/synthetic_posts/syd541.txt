@@ -1,0 +1,22 @@
+[POST]
+Title:
+Higher-for-longer rates and CRE duration mismatch
+Body:
+Commercial real estate capital structures were largely built around an assumption of declining or stable rates. With policy rates remaining elevated, duration mismatch between short-term financing and long-lived assets is becoming more visible.
+
+Implications:
+- Refinancing at materially higher coupons compresses debt service coverage ratios (DSCR)
+- Loan-to-value ratios rise as cap rates adjust upward
+- Sponsors may need equity infusions to avoid covenant breaches
+
+The issue is less about occupancy in the near term and more about capital stack sustainability under persistent rate pressure.
+
+[COMMENTS]
+Comment 1:
+Duration mismatch is the core macro problem here.
+Comment 2:
+Refi risk is a slow-moving but systemic pressure.
+Comment 3:
+Cap rate expansion + higher coupons = DSCR squeeze.
+Comment 4:
+This is fundamentally a balance sheet cycle.

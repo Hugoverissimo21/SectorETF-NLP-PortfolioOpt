@@ -1,0 +1,25 @@
+[POST]
+Title:
+Are telecoms stuck in a permanent price war?
+Body:
+Looking across major markets, telecom operators seem trapped in a cycle of promotions, handset subsidies, and bundle discounts just to maintain subscriber counts.
+
+Switching costs are low. Number portability is seamless. Consumers will churn for marginal savings. As a result, operators compete on price rather than service differentiation, compressing margins across the board.
+
+5G was supposed to enable premium pricing tiers, but most consumers see it as a baseline expectation rather than a value-added service. Enterprise use cases exist, but adoption is slower than initial projections suggested.
+
+In the meantime, spectrum costs, tower leases, and energy expenses continue to rise.
+
+It’s hard to see how sustained pricing power emerges in such an environment.
+
+[COMMENTS]
+Comment 1:
+Number portability killed loyalty.
+Comment 2:
+5G became table stakes overnight.
+Comment 3:
+Enterprise 5G still feels niche.
+Comment 4:
+Energy costs for towers are an underrated expense.
+Comment 5:
+Telecoms compete like airlines now.

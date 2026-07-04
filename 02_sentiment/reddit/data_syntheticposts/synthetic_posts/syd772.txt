@@ -1,0 +1,25 @@
+[POST]
+Title:
+Communication Services and the Quiet Influence of Cultural Trends
+Body:
+We often model this sector using metrics like ARPU, churn, and engagement, but cultural shifts might be just as influential.
+
+Short-form content, creator-led ecosystems, and community-driven platforms are changing how attention is distributed. The idea of a single dominant platform seems less certain than it once did.
+
+If attention continues to fragment, the economics of scale could look different than historical precedents suggest.
+
+Not predicting outcomes — just wondering whether our models adequately capture cultural momentum.
+
+[COMMENTS]
+Comment 1:
+Attention is the real currency here, and it’s getting sliced thinner.
+Comment 2:
+Creator economies decentralize power, which changes platform leverage.
+Comment 3:
+We said the same thing a decade ago and consolidation still happened.
+Comment 4:
+Cultural trends move faster than infrastructure can adapt.
+Comment 5:
+Hard to put cultural momentum into a DCF model lol
+Comment 6:
+Fragmentation might increase total engagement even if it spreads it out.

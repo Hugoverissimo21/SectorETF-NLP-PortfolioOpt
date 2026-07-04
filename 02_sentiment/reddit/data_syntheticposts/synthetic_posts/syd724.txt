@@ -1,0 +1,28 @@
+[POST]
+Title:
+Are Digital Platforms Becoming Too Embedded to Disrupt?
+Body:
+Lately I’ve been thinking about how deeply integrated large digital platforms have become in everyday routines — messaging, entertainment, news, work collaboration, even commerce.
+
+A few observations:
+
+- Daily active usage remains high across age groups.
+- Switching costs are more behavioral than technical.
+- Monetization layers keep expanding without major changes to the core user experience.
+- Global user growth may slow in developed markets but continues elsewhere.
+
+At the same time, attention is finite and regulatory scrutiny isn’t going away.
+
+Do you see these platforms as entrenched infrastructure at this point, or still vulnerable to rapid displacement?
+
+[COMMENTS]
+Comment 1:
+Behavioral switching costs are massively underestimated.
+Comment 2:
+Nothing is permanent online — remember past dominant platforms.
+Comment 3:
+Infrastructure might be the right framing, especially for messaging.
+Comment 4:
+Regulation could force interoperability, which changes the moat.
+Comment 5:
+Entrenched, but attention shifts faster than people think.

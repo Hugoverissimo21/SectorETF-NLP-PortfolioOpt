@@ -1,0 +1,25 @@
+[POST]
+Title:
+My power stayed on during the storm… stock didn’t
+Body:
+Massive storm rolled through, trees down everywhere, half the town dark — somehow my place kept electricity the whole time. Crews were out all night replacing lines.
+
+Next morning I check the market and the companies doing that exact work are down 3% for no obvious reason.
+
+Not even a thesis, just feels weird that reliability improves while sentiment doesn’t. Maybe the market only notices when things break.
+
+[COMMENTS]
+Comment 1:
+Market prices financing costs, not heroic line workers.
+Comment 2:
+Storm response = overtime + capex, not instant profit.
+Comment 3:
+If outages were worse you’d see political heat instead of stock dips.
+Comment 4:
+These names trade more on rates than on actual performance.
+Comment 5:
+Reliability is invisible until it fails. Same with the business model.
+Comment 6:
+Could also just be ETF flows dumping the whole sector that day.
+Comment 7:
+You’re describing infrastructure: essential, underappreciated, and perpetually ‘meh’.

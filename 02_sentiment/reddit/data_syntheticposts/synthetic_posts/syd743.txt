@@ -1,0 +1,26 @@
+[POST]
+Title:
+attention might be the real scarce resource here
+Body:
+formal-ish thought: sustained user attention functions as an economic input enabling monetization, data accumulation, and network reinforcement.
+
+less formal: there are 24 hrs in a day and like 5 platforms eat most of them.
+
+if time spent holds → optionality
+if time spent drops → whole model feels it
+
+kinda fragile, kinda durable. weird combo.
+
+are we underestimating how hard it is to *take* attention once habits form?
+
+[COMMENTS]
+Comment 1:
+attention is the foundation of digital economics
+Comment 2:
+habits protect incumbents more than features do
+Comment 3:
+new formats can steal time بسرعة (lol multilingual brain)
+Comment 4:
+durable until it suddenly isnt
+Comment 5:
+time spent is the KPI that matters

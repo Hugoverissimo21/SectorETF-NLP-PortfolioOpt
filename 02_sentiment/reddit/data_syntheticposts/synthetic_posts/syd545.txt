@@ -1,0 +1,22 @@
+[POST]
+Title:
+Credit tightening and the regional bank CRE feedback loop
+Body:
+Regional banks hold a significant share of commercial real estate loans. As credit conditions tighten, banks may reduce new originations and demand stricter terms.
+
+Feedback loop:
+- Reduced credit availability → fewer buyers → lower transaction volume
+- Lower comps → appraisal declines
+- Appraisal declines → tighter lending standards
+
+This dynamic can amplify downturns even in segments with stable occupancy.
+
+[COMMENTS]
+Comment 1:
+Regional bank exposure is the systemic risk vector.
+Comment 2:
+Transaction volume collapse is already visible in some markets.
+Comment 3:
+Appraisal-based lending creates procyclicality.
+Comment 4:
+Credit availability drives price discovery.

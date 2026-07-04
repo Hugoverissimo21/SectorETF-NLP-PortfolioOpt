@@ -1,0 +1,22 @@
+[POST]
+Title:
+Case Study: €VAF.L (Vafias Group) and niche exposure to everyday consumption logistics
+Body:
+Been digging into smaller-cap names tied indirectly to routine consumption and came across Vafias Group (shipping/logistics exposure to food commodities).
+
+While not a branded goods company, its revenue is linked to the transport of staple food inputs. That creates a different risk profile compared to discretionary cargo: baseline demand for agricultural commodities tends to persist even during economic slowdowns.
+
+Key variables to watch:
+- Freight rate volatility vs contract coverage
+- Commodity flow stability
+- Counterparty risk in emerging markets
+
+Interesting example of how essential consumption demand propagates through the supply chain.
+
+[COMMENTS]
+Comment 1:
+Upstream exposure is an overlooked angle.
+Comment 2:
+Freight rate cyclicality can still dominate the thesis though.
+Comment 3:
+Agricultural flows are structurally more stable than industrial cargo.

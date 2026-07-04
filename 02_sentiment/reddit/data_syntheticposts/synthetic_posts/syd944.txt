@@ -1,0 +1,25 @@
+[POST]
+Title:
+Streaming economics: scale isn’t fixing the problem
+Body:
+The streaming model was built on the assumption that scale would eventually deliver operating leverage. Instead, we’re seeing content costs scale alongside subscriber bases.
+
+Studios demand higher licensing fees, original productions require blockbuster budgets to stand out, and global expansion multiplies localization costs.
+
+At the same time, consumers are hitting subscription fatigue. Rather than stacking multiple services, many rotate subscriptions month to month. This undermines predictable recurring revenue and complicates content amortization models.
+
+Ad-supported tiers help margins but dilute brand positioning and reintroduce cyclicality through ad markets.
+
+The end result: a business model that looks structurally less profitable than legacy cable, despite being more technologically advanced.
+
+[COMMENTS]
+Comment 1:
+Rotation behavior is the killer here.
+Comment 2:
+Content inflation is out of control.
+Comment 3:
+Ad tiers feel like cable 2.0.
+Comment 4:
+Global content costs are massively underestimated.
+Comment 5:
+Scale without pricing power is meaningless.

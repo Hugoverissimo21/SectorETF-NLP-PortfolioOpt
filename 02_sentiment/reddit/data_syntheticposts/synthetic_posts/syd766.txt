@@ -1,0 +1,36 @@
+[POST]
+Title:
+Why Communication Services Might Be Facing a Margin Squeeze
+Body:
+Been reviewing financials across the Communication Services space and one theme keeps popping up: margin compression risk.
+
+Between escalating content acquisition costs, network upgrades, and customer acquisition expenses, operating leverage doesn’t look as strong as it did a decade ago.
+
+Some observations:
+
+- Telecom operators are spending heavily on 5G rollouts while average revenue per user isn’t scaling proportionally.
+- Streaming platforms are competing on exclusive content, which raises fixed costs and increases earnings volatility.
+- Digital advertising platforms face pricing pressure as advertisers demand measurable ROI and diversify spend across channels.
+- Bundling strategies can reduce churn but often dilute per-service profitability.
+
+This isn’t a doom post — just questioning whether historical margin assumptions still hold in valuation models.
+
+Anyone else adjusting long-term margin expectations for the sector?
+
+[COMMENTS]
+Comment 1:
+Margins were never sustainable at those levels. Competition + capex = reality check.
+Comment 2:
+I think bundling is a defensive move. It keeps users in the ecosystem even if per-unit economics weaken.
+Comment 3:
+You’re ignoring pricing power. Connectivity is becoming a utility — people will pay.
+Comment 4:
+As an advertiser, CPMs are getting harder to justify. We’re reallocating to performance channels.
+Comment 5:
+This is why I prefer infrastructure providers over content producers.
+Comment 6:
+Margin squeeze narratives pop up every cycle and the sector adapts. Not new.
+Comment 7:
+Formal take: The sector's cost structure is shifting from scalable to capital-intensive, which should lower terminal margins.
+Comment 8:
+informal take: they’re spending like crazy and hoping subs don’t cancel 💀

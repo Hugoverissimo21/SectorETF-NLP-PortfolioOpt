@@ -1,0 +1,25 @@
+[POST]
+Title:
+Subtle Pricing Psychology in Communication Services
+Body:
+Something I’ve been thinking about: pricing in this sector is increasingly psychological rather than purely economic.
+
+Ad-supported tiers, microtransactions, limited-time bundles, and loyalty perks all shape perceived value. Two services with similar costs can feel very different depending on how pricing is framed.
+
+If consumer perception drives retention more than absolute price, traditional elasticity assumptions might not hold.
+
+Anyone studying this from a behavioral angle?
+
+[COMMENTS]
+Comment 1:
+Perceived value > actual value in subscription models.
+Comment 2:
+Ad tiers normalize the idea of trading attention for access.
+Comment 3:
+Behavioral pricing has been standard in gaming for years.
+Comment 4:
+Elasticity models assume rational users… that’s the flaw.
+Comment 5:
+Loyalty perks are just switching-cost theater.
+Comment 6:
+From UX research: clarity in pricing reduces churn more than lower prices.

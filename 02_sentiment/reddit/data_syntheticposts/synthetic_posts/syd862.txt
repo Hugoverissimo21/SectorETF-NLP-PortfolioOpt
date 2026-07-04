@@ -1,0 +1,15 @@
+[POST]
+Title:
+Rising interest rates pressuring utility valuations
+Body:
+Utilities are capital-intensive and rely heavily on debt financing. Higher interest rates increase borrowing costs and reduce the relative attractiveness of dividend yields compared to safer fixed-income alternatives.
+
+This dynamic could compress valuations even if operating performance remains stable.
+
+[COMMENTS]
+Comment 1:
+Bond yields competing with dividends is a real issue.
+Comment 2:
+Higher financing costs hit capex-heavy sectors first.
+Comment 3:
+Utilities trade like duration-sensitive assets.

@@ -1,0 +1,26 @@
+[POST]
+Title:
+Data Centers Locking In Power for a Decade+ — Probably Nothing
+Body:
+Large data facilities are increasingly signing long-term power purchase agreements, often exceeding ten years, to secure energy supply and cost stability.
+
+**Notable trends:**
+
+• Energy availability influencing site selection.
+• Co-location strategies becoming more common.
+• Power treated as a strategic input rather than a variable expense.
+
+Analyst view: long-term contracts signal confidence in sustained demand.
+Reddit brain: if you’re locking in electrons for a decade, you’re planning to use them.
+
+Just an observation.
+
+[COMMENTS]
+Comment 1:
+Power availability is the new location, location, location.
+Comment 2:
+Long-term PPAs are basically a demand receipt.
+Comment 3:
+Compute growth without power growth isn’t a thing.
+Comment 4:
+Strategic inputs get locked in early.

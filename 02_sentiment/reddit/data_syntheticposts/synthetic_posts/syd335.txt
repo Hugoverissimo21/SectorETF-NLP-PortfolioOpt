@@ -1,0 +1,38 @@
+[POST]
+Title:
+Data Facility Site Selection Increasingly Driven by Power Availability
+Body:
+Site selection criteria for large data facilities are shifting, with power availability and grid access emerging as primary constraints.
+
+**Notable patterns:**
+
+• Regions with surplus capacity attracting new builds.
+• Co-location with generation assets becoming more common.
+• Long-term supply agreements signed prior to construction.
+
+Analyst perspective: energy access is becoming a strategic input.
+Reddit translation: no power, no servers — it’s that simple.
+
+Draw your own conclusions.
+
+[COMMENTS]
+Comment 1:
+Power constraints are the new zoning laws.
+Comment 2:
+Energy access deciding site selection is a major shift.
+Comment 3:
+Long-term agreements signal confidence in utilization.
+Comment 4:
+Surplus capacity regions may see accelerated development.
+Comment 5:
+Co-location reduces risk for operators.
+Comment 6:
+Demand for compute keeps rising regardless of cycles.
+Comment 7:
+Infrastructure follows the power, not the other way around.
+Comment 8:
+Energy availability is now a competitive advantage.
+Comment 9:
+Grid access is becoming a gating factor.
+Comment 10:
+This trend feels structural rather than temporary.

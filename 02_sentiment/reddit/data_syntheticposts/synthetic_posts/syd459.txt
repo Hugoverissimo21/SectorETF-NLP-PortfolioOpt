@@ -1,0 +1,19 @@
+[POST]
+Title:
+Quant-ish view: Staples helps smooth the equity curve
+Body:
+Not a quant, but I do track volatility and drawdowns by sector as part of my rebalancing rules. Staples repeatedly shows up as a stabilizer.
+
+Lower variability in demand translates into more stable earnings. That tends to reduce the severity of declines when macro conditions worsen.
+
+If you’re optimizing for a smoother ride (not maximum upside), staples exposure is a reasonable lever.
+
+[COMMENTS]
+Comment 1:
+Smoother ride is exactly the point.
+Comment 2:
+Most people are over-optimized for upside.
+Comment 3:
+Earnings stability = fewer nasty surprises.
+Comment 4:
+This is risk management, not hype.

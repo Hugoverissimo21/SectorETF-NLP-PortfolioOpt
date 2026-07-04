@@ -1,0 +1,15 @@
+[POST]
+Title:
+Distributed energy resources increasing grid complexity
+Body:
+The growth of rooftop solar, battery storage, and distributed generation increases grid complexity. Utilities must invest in advanced management systems and infrastructure.
+
+These investments expand the regulated asset base and support earnings growth.
+
+[COMMENTS]
+Comment 1:
+More complexity = more infrastructure.
+Comment 2:
+Grid management tech is a hidden growth area.
+Comment 3:
+DER adoption isn’t slowing down.

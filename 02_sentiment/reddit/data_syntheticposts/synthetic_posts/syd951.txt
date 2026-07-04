@@ -1,0 +1,19 @@
+[POST]
+Title:
+Subscription fatigue is reshaping revenue models
+Body:
+Consumers are increasingly unwilling to maintain multiple recurring subscriptions. Instead, they rotate services based on content releases.
+
+This behavior undermines predictable revenue streams and increases marketing costs, as companies must constantly reacquire churned users.
+
+The result is a structurally less stable subscription model than initially envisioned.
+
+[COMMENTS]
+Comment 1:
+Rotation behavior breaks the model.
+Comment 2:
+Marketing costs rising due to churn.
+Comment 3:
+Predictability was the main value prop.
+Comment 4:
+Consumers optimizing spend.

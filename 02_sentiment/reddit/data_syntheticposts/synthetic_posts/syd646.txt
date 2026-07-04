@@ -1,0 +1,34 @@
+[POST]
+Title:
+Utilities sector looking overheated? Defensive play or slow-motion unwind?
+Body:
+I've been digging into the Utilities sector lately and I'm struggling to justify current valuations given the macro backdrop. Traditionally, utilities are treated as defensive, income-oriented plays — stable cash flows, regulated returns, and relatively predictable demand. But with bond yields no longer near zero and capital costs staying elevated, the sector’s appeal as a bond proxy seems less compelling.
+
+A few concerns I'm weighing:
+
+• Rising financing costs: Utilities are capital-intensive and rely heavily on debt markets. Higher rates squeeze margins and delay infrastructure projects.
+• Regulatory lag: Allowed returns often adjust slowly, which can create a mismatch between cost pressures and revenue recovery.
+• Load growth uncertainty: Electrification is a long-term tailwind, but near-term demand growth remains uneven across regions.
+• Energy transition capex: Massive spending on grid upgrades and renewables may dilute returns before benefits materialize.
+
+On the other hand, the sector still offers earnings visibility and essential-service demand, which could matter if economic conditions deteriorate.
+
+Curious how others are thinking about utilities right now — still a safe harbor, or a crowded trade with asymmetric downside?
+
+[COMMENTS]
+Comment 1:
+Utilities stopped being 'boring' the moment rates went up. People forget these companies are basically leveraged infrastructure funds.
+Comment 2:
+From a portfolio construction standpoint, I still see value in the sector as a volatility dampener, but I agree the risk/reward looks worse than it did a few years ago.
+Comment 3:
+Grid upgrades alone are going to require trillions globally. The question isn't demand — it's whether shareholders see the returns or regulators capture them.
+Comment 4:
+Not touching it. If I want yield, I'll just buy Treasuries and skip the regulatory headache.
+Comment 5:
+Hot take: utilities are the new duration trap. Everyone piled in for safety and now they're stuck with rate sensitivity.
+Comment 6:
+Depends on geography. Some regions allow faster rate adjustments, which changes the entire thesis.
+Comment 7:
+People underestimate political risk. One bad rate case and your 'stable' investment underperforms for years.
+Comment 8:
+I work in energy policy — the transition costs are real and timelines are wildly optimistic. That alone should make investors cautious.

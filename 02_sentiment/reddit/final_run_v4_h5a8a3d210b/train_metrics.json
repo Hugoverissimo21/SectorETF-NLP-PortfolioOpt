@@ -1,0 +1,9 @@
+{
+  "train_loss": 0.13355429470539093,
+  "train_macro_f1_mean": 0.856207522766043,
+  "train_acc_mean": 0.9821160858505258,
+  "train_runtime": 839.7712,
+  "train_samples_per_second": 22.385,
+  "train_steps_per_second": 1.399,
+  "epoch": 2.0
+}

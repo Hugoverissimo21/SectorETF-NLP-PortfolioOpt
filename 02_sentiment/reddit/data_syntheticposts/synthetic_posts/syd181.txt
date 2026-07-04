@@ -1,0 +1,17 @@
+[POST]
+Title:
+The 'Callable' Nature of Regulated Yields
+Body:
+The market is treating these names like perpetual annuities, but the capital structure says otherwise. We are seeing a massive divergence between the equity price and the CDS (Credit Default Swap) spreads. 
+
+When the cost of debt exceeds the allowed ROE, the equity isn't 'defensive'—it's a subordinated claim on a melting ice cube. If the state commissions cap the pass-through costs, these companies will have to trigger mandatory deleveraging events. Your 'safe' 3% yield is one credit event away from a forced redemption at book value—which is currently 40% below market price.
+
+[COMMENTS]
+Comment 1:
+P/B at 2.1x while the cost of capital is 6%? The mean reversion is going to be violent.
+Comment 2:
+Most people here don't even know what a rate case is. They just see a green line and a dividend.
+Comment 3:
+I've seen this movie before. The 'safety' trade works until the liquidity evaporates and the bid-ask spread on the options goes to infinity.
+Comment 4:
+Shorting the 200-day EMA cross. The technicals are finally catching up to the balance sheet rot.

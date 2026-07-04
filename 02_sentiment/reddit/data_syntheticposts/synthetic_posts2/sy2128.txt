@@ -1,0 +1,17 @@
+[POST]
+Title:
+Capex-heavy sectors struggle with execution risk
+Body:
+Utilities depend on large-scale infrastructure projects to grow. Delays, contractor disputes, supply chain issues, and permitting challenges can derail timelines and budgets.
+
+Execution risk alone makes forecasting returns difficult.
+
+[COMMENTS]
+Comment 1:
+Infrastructure projects are notoriously messy.
+Comment 2:
+Permitting can take years.
+Comment 3:
+Supply chain issues aren’t fully resolved.
+Comment 4:
+Forecasts assume perfect execution.

@@ -1,0 +1,36 @@
+[POST]
+Title:
+battery storage adoption: hype cycle or new baseline?
+Body:
+bear view:
+• costs still high
+• degradation concerns
+
+bull view:
+• renewables require balancing
+• procurement moving to multi-year
+• storage in long-term capacity plans
+
+feels less like hype when it’s in every spreadsheet
+
+[COMMENTS]
+Comment 1:
+once it’s in capacity planning it’s permanent.
+Comment 2:
+balancing intermittent supply isn’t optional.
+Comment 3:
+cost curves keep improving.
+Comment 4:
+degradation risk is priced into contracts.
+Comment 5:
+multi-year procurement signals commitment.
+Comment 6:
+pilot fatigue leads to standardization.
+Comment 7:
+renewables without storage isn’t scalable.
+Comment 8:
+this looks like infrastructure, not a trend.
+Comment 9:
+cost concerns slow adoption, not stop it.
+Comment 10:
+baseline demand forming in real time.

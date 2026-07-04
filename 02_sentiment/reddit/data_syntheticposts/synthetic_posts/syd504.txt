@@ -1,0 +1,20 @@
+[POST]
+Title:
+Tiny ticker: $SPB — distribution scale in household consumables
+Body:
+Spectrum Brands ($SPB) sits in an interesting spot: small appliances and household consumables. While appliances are cyclical, replacement cycles for items like water filtration and batteries introduce recurring demand elements.
+
+For mixed-demand companies like this, segmentation matters:
+- Replacement-driven vs discretionary sales
+- Retail channel exposure
+- Input cost sensitivity (metals, chemicals)
+
+Shows how even within a single ticker, revenue streams can have very different demand elasticity.
+
+[COMMENTS]
+Comment 1:
+Batteries are closer to recurring consumption than people think.
+Comment 2:
+Segment reporting is key for mixed-demand businesses.
+Comment 3:
+Retailer exposure concentration is worth checking.

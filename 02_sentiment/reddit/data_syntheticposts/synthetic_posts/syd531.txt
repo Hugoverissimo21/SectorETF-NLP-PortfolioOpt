@@ -1,0 +1,30 @@
+[POST]
+Title:
+Mortgage REITs: spread compression risk
+Body:
+Mortgage REITs rely on interest rate spreads between borrowing costs and mortgage yields. In volatile rate environments, spread compression can pressure earnings even without credit losses.
+
+Risks to monitor:
+- Funding cost volatility
+- Prepayment rate fluctuations
+- Hedging effectiveness
+
+Earnings sensitivity to rate movements remains a core vulnerability.
+
+[COMMENTS]
+Comment 1:
+Hedging costs can eat into already thin spreads.
+Comment 2:
+Prepayment assumptions break quickly when rates swing.
+Comment 3:
+Funding markets can seize up in stress scenarios.
+Comment 4:
+Book value volatility is often underestimated.
+Comment 5:
+Spread compression is the silent killer here.
+Comment 6:
+Leverage magnifies small miscalculations.
+Comment 7:
+Repo market stability is critical.
+Comment 8:
+This is a rate bet disguised as income.

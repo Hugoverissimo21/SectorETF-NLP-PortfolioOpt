@@ -1,0 +1,15 @@
+[POST]
+Title:
+hot take: electrification hype is overstated for utilities
+Body:
+EVs and heat pumps will increase load, but efficiency improvements and distributed generation may offset much of that growth.
+
+[COMMENTS]
+Comment 1:
+net impact unclear.
+Comment 2:
+timelines are long.
+Comment 3:
+grid constraints limit growth.
+Comment 4:
+regional differences matter.

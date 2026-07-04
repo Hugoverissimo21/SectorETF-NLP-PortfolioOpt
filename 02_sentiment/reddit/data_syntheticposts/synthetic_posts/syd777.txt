@@ -1,0 +1,23 @@
+[POST]
+Title:
+When 'Free' Isn’t Really Free Anymore
+Body:
+A lot of platforms built their growth on frictionless access. Lately it feels like the tradeoffs are more visible: more ads, more paywalls, more upsells, more restrictions.
+
+Users notice when the experience deteriorates, even if the sticker price doesn’t change.
+
+Feels like a classic case of squeezing value out of an established base vs keeping the experience clean enough to stay sticky.
+
+Not sure where the equilibrium is.
+
+[COMMENTS]
+Comment 1:
+The moment the UX gets annoying, people bail. There’s too many alternatives.
+Comment 2:
+Ads are getting louder because targeting got harder (privacy).
+Comment 3:
+It’s the same story everywhere: growth first, then monetization, then backlash.
+Comment 4:
+Paywalls are fine if the value is clear. Problem is the value is often… not clear.
+Comment 5:
+Upsells everywhere is a sign the easy money is gone.

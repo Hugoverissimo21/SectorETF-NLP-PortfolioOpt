@@ -1,0 +1,15 @@
+[POST]
+Title:
+Overestimation of EV-driven demand growth
+Body:
+While electric vehicles are expected to increase electricity consumption, adoption rates and charging behaviors may not drive demand as quickly as projected.
+
+Utilities could face slower-than-anticipated load growth.
+
+[COMMENTS]
+Comment 1:
+Adoption curves can disappoint.
+Comment 2:
+Off-peak charging reduces revenue impact.
+Comment 3:
+Forecasts may be optimistic.

@@ -1,0 +1,17 @@
+[POST]
+Title:
+Inventory normalization: temporary adjustment or prolonged drag?
+Body:
+Recent commentary across supply chains has emphasized customer destocking and cautious order patterns. While often framed as a normalization process following prior overstocking, such cycles can extend longer than anticipated when end-demand remains uncertain.
+
+Producers may face reduced order visibility, increased pricing pressure, and underutilized capacity during these periods. The resulting margin compression can persist even after volumes stabilize, particularly if competitive dynamics intensify.
+
+[COMMENTS]
+Comment 1:
+Destocking cycles frequently outlast initial management guidance.
+Comment 2:
+Underutilized capacity can lead to aggressive pricing behavior.
+Comment 3:
+Order visibility tends to deteriorate before demand troughs.
+Comment 4:
+Normalization does not necessarily imply rapid recovery.

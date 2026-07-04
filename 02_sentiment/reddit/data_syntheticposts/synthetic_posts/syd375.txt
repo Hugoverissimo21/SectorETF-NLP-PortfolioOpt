@@ -1,0 +1,30 @@
+[POST]
+Title:
+Sector check: Communication Services sentiment turning negative?
+Body:
+Scanning sentiment across forums and analyst notes, the tone around Communication Services is shifting.
+
+Common themes:
+• Ad slowdown concerns
+• Margin compression
+• User growth plateau
+
+Is sentiment leading fundamentals here?
+
+[COMMENTS]
+Comment 1:
+Ad slowdown is real.
+Comment 2:
+Margin compression is real.
+Comment 3:
+User growth plateau is real.
+Comment 4:
+Ad slowdown is real.
+Comment 5:
+Margin compression is real.
+Comment 6:
+User growth plateau is real.
+Comment 7:
+Sentiment follows fundamentals.
+Comment 8:
+Sentiment follows fundamentals.

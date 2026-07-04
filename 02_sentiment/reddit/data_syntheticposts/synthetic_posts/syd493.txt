@@ -1,0 +1,22 @@
+[POST]
+Title:
+Gross Margin Sensitivity to Commodity Inputs in Packaged Goods
+Body:
+In packaged household goods, gross margin volatility is frequently more correlated with commodity inputs (e.g., pulp, resins, agricultural inputs) than with end-demand fluctuations.
+
+Companies typically deploy a mix of:
+- Hedging strategies
+- Lagged pricing adjustments
+- Pack-size optimization
+
+The timing mismatch between cost inflation and pricing realization appears to be a primary driver of earnings variability.
+
+How do you model lag effects between input cost spikes and price realization in this space?
+
+[COMMENTS]
+Comment 1:
+Most models underestimate lag duration during rapid inflation cycles.
+Comment 2:
+Hedging disclosures can provide clues but lack granularity.
+Comment 3:
+Pack-size changes are often the fastest lever operationally.

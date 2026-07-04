@@ -1,0 +1,15 @@
+[POST]
+Title:
+lower case take: data demand keeps exploding
+Body:
+every year people use more data. video, gaming, cloud, ai workloads… traffic just keeps going up. someone has to carry it.
+
+[COMMENTS]
+Comment 1:
+bandwidth demand is relentless
+Comment 2:
+ai will accelerate usage
+Comment 3:
+video already dominates traffic
+Comment 4:
+networks remain essential

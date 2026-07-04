@@ -1,0 +1,27 @@
+[POST]
+Title:
+Time Spent vs. User Count: Which Metric Drives Valuation?
+Body:
+User growth has historically been a headline metric, but time spent may be more economically relevant.
+
+Rationale:
+
+• Monetization opportunities scale with engagement duration
+• Ad inventory expands with session length
+• Retention correlates with habitual usage
+
+A platform with stable users but increasing time spent may outperform one with user growth but declining engagement.
+
+Are valuation frameworks underweighting engagement depth?
+
+[COMMENTS]
+Comment 1:
+Time spent correlates more directly with revenue potential.
+Comment 2:
+User growth without engagement is low quality.
+Comment 3:
+Session frequency matters as much as duration.
+Comment 4:
+Advertisers buy attention, not accounts.
+Comment 5:
+Depth metrics deserve more emphasis.

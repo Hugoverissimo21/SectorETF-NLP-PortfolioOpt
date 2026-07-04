@@ -1,0 +1,25 @@
+[POST]
+Title:
+If inflation stays sticky, cost recovery timing becomes a real issue
+Body:
+Sticky inflation means operating expenses adjust quickly. Revenue frameworks do not.
+
+When approvals take years but costs rise immediately, interim margin compression is inevitable. Markets tend to model smooth adjustments, but real-world policy processes are slower and political.
+
+Feels like consensus assumes frictionless pass-through.
+
+[COMMENTS]
+Comment 1:
+Nothing is frictionless in regulated environments.
+Comment 2:
+Lag risk is real.
+Comment 3:
+Inflation exposes timing gaps.
+Comment 4:
+Margins get squeezed before they recover.
+Comment 5:
+Political optics matter in rate approvals.
+Comment 6:
+Short-term pain, maybe long-term neutral.
+Comment 7:
+Consensus models rarely account for delays.

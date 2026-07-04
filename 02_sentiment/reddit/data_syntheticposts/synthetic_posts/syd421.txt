@@ -1,0 +1,28 @@
+[POST]
+Title:
+Ad-dependent business models look increasingly fragile
+Body:
+A large portion of sector earnings still relies on advertising, which introduces multiple layers of vulnerability.
+
+Key pressures include:
+
+• Economic slowdowns triggering immediate ad budget cuts
+• Privacy changes reducing targeting effectiveness
+• Brands demanding measurable ROI rather than impressions
+• User behavior shifting toward formats that are harder to monetize
+
+Historically, digital advertising benefited from superior targeting and measurement. Those advantages are narrowing.
+
+If ad pricing power weakens while user growth slows, revenue per user may stagnate or decline.
+
+The market still prices in resilient ad growth, but structural changes suggest a less predictable future.
+
+[COMMENTS]
+Comment 1:
+Ad spend is the first thing companies cut.
+Comment 2:
+Privacy rules permanently changed targeting.
+Comment 3:
+Engagement doesn’t equal monetization anymore.
+Comment 4:
+This risk is still underpriced.

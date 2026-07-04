@@ -1,0 +1,15 @@
+[POST]
+Title:
+macro lens: communication services highly cyclical
+Body:
+Despite being perceived as essential, key revenue streams — advertising, device upgrades, enterprise connectivity — are economically sensitive.
+
+[COMMENTS]
+Comment 1:
+ads drive cyclicality.
+Comment 2:
+upgrade cycles slow in downturns.
+Comment 3:
+enterprise spending volatile.
+Comment 4:
+not defensive.

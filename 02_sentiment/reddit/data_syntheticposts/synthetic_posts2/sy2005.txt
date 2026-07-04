@@ -1,0 +1,17 @@
+[POST]
+Title:
+Rising Data Consumption Supports Long-Term Growth
+Body:
+Global data consumption continues to expand, driven by video, real-time applications, and connected devices. Even where pricing models evolve, the underlying demand for data transmission remains strong.
+
+This secular trend may support sustained network investment and utilization.
+
+[COMMENTS]
+Comment 1:
+Video traffic alone drives massive demand.
+Comment 2:
+Connected devices multiply usage.
+Comment 3:
+Underlying trend remains intact.
+Comment 4:
+Capacity needs continue to grow.

@@ -1,0 +1,17 @@
+[POST]
+Title:
+Pricing power erosion in a softer demand environment
+Body:
+In expansionary periods, tight supply conditions enabled pricing actions that supported margin expansion. As demand moderates and inventories rebuild, customers often regain negotiating leverage, leading to price concessions and contract repricing.
+
+Where input costs remain volatile or sticky, the inability to fully pass through expenses can compress margins. This dynamic is particularly pronounced in commoditized segments with limited product differentiation.
+
+[COMMENTS]
+Comment 1:
+Pricing power is highly cyclical in commoditized markets.
+Comment 2:
+Contract repricing cycles can lag spot market movements.
+Comment 3:
+Sticky input costs exacerbate margin compression.
+Comment 4:
+Differentiation remains the primary defense against price erosion.

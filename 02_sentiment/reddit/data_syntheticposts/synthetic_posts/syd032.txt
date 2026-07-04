@@ -1,0 +1,11 @@
+[POST]
+Title:
+Is it just me or is the "Data Center Boom" just a massive wealth transfer from Big Tech to Boomer Utility stocks?
+Body:
+I’ve been looking at the Capex of the hyperscalers. They are spending hundreds of billions on "Compute," but they literally can't turn the servers on without a grid connection that takes 4 years to build. We’re basically in a situation where the "AI Revolution" is entirely dependent on regulated monopolies that haven't changed their business model since 1950. Am I crazy or is the "utility play" the only rational way to trade this without the NVDA volatility?
+
+[COMMENTS]
+Comment 1:
+It’s not just you. The "Power Gap" is the new semiconductor shortage. You can't download a power plant.
+Comment 2:
+If you own the transmission lines, you own the toll booth to the future.

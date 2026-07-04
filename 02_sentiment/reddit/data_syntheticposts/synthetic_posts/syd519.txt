@@ -1,0 +1,20 @@
+[POST]
+Title:
+Student housing: enrollment stability vs affordability constraints
+Body:
+Student housing often benefits from stable enrollment trends, but affordability pressures are becoming more pronounced. Rising rents and living costs may push students toward shared housing or alternative arrangements.
+
+Risks to monitor:
+- Occupancy sensitivity to rent increases
+- University enrollment shifts by region
+- Operating cost inflation
+
+Demand may remain, but pricing flexibility could narrow.
+
+[COMMENTS]
+Comment 1:
+Double-occupancy trends are rising again.
+Comment 2:
+Public university enrollment declines in some regions are a concern.
+Comment 3:
+Operating costs are climbing faster than rents in certain markets.

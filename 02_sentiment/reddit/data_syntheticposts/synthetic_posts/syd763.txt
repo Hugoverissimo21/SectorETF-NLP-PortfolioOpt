@@ -1,0 +1,28 @@
+[POST]
+Title:
+Behavioral Switching Costs: Quantifying the Intangible
+Body:
+Switching costs in digital ecosystems are often behavioral rather than technical.
+
+Components include:
+
+- Social graph lock-in
+- Content libraries and history
+- Habit formation
+- Creator and community ties
+
+Quantifying these factors is challenging, yet they materially influence retention and pricing power.
+
+Are there reliable proxies for behavioral switching costs in valuation models?
+
+[COMMENTS]
+Comment 1:
+Churn rates are a rough proxy.
+Comment 2:
+Social graph density is underutilized in models.
+Comment 3:
+Habit formation is difficult to quantify.
+Comment 4:
+Community ties create durable retention.
+Comment 5:
+Behavioral factors are often underestimated.

@@ -1,0 +1,19 @@
+[POST]
+Title:
+Capital expenditure cycles and long-term earnings visibility
+Body:
+Multi-year capital expenditure programs tied to infrastructure resilience, grid modernization, and integration of distributed generation create a pipeline of approved investments with defined recovery mechanisms.
+
+Unlike discretionary expansion in competitive industries, these investments are often supported by regulatory frameworks that prioritize reliability and system stability. As a result, capital deployment can translate into predictable growth in the regulated asset base, supporting earnings visibility that extends beyond typical business cycles.
+
+Execution risk, regulatory lag, and cost overruns remain relevant considerations, but the structural linkage between investment and earnings distinguishes this model from more cyclical capital spending patterns.
+
+[COMMENTS]
+Comment 1:
+Regulatory lag can create timing mismatches between spending and recovery.
+Comment 2:
+Cost discipline remains critical to avoid disallowances.
+Comment 3:
+Infrastructure resilience is becoming a policy priority in multiple jurisdictions.
+Comment 4:
+This model shifts risk from demand volatility to execution and oversight.

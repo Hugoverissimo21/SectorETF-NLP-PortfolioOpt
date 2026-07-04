@@ -1,0 +1,27 @@
+[POST]
+Title:
+Engagement as a Leading Indicator: A Quantitative Lens
+Body:
+When modeling large communication-driven platforms, engagement metrics often precede revenue expansion.
+
+Observed sequence in prior cycles:
+- Increase in user minutes / interactions
+- Introduction of new monetization tools
+- ARPU expansion
+- Margin improvement through scale
+
+Engagement volatility, however, can rapidly alter forward projections.
+
+For those running discounted cash flow models, do you explicitly incorporate engagement growth assumptions, or proxy everything through revenue estimates?
+
+[COMMENTS]
+Comment 1:
+Engagement is an input variable in my top-down model.
+Comment 2:
+I avoid soft metrics and stick to financial statements.
+Comment 3:
+User minutes correlate strongly with monetization optionality.
+Comment 4:
+The challenge is forecasting engagement durability.
+Comment 5:
+Revenue is a lagging reflection of attention.

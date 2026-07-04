@@ -1,0 +1,20 @@
+[POST]
+Title:
+Construction cost inflation and stalled development pipelines
+Body:
+Rising construction costs and financing expenses are forcing developers to delay or cancel projects. While this may reduce future supply, it also strands capital and delays expected returns.
+
+Challenges include:
+- Budget overruns
+- Financing gaps due to higher interest rates
+- Contractor availability constraints
+
+Pipeline uncertainty complicates forward supply modeling.
+
+[COMMENTS]
+Comment 1:
+Projects penciled in at 4% debt don’t work at 7%.
+Comment 2:
+Contractor bids are volatile and hard to lock in.
+Comment 3:
+Delayed projects can still incur carrying costs.

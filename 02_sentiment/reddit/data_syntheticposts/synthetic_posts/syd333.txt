@@ -1,0 +1,38 @@
+[POST]
+Title:
+Substation Orders Up Across Regions — Planning Cycles Getting Crowded
+Body:
+Recent procurement disclosures show a notable increase in substation equipment orders across multiple regions.
+
+**Observed dynamics:**
+
+• Capacity upgrades tied to electrification and load growth.
+• Replacement of aging infrastructure reaching end-of-life.
+• Developers placing orders earlier to secure manufacturing slots.
+
+Formal interpretation: synchronized ordering often reflects sustained infrastructure demand.
+Less formal interpretation: when everyone’s booking the same gear years in advance, something big is coming online.
+
+Just an observation.
+
+[COMMENTS]
+Comment 1:
+Lead indicators like substation orders rarely spike without underlying demand.
+Comment 2:
+End-of-life replacement cycles are unavoidable.
+Comment 3:
+Early procurement suggests confidence in project pipelines.
+Comment 4:
+Manufacturing slots becoming scarce is telling.
+Comment 5:
+Load growth narratives are finally showing up in orders.
+Comment 6:
+Replacement demand alone can sustain volumes for years.
+Comment 7:
+Grid upgrades tend to cluster rather than spread evenly.
+Comment 8:
+Procurement data is more honest than press releases.
+Comment 9:
+Infrastructure demand moves slowly but persistently.
+Comment 10:
+When planning cycles get crowded, suppliers get leverage.

@@ -1,0 +1,19 @@
+[POST]
+Title:
+Utilities and AI: an overlooked connection
+Body:
+AI gets framed as a software and semiconductor story, but large-scale compute requires enormous, continuous power. Hyperscale facilities are signing long-term power agreements and pushing utilities to expand capacity.
+
+This creates a feedback loop: higher demand justifies infrastructure investment, which expands the rate base and supports earnings growth. Unlike cyclical demand spikes, compute load is persistent and growing.
+
+The AI boom may have a very physical backbone — the power grid.
+
+[COMMENTS]
+Comment 1:
+Data centers are basically industrial power users.
+Comment 2:
+People model chip demand but ignore power demand.
+Comment 3:
+Long-term contracts provide visibility utilities love.
+Comment 4:
+Digital economy, physical constraints.

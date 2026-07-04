@@ -1,0 +1,25 @@
+[POST]
+Title:
+Comparing sector resilience: ads vs electricity vs commodities
+Body:
+Different sectors respond very differently to economic slowdowns.
+
+• Advertising-driven businesses see immediate revenue cuts
+• Electricity demand remains stable but returns are regulated
+• Commodities benefit from supply constraints and pricing power
+
+Communication Services sits in an awkward middle: cyclical revenue with high fixed costs.
+
+Unlike commodities, they lack pricing power. Unlike electricity providers, they lack regulated return stability.
+
+This hybrid risk profile may explain recent underperformance.
+
+[COMMENTS]
+Comment 1:
+Great framing — cyclical revenue + fixed costs is dangerous.
+Comment 2:
+Pricing power is the key differentiator.
+Comment 3:
+Ad spend is the first budget cut.
+Comment 4:
+Hybrid risk profile is a good way to describe it.

@@ -1,0 +1,22 @@
+[POST]
+Title:
+Why low elasticity categories tend to stabilize revenue during slowdowns
+Body:
+While reviewing sector sensitivity to macro cycles, categories with low price elasticity of demand (e.g., food, hygiene, household essentials) consistently show more stable aggregate volumes.
+
+Even under real income pressure, consumers tend to adjust within the category rather than exit it. This leads to:
+- Mix shifts toward value tiers
+- Increased promotional responsiveness
+- Channel migration to discount formats
+
+From a modeling perspective, this creates a demand floor that can reduce revenue volatility relative to discretionary categories.
+
+[COMMENTS]
+Comment 1:
+Category elasticity matters more than brand elasticity.
+Comment 2:
+Trade-down behavior keeps volume intact.
+Comment 3:
+Revenue stability doesn’t mean margin stability, though.
+Comment 4:
+Great macro framing.

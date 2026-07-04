@@ -1,0 +1,38 @@
+{
+  "model_id": "answerdotai/ModernBERT-base",
+  "num_sectors": 11,
+  "num_classes": 3,
+  "sector_cols": [
+    "label_Information Technology",
+    "label_Health Care",
+    "label_Materials",
+    "label_Financials",
+    "label_Consumer Discretionary",
+    "label_Utilities",
+    "label_Communication Services",
+    "label_Real Estate",
+    "label_Consumer Staples",
+    "label_Energy",
+    "label_Industrials"
+  ],
+  "sentiments": [
+    "negative",
+    "neutral",
+    "positive"
+  ],
+  "sent2id": {
+    "negative": 0,
+    "neutral": 1,
+    "positive": 2
+  },
+  "hparams": {
+    "lr": 3e-05,
+    "weight_decay": 0.005,
+    "dropout": 0.2,
+    "train_bs": 8,
+    "eval_bs": 16,
+    "epochs": 2,
+    "max_len": 2048
+  },
+  "seed": 42
+}

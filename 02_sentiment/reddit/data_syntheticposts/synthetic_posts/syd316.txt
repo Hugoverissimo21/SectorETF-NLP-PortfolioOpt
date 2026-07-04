@@ -1,0 +1,27 @@
+[POST]
+Title:
+Substation Equipment Manufacturers Quietly Riding Grid Upgrade Cycle
+Body:
+Producers of transformers, switchgear, and substation equipment rarely attract attention, yet the scale of grid modernization suggests sustained demand.
+
+**Drivers:**
+
+• Replacement of aging transformers past design life.
+• Capacity upgrades to support electrification.
+• Resilience investments against extreme weather.
+
+**Internal perspectives:**
+
+Engineer: "Much of the installed base is decades old."
+Investor: "Replacement cycles create recurring demand."
+Skeptic: "Project delays can shift revenue recognition."
+
+Even with timing variability, replacement needs are non-discretionary over the long term.
+
+[COMMENTS]
+Comment 1:
+Transformer lead times alone signal strong demand.
+Comment 2:
+Replacement cycles are unavoidable in aging grids.
+Comment 3:
+Resilience spending is becoming a regulatory priority.

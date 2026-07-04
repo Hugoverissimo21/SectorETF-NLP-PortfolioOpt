@@ -1,0 +1,15 @@
+[POST]
+Title:
+Aging infrastructure posing reliability and cost challenges
+Body:
+Much of the utility infrastructure in developed markets is decades old. Maintenance and replacement costs are rising, requiring sustained capital investment.
+
+These costs may weigh on free cash flow.
+
+[COMMENTS]
+Comment 1:
+Deferred maintenance is catching up.
+Comment 2:
+Replacement cycles are expensive.
+Comment 3:
+Capex never really ends.

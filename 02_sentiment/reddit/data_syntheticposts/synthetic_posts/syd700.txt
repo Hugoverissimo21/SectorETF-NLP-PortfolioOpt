@@ -1,0 +1,21 @@
+[POST]
+Title:
+valuation already pricing perfection?
+Body:
+steady demand baked in.
+rate recovery assumed.
+no execution errors expected.
+
+that’s a lot of assumptions.
+
+[COMMENTS]
+Comment 1:
+perfection priced
+Comment 2:
+zero margin for error
+Comment 3:
+execution risk underrated
+Comment 4:
+expectations high
+Comment 5:
+one miss and it wobbles

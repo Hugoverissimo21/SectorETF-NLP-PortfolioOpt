@@ -1,0 +1,23 @@
+[POST]
+Title:
+Casual User Rant: Why Does Everything Need an App?
+Body:
+Wanted to watch something. Needed an app.
+Wanted to read something. Needed an app.
+Wanted to message support. Needed an app.
+
+At some point, installing yet another app feels like work. I just close the tab instead.
+
+If friction to start is high, how many potential users never even begin?
+
+[COMMENTS]
+Comment 1:
+Onboarding friction is massively underrated.
+Comment 2:
+Web vs app fragmentation hurts adoption.
+Comment 3:
+Storage space is the new gatekeeper.
+Comment 4:
+If I need an account before seeing value, I’m out.
+Comment 5:
+First impression = install or abandon.

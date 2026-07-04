@@ -1,0 +1,23 @@
+[POST]
+Title:
+Transformer Lead Times Extending Beyond Typical Planning Cycles
+Body:
+Recent procurement data indicates that lead times for high-voltage transformers have extended well beyond historical norms, in some cases exceeding two years.
+
+Contributing factors include:
+
+• Increased grid expansion and modernization projects.
+• Limited global manufacturing capacity for large units.
+• Rising demand tied to electrification and data infrastructure.
+
+Project developers appear to be placing orders earlier in the planning process to secure delivery windows, suggesting a shift in procurement behavior.
+
+Extended lead times often reflect sustained demand rather than temporary disruptions.
+
+[COMMENTS]
+Comment 1:
+Early procurement typically signals confidence in project pipelines.
+Comment 2:
+Manufacturing bottlenecks rarely appear without underlying demand strength.
+Comment 3:
+Longer lead times can reshape capital planning across the sector.

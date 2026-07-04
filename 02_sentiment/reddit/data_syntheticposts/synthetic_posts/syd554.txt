@@ -1,0 +1,22 @@
+[POST]
+Title:
+Why recurring purchase cycles support cash flow predictability
+Body:
+Products with short repurchase cycles (weekly to monthly) create more predictable revenue streams than categories dependent on replacement cycles.
+
+Implications for financial modeling:
+- Lower forecast error in volume assumptions
+- More stable working capital cycles
+- Improved cash conversion visibility
+
+Predictability can be a meaningful advantage in volatile macro environments.
+
+[COMMENTS]
+Comment 1:
+Cash flow visibility is a premium attribute.
+Comment 2:
+Short cycles reduce demand forecasting risk.
+Comment 3:
+Working capital stability is underrated.
+Comment 4:
+Predictability supports dividend consistency.

@@ -1,0 +1,17 @@
+[POST]
+Title:
+If corporate profits weaken, which sectors feel it first?
+Body:
+Trying to map second-order effects.
+
+[COMMENTS]
+Comment 1:
+Advertising budgets get cut immediately.
+Comment 2:
+Consumer discretionary follows.
+Comment 3:
+Industrial demand slows next.
+Comment 4:
+Energy depends more on supply constraints.
+Comment 5:
+Communication Services is a leading indicator.

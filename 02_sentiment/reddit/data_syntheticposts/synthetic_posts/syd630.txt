@@ -1,0 +1,17 @@
+[POST]
+Title:
+Interest rate sensitivity and valuation frameworks
+Body:
+Yield-oriented equities are often evaluated through a duration lens, with valuation sensitivity linked to movements in sovereign bond yields. In periods of elevated rates, relative attractiveness may diminish; conversely, stabilization or declines in yields can alter comparative valuation.
+
+However, this relationship is not purely mechanical. Allowed returns, capital structure adjustments, and incremental investment opportunities can mitigate some rate pressures over time. A nuanced assessment should consider both the cost of debt refinancing cycles and the trajectory of authorized returns in regulatory proceedings.
+
+[COMMENTS]
+Comment 1:
+Duration effects are frequently oversimplified in sector-level analysis.
+Comment 2:
+Refinancing schedules materially influence near-term earnings sensitivity.
+Comment 3:
+Authorized ROE decisions can offset part of the rate headwind.
+Comment 4:
+Relative yield spreads versus Treasuries remain a key valuation anchor.

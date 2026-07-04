@@ -1,0 +1,19 @@
+[POST]
+Title:
+Capital intensity: barrier to entry or constraint on flexibility?
+Body:
+High capital intensity creates substantial barriers to entry and supports natural monopoly characteristics in many service territories. This structure can underpin durable returns over long horizons. Conversely, capital intensity reduces financial flexibility and increases dependence on external financing and regulatory approval.
+
+In periods of favorable credit conditions and supportive regulation, the model can be highly effective. Under tighter financial conditions or regulatory friction, capital requirements may become a constraint.
+
+[COMMENTS]
+Comment 1:
+Natural monopoly characteristics support long-term stability.
+Comment 2:
+Capital intensity amplifies exposure to financing conditions.
+Comment 3:
+Regulatory approval is integral to capital deployment.
+Comment 4:
+Barrier to entry benefits must be weighed against financial rigidity.
+Comment 5:
+Credit market access is a key operational dependency.

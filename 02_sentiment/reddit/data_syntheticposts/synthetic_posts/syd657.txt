@@ -1,0 +1,23 @@
+[POST]
+Title:
+Load growth projections feel optimistic given current industrial trends
+Body:
+A lot of forecasts assume steady demand growth driven by electrification and data infrastructure. That may play out long term, but near-term industrial consumption looks uneven across regions.
+
+If large users slow expansion or delay projects, demand assumptions may need revisiting. Given the fixed-cost nature of network operations, even modest demand shortfalls can pressure margins.
+
+I'm not disputing structural tailwinds — just questioning the timing embedded in current expectations.
+
+[COMMENTS]
+Comment 1:
+Forecasts always assume smooth growth. Reality rarely cooperates.
+Comment 2:
+Industrial demand is more cyclical than people think.
+Comment 3:
+Timing risk matters as much as direction.
+Comment 4:
+Fixed costs make small demand misses feel big.
+Comment 5:
+The long-term story can still be true and overpriced today.
+Comment 6:
+Models love straight lines; economies don't.

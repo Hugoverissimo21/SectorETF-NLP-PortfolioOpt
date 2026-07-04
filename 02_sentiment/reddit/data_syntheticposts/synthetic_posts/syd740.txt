@@ -1,0 +1,28 @@
+[POST]
+Title:
+ad spend: cyclical in theory, reallocating in practice?
+Body:
+formal take: advertising expenditure has historically demonstrated cyclical sensitivity to macroeconomic contraction.
+
+informal take: yeah but the money doesnt vanish, it just moves to whatever shows ROI.
+
+current pattern seems like:
+brand spend ↓ first
+performance channels hold up better
+attribution → budget defense tool
+
+not saying cyclicality is gone. just maybe… reshaped?
+
+curious how ppl here model this. spreadsheet answer + vibes welcome.
+
+[COMMENTS]
+Comment 1:
+roi visibility keeps performance budgets alive
+Comment 2:
+brand still gets chopped when confidence drops
+Comment 3:
+both things can be true at once
+Comment 4:
+my marketing team literally shifts not cuts
+Comment 5:
+macro still matters, just hits differently now

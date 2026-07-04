@@ -1,0 +1,15 @@
+[POST]
+Title:
+consumer churn remains a major issue
+Body:
+low switching costs and aggressive promotions make customer retention expensive and unpredictable.
+
+[COMMENTS]
+Comment 1:
+loyalty programs barely work.
+Comment 2:
+price competition brutal.
+Comment 3:
+CAC rising.
+Comment 4:
+churn destroys LTV.

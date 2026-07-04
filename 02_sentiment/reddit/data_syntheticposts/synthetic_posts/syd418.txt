@@ -1,0 +1,28 @@
+[POST]
+Title:
+Political pressure could erode returns in the power sector
+Body:
+Electricity pricing is inherently political. During inflationary periods, governments face pressure to shield consumers from rising costs.
+
+This creates a structural risk:
+
+• Delayed approval of rate increases
+• Mandated investment without proportional return
+• Subsidized pricing structures
+• Policy-driven shifts in energy mix
+
+These companies operate in a space where economic logic often collides with political reality.
+
+Even when costs rise, they may not be permitted to fully recover them in a timely manner.
+
+That dynamic can quietly erode returns over time, especially in periods of economic stress.
+
+[COMMENTS]
+Comment 1:
+Politics and pricing are inseparable here.
+Comment 2:
+Regulatory lag kills returns.
+Comment 3:
+Mandates without compensation are real.
+Comment 4:
+This risk rarely shows up in models.

@@ -1,0 +1,13 @@
+[POST]
+Title:
+XLU: A quantitative look at why the safety margin has vanished
+Body:
+i ran the numbers on the top 5 regulated utilities. at current prices, they are trading at a 40% premium to their 10-year average book value. ; ; the 'ai data center' narrative has pushed valuations into a territory that requires 8% annual eps growth—something the sector has literally never achieved. when you factor in the execution risk of these massive infrastructure projects, the margin of safety is effectively zero. i’m moving to a heavy underweight position. wait for the mean reversion.
+
+[COMMENTS]
+Comment 1:
+excellent points. people r ignoring the 'execution risk' of building 50gw of new capacity.
+Comment 2:
+the 'comfort buy' logic is how people get stuck in value traps.
+Comment 3:
+disclosure: i hold no shares and am waiting for a 20% correction before looking again.

@@ -1,0 +1,31 @@
+[POST]
+Title:
+Is the 'Safety' rotation a masterstroke or a massive trap? Let's look at the numbers.
+Body:
+I’m seeing a lot of back-and-forth on the 'safe' yield sectors. On one hand, the rotation out of overvalued tech seems logical. On the other, the technical data for these 'defensive' names is starting to look a bit shaky. I’ve laid out the core conflict below. 
+
+**The Bull Case (The Narrative):** 
+- Massive demand growth from hyperscalers (AI data centers) requiring a complete grid overhaul.
+- Stable regulated returns acting as a hedge against a recessionary environment.
+- Dividend yields that are still attractive if/when the Fed starts a cutting cycle.
+
+**The Bear Case (The Math):** 
+- **WACC vs. ROE:** Allowed Returns on Equity are stuck in the 9-10% range while the Weighted Average Cost of Capital is climbing. The spread is narrowing.
+- **Asset-to-Equity:** Leverage ratios are at 10-year highs. Net Debt/EBITDA is pushing 5.5x for many players.
+- **Regulatory Lag:** Can commissions actually approve the rate hikes needed to fund $100B+ capex plans without a consumer revolt? 
+
+I’m leaning toward the bear case simply because the valuation doesn’t seem to account for the execution risk. 19x forward earnings for a regulated monopoly feels like a 'priced for perfection' scenario. Thoughts?
+
+[COMMENTS]
+Comment 1:
+The AI demand is the real deal, but it’s a 5-year play. The debt refinancing is a 6-month play. The mismatch is going to cause some pain first.
+Comment 2:
+People calling this 'safe' aren't looking at the payout ratios. Some are at 85%+. If earnings drop even 5% because of interest expense, that dividend is on the chopping block.
+Comment 3:
+Honestly, the technicals look overbought. RSI is diverging from price on the weekly. I'm waiting for a 10% pullback before even thinking about a 'safe' entry.
+Comment 4:
+You're forgetting that these companies are essentially semi-government entities. They won't let them fail, but they will let the shareholders bleed to keep the rates low.
+Comment 5:
+It’s giving '2022 bond crash' vibes. High duration equity is the last place I want to be if inflation stays sticky.
+Comment 6:
+Counterpoint: If the macro goes to zero, a 3% yield and a regulated moat is the only place left to hide. It's a relative value play, not an absolute one.

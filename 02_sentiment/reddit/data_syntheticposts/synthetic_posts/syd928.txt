@@ -1,0 +1,15 @@
+[POST]
+Title:
+advertising dependence is a vulnerability
+Body:
+platforms reliant on digital ads face cyclical revenue swings and increasing privacy restrictions that reduce targeting effectiveness.
+
+[COMMENTS]
+Comment 1:
+cookie deprecation hurts.
+Comment 2:
+signal loss impacts pricing.
+Comment 3:
+cyclical ad budgets risky.
+Comment 4:
+diversification needed.

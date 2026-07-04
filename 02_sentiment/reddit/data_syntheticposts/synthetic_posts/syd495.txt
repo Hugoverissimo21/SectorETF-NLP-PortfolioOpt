@@ -1,0 +1,22 @@
+[POST]
+Title:
+Revenue Quality: Recurring Consumption vs Durable Goods Cyclicality
+Body:
+From a revenue quality standpoint, recurring consumption categories exhibit shorter repurchase cycles and lower demand volatility compared to durable goods.
+
+This leads to:
+- More predictable cash conversion cycles
+- Lower inventory obsolescence risk
+- Reduced demand forecasting error
+
+However, margin stability remains contingent on cost control and pricing discipline.
+
+For those running multi-sector models, do you apply differentiated discount rates to reflect demand stability characteristics?
+
+[COMMENTS]
+Comment 1:
+Some practitioners adjust beta assumptions rather than discount rates directly.
+Comment 2:
+Cash flow predictability often justifies tighter forecast ranges.
+Comment 3:
+Inventory risk differentials are an under-discussed factor.

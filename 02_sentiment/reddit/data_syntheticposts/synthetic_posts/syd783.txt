@@ -1,0 +1,23 @@
+[POST]
+Title:
+Product Manager Perspective: Engagement vs. Trust Is a Real Tradeoff
+Body:
+From inside product teams, there’s constant tension between maximizing engagement and maintaining user trust.
+
+Dark patterns boost short-term metrics. Transparent design builds long-term loyalty. The tricky part is that dashboards reward the former.
+
+Over time, though, trust erosion shows up as slower growth, higher churn, and brand fatigue.
+
+Feels like the industry is slowly relearning that not everything measurable is worth optimizing.
+
+[COMMENTS]
+Comment 1:
+Short-term metrics are addictive — for companies too.
+Comment 2:
+Trust compounds, but it’s invisible until it’s gone.
+Comment 3:
+Dark patterns are basically technical debt for UX.
+Comment 4:
+Quarterly pressure pushes teams toward the wrong optimizations.
+Comment 5:
+This is the kind of nuance earnings calls never capture.

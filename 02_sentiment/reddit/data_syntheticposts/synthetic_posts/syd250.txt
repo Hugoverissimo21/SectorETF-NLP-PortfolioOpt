@@ -1,0 +1,31 @@
+[POST]
+Title:
+UNH Death Cross confirmed on the Daily. The HCA 'head and shoulders' is about to complete. Healthcare is a falling knife.
+Body:
+I’ve been charting the major XLV components all weekend and the technicals are screaming 'get out.' We aren't just seeing a pull-back; we are seeing a total breakdown of the multi-year support levels. 
+
+1. UnitedHealth (UNH): The 50-day SMA officially crossed below the 200-day SMA last week—the classic Death Cross. More concerning is the RSI; even after dropping to $292, it hasn't stayed in 'oversold' territory long enough to trigger a reversal. Every 'relief rally' is getting sold off on higher-than-average volume. We have a massive liquidity gap down to $258 (the S1 pivot), and I don't see any buyer support until we hit that level. 
+
+2. HCA Healthcare (HCA): This is the cleanest Head and Shoulders pattern I’ve seen in years. The 'left shoulder' peaked in late '25, the 'head' at the Jan earnings, and we just formed a weak 'right shoulder' that failed to even test the 20-day EMA. The neckline is sitting right at $280. If it breaks that on a daily close, the measured move takes this down to $235. 
+
+3. The 'Ratio of Pain': Look at the Medical Loss Ratio (MLR) trends. UNH is guiding for 88.8%—that’s nearly a 400bps expansion from their historical norms. From a technical standpoint, these companies are no longer trading like 'Growth at a Reasonable Price' (GARP); they are being re-rated as low-margin utilities. 
+
+The Trade: I’m buying May $280 Puts on UNH. The MACD is deep in the red and hasn't even begun to curl. This isn't a dip, it's a regime change. 
+
+Positions: $XLV 155P 6/19, $UNH 280P 5/15
+
+[COMMENTS]
+Comment 1:
+Finally, some actual TA. That UNH Death Cross is nasty because it happened on a high-volume red day. There’s no institutional bid underneath this until the $260 area.
+Comment 2:
+Wait, didn't UNH just report they're losing 1 million Medicare Advantage members? That volume loss isn't even priced into the chart yet. The fundamental 'cliff' matches the technical breakdown perfectly.
+Comment 3:
+Check the Bollinger Bands on CVS too. It’s been hugging the lower band for two weeks and still hasn't bounced. Usually, that means the 'bottom' is still a long way down.
+Comment 4:
+Technical analysis on healthcare is astrology for men. The only 'chart' that matters is the one in the Senate Finance Committee. If they don't fix the OBBB reimbursement rates, the chart is going to look like a staircase to hell.
+Comment 5:
+I'm seeing a Bullish Divergence on the 4-hour chart for HCA... just kidding, it just hit a new 52-week low while I was typing this. F.
+Comment 6:
+What’s the OBV (On-Balance Volume) looking like? If the big money is distribution-heavy during these flat days, then your $258 target for UNH is actually conservative.
+Comment 7:
+I’m staying away. Catching a falling knife in a sector with this much regulatory 'smoke' is how you blow up an account. Good luck with the puts though, looks like a solid setup.

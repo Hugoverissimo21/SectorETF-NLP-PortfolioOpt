@@ -1,0 +1,15 @@
+[POST]
+Title:
+Distributed generation reducing utility demand
+Body:
+Rooftop solar and on-site generation allow customers to reduce grid reliance. As distributed energy adoption grows, utilities may face declining net demand.
+
+This trend could erode traditional revenue models.
+
+[COMMENTS]
+Comment 1:
+Net metering impacts revenues.
+Comment 2:
+High adoption areas already seeing effects.
+Comment 3:
+Utilities may need new pricing models.

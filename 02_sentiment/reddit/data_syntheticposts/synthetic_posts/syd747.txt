@@ -1,0 +1,23 @@
+[POST]
+Title:
+Operating Leverage in Digital Platforms
+Body:
+Many large digital platforms share a similar cost structure: substantial upfront investment followed by relatively low marginal distribution costs.
+
+If engagement remains stable, incremental monetization can contribute disproportionately to earnings.
+
+However, rising content acquisition, compliance, and moderation expenses complicate the margin outlook.
+
+When modeling these businesses, do you assume expanding margins over time, or a more balanced cost trajectory?
+
+[COMMENTS]
+Comment 1:
+Scale supports margin expansion if engagement holds.
+Comment 2:
+Content costs can offset efficiency gains.
+Comment 3:
+Compliance is becoming a structural expense.
+Comment 4:
+Operating leverage is real but not automatic.
+Comment 5:
+Execution quality matters more than structure.

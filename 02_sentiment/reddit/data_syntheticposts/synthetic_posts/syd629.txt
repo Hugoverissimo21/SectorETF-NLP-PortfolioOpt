@@ -1,0 +1,21 @@
+[POST]
+Title:
+Load growth assumptions may be entering a structural shift
+Body:
+For much of the past decade, electricity demand forecasts in developed markets were characterized by stagnation, driven by efficiency gains and slow industrial expansion. Recent projections, however, suggest a potential inflection.
+
+Drivers include electrification of transport and heating, expansion of data infrastructure, and selective reshoring of energy-intensive manufacturing. If sustained, even modest percentage increases in load can have meaningful implications for long-duration capital planning and asset utilization.
+
+The durability of these trends remains subject to policy, technological efficiency gains, and macroeconomic conditions, but the directional change in demand assumptions merits attention.
+
+[COMMENTS]
+Comment 1:
+Even low single-digit load growth can materially affect long-term planning models.
+Comment 2:
+Forecast accuracy will depend heavily on adoption curves for electrification technologies.
+Comment 3:
+Data center clustering introduces regional demand concentration risks.
+Comment 4:
+Efficiency improvements could partially offset gross demand increases.
+Comment 5:
+This may represent a shift from volume stagnation to managed growth.

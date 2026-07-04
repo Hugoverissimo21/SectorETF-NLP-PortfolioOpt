@@ -1,0 +1,22 @@
+[POST]
+Title:
+Behavioral inertia and habitual purchasing patterns
+Body:
+Habit formation plays a significant role in routine consumption. Once purchasing patterns are established, consumers exhibit inertia unless disrupted by major price shocks or availability issues.
+
+Implications:
+- Stable baseline demand
+- Reduced sensitivity to short-term sentiment swings
+- Strong repeat purchase behavior
+
+Behavioral stickiness contributes to category resilience over time.
+
+[COMMENTS]
+Comment 1:
+Habit persistence lowers demand volatility.
+Comment 2:
+Switching costs are psychological, not financial.
+Comment 3:
+Repeat purchases create a demand anchor.
+Comment 4:
+Behavioral factors often outweigh macro noise.

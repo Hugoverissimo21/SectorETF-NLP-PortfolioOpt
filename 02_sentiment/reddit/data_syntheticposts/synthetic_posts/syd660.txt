@@ -1,0 +1,21 @@
+[POST]
+Title:
+Anyone else think the capex cycle is being underestimated?
+Body:
+Upgrading aging networks, hardening infrastructure, integrating new generation sources — all necessary. But the scale of spending required over the next decade is enormous.
+
+Even with cost recovery mechanisms, timing gaps and financing costs can dilute returns. The narrative focuses on growth of the asset base, but ignores the path dependency and execution risk.
+
+Feels like the market is pricing the outcome, not the process.
+
+[COMMENTS]
+Comment 1:
+Execution risk is always underpriced.
+Comment 2:
+Slide decks show straight lines; projects don't.
+Comment 3:
+Asset base growth doesn't guarantee shareholder returns.
+Comment 4:
+Financing costs will eat into that growth.
+Comment 5:
+The journey matters more than the destination.

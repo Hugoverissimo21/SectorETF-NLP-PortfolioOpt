@@ -1,0 +1,18 @@
+[POST]
+Title:
+Fiscal deficits, Treasury supply, and cap rate repricing
+Body:
+Elevated fiscal deficits are increasing Treasury issuance, which can place upward pressure on long-term yields. Higher risk-free rates translate into higher required returns for real estate assets.
+
+Mechanism:
+Risk-free rate ↑ → required yield ↑ → cap rates ↑ → asset values ↓
+
+This repricing can occur even if NOI remains stable, particularly in sectors where cap rates had compressed aggressively during low-rate periods.
+
+[COMMENTS]
+Comment 1:
+The risk-free rate is the anchor for all valuations.
+Comment 2:
+Cap rate compression unwinds fast when yields rise.
+Comment 3:
+Fiscal dynamics feeding into CRE is a macro link many ignore.

@@ -1,0 +1,24 @@
+[POST]
+Title:
+Real estate valuations under quantitative tightening
+Body:
+Quantitative tightening (QT) is reducing system liquidity and increasing term premiums, which can indirectly pressure real estate valuations.
+
+Transmission channels:
+- Higher long-term yields raise discount rates applied to property cash flows
+- Reduced bank reserves tighten lending standards
+- Lower transaction liquidity widens bid-ask spreads
+
+Even without deterioration in property-level fundamentals, valuation marks can decline due to macro liquidity conditions.
+
+[COMMENTS]
+Comment 1:
+Bid-ask spreads widening is a real-time liquidity signal.
+Comment 2:
+Regional banks pulling back on CRE lending is huge.
+Comment 3:
+QT’s impact on term premium is under-discussed.
+Comment 4:
+Transaction volume collapse precedes price discovery.
+Comment 5:
+Liquidity cycles drive valuation cycles.

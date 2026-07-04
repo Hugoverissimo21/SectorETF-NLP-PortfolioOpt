@@ -1,0 +1,15 @@
+[POST]
+Title:
+Destocking cycles can be deceptive
+Body:
+When distributors reduce inventory, demand appears to collapse temporarily. However, once inventories normalize, orders can rebound quickly.
+
+The challenge is distinguishing between structural demand decline and temporary destocking.
+
+[COMMENTS]
+Comment 1:
+Market often overreacts to destocking.
+Comment 2:
+But timing the rebound is hard.
+Comment 3:
+Data lag makes it tricky.

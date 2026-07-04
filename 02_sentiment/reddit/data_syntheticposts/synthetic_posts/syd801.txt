@@ -1,0 +1,21 @@
+[POST]
+Title:
+are we reaching peak account creation?
+Body:
+every service wants an account. every account wants a password. every password wants 2fa.
+
+security is good, but cognitive overload is real.
+
+wonder how many people abandon signups simply because they don’t want another login to manage.
+
+[COMMENTS]
+Comment 1:
+password fatigue is real
+Comment 2:
+passkeys might help, eventually
+Comment 3:
+social logins exist but people don’t trust them
+Comment 4:
+account sprawl is a hidden cost
+Comment 5:
+if guest checkout exists, i always choose it

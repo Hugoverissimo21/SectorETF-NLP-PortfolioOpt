@@ -1,0 +1,15 @@
+[POST]
+Title:
+Utilities vulnerable to prolonged high-rate environment
+Body:
+If interest rates remain elevated for an extended period, utilities may face sustained valuation pressure and higher financing costs.
+
+Long-duration assets are particularly sensitive to rate environments.
+
+[COMMENTS]
+Comment 1:
+Rates drive sector performance.
+Comment 2:
+Duration sensitivity is key.
+Comment 3:
+High rates change the investment case.

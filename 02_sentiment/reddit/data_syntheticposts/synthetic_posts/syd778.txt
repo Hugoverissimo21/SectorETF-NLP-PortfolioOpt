@@ -1,0 +1,23 @@
+[POST]
+Title:
+Privacy Expectations Are Changing the Business Model (Slowly, Then Suddenly)
+Body:
+Feels like privacy went from a niche concern to a default expectation.
+
+Even if rules vary by region, the cultural baseline shifted: people ask more questions, opt out more often, and react faster to headlines. That affects how products are designed and how marketing works.
+
+This isn’t about one regulation or one country — it’s broader than that.
+
+Hard to model, but I think it’s one of those background forces that compounds over time.
+
+[COMMENTS]
+Comment 1:
+Agree. The cost is subtle: less data, less precision, more guesswork.
+Comment 2:
+Also makes acquisition harder. You can’t target like you used to.
+Comment 3:
+It’ll favor whoever already has trust + a strong brand.
+Comment 4:
+Consumers say they care, but then they click accept anyway lol
+Comment 5:
+Trust is like a moat, but it’s fragile.

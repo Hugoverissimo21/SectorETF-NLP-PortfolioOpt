@@ -1,0 +1,21 @@
+[POST]
+Title:
+Yield spread compression vs sovereigns nearing historical tights
+Body:
+Dividend yield spreads relative to 10-year sovereigns are approaching the lower end of the historical range.
+
+When spreads compress, forward excess returns tend to decline unless earnings growth accelerates. Given capital intensity and regulated return caps, growth acceleration appears constrained.
+
+Risk/reward skew: neutral to negative.
+
+[COMMENTS]
+Comment 1:
+Spread compression reduces margin of safety.
+Comment 2:
+Forward returns correlate with spread levels.
+Comment 3:
+Growth constraints limit upside.
+Comment 4:
+Income parity with bonds shifts allocations.
+Comment 5:
+Valuation support weakening.

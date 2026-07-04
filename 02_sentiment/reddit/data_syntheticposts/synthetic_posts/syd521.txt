@@ -1,0 +1,20 @@
+[POST]
+Title:
+Cap rate expansion risk in a higher-for-longer environment
+Body:
+If interest rates remain elevated, cap rate expansion could pressure property valuations even if cash flows hold steady.
+
+This creates a scenario where:
+- Loan-to-value ratios increase without new borrowing
+- Refinancing becomes more difficult
+- Equity cushions shrink
+
+Valuation risk may materialize before operational distress in certain segments.
+
+[COMMENTS]
+Comment 1:
+Cap rate expansion is slow until it isn’t.
+Comment 2:
+Appraisal lag can mask value declines temporarily.
+Comment 3:
+Refinancing at higher cap rates resets the entire capital stack.

@@ -1,0 +1,28 @@
+[POST]
+Title:
+Marginal Cost Dynamics and Incremental Margin Sensitivity
+Body:
+Digital distribution models often exhibit near-zero marginal costs per additional user, but incremental margins are not purely a function of scale.
+
+Variables affecting incremental margins include:
+
+- Content acquisition costs
+- Revenue share with creators or partners
+- Compliance and moderation overhead
+- Infrastructure scaling at peak loads
+
+The key insight: marginal cost is low, but marginal *expense layers* evolve over time.
+
+How are you incorporating these second-order costs into margin forecasts?
+
+[COMMENTS]
+Comment 1:
+Revenue sharing can cap margin expansion.
+Comment 2:
+Moderation costs scale with user base.
+Comment 3:
+Peak infrastructure loads are often underestimated.
+Comment 4:
+Near-zero marginal cost is directionally true, not absolute.
+Comment 5:
+Second-order costs are where models break.

@@ -1,0 +1,23 @@
+[POST]
+Title:
+Fiber overbuild: when competition destroys ROI
+Body:
+In many المدن, multiple providers are deploying fiber in the same neighborhoods. While this benefits consumers through lower prices and better service, it undermines return on investment for operators.
+
+Fiber projects assume long payback periods and stable pricing. Overbuild introduces price competition before costs are recovered, extending payback timelines and lowering IRRs.
+
+Municipal broadband initiatives and government subsidies further complicate the competitive landscape, introducing players with different return expectations.
+
+Infrastructure that once promised stable, utility-like returns now faces market dynamics closer to commoditized competition.
+
+[COMMENTS]
+Comment 1:
+Overbuild risk is very real in dense المدن.
+Comment 2:
+Government subsidies distort the market.
+Comment 3:
+Payback assumptions look too optimistic.
+Comment 4:
+Great for consumers, bad for investors.
+Comment 5:
+Seen similar dynamics in early cable deployments.

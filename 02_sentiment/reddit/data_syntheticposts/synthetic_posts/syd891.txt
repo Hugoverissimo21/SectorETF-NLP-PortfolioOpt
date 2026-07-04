@@ -1,0 +1,17 @@
+[POST]
+Title:
+load growth assumptions look optimistic
+Body:
+efficiency gains + rooftop solar + demand response = slower load growth in many regions.
+
+if demand growth underwhelms, utilities still have to maintain massive fixed infrastructure. that math isn’t great.
+
+[COMMENTS]
+Comment 1:
+Energy efficiency is the silent demand killer.
+Comment 2:
+Electrification might offset some of it.
+Comment 3:
+Depends heavily on region.
+Comment 4:
+Fixed cost structure is brutal.

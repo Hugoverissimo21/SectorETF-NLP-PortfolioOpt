@@ -1,0 +1,15 @@
+[POST]
+Title:
+fiber rollouts: great for society, bad for returns
+Body:
+fiber deployment is capital intensive and payback periods are long. competition often forces pricing lower before ROI is achieved.
+
+[COMMENTS]
+Comment 1:
+overbuild risk is real.
+Comment 2:
+municipal broadband adds pressure.
+Comment 3:
+long payback periods scare investors.
+Comment 4:
+needed infrastructure though.

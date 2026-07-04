@@ -1,0 +1,21 @@
+[POST]
+Title:
+Why “necessary vs optional” spending matters more than growth rates
+Body:
+When comparing sectors, growth rates get most of the attention. But I’m starting to think necessity vs optionality might be just as important.
+
+Necessary goods tend to maintain baseline demand even when confidence drops. Optional goods can see demand evaporate quickly.
+
+That distinction seems to explain a lot of performance differences during volatile periods.
+
+Are there good datasets that quantify necessity-driven demand stability?
+
+[COMMENTS]
+Comment 1:
+Consumer confidence vs category sales is a good place to start.
+Comment 2:
+Necessity doesn’t mean immune, but it does mean resilient.
+Comment 3:
+Great framing for thinking about cycles.
+Comment 4:
+You can see this clearly in grocery vs discretionary retail data.

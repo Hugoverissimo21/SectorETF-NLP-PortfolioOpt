@@ -1,0 +1,19 @@
+[POST]
+Title:
+Why do Staples companies talk about “mix” so much?
+Body:
+I used to roll my eyes at earnings calls until I noticed how often Staples management mentions “mix.”
+
+It’s basically: what people buy (premium vs value), where they buy it (club, grocery, online), and what sizes they pick. In staples categories, consumers can react to price increases by shifting mix rather than stopping purchases.
+
+So you can see sales stay okay while volumes wobble, or the opposite, depending on promo and pricing.
+
+If anyone has a clean way to track mix vs pricing vs volume over time, drop it below.
+
+[COMMENTS]
+Comment 1:
+This is one of those things that sounds like corporate fluff but is actually core to the model.
+Comment 2:
+A lot of staples is basically revenue management: pricing + pack architecture + promos.
+Comment 3:
+Mix shifts are also why headline revenue can be misleading.

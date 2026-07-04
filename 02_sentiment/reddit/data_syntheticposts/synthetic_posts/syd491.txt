@@ -1,0 +1,20 @@
+[POST]
+Title:
+Demand Inelasticity in Household Consumption Categories: A Structural Perspective
+Body:
+While reviewing sector-level demand characteristics, categories tied to essential household consumption exhibit relatively low price elasticity at the aggregate level. Consumers may substitute across brands, channels, or pack sizes, but aggregate category volumes tend to remain comparatively stable.
+
+This creates a framework where:
+- Revenue variability is driven more by pricing architecture and mix than by unit collapse
+- Margin outcomes are sensitive to input cost pass-through efficiency
+- Promotional intensity becomes a key competitive variable
+
+For those modeling these businesses, how do you parameterize elasticity differences between premium and value tiers within the same category?
+
+[COMMENTS]
+Comment 1:
+Tiered elasticity assumptions are critical — premium SKUs usually show higher sensitivity.
+Comment 2:
+Cross-elasticity with private label is a major modeling challenge.
+Comment 3:
+Promo elasticity can distort baseline demand estimates.

@@ -1,0 +1,34 @@
+{
+  "hparams": {
+    "lr": 3e-05,
+    "weight_decay": 0.005,
+    "dropout": 0.2,
+    "train_bs": 8,
+    "eval_bs": 16,
+    "epochs": 2,
+    "max_len": 2048
+  },
+  "hparams_hash": "5a8a3d210b",
+  "n_train_samples": 18798,
+  "n_test_samples": 1152,
+  "train_metrics": {
+    "train_loss": 0.13355429470539093,
+    "train_macro_f1_mean": 0.856207522766043,
+    "train_acc_mean": 0.9821160858505258,
+    "train_runtime": 839.7712,
+    "train_samples_per_second": 22.385,
+    "train_steps_per_second": 1.399,
+    "epoch": 2.0
+  },
+  "test_metrics": {
+    "test_loss": 1.1557780504226685,
+    "test_macro_f1_mean": 0.6586813919639402,
+    "test_acc_mean": 0.9371843434343433,
+    "test_runtime": 65.8207,
+    "test_samples_per_second": 17.502,
+    "test_steps_per_second": 1.094,
+    "epoch": 2.0
+  },
+  "final_model_dir": "modernbert_final_run/final_run_h5a8a3d210b/final_model",
+  "run_dir": "modernbert_final_run/final_run_h5a8a3d210b"
+}

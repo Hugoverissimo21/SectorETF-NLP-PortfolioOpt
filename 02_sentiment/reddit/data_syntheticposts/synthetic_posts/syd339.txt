@@ -1,0 +1,33 @@
+[POST]
+Title:
+data centers picking sites based on power availability now
+Body:
+no power = no AI
+
+regions with surplus capacity getting all the builds
+
+long-term power contracts locked before construction even starts
+
+just an observation.
+
+[COMMENTS]
+Comment 1:
+power is the new real estate.
+Comment 2:
+compute growth without energy growth isn’t possible.
+Comment 3:
+locking power first tells you everything.
+Comment 4:
+grid access is the new zoning permit.
+Comment 5:
+AI hype but nobody talking about electricity demand.
+Comment 6:
+this is infrastructure alpha hiding in plain sight.
+Comment 7:
+long term contracts = guaranteed load.
+Comment 8:
+servers don’t run on vibes.
+Comment 9:
+energy availability is now a competitive moat.
+Comment 10:
+people still think demand is flat 💀

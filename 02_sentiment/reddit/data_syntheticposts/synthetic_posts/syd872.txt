@@ -1,0 +1,15 @@
+[POST]
+Title:
+Operational complexity rising with grid decentralization
+Body:
+Integrating distributed energy resources increases grid management complexity and costs. Utilities must invest heavily in technology and workforce training.
+
+These expenses may outpace near-term revenue gains.
+
+[COMMENTS]
+Comment 1:
+Complexity increases operating costs.
+Comment 2:
+Tech upgrades aren’t cheap.
+Comment 3:
+Learning curve adds risk.

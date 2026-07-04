@@ -1,0 +1,15 @@
+[POST]
+Title:
+long-term bear case: returns on capital trending down
+Body:
+Between rising capital requirements, competitive pricing, and regulatory constraints, returns on invested capital appear to be trending downward across multiple subindustries.
+
+[COMMENTS]
+Comment 1:
+ROIC compression is the key metric.
+Comment 2:
+capital intensity rising.
+Comment 3:
+pricing power falling.
+Comment 4:
+long-term concern.

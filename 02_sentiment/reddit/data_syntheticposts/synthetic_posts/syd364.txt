@@ -1,0 +1,26 @@
+[POST]
+Title:
+Bear case: engagement ≠ monetization anymore
+Body:
+We keep hearing about record engagement metrics across platforms, but engagement doesn’t translate into revenue the way it used to.
+
+Reasons:
+
+• Users spend more time on formats that are harder to monetize
+• Ad loads can’t increase without hurting UX
+• Younger demographics resist traditional ads
+• Brands demand performance metrics, not impressions
+
+So you end up with growing usage but flat revenue per user — the worst combo.
+
+Feels like the business model is hitting a ceiling that isn’t obvious in headline metrics.
+
+[COMMENTS]
+Comment 1:
+Short-form content is terrible for monetization compared to long-form.
+Comment 2:
+Gen Z just scrolls past ads. Different behavior entirely.
+Comment 3:
+More engagement + same revenue = margin compression over time.
+Comment 4:
+Metrics look good until you follow the money.

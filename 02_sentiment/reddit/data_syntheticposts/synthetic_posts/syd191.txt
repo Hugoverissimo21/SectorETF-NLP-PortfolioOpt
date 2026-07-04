@@ -1,0 +1,17 @@
+[POST]
+Title:
+Is the 'Safety' rotation actually getting too crowded? (A bear-ish hypothesis)
+Body:
+I’ve been looking at the flow of funds recently and I’m starting to wonder if the 'defensive' trade is reaching an inflection point. Everyone is piling into regulated yield names because they’re scared of a macro drawdown, but aren't we just trading one risk for another? 
+
+The sector is trading at a significant premium to its 10-year P/E mean, while organic volume is consistently flat. If we don't see a significant rate cut soon, I’m worried these debt-heavy balance sheets will start to feel the squeeze. If interest coverage ratios slide another 50bps, do these dividends even remain 'safe'? I'm not shorting the whole thing yet, but the risk-reward feels increasingly skewed to the downside. Curious if anyone else thinks the 'yield' here is a bit of a mirage.
+
+[COMMENTS]
+Comment 1:
+Good points, but you might be ignoring the AI power demand tailwind. If that load growth hits, the valuation might actually be justified.
+Comment 2:
+I'm leaning with you. The Equity Risk Premium is basically non-existent compared to Treasuries right now. It's a weird spot to be.
+Comment 3:
+You're assuming the regulators won't play ball. Usually, they allow enough of a rate hike to keep the credit ratings stable.
+Comment 4:
+The crowd is definitely in the room. Whether they're near the exit or not is the real question.

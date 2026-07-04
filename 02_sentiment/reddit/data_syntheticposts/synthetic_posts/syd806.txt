@@ -1,0 +1,23 @@
+[POST]
+Title:
+small annoyances add up faster than big failures
+Body:
+rare outages get headlines. daily friction gets ignored.
+
+slow load here. extra click there. autoplay you didn’t ask for. settings buried three menus deep.
+
+none of it is deal-breaking alone, but together it shapes how people feel.
+
+experience debt is real.
+
+[COMMENTS]
+Comment 1:
+paper cuts > broken bones in ux
+Comment 2:
+micro-frustrations drive churn
+Comment 3:
+teams optimize metrics, users feel friction
+Comment 4:
+experience debt is a great term
+Comment 5:
+people leave quietly

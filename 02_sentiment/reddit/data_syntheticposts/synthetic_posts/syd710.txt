@@ -1,0 +1,21 @@
+[POST]
+Title:
+Capex cycle implies negative free cash flow persistence
+Body:
+Projected infrastructure investment suggests extended periods of negative free cash flow, funded through debt and equity markets.
+
+While rate base expansion supports long-term earnings, near-term shareholder returns may be diluted by financing requirements and timing mismatches in cost recovery.
+
+Free cash flow yield may remain structurally low during peak investment phases.
+
+[COMMENTS]
+Comment 1:
+Negative FCF phases often coincide with equity underperformance.
+Comment 2:
+Timing mismatch drives valuation pressure.
+Comment 3:
+Rate base growth is long duration.
+Comment 4:
+Financing mix determines shareholder outcome.
+Comment 5:
+FCF yield compression likely.

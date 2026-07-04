@@ -1,0 +1,12 @@
+[POST]
+Title:
+The structural re-rating of Utilities: Why "Bond Proxies" are becoming Growth Stocks in 2026.
+Body:
+We’ve spent 20 years with flat electricity demand in the US. That era ended last year. Between the onshoring of semiconductor manufacturing and the AI data center build-out, we are seeing the first real load growth in decades.
+
+Look at the PJM capacity auctions—prices hit the cap ($333/MW-day) for 2027/28. This isn't a temporary spike; it’s a signal that the margin of safety on the grid is gone. Companies like Southern Co ($SO) just raised their 5-year CAPEX to $81B to handle a 75GW pipeline.
+
+The market is still treating these as 3% dividend plays, but the EPS growth is shifting into the high single digits. If you want to play the AI revolution without the 50x P/E risk of software, you buy the infrastructure. The "juice" is now the primary constraint on global GDP.
+
+[COMMENTS]
+No comments available.

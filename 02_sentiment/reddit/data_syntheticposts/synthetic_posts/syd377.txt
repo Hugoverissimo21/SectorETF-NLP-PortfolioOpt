@@ -1,0 +1,26 @@
+[POST]
+Title:
+Factor model shows deteriorating quality scores for Communication Services
+Body:
+Ran a multi-factor screen on major sectors and Communication Services stood out negatively in several areas:
+
+• Quality factor declining (ROIC compression)
+• Earnings revision breadth turning negative
+• Rising leverage vs cash flow
+• Volatility clustering during macro shocks
+
+Historically, this combination precedes prolonged underperformance.
+
+Not a timing signal, but a risk flag.
+
+Anyone else seeing similar factor deterioration?
+
+[COMMENTS]
+Comment 1:
+Earnings revisions are the canary in the coal mine.
+Comment 2:
+Leverage + declining ROIC is a nasty combo.
+Comment 3:
+Factor crowding unwind could make this worse.
+Comment 4:
+Would be interesting to compare vs 2018 drawdown.

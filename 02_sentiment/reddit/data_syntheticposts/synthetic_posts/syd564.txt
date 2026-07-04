@@ -1,0 +1,20 @@
+[POST]
+Title:
+Hotel sector and pricing power through revenue management systems
+Body:
+Advances in revenue management systems have improved pricing optimization in the hospitality sector, allowing operators to dynamically adjust rates based on demand patterns.
+
+Benefits:
+- Improved RevPAR optimization
+- Better segmentation of business vs leisure demand
+- Real-time pricing adjustments
+
+Technology-driven pricing may help mitigate cyclicality compared to historical models.
+
+[COMMENTS]
+Comment 1:
+Dynamic pricing has transformed hotel revenue models.
+Comment 2:
+Leisure demand has proven more resilient than expected.
+Comment 3:
+Segmentation allows targeted pricing strategies.

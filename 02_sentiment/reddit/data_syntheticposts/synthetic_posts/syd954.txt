@@ -1,0 +1,17 @@
+[POST]
+Title:
+Data growth without revenue growth
+Body:
+Network traffic continues to grow exponentially, but pricing models remain flat-rate. Operators must invest to support traffic growth without proportional revenue increases.
+
+This decoupling erodes returns on network investment.
+
+[COMMENTS]
+Comment 1:
+bit growth ≠ profit growth.
+Comment 2:
+flat pricing is the problem.
+Comment 3:
+network strain rising.
+Comment 4:
+unsustainable long term.

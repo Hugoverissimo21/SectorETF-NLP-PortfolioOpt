@@ -1,0 +1,15 @@
+[POST]
+Title:
+macro take: utilities lose their edge when real yields rise
+Body:
+historically, utilities outperform when real yields fall. we’re in the opposite regime. that alone explains the underperformance.
+
+[COMMENTS]
+Comment 1:
+macro regimes matter more than fundamentals sometimes.
+Comment 2:
+sector rotation 101.
+Comment 3:
+real yields are the key variable.
+Comment 4:
+simple but overlooked.

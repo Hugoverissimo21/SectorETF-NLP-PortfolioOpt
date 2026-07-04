@@ -1,0 +1,15 @@
+[POST]
+Title:
+Quant Signal: The Staples/S&P 500 Ratio is at a 20-Year Extreme
+Body:
+I ran a backtest on the XLP/SPY ratio going back to the late 90s. Every time the ratio hits this level of divergence, the Consumer Staples sector underperforms the broader market by an average of 14% over the following 12 months. 
+
+We are currently in a 'Crowded Trade' scenario. Institutional positioning is at the 95th percentile for defensives. This isn't about the companies being 'bad'—it's about the price being 'wrong.' When the macro narrative shifts even slightly toward growth, the liquidity exit from these stocks will cause a massive drawdown regardless of how many diapers they sell.
+
+[COMMENTS]
+Comment 1:
+Standard 'Reversion to the Mean' play. I’ve seen this movie before.
+Comment 2:
+Does your model account for the current interest rate environment? Defensive yields usually look better when the 10-year is sliding.
+Comment 3:
+I’m seeing the same thing in the options flow. Massive put buying on the 'stable' giants for the six-month outlook.

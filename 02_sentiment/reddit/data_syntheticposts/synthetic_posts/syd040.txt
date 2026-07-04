@@ -1,0 +1,13 @@
+[POST]
+Title:
+The "Grid Strike" is real: My local utility just told a data center developer "No."
+Body:
+Just heard from a buddy in the industry—a major hyperscaler tried to site a 500MW facility and the local utility basically laughed at them. They said the current transmission lines would melt and they won't have an upgrade ready until 2031. The "infinite AI growth" is hitting a brick wall made of concrete and steel.
+
+[COMMENTS]
+Comment 1:
+Sell the chips, buy the wires. The "Compute" bubble is meeting the "Physics" reality.
+Comment 2:
+This is why I'm long on the "integrated" players who own the whole stack. They don't have to ask for permission.
+Comment 3:
+This is exactly why the existing data centers are worth so much. If you have power NOW, you have a gold mine.

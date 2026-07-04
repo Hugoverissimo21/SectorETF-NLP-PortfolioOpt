@@ -1,0 +1,20 @@
+[POST]
+Title:
+Regional malls: traffic vs tenant quality divergence
+Body:
+Foot traffic data in some regional malls has stabilized, but tenant quality appears to be deteriorating. Lower-credit tenants are replacing national chains, increasing default risk and reducing lease durability.
+
+Even with stable traffic, rent rolls can weaken due to:
+- Shorter lease terms
+- Higher tenant turnover
+- Increased revenue-sharing lease structures
+
+This seems to complicate traditional valuation models that rely heavily on occupancy rates alone.
+
+[COMMENTS]
+Comment 1:
+Occupancy is a vanity metric if tenant quality drops.
+Comment 2:
+Revenue-sharing leases shift risk back to landlords.
+Comment 3:
+Cap rates may not fully reflect tenant credit deterioration.

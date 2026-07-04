@@ -1,0 +1,17 @@
+[POST]
+Title:
+Not all defensive sectors are safe
+Body:
+Utilities are considered safe because demand is inelastic, but that doesn’t eliminate financial risk. High leverage, regulatory constraints, and capital intensity create vulnerabilities.
+
+Safety in demand doesn’t always translate to safety in returns.
+
+[COMMENTS]
+Comment 1:
+Demand safety ≠ shareholder safety.
+Comment 2:
+Leverage amplifies risk.
+Comment 3:
+Regulation limits flexibility.
+Comment 4:
+Perception vs. reality.

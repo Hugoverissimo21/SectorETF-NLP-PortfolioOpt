@@ -1,0 +1,17 @@
+[POST]
+Title:
+Relative valuation: low multiples or declining earnings base?
+Body:
+The sector often appears inexpensive on traditional valuation metrics during cyclical slowdowns. However, declining earnings estimates can offset seemingly attractive multiples, resulting in value traps rather than genuine opportunities.
+
+Forward-looking analysis should consider the trajectory of earnings revisions, capacity utilization, and end-market demand rather than relying solely on historical valuation ranges.
+
+[COMMENTS]
+Comment 1:
+Low multiples can mask deteriorating earnings quality.
+Comment 2:
+Estimate revisions frequently lag underlying demand shifts.
+Comment 3:
+Historical valuation bands may not hold in structural downturns.
+Comment 4:
+Distinguishing cyclical troughs from structural decline is critical.

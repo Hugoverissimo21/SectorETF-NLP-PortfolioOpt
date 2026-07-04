@@ -1,0 +1,23 @@
+[POST]
+Title:
+Digital advertising: structural headwinds are mounting
+Body:
+Communication services firms with ad-heavy revenue models face a convergence of structural challenges.
+
+Privacy regulations and platform-level tracking restrictions reduce targeting precision, lowering ad effectiveness and pricing. At the same time, advertisers are diversifying spend across more platforms, fragmenting budgets.
+
+In downturns, ad spending is one of the first expenses cut, making revenue highly cyclical. This cyclicality contradicts the perception that major platforms are stable cash flow machines.
+
+The combination of signal loss, regulatory risk, and cyclical demand suggests that digital advertising margins may never return to prior peaks.
+
+[COMMENTS]
+Comment 1:
+Signal loss is the silent margin killer.
+Comment 2:
+Advertisers are spreading budgets thinner.
+Comment 3:
+Ad revenue volatility is underappreciated.
+Comment 4:
+Privacy rules fundamentally changed the game.
+Comment 5:
+Margins likely peaked years ago.

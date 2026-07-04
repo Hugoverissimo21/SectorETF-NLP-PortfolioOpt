@@ -1,0 +1,20 @@
+[POST]
+Title:
+Regional name: $NGVC and natural grocery demand elasticity
+Body:
+Natural Grocers ($NGVC) focuses on organic and natural foods. While premium positioning can introduce elasticity, baseline food consumption still anchors demand.
+
+Analytical nuances:
+- Trade-down risk to conventional grocers
+- Basket size vs traffic trends
+- Private label expansion in natural categories
+
+Useful case for examining how premium tiers behave within essential consumption categories.
+
+[COMMENTS]
+Comment 1:
+Premium grocers feel pressure faster when budgets tighten.
+Comment 2:
+Basket size trends tell more than traffic alone.
+Comment 3:
+Private label in organic is growing quietly.

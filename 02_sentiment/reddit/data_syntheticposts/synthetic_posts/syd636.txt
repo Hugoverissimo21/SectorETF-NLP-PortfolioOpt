@@ -1,0 +1,19 @@
+[POST]
+Title:
+Interest rates: valuation headwind or cyclical overhang?
+Body:
+Elevated sovereign yields have weighed on yield-oriented equities by reducing their relative attractiveness. A more constructive view suggests that stabilization in rates could alleviate valuation pressure and restore spread appeal. Conversely, a prolonged higher-rate environment may continue to challenge multiples and increase financing costs.
+
+The sensitivity varies based on capital structure, debt maturity profiles, and regulatory allowances for cost recovery. Consequently, rate dynamics may create both risks and opportunities depending on individual balance sheet positioning.
+
+[COMMENTS]
+Comment 1:
+Debt maturity ladders materially affect near-term rate sensitivity.
+Comment 2:
+Authorized returns may not fully offset higher financing costs.
+Comment 3:
+Spread compression versus bonds is a key valuation driver.
+Comment 4:
+Rate volatility introduces timing risk for capital raises.
+Comment 5:
+Historical relationships with yields are informative but not deterministic.

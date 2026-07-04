@@ -1,0 +1,24 @@
+[POST]
+Title:
+Industrial real estate and the long tail of supply chain reconfiguration
+Body:
+Even after the pandemic surge, structural shifts in supply chains — including nearshoring, inventory buffering, and multi-node distribution — continue to support long-term demand for logistics space.
+
+Key structural drivers:
+- Higher inventory-to-sales ratios vs pre-2020 norms
+- Redundancy in distribution networks to mitigate disruptions
+- Growth in regional fulfillment nodes
+
+While rent growth may normalize, the structural demand floor appears higher than in prior cycles.
+
+[COMMENTS]
+Comment 1:
+Nearshoring alone could sustain demand for years.
+Comment 2:
+Inventory buffering is the opposite of just-in-time.
+Comment 3:
+Logistics redundancy is now a board-level priority.
+Comment 4:
+Normalization ≠ collapse.
+Comment 5:
+Structural demand > cyclical noise.

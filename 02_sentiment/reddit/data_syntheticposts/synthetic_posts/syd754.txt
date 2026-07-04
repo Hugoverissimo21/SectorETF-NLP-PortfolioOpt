@@ -1,0 +1,27 @@
+[POST]
+Title:
+Discount Rate Sensitivity in Platform Valuations
+Body:
+Valuations for large digital platforms tend to be highly sensitive to discount rate assumptions due to long-duration cash flow profiles.
+
+Key considerations:
+
+- Terminal value often represents a significant portion of total valuation.
+- Small changes in WACC can materially alter present value.
+- Engagement durability assumptions compound discount rate effects.
+
+In practice, stress testing discount rate ranges may be as important as revenue growth scenarios.
+
+How wide are you setting your sensitivity bands for long-duration platform models?
+
+[COMMENTS]
+Comment 1:
+Terminal value dominates most DCF outputs here.
+Comment 2:
+I run at least a 200 bps range on WACC.
+Comment 3:
+Long-duration assets are extremely rate-sensitive.
+Comment 4:
+Growth assumptions and discount rates interact nonlinearly.
+Comment 5:
+Scenario analysis is essential.

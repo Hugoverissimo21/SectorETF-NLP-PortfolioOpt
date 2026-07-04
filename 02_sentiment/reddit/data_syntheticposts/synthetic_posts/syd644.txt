@@ -1,0 +1,17 @@
+[POST]
+Title:
+Input cost volatility and margin asymmetry
+Body:
+Producers frequently face asymmetric cost dynamics: raw material and energy inputs can rise rapidly, while price increases to customers occur with delay or resistance. In a softer demand environment, the ability to pass through cost increases diminishes further.
+
+This asymmetry can erode margins even without significant volume declines. Firms with limited hedging, long-term supply contracts, or differentiated products may be particularly exposed.
+
+[COMMENTS]
+Comment 1:
+Cost pass-through mechanisms weaken as demand softens.
+Comment 2:
+Energy price volatility remains a key margin variable.
+Comment 3:
+Hedging strategies can mitigate but not eliminate exposure.
+Comment 4:
+Product differentiation influences pricing resilience.

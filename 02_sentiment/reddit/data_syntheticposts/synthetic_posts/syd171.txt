@@ -1,0 +1,13 @@
+[POST]
+Title:
+Equity Risk Premium is literally negative here
+Body:
+Why are we bid on 22x forward multiples for 1.8% organic topline? The spread between these 'defensive' yields and the 2-year Treasury is a joke. You're taking massive duration risk on a proxy-bond with a 75% payout ratio. The second the volume-to-price divergence flips, the dividend coverage gets nuked. Shorting the 'safety' trade.
+
+[COMMENTS]
+Comment 1:
+Finally, someone mentions the payout ratios. They're cannibalizing CAPEX to keep the boomers happy.
+Comment 2:
+WACC is up, ROIC is down. Simple as.
+Comment 3:
+Enjoy the 3% yield while your principal drops 15% on an earnings miss.

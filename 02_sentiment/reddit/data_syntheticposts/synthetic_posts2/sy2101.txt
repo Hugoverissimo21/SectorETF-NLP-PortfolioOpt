@@ -1,0 +1,21 @@
+[POST]
+Title:
+Why is nobody talking about the electricity demand boom?
+Body:
+Everywhere I look people are debating AI winners, chip supply chains, and software margins — but almost nobody is asking the obvious question: where does all the power come from?
+
+Between hyperscale data centers, EV charging networks, heat pumps, and industrial electrification, electricity demand growth is no longer flat. Utilities are uniquely positioned because they operate regulated monopolies with cost-recovery mechanisms. When they invest in infrastructure, they often earn a return on that investment.
+
+This isn't a hype cycle — it's a structural shift. Grid upgrades, transmission expansion, and resilience spending are not optional anymore.
+
+Feels like the market is still pricing utilities as slow-growth bond proxies rather than infrastructure platforms for a more electrified economy.
+
+[COMMENTS]
+Comment 1:
+You're not wrong. Data centers alone are becoming small cities in terms of energy usage.
+Comment 2:
+The boring sectors are usually where the asymmetric risk/reward hides.
+Comment 3:
+Rate cases allow cost recovery. That's the key piece retail investors miss.
+Comment 4:
+Utilities lag until suddenly they don't — seen this movie before.

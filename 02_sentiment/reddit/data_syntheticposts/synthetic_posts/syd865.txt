@@ -1,0 +1,15 @@
+[POST]
+Title:
+Demand growth slower than expected despite electrification
+Body:
+While electrification is a long-term theme, near-term demand growth has been modest in many regions due to efficiency gains and conservation measures.
+
+Lower-than-expected load growth could limit revenue expansion.
+
+[COMMENTS]
+Comment 1:
+Efficiency offsets new demand.
+Comment 2:
+Load growth projections may be optimistic.
+Comment 3:
+Conservation programs are working.

@@ -1,0 +1,27 @@
+[POST]
+Title:
+Cost Structures in Communication Platforms: Fixed vs. Variable Dynamics
+Body:
+Looking at cost structures across the Communication Services sector, many platforms share a similar profile: high upfront investment followed by relatively low marginal costs.
+
+This dynamic can create:
+
+• Sensitivity to user growth trends
+• Potential margin variability depending on content spend
+• Efficiency gains at scale
+
+At the same time, rising compliance, moderation, and content acquisition costs may offset some efficiencies.
+
+How are you modeling cost dynamics here — as a long-term efficiency story or a balancing act?
+
+[COMMENTS]
+Comment 1:
+Scale helps, but costs evolve with regulation and content demands.
+Comment 2:
+Moderation and compliance are the wild cards.
+Comment 3:
+Low marginal cost is the core advantage.
+Comment 4:
+Content arms races can erode efficiency gains.
+Comment 5:
+It’s a balancing act, not a straight-line story.

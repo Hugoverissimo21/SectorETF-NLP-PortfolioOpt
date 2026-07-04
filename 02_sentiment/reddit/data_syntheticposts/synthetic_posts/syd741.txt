@@ -1,0 +1,28 @@
+[POST]
+Title:
+global user growth: saturated in the west, just starting elsewhere
+Body:
+structured view:
+• developed markets → high penetration
+• emerging markets → mobile-first adoption
+• monetization per user → initially low, expands over time
+
+real talk version:
+not everyone lives in a place w unlimited wifi and 5 streaming subs
+
+risks: currency, infra gaps, local competitors
+opportunity: entirely new user cohorts skipping legacy media
+
+feels messy but long runway-ish? idk
+
+[COMMENTS]
+Comment 1:
+arpu differences make comparisons tricky
+Comment 2:
+mobile-first users behave totally different
+Comment 3:
+local platforms can dominate regionally
+Comment 4:
+long runway but not linear
+Comment 5:
+people forget how recent mass connectivity is

@@ -1,0 +1,19 @@
+[POST]
+Title:
+market summary:
+Body:
+people still need electricity
+people still need oil
+people don’t need more ads
+
+[COMMENTS]
+Comment 1:
+Demand elasticity matters.
+Comment 2:
+Ad spend is discretionary; energy consumption isn’t.
+Comment 3:
+Communication platforms depend on corporate budgets.
+Comment 4:
+Energy benefits from supply constraints too.
+Comment 5:
+This is simplistic but directionally true.

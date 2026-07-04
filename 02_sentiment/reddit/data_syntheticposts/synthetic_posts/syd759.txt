@@ -1,0 +1,27 @@
+[POST]
+Title:
+Multi-Format Expansion: Extending User Lifecycles
+Body:
+Platforms increasingly introduce new content formats (short-form, live, audio, interactive) to extend engagement lifecycles.
+
+Potential benefits:
+
+• Increased time spent per user
+• Reduced churn through format diversification
+• New monetization surfaces
+
+Risks include format fatigue and dilution of core user experience.
+
+Do multi-format strategies extend lifecycle value or fragment attention?
+
+[COMMENTS]
+Comment 1:
+Format diversification increases retention.
+Comment 2:
+Too many formats can dilute brand identity.
+Comment 3:
+Short-form has materially increased engagement.
+Comment 4:
+Lifecycle extension is the main benefit.
+Comment 5:
+User fatigue is an emerging risk.

@@ -1,0 +1,17 @@
+[POST]
+Title:
+The Role of Low-Latency Networks in Emerging Applications
+Body:
+Applications such as telemedicine, autonomous systems, and immersive media require low-latency connectivity. Communication networks capable of meeting these requirements may enable new service categories.
+
+The evolution of such applications could expand demand for advanced network capabilities.
+
+[COMMENTS]
+Comment 1:
+Latency requirements are tightening.
+Comment 2:
+Telemedicine depends on reliable connectivity.
+Comment 3:
+Autonomous systems need real-time data.
+Comment 4:
+Emerging applications broaden use cases.

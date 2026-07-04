@@ -1,0 +1,19 @@
+[POST]
+Title:
+Comparative resilience in earnings during economic slowdowns
+Body:
+Historically, demand for essential services has demonstrated lower elasticity relative to broader economic activity. While industrial consumption may fluctuate, residential and baseline commercial demand tends to provide a stabilizing effect on aggregate load.
+
+This demand profile, combined with regulated pricing structures, has contributed to comparatively stable earnings trajectories during economic contractions. Although not immune to macroeconomic pressures, the sector’s revenue framework differs meaningfully from industries reliant on discretionary spending.
+
+Such characteristics may influence portfolio construction decisions in environments where earnings cyclicality is a primary concern.
+
+[COMMENTS]
+Comment 1:
+Elasticity differences between customer classes are an important modeling input.
+Comment 2:
+Industrial demand volatility remains a key swing factor.
+Comment 3:
+Weather variability can overshadow macro effects in certain periods.
+Comment 4:
+Stability of cash flows has historically supported dividend continuity.

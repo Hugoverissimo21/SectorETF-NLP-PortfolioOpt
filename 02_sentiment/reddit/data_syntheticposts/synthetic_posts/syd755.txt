@@ -1,0 +1,28 @@
+[POST]
+Title:
+Cohort Monetization Lag: Timing the Revenue Curve
+Body:
+In many digital ecosystems, monetization lags user acquisition.
+
+Typical pattern:
+
+1. User growth phase
+2. Engagement stabilization
+3. Monetization tool rollout
+4. ARPU expansion
+
+The lag between phases can distort short-term financial metrics while long-term value accrues.
+
+Do you explicitly model monetization lag, or assume a steady ARPU trajectory?
+
+[COMMENTS]
+Comment 1:
+Lag modeling improves realism significantly.
+Comment 2:
+Early cohorts are often under-monetized by design.
+Comment 3:
+ARPU smoothing hides inflection points.
+Comment 4:
+Timing differences can mislead quarterly comparisons.
+Comment 5:
+Lifecycle staging is critical.

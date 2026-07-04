@@ -1,0 +1,19 @@
+[POST]
+Title:
+Defensive characteristics: resilience or relative underperformance risk?
+Body:
+The sector’s defensive profile—stemming from essential service demand and regulated pricing—has historically supported earnings stability during economic downturns. This resilience can enhance portfolio diversification. However, in periods of strong economic expansion and risk-on sentiment, defensive characteristics may translate into relative underperformance.
+
+Thus, the same attributes that provide downside protection may limit upside participation, making positioning decisions sensitive to broader macro conditions and investor risk appetite.
+
+[COMMENTS]
+Comment 1:
+Downside protection often comes at the cost of upside capture.
+Comment 2:
+Relative performance is highly regime-dependent.
+Comment 3:
+Diversification benefits extend beyond return maximization.
+Comment 4:
+Risk appetite cycles influence sector flows.
+Comment 5:
+Defensive does not mean immune to drawdowns.

@@ -1,0 +1,21 @@
+[POST]
+Title:
+anyone else rotating subscriptions instead of canceling?
+Body:
+i keep 1–2 core services and rotate the rest depending on what i want that month.
+
+none of my friends think of this as ‘churn.’ it’s just normal behavior now.
+
+makes me wonder how meaningful subscriber counts are without context on activity.
+
+[COMMENTS]
+Comment 1:
+rotation is just delayed churn
+Comment 2:
+seasonal usage patterns matter more than totals
+Comment 3:
+bundles hide this behavior
+Comment 4:
+sharing accounts complicates the picture even more
+Comment 5:
+subscriber ≠ active user

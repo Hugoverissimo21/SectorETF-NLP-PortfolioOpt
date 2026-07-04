@@ -1,0 +1,23 @@
+[POST]
+Title:
+Communication Services: The Illusion of Platform Moats
+Body:
+Many platforms in this sector are assumed to have strong network effects. While this is true to an extent, user behavior over the past decade shows that attention can migrate quickly.
+
+Younger demographics routinely shift to new platforms, fragmenting engagement. Advertisers follow attention, reducing the durability of monetization advantages.
+
+At the same time, regulatory scrutiny increases with scale, imposing moderation costs, compliance burdens, and limits on data usage.
+
+The moat, therefore, is not as durable as traditional network effect models suggest — it is constantly eroded by cultural shifts and policy intervention.
+
+[COMMENTS]
+Comment 1:
+Attention is the most fickle asset.
+Comment 2:
+Regulation scales with success.
+Comment 3:
+Network effects aren’t permanent.
+Comment 4:
+Gen Z platform shifts prove this.
+Comment 5:
+Moats here require constant reinvestment.

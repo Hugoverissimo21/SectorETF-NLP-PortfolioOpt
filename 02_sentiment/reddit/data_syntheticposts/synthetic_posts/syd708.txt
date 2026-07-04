@@ -1,0 +1,21 @@
+[POST]
+Title:
+Factor view: rate sensitivity remains the dominant driver
+Body:
+Screening for interest rate beta across defensive income equities shows elevated sensitivity relative to historical norms.
+
+High leverage, long asset lives, and regulated pricing frameworks create duration-like characteristics. In a higher-for-longer regime, valuation compression appears consistent with discount rate adjustments rather than idiosyncratic weakness.
+
+Conclusion: performance dispersion likely macro-driven rather than sector-specific execution.
+
+[COMMENTS]
+Comment 1:
+Rate beta explains most of the move.
+Comment 2:
+Duration characteristics are underappreciated.
+Comment 3:
+Macro regime shift > fundamentals.
+Comment 4:
+Discount rate sensitivity is the key variable.
+Comment 5:
+Cross-asset yield competition matters.

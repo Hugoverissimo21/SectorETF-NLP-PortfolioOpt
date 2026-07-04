@@ -1,0 +1,23 @@
+[POST]
+Title:
+EU User Here: Consent Fatigue Is a Thing
+Body:
+Every site: cookies. Every app: permissions. Every update: new terms.
+
+At some point you stop reading and just click ‘accept’ to make the popup disappear. I get why the rules exist, but the user experience is… exhausting.
+
+If everyone blindly consents, are we really improving outcomes, or just adding friction?
+
+Genuine question from the front lines.
+
+[COMMENTS]
+Comment 1:
+Consent fatigue undermines the whole point.
+Comment 2:
+Designers optimize for acceptance rates, not comprehension.
+Comment 3:
+Regulation without UX standards leads to popup hell.
+Comment 4:
+Most people just want the banner gone.
+Comment 5:
+Friction tax on the internet.

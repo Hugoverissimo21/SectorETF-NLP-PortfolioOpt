@@ -1,0 +1,17 @@
+[POST]
+Title:
+Inventory mismanagement risks are rising
+Body:
+Demand volatility makes forecasting difficult. Overstocking leads to markdowns and waste, while understocking leads to lost sales and retailer penalties.
+
+Execution risk in inventory management can erode profitability.
+
+[COMMENTS]
+Comment 1:
+Forecasting is harder than ever.
+Comment 2:
+Markdowns destroy margins.
+Comment 3:
+Stockouts damage relationships.
+Comment 4:
+Balancing inventory is tricky.

@@ -1,0 +1,20 @@
+[POST]
+Title:
+Floating-rate debt exposure across smaller REITs
+Body:
+Some small and mid-cap REITs still carry meaningful floating-rate debt exposure. Even with partial hedging, higher-for-longer rate scenarios can pressure FFO through increased interest expense.
+
+Risks to monitor:
+- Hedge roll-offs
+- Refinancing spreads vs original coupons
+- Covenant headroom
+
+Balance sheet structure may matter more than property-level performance in the current rate environment.
+
+[COMMENTS]
+Comment 1:
+Refinancing risk is underpriced in smaller names.
+Comment 2:
+Hedges expiring in 2026–2027 could be painful.
+Comment 3:
+Covenant breaches can force asset sales at bad prices.

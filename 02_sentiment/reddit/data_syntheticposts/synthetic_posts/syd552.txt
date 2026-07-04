@@ -1,0 +1,22 @@
+[POST]
+Title:
+Input cost normalization and potential margin recovery
+Body:
+After a period of elevated commodity and freight costs, several input categories (e.g., agricultural commodities, packaging resins, ocean freight) have shown signs of normalization.
+
+If cost deflation coincides with previously implemented price increases, companies may experience temporary margin expansion.
+
+Key variables:
+- Timing mismatch between price realization and cost normalization
+- Competitive response via promotions
+- Retailer negotiations on wholesale pricing
+
+The margin cycle in essential goods often lags the commodity cycle.
+
+[COMMENTS]
+Comment 1:
+Lag effects are where the margin upside hides.
+Comment 2:
+Retailers will push back if costs fall too fast.
+Comment 3:
+Promo wars can erase margin gains quickly.

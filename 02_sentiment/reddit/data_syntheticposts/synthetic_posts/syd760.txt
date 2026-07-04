@@ -1,0 +1,27 @@
+[POST]
+Title:
+Interoperability Mandates: Competitive Reset or Marginal Impact?
+Body:
+Regulatory discussions around interoperability could reshape competitive dynamics by lowering switching costs.
+
+Potential outcomes:
+
+- Increased user mobility between platforms
+- Reduced lock-in effects
+- Greater emphasis on product differentiation
+
+However, behavioral inertia may still limit switching despite technical openness.
+
+Would interoperability meaningfully alter competitive moats?
+
+[COMMENTS]
+Comment 1:
+Behavioral lock-in may outlast technical barriers.
+Comment 2:
+Interoperability could commoditize core features.
+Comment 3:
+Differentiation will shift to experience and community.
+Comment 4:
+Switching costs are social, not technical.
+Comment 5:
+Impact may be gradual rather than disruptive.

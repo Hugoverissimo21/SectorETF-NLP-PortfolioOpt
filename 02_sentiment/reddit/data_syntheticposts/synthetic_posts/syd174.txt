@@ -1,0 +1,19 @@
+[POST]
+Title:
+Utilities (XLU): The Equity Risk Premium is officially broken
+Body:
+Running the numbers on the sector's forward curve and the math doesn't check out. 
+
+* **Forward P/E:** 18.5x (Current) vs. 15.1x (10-yr Mean). That's a ~22% premium for a sector with 5% projected EPS growth.
+* **The Spread:** 10-Year Treasury is at 4.2% while XLU dividend yield has compressed to 2.8%. We are at the widest negative spread since 2008. 
+* **Duration Risk:** Utilities are trading like 30-year zeros. A 50bps move higher in the long bond wipes out 3 years of dividends in capital depreciation. 
+
+We’re paying 'growth' multiples for regulated monopolies that can't hike rates without commission approval. Mean reversion is coming.
+
+[COMMENTS]
+Comment 1:
+Negative ERP in a high-rate environment is a death sentence for multiples.
+Comment 2:
+Regulatory lag is the real risk. Commissions aren't going to let them pass 8% WACC onto consumers just to save the dividend.
+Comment 3:
+I'm shorting the 18x handle. The AI 'power demand' narrative is priced in, but the cost of capital isn't.

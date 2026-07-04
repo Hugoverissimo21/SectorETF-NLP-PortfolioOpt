@@ -1,0 +1,15 @@
+[POST]
+Title:
+Are we underestimating demand elasticity in industrial inputs?
+Body:
+Demand for industrial inputs can decline rapidly when end markets slow, as customers delay projects and reduce consumption.
+
+Understanding elasticity is critical when assessing potential downside risk in the materials space.
+
+[COMMENTS]
+Comment 1:
+Project delays kill demand quickly.
+Comment 2:
+Elasticity varies by product.
+Comment 3:
+Long-term contracts provide some buffer.

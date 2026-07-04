@@ -1,0 +1,17 @@
+[POST]
+Title:
+Network Effects in Large-Scale Platforms
+Body:
+Large communication platforms benefit from user scale that attracts advertisers, developers, and content creators. While competitive dynamics persist, scale can reinforce engagement loops that sustain platform relevance.
+
+Such network effects may continue to provide structural advantages.
+
+[COMMENTS]
+Comment 1:
+Scale attracts ecosystem participants.
+Comment 2:
+Engagement loops strengthen retention.
+Comment 3:
+Advertisers follow audiences.
+Comment 4:
+Network effects remain meaningful.

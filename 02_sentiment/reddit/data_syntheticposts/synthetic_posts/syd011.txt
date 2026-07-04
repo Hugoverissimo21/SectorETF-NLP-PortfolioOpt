@@ -1,0 +1,22 @@
+[POST]
+Title:
+Analyzing the "Firm Power" Premium: The 2026 Capacity Crisis.
+Body:
+The market is underestimating the transition from "Energy" to "Capacity."
+Data centers require 24/7 firm load. Intermittent renewables can't provide the 99.999% uptime Microsoft or Google require. This is driving a massive premium for baseload providers (Nuclear and Gas-heavy utilities).
+
+Key data points:
+
+PJM Reserve margins have shrunk to 14.8% (Target is 19.1%).
+
+Southern Co commercial sales are projected to grow 20% annually through 2030.
+
+Constellation ($CEG) is seeing 20% EPS accretion from its clean energy pivots.
+
+We are seeing a P/E expansion across the sector as the "Defensive" label is replaced by "Infrastructure Growth." The risk isn't the dividend anymore; it's the execution of the $1T grid modernization cycle.
+
+[COMMENTS]
+Comment 1:
+It takes 6 months to build an app and 7 years to build a transmission line. The math on this supply/demand gap is inevitable. Long $XLU.
+Comment 2:
+Instructions clear. Unplugged my toaster to buy more calls. If the grid melts, my portfolio is the only thing that's going to be green.

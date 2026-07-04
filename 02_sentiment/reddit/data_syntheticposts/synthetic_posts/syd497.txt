@@ -1,0 +1,22 @@
+[POST]
+Title:
+Pack Architecture Optimization and Its Impact on Realized Pricing
+Body:
+Pack architecture (size, format, bundling) is a critical but often under-modeled lever in essential goods categories.
+
+Adjustments can influence:
+- Effective price per unit
+- Consumer perception of value
+- Shelf-space efficiency
+
+Because consumers often anchor on absolute price rather than unit economics, pack resizing can facilitate price realization without explicit list-price changes.
+
+How do you incorporate pack-size adjustments into ASP modeling?
+
+[COMMENTS]
+Comment 1:
+Unit price normalization is key when tracking ASP trends.
+Comment 2:
+Shrinkflation effects can mask real pricing power.
+Comment 3:
+Retailer acceptance of new pack formats is a gating factor.

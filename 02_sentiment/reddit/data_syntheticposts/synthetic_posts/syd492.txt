@@ -1,0 +1,21 @@
+[POST]
+Title:
+Channel Mix Shifts as a Leading Indicator in Essential Goods Retail
+Body:
+Recent retail data suggests that channel migration (e.g., grocery → discount → club) can serve as a leading indicator of consumer stress without necessarily implying a contraction in category demand.
+
+From an analytical standpoint, channel mix shifts affect:
+- Realized pricing
+- Promotional cadence
+- SKU rationalization
+- Working capital dynamics
+
+Curious whether others incorporate channel-weighted pricing adjustments into their revenue forecasts.
+
+[COMMENTS]
+Comment 1:
+Channel-weighted ASP modeling is essential for accuracy.
+Comment 2:
+Club channel growth often compresses per-unit margins but improves volume visibility.
+Comment 3:
+Great point — demand signal vs channel signal often get conflated.

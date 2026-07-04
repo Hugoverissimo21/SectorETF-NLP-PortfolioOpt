@@ -1,0 +1,17 @@
+[POST]
+Title:
+Renewable integration could pressure returns
+Body:
+Integrating intermittent energy sources requires storage, backup generation, and grid balancing. These costs may not be fully recoverable, especially if regulators push affordability over profitability.
+
+The transition narrative sounds positive, but the economics are complex and potentially unfavorable.
+
+[COMMENTS]
+Comment 1:
+Intermittency adds hidden costs.
+Comment 2:
+Policy goals don’t always align with investor returns.
+Comment 3:
+Storage economics are still evolving.
+Comment 4:
+Transition risk is real.

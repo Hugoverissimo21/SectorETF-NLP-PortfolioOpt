@@ -1,0 +1,21 @@
+[POST]
+Title:
+tiny friction kills adoption
+Body:
+download app → create account → verify email → allow permissions → choose plan → enter payment → confirm device → tutorial → finally see content
+
+most people won’t say no. they just… never finish.
+
+onboarding feels like a silent filter for potential users.
+
+[COMMENTS]
+Comment 1:
+each step drops conversion
+Comment 2:
+web previews help a lot with this
+Comment 3:
+if i can’t try before signing up, i bounce
+Comment 4:
+permissions upfront are a red flag for many users
+Comment 5:
+onboarding is where growth quietly dies

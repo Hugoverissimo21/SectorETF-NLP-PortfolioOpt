@@ -1,0 +1,13 @@
+[POST]
+Title:
+Why the "Grid Supercycle" is going to end in a massive pile of debt and tears.
+Body:
+Everyone is foaming at the mouth over 150GW of data center demand by 2030. Here’s what you’re missing: the cost of capital. These companies are borrowing billions at 2026 rates to build infrastructure that won't see a dime of revenue for 7 years. One "AI Winter" or a shift to more efficient inference models and these utilities are left holding the bag on stranded assets. The "growth" is being priced in, but the "risk of bankruptcy" isn't.
+
+[COMMENTS]
+Comment 1:
+This. If Microsoft is willing to pay a premium just to stay at the front of the interconnection queue, the debt doesn't matter.
+Comment 2:
+Counter-point: The hyperscalers are signing 20-year PPAs. The revenue is literally guaranteed by the richest companies on earth. It’s the safest yield in history.
+Comment 3:
+Finally, a bear with a brain. People forget these aren't software companies. You can't "pivot" a 500kv substation.

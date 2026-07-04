@@ -1,0 +1,21 @@
+[POST]
+Title:
+Regulatory lag is the silent earnings killer
+Body:
+Cost inflation hits immediately. Rate adjustments take years. That timing mismatch compounds and quietly erodes returns.
+
+On paper, the framework works. In practice, the lag matters more than the allowed return.
+
+Feels like analysts model the destination while ignoring the delay.
+
+[COMMENTS]
+Comment 1:
+Timing mismatch is everything.
+Comment 2:
+Allowed returns don't help if recovery takes 3 years.
+Comment 3:
+Most models assume smoother adjustments than reality.
+Comment 4:
+Lag risk is real but hard to quantify.
+Comment 5:
+The framework works — just slowly.

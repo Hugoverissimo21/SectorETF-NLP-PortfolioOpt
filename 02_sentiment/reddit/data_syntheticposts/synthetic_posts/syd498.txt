@@ -1,0 +1,22 @@
+[POST]
+Title:
+Retailer Concentration Risk in Household Consumables
+Body:
+A notable structural risk in household consumables is retailer concentration. Large retailers exert significant bargaining power over pricing, promotions, and shelf placement.
+
+This dynamic affects:
+- Gross-to-net adjustments
+- Trade spend requirements
+- Working capital through payment terms
+
+In extreme cases, retailer delisting risk can materially impact volumes.
+
+Do you model retailer concentration as a discrete risk factor or embed it within margin assumptions?
+
+[COMMENTS]
+Comment 1:
+I treat it as a margin risk with scenario analysis for delisting events.
+Comment 2:
+Trade spend inflation is often underestimated.
+Comment 3:
+Payment terms can quietly erode cash flow quality.

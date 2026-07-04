@@ -1,0 +1,17 @@
+[POST]
+Title:
+Supply chain disruptions are still a risk
+Body:
+Global supply chains remain vulnerable to geopolitical tensions, shipping constraints, and raw material shortages. Staples companies depend on complex logistics networks.
+
+Disruptions can lead to stockouts, lost sales, and higher costs.
+
+[COMMENTS]
+Comment 1:
+Just-in-time isn’t foolproof.
+Comment 2:
+Logistics costs are unpredictable.
+Comment 3:
+Stockouts damage brand trust.
+Comment 4:
+Global risk persists.

@@ -1,0 +1,25 @@
+[POST]
+Title:
+Subscription Fatigue vs. Bundling: Where Do Users Draw the Line?
+Body:
+We’ve seen an explosion of subscription-based digital services over the past decade. Recently, there’s more talk about bundling as a way to reduce churn and increase perceived value.
+
+Some dynamics at play:
+
+- Users resist managing too many standalone subscriptions
+- Bundles can improve retention and revenue predictability
+- Content and service differentiation still matters
+
+Do bundles solve subscription fatigue, or just delay it?
+
+[COMMENTS]
+Comment 1:
+Bundles reduce friction — one bill feels simpler.
+Comment 2:
+Fatigue is real; users rotate subscriptions.
+Comment 3:
+Retention improves when services are complementary.
+Comment 4:
+Bundles work until prices creep up.
+Comment 5:
+Churn never disappears, it just slows.

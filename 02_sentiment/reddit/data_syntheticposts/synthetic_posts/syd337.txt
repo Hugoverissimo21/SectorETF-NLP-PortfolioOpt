@@ -1,0 +1,38 @@
+[POST]
+Title:
+Grid-Scale Storage Procurement Becoming Routine in Capacity Planning
+Body:
+Capacity planning documents increasingly include grid-scale storage as a standard component rather than an experimental addition.
+
+**Emerging trends:**
+
+• Multi-year procurement frameworks.
+• Integration with renewable generation portfolios.
+• Standardized evaluation metrics for deployment.
+
+Institutional interpretation: routine inclusion suggests long-term adoption.
+WSB interpretation: when it’s in the spreadsheet every year, it’s not a science project anymore.
+
+Not a forecast — just an observable shift.
+
+[COMMENTS]
+Comment 1:
+Routine inclusion signals permanence.
+Comment 2:
+Standardized metrics accelerate deployment decisions.
+Comment 3:
+Storage is becoming essential for balancing supply.
+Comment 4:
+Procurement frameworks indicate institutional commitment.
+Comment 5:
+Renewable integration requires complementary infrastructure.
+Comment 6:
+Cost curves improving makes adoption easier.
+Comment 7:
+Pilot fatigue often leads to standardization.
+Comment 8:
+Capacity planners prioritize reliability.
+Comment 9:
+Multi-year frameworks reduce uncertainty.
+Comment 10:
+This looks like infrastructure, not experimentation.

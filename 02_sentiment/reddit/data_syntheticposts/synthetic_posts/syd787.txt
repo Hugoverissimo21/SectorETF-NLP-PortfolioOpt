@@ -1,0 +1,23 @@
+[POST]
+Title:
+Student Perspective: We Don’t ‘Quit,’ We Drift
+Body:
+Among my friends, nobody makes a dramatic exit from platforms. We just… drift.
+
+One semester it’s group chats. Next it’s a niche app. Then it’s back to something older because that’s where a club moved.
+
+From the outside it might look like stable user numbers, but the actual activity shifts constantly.
+
+Not sure what that means for long-term loyalty.
+
+[COMMENTS]
+Comment 1:
+Drift is harder to detect than churn.
+Comment 2:
+Network effects weaken if communities migrate.
+Comment 3:
+Activity matters more than account counts.
+Comment 4:
+This is why platforms chase creators — they anchor users.
+Comment 5:
+Silent disengagement is the scariest metric.

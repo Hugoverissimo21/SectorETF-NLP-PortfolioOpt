@@ -1,0 +1,19 @@
+[POST]
+Title:
+Rising load forecasts: durable demand or optimistic modeling?
+Body:
+Recent load growth projections have incorporated electrification trends, data infrastructure expansion, and selective industrial reshoring. Supporters view this as a structural shift following a decade of stagnation. Skeptics caution that efficiency gains, distributed generation, and economic cyclicality may temper realized demand.
+
+Even modest deviations from projected load growth can influence capacity planning, capital allocation, and long-term return assumptions. As such, scenario analysis may be more appropriate than reliance on a single demand trajectory.
+
+[COMMENTS]
+Comment 1:
+Efficiency improvements have historically offset gross demand growth.
+Comment 2:
+Regional demand concentration introduces localized risk.
+Comment 3:
+Electrification adoption curves remain uncertain.
+Comment 4:
+Scenario-based planning may better capture the range of outcomes.
+Comment 5:
+Small percentage changes compound over multi-decade horizons.

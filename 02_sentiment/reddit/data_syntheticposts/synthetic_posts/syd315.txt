@@ -1,0 +1,27 @@
+[POST]
+Title:
+Data Center Power Suppliers: Demand Growth Hiding in Plain Sight
+Body:
+Firms specializing in supplying dedicated power infrastructure to data centers may see sustained demand growth as digital infrastructure expands.
+
+**Growth drivers:**
+
+• Rapid expansion of hyperscale facilities.
+• High reliability requirements favoring long-term supply agreements.
+• Increasing power density per facility.
+
+**Internal viewpoints:**
+
+Technologist: "Compute growth is power-intensive by nature."
+Investor: "Long-term contracts provide revenue predictability."
+Skeptic: "Efficiency gains could moderate demand growth."
+
+Even accounting for efficiency improvements, aggregate power demand from digital infrastructure continues to rise.
+
+[COMMENTS]
+Comment 1:
+Power density per rack keeps increasing.
+Comment 2:
+Long-term supply agreements reduce revenue uncertainty.
+Comment 3:
+Digital infrastructure growth is still in early stages.

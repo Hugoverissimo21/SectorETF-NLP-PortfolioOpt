@@ -1,0 +1,28 @@
+[POST]
+Title:
+Regulation risk in Communication Services is being massively underpriced
+Body:
+Everyone talks about growth and engagement metrics, but regulatory risk seems like the elephant in the room.
+
+Potential impacts:
+
+• Data usage restrictions reducing ad effectiveness.
+• Forced interoperability weakening platform lock-in.
+• Antitrust actions limiting acquisitions and vertical integration.
+• Content moderation mandates increasing operational costs.
+
+Historically, these companies grew in lightly regulated environments. That era is ending.
+
+Even if revenues hold up, compliance costs and structural changes could compress margins in ways current valuations don’t reflect.
+
+Curious whether people are factoring regulatory drag into their long-term models.
+
+[COMMENTS]
+Comment 1:
+Compliance costs are invisible until they suddenly aren’t.
+Comment 2:
+Interoperability rules could kill network effects.
+Comment 3:
+Antitrust limits M&A, which was their main growth lever.
+Comment 4:
+Market always prices regulation late.

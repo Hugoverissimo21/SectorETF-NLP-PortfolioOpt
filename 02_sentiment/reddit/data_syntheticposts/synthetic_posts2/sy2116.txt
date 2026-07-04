@@ -1,0 +1,17 @@
+[POST]
+Title:
+Electricity demand growth may be overstated
+Body:
+Yes, EVs and data centers use power, but efficiency gains and distributed generation could offset a lot of that demand. Rooftop solar, storage, and demand-response programs reduce reliance on centralized utilities.
+
+If consumption growth disappoints while utilities invest heavily in new infrastructure, shareholders could be left funding underutilized assets.
+
+[COMMENTS]
+Comment 1:
+Demand projections are notoriously optimistic.
+Comment 2:
+Distributed energy is a real wildcard.
+Comment 3:
+Overbuilding capacity has happened before.
+Comment 4:
+Efficiency improvements rarely get priced in.

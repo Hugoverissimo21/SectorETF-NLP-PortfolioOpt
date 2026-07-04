@@ -1,0 +1,17 @@
+[POST]
+Title:
+Utilities face growing cybersecurity risks
+Body:
+As grids become digitized, cyber threats increase. Utilities must invest heavily in security without guaranteed returns, and successful attacks could result in massive liabilities.
+
+This is a growing operational risk that markets may be underpricing.
+
+[COMMENTS]
+Comment 1:
+Critical infrastructure is a prime target.
+Comment 2:
+Security spending rarely generates returns.
+Comment 3:
+One breach could be catastrophic.
+Comment 4:
+Hidden risk factor.

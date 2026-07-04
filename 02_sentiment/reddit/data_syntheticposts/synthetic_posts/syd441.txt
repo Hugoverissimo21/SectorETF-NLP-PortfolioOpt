@@ -1,0 +1,21 @@
+[POST]
+Title:
+Sector factor comparison shows divergence in earnings stability
+Body:
+Recent screens show:
+
+• Energy: high cash flow volatility, strong pricing power
+• Power providers: low volatility, regulated returns
+• Communication Services: moderate volatility, cyclical ad revenue
+
+The sector sits in a middle ground — exposed to macro cycles without the pricing power of commodities or the stability of regulated returns.
+
+[COMMENTS]
+Comment 1:
+Middle-ground risk is hard to hedge.
+Comment 2:
+Pricing power vs regulation is the key tradeoff.
+Comment 3:
+Ad cyclicality increases earnings volatility.
+Comment 4:
+Great comparative framework.

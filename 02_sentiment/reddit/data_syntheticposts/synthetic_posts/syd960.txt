@@ -1,0 +1,17 @@
+[POST]
+Title:
+Churn economics are worsening
+Body:
+Low switching costs and aggressive promotions increase churn rates, forcing companies to spend heavily on customer acquisition and retention.
+
+Lifetime value assumptions may be overly optimistic.
+
+[COMMENTS]
+Comment 1:
+CAC rising fast.
+Comment 2:
+loyalty programs ineffective.
+Comment 3:
+promos destroy margins.
+Comment 4:
+LTV models need revision.

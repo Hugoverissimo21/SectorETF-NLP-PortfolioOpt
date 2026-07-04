@@ -1,0 +1,27 @@
+[POST]
+Title:
+Some notes on why Consumer Staples tends to look “calm” in messy markets
+Body:
+Been reading up on sector behavior during volatility and Staples keeps coming up as one of the steadier corners of equities.
+
+Not because it’s immune to anything, but because the underlying products are typically non-discretionary. People adjust *how* they buy (trade down, buy on promo, change pack sizes), yet the category demand often stays fairly sticky.
+
+A few things I keep seeing discussed:
+- Repeat purchase cycles (weekly/monthly) can make revenue less “lumpy”
+- Distribution + shelf space can act like a moat
+- Input costs (commodities, freight) can swing margins, but some businesses have mechanisms to offset that over time
+- In rotations, lower-vol sectors sometimes attract flows when risk appetite drops
+
+If anyone has favorite research / data on staples volume trends vs pricing, I’d love to read it.
+
+[COMMENTS]
+Comment 1:
+The trade-down behavior is real. Category demand holds up, brands shift.
+Comment 2:
+Shelf space is underrated as a competitive advantage.
+Comment 3:
+Margins are the part people ignore—inputs can be brutal sometimes.
+Comment 4:
+This is a good framework without turning into a “buy now” post.
+Comment 5:
+Also worth noting: staples can lag in rip-your-face-off rallies.

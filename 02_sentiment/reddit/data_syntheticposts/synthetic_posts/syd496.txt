@@ -1,0 +1,22 @@
+[POST]
+Title:
+Promotional Intensity as a Competitive Signaling Mechanism
+Body:
+In routine consumption categories, promotional intensity functions not only as a demand lever but also as a competitive signal.
+
+Elevated discounting may indicate:
+- Excess inventory
+- Share defense strategies
+- Retailer negotiation pressure
+
+Conversely, reduced promotional activity can signal pricing power or constrained supply.
+
+Has anyone constructed a promo-intensity index as a leading indicator for margin pressure?
+
+[COMMENTS]
+Comment 1:
+Scanner data is ideal but expensive; proxying with retailer circulars can work.
+Comment 2:
+Promo depth vs frequency both matter — not just one dimension.
+Comment 3:
+Useful leading indicator if normalized properly.

@@ -1,0 +1,15 @@
+[POST]
+Title:
+Bundling can still reduce churn
+Body:
+While not perfect, bundling connectivity with content, cloud storage, or security services can improve retention and increase lifetime value.
+
+[COMMENTS]
+Comment 1:
+bundles improve stickiness.
+Comment 2:
+multi-service discounts work.
+Comment 3:
+ecosystem lock-in matters.
+Comment 4:
+reduces churn over time.

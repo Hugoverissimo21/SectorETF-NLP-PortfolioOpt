@@ -1,0 +1,19 @@
+[POST]
+Title:
+Where are margins most at risk across sectors?
+Body:
+Trying to identify industries facing structural margin pressure.
+
+[COMMENTS]
+Comment 1:
+Communication Services — rising content costs and revenue sharing.
+Comment 2:
+Healthcare — reimbursement pressure.
+Comment 3:
+Retail — discounting and logistics costs.
+Comment 4:
+Semiconductors — cyclical pricing swings.
+Comment 5:
+Margins compress when costs rise faster than pricing power.
+Comment 6:
+Ad-driven models have limited pricing leverage.

@@ -1,0 +1,15 @@
+[POST]
+Title:
+Energy efficiency could flatten long-term demand
+Body:
+Improved building standards, efficient appliances, and smart energy management systems reduce consumption. If efficiency gains outpace electrification growth, utilities may face stagnant demand despite heavy investment.
+
+[COMMENTS]
+Comment 1:
+Efficiency is the silent demand killer.
+Comment 2:
+Smart grids optimize consumption downward.
+Comment 3:
+Less usage, same infrastructure costs.
+Comment 4:
+Demand forecasts may be too optimistic.

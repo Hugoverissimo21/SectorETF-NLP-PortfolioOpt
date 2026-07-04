@@ -1,0 +1,13 @@
+[POST]
+Title:
+The Regulatory Lag Trap: Why the 2026 Utilities rally is fundamentally flawed
+Body:
+the current valuation of the utilities sector fails to account for regulatory lag. as cost of capital remains elevated, utilities must petition state commissions for rate increases to recover their capex. ; ; however, with political pressure mounting over consumer affordability, these approvals are becoming increasingly contentious. we are seeing 'disallowances' for the first time in a decade. if the utilities can't recover their grid-modernization costs in a timely manner, their return on equity (roe) will collapse. the market is pricing in the growth but ignoring the political risk of the rate-case cycle.
+
+[COMMENTS]
+Comment 1:
+spot on. the 'social contract' between utilities and regulators is fraying.
+Comment 2:
+high inflation + high rates = no way the commissions allow a 15% rate hike.
+Comment 3:
+the 'one big beautiful bill' helps, but it doesn't solve the structural roe problem.

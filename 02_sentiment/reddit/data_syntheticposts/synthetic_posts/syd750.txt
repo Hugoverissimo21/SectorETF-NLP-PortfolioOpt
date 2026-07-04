@@ -1,0 +1,28 @@
+[POST]
+Title:
+ARPU Expansion vs User Growth: Which Drives Long-Term Value?
+Body:
+In mature digital ecosystems, user growth often moderates while ARPU becomes the primary value driver.
+
+ARPU expansion can come from:
+
+- Improved ad targeting and yield
+- Subscription tiering
+- Bundled service offerings
+- Digital goods and transaction fees
+
+The risk is that monetization intensity may approach user tolerance thresholds.
+
+From a valuation standpoint, how do you balance saturation risk against incremental monetization opportunities?
+
+[COMMENTS]
+Comment 1:
+ARPU growth matters more once penetration stabilizes.
+Comment 2:
+User tolerance is the limiting factor.
+Comment 3:
+Bundling can mask price increases.
+Comment 4:
+Ad yield improvements are still a lever.
+Comment 5:
+Saturation risk varies by geography.

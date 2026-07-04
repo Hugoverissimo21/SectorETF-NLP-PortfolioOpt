@@ -1,0 +1,32 @@
+[POST]
+Title:
+Why the power and grid sector may struggle in a prolonged high-rate environment
+Body:
+I’ve been reviewing the fundamentals of electricity providers and transmission operators, and the traditional “defensive” label looks increasingly questionable in a higher-rate world.
+
+The core issue is capital intensity. These companies rely heavily on debt to finance infrastructure: transmission lines, substations, grid hardening, and renewable integration. That model works well when borrowing costs are low and predictable.
+
+But today:
+
+• Interest expenses are rising as debt rolls over
+• Regulators often lag in approving rate increases
+• Political pressure limits how much cost can be passed to consumers
+• Large capex cycles are unavoidable and ongoing
+
+Unlike many industries, they cannot simply cut investment without risking reliability failures or regulatory penalties.
+
+This creates a squeeze: financing costs rise immediately, while revenue adjustments come slowly — if at all.
+
+The result may be prolonged margin pressure despite stable demand.
+
+Curious if others think the defensive narrative still holds under these conditions.
+
+[COMMENTS]
+Comment 1:
+Cost recovery lag is a real issue.
+Comment 2:
+People underestimate rate sensitivity here.
+Comment 3:
+Stable demand doesn’t protect margins.
+Comment 4:
+Good breakdown.

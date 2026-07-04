@@ -1,0 +1,15 @@
+[POST]
+Title:
+Factor Decay and the Negative Equity Risk Premium in 'Safety' Proxies
+Body:
+Quantitative analysis of the XLP/XLU/XLRE cohort reveals a significant 'duration trap.' Net Debt/EBITDA across the utility subsectors (Electric +25% earnings growth vs. Water +8%) shows extreme leverage sensitivity. In staples, the 'Price/Mix' sustainability is exhausted; with private label penetration hitting 40% in EU and 20% in US, the ROIC-WACC spread is compressing structurally. For REITs, the FFO growth of 6.5% for 2026 is threatened by a mandatory 'national interest' freeze on price hikes in key sectors. 📉🖥️
+
+[COMMENTS]
+Comment 1:
+Utilities: 104 GW of coal/gas retirements vs 209 GW new capacity creates a reliability gap.
+Comment 2:
+Staples: P/E expansion to 18.5x-22x is a 2-standard-deviation outlier vs 15x mean.
+Comment 3:
+Real Estate: Tower REITs (AMT) are sensitive to carrier capex budgets—normalization is years away.
+Comment 4:
+The short trade is the only logical play once the 'flight to safety' liquidity dries up.

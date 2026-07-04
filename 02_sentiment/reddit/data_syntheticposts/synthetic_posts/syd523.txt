@@ -1,0 +1,20 @@
+[POST]
+Title:
+Data centers: power constraints as a growth bottleneck
+Body:
+Data center demand remains strong, but power availability is emerging as a constraint in several key markets. Projects are being delayed due to grid capacity limitations and permitting challenges.
+
+Risks include:
+- Extended development timelines
+- Increased capital expenditure for on-site power solutions
+- Tenant concentration risk in hyperscale clients
+
+Supply constraints may support pricing, but they also introduce execution risk.
+
+[COMMENTS]
+Comment 1:
+Power access is the new zoning battle.
+Comment 2:
+On-site generation adds complexity and cost.
+Comment 3:
+Hyperscaler concentration is an underappreciated risk.

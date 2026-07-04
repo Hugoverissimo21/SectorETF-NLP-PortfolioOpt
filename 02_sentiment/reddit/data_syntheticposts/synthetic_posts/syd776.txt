@@ -1,0 +1,23 @@
+[POST]
+Title:
+Subscription Fatigue Is Real (And It’s Quietly Changing User Behavior)
+Body:
+I’ve noticed a pattern in my own circle: people don’t cancel everything, they rotate.
+
+They’ll keep 1–2 “core” services, then cycle the rest depending on what’s new. Add in bundles and promo pricing and it gets even harder to tell what retention actually means.
+
+This isn’t necessarily bad, but it does make recurring revenue feel less ‘set it and forget it’ than it used to.
+
+Curious how you all think this plays out long-term.
+
+[COMMENTS]
+Comment 1:
+Rotation is the new normal. People treat subscriptions like monthly rentals now.
+Comment 2:
+Bundles mask churn. Looks stable until you unpack it.
+Comment 3:
+Promo pricing trains users to wait for deals.
+Comment 4:
+My friends share accounts constantly. That probably matters too.
+Comment 5:
+If everyone rotates, the winners are whoever owns the billing relationship.

@@ -1,0 +1,11 @@
+[POST]
+Title:
+Stop buying AI, start buying the "Bottleneck."
+Body:
+In a gold rush, you buy the shovels. In an AI rush, you buy the transformer manufacturers and the people who own the substations. The hardware is a commodity; the power connection is a monopoly. Change my mind.
+
+[COMMENTS]
+Comment 1:
+This has been my thesis since late 2024. The "physical layer" is where the alpha is.
+Comment 2:
+Building a private plant is way harder than it looks. They still need the grid for backup.

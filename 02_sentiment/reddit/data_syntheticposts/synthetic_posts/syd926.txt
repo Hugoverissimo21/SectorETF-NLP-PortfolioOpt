@@ -1,0 +1,15 @@
+[POST]
+Title:
+bundling strategies keep failing
+Body:
+telcos tried bundling streaming, music, and cloud storage, but consumers still churn for better deals elsewhere.
+
+[COMMENTS]
+Comment 1:
+bundles reduce churn only temporarily.
+Comment 2:
+customers chase promos.
+Comment 3:
+no real lock-in.
+Comment 4:
+price still king.

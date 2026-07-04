@@ -1,0 +1,15 @@
+[POST]
+Title:
+Yield Spread vs. 10Y is now -140bps. Absolute insanity.
+Body:
+Technicals are broken. We are trading at a 19.2x forward handle on 6% EPS growth while the risk-free rate is sitting at 4.25%. The historical ERP (Equity Risk Premium) for the sector is 200bps+. 
+
+Right now, you are literally paying a premium to take on regulatory and duration risk compared to just holding paper. Net Debt/EBITDA across the board is pushing 5.1x. Any further expansion in the terminal rate puts the entire 'dividend safety' narrative in the bin. The valuation gap has never been this disconnected from the macro reality.
+
+[COMMENTS]
+Comment 1:
+Duration risk in equities is the most underpriced variable right now. These are just 30-year bonds with a logo.
+Comment 2:
+Wait until the rolling credit facilities hit the 6% wall. Interest coverage is going to look like a horror show.
+Comment 3:
+The AI power demand narrative is a massive over-correction. Grid capex is going to eat all that revenue before it hits FCF.

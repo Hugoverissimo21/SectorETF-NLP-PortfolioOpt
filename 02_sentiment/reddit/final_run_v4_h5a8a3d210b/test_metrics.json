@@ -1,0 +1,9 @@
+{
+  "test_loss": 1.1557780504226685,
+  "test_macro_f1_mean": 0.6586813919639402,
+  "test_acc_mean": 0.9371843434343433,
+  "test_runtime": 65.8207,
+  "test_samples_per_second": 17.502,
+  "test_steps_per_second": 1.094,
+  "epoch": 2.0
+}

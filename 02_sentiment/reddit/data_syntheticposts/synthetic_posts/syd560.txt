@@ -1,0 +1,22 @@
+[POST]
+Title:
+Data centers: digital infrastructure as a real estate demand engine
+Body:
+The growth of cloud computing, AI workloads, and data localization requirements is driving sustained demand for data center capacity.
+
+Supporting factors:
+- Enterprise cloud migration
+- AI compute intensity increasing power density needs
+- Regulatory requirements for local data storage
+
+Despite power constraints in some regions, the strategic importance of digital infrastructure supports long-term occupancy and pricing power in well-located facilities.
+
+[COMMENTS]
+Comment 1:
+AI workloads are massively power-intensive.
+Comment 2:
+Data sovereignty laws are a quiet demand driver.
+Comment 3:
+High switching costs make tenant retention strong.
+Comment 4:
+Power constraints limit supply, which supports pricing.

@@ -1,0 +1,15 @@
+[POST]
+Title:
+distributed energy is a slow bleed
+Body:
+rooftop solar + batteries won’t kill utilities overnight, but every kWh generated off-grid reduces revenue while infrastructure costs remain fixed.
+
+[COMMENTS]
+Comment 1:
+death by a thousand cuts.
+Comment 2:
+net metering policies matter a lot.
+Comment 3:
+utilities adapting with fixed charges.
+Comment 4:
+grid still necessary.

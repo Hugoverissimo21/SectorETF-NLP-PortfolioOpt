@@ -1,0 +1,21 @@
+[POST]
+Title:
+Revisiting regulated asset models in a higher-volatility market
+Body:
+In an environment where earnings visibility is becoming increasingly valuable, business models built around regulated returns and approved capital investment plans warrant closer examination.
+
+These entities operate under frameworks that allow recovery of prudently incurred costs plus an authorized return on equity. As capital is deployed into grid modernization, reliability improvements, and capacity expansion, the rate base grows, providing a relatively transparent path to earnings expansion over multi-year horizons.
+
+While not immune to interest rate sensitivity or regulatory risk, the combination of essential service demand and formula-based returns presents an interesting contrast to sectors where revenue trajectories are more discretionary or sentiment-driven.
+
+[COMMENTS]
+Comment 1:
+Visibility of cash flows is underappreciated in late-cycle conditions.
+Comment 2:
+The key variable remains the cost of capital versus allowed returns.
+Comment 3:
+Regulatory lag can create temporary earnings pressure despite long-term growth.
+Comment 4:
+This framework tends to reward patience rather than tactical trading.
+Comment 5:
+Rate base growth is often overlooked in top-down sector allocations.

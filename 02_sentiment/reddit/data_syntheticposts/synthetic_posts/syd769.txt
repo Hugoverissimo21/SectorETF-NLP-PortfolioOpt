@@ -1,0 +1,34 @@
+[POST]
+Title:
+Is the Communication Services Sector Becoming Too Capital Intensive?
+Body:
+Historically, parts of the Communication Services sector benefited from scalable digital models. That narrative may be shifting.
+
+Telecom infrastructure requires continuous investment. Streaming platforms are increasing content budgets. Even digital platforms are spending heavily on AI infrastructure and data centers.
+
+If capital intensity rises, we could see:
+- Lower free cash flow
+- Greater sensitivity to interest rates
+- Longer payback periods on investments
+
+In a higher-for-longer rate environment, that combination could weigh on valuations.
+
+Am I overstating the capex burden here?
+
+[COMMENTS]
+Comment 1:
+You’re not overstating it. Maintenance capex alone is massive in telecom.
+Comment 2:
+AI infrastructure costs are the new wildcard nobody has fully modeled yet.
+Comment 3:
+Capex today, pricing power tomorrow. That’s the bet.
+Comment 4:
+Higher rates expose weak balance sheets — that’s where the pain shows up first.
+Comment 5:
+This sector used to be asset-light in parts. Not anymore.
+Comment 6:
+If free cash flow declines, dividend investors will rotate out.
+Comment 7:
+Counterpoint: scale advantages still allow the largest players to outspend competitors.
+Comment 8:
+The question isn’t capex — it’s return on invested capital.

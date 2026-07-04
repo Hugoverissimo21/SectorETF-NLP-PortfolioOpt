@@ -1,0 +1,31 @@
+[POST]
+Title:
+digital platforms feel sticky… but is that structural or just habit?
+Body:
+ok so this is half shower thought half actual question
+
+on one side:
+- daily active use still high
+- switching costs = mostly behavioral
+- monetization keeps layering (ads, subs, digital goods)
+
+on the other side:
+attention shifts fast
+regulation never sleeps
+new formats can nuke incumbents
+
+from a structured POV, habit formation + network effects create inertia. from a normal human POV, ppl just open the same apps every morning without thinking.
+
+so is this durability… or just routine waiting to be broken
+
+[COMMENTS]
+Comment 1:
+habit is underrated in most models
+Comment 2:
+routines break when friend groups move
+Comment 3:
+network effects buy time, not immortality
+Comment 4:
+lowkey i open the same 4 apps every day no thoughts
+Comment 5:
+regulation could force interoperability which changes the game

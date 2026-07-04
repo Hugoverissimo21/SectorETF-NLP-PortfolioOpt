@@ -1,0 +1,27 @@
+[POST]
+Title:
+Peak Load Infrastructure Costs: The Hidden Margin Variable
+Body:
+Infrastructure costs are often modeled as linear with usage, but peak load events can introduce nonlinear expenses.
+
+Examples include:
+
+- Live events driving traffic spikes
+- Viral content causing sudden demand surges
+- Regional outages requiring redundancy
+
+Capacity planning for peak demand can reduce average margin efficiency.
+
+Are peak load scenarios adequately reflected in margin models?
+
+[COMMENTS]
+Comment 1:
+Overprovisioning for peaks reduces efficiency.
+Comment 2:
+Cloud elasticity helps but isn’t free.
+Comment 3:
+Viral spikes are difficult to predict.
+Comment 4:
+Redundancy requirements increase fixed costs.
+Comment 5:
+Most models assume smoother demand than reality.

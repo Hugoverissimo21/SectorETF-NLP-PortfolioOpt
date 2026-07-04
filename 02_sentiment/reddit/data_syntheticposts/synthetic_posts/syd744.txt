@@ -1,0 +1,29 @@
+[POST]
+Title:
+How Durable Are Large-Scale Digital Ecosystems Really?
+Body:
+There’s a recurring debate about whether major digital ecosystems are inherently fragile or structurally durable.
+
+On one side, consumer preferences can shift quickly. On the other, scale advantages, network effects, and embedded daily usage create meaningful barriers.
+
+Consider:
+
+- Multi-layer monetization (advertising, subscriptions, services)
+- High habitual usage across demographics
+- Global distribution with relatively low marginal cost
+
+Risks remain — competition for attention, regulatory intervention, and pricing sensitivity.
+
+From an investment perspective, the question is whether these ecosystems should be modeled as cyclical media assets or long-duration infrastructure-like platforms.
+
+[COMMENTS]
+Comment 1:
+I lean toward long-duration with cyclical overlays.
+Comment 2:
+Engagement durability is the key variable.
+Comment 3:
+Regulation is the biggest unknown in my view.
+Comment 4:
+Scale advantages today are much stronger than a decade ago.
+Comment 5:
+Still cyclical, just less obviously so.

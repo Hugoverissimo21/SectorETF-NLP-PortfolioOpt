@@ -1,0 +1,13 @@
+[POST]
+Title:
+the 'ai power' hype is hitting a supply chain brick wall
+Body:
+every analyst is bullish on the power sector because 'ai needs electricity,' but i work in high-voltage transformer logistics. lead times r now 150+ weeks. costs r up 3x. ; ; these infrastructure companies have promised big growth to shareholders but they literally cannot physically build the capacity fast enough. they r going to miss their 2026-2027 delivery targets and the 'growth' story is going to turn into a 'capex nightmare.' i’m staying away until the equipment backlog clears, which won't be for years.
+
+[COMMENTS]
+Comment 1:
+can confirm. copper prices r also a huge headwind for these projects right now.
+Comment 2:
+the market thinks the grid expansion is a 1-year project. it's a 10-year slog.
+Comment 3:
+everyone is pricing in the revenue from the data centers but ignoring the cost to connect them.

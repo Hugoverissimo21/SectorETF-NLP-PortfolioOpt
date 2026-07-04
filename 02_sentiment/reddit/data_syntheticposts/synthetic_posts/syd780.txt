@@ -1,0 +1,23 @@
+[POST]
+Title:
+Ad-Supported Tiers Feel Like a Symptom, Not a Strategy
+Body:
+Seeing more services roll out cheaper ad-supported options.
+
+It’s pitched as “consumer choice,” but it also feels like a response to a ceiling on what people will pay monthly.
+
+The interesting part is what it does to incentives: you’re balancing user satisfaction with maximizing ad load, while also trying not to cannibalize higher-priced tiers.
+
+Seems like a delicate game where small changes in user tolerance matter a lot.
+
+[COMMENTS]
+Comment 1:
+Ad tiers are basically price discrimination done politely.
+Comment 2:
+The risk is turning premium into ‘sucker tier’ if ads get too normalized.
+Comment 3:
+Some people will always choose cheaper. That’s not necessarily bearish.
+Comment 4:
+The real question is whether ad markets stay strong enough to support it.
+Comment 5:
+Ad load creep is inevitable. Then users get annoyed. Then churn.

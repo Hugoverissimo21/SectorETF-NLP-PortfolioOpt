@@ -1,0 +1,15 @@
+[POST]
+Title:
+Renewable intermittency increasing balancing costs
+Body:
+The integration of intermittent renewable sources requires backup generation and storage solutions. These balancing measures add costs and operational complexity.
+
+Cost recovery may not fully offset these expenses in the near term.
+
+[COMMENTS]
+Comment 1:
+Balancing costs are significant.
+Comment 2:
+Storage investments are capital-intensive.
+Comment 3:
+Grid stability isn’t free.

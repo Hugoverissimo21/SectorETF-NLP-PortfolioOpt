@@ -1,0 +1,17 @@
+[POST]
+Title:
+Why I think utilities will lag tech-driven productivity gains
+Body:
+Technology sectors scale with minimal marginal cost. Utilities, by contrast, require continuous capital investment to grow. This structural difference limits operating leverage and return potential.
+
+In a productivity-driven economy, capital-light models may continue to outperform.
+
+[COMMENTS]
+Comment 1:
+Asset-heavy businesses scale poorly.
+Comment 2:
+Operating leverage is limited.
+Comment 3:
+Capex eats into returns.
+Comment 4:
+Different era, different winners.

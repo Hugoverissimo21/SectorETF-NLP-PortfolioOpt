@@ -1,0 +1,19 @@
+[POST]
+Title:
+Why routine consumption categories show up in low-volatility screens
+Body:
+While filtering sectors by historical volatility, I noticed categories tied to routine household consumption tend to cluster toward the lower end.
+
+The reasoning seems straightforward: demand is anchored to habits rather than sentiment. People may change where they shop or which brand they choose, but they still purchase the same core items.
+
+That creates a scenario where revenue variability is influenced more by pricing, input costs, and channel mix than by demand shocks.
+
+If anyone has good resources on habit-driven demand modeling, I’d appreciate recommendations.
+
+[COMMENTS]
+Comment 1:
+Habit persistence is a huge factor in consumer behavior models.
+Comment 2:
+You’re basically describing low elasticity at the category level.
+Comment 3:
+Channel mix has been the most interesting shift lately.

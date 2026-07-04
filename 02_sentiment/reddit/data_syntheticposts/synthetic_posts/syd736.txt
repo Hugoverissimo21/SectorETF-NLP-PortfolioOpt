@@ -1,0 +1,25 @@
+[POST]
+Title:
+global internet growth still a thing or nah
+Body:
+feel like ppl in developed markets assume everyone is already online but thats not really true
+
+lots of mobile-first users coming in
+skipping old media completely
+low spend at first but scales later
+
+obv risks w currency, infra, local competition etc
+
+but the adoption curve doesnt look done to me
+
+[COMMENTS]
+Comment 1:
+arpu gap is huge tho
+Comment 2:
+mobile first = totally diff behavior
+Comment 3:
+local apps win in some regions
+Comment 4:
+long runway but messy path
+Comment 5:
+priced in? prob not fully

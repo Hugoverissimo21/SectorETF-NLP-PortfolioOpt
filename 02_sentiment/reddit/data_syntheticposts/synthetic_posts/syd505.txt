@@ -1,0 +1,20 @@
+[POST]
+Title:
+Underfollowed name: $UNFI and the economics of grocery distribution
+Body:
+United Natural Foods ($UNFI) operates as a grocery distributor. While margins are thin, volumes are tied to baseline food consumption rather than discretionary demand.
+
+Analytical considerations:
+- Volume stability vs margin compression
+- Fuel and logistics costs
+- Retailer concentration risk
+
+Distribution economics aren’t glamorous, but they provide insight into how essential consumption translates into revenue flows across the supply chain.
+
+[COMMENTS]
+Comment 1:
+Distribution is a scale game with razor-thin margins.
+Comment 2:
+Fuel costs can wipe out operating leverage quickly.
+Comment 3:
+Volume visibility is strong even when profitability fluctuates.

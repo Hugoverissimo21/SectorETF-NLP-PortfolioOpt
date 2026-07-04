@@ -1,0 +1,21 @@
+[POST]
+Title:
+Undergrounding Projects Expanding Beyond High-Risk Regions
+Body:
+Programs to relocate overhead lines underground, once concentrated in high-risk regions, are expanding into urban and suburban areas focused on reliability and resilience.
+
+Drivers include:
+
+• Increased outage cost awareness.
+• Urban densification and right-of-way constraints.
+• Insurance pressures related to extreme weather exposure.
+
+As reliability investments shift from reactive to preventative, infrastructure planning horizons appear to be lengthening.
+
+[COMMENTS]
+Comment 1:
+Preventative resilience spending tends to be sustained once adopted.
+Comment 2:
+Insurance pressures can accelerate infrastructure decisions.
+Comment 3:
+Urban density makes underground systems more practical over time.

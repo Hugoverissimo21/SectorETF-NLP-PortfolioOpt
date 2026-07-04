@@ -1,0 +1,29 @@
+[POST]
+Title:
+Electrification Trends Strengthen Long-Term Demand Outlook
+Body:
+The electrification of transport, heating, and industry is gradually increasing baseline electricity demand, reinforcing the long-term outlook for utilities.
+
+**Structural tailwinds:**
+
+• Electric vehicle adoption increasing grid load.
+• Industrial electrification reducing fossil fuel dependence.
+• Data center expansion requiring reliable power supply.
+
+**Voices in the debate:**
+
+Technologist: "Digital infrastructure is power-intensive by design."
+Economist: "Demand growth may be gradual but persistent."
+Skeptic: "Efficiency gains could offset some demand increases."
+
+Even accounting for efficiency improvements, the net direction of demand remains upward over time.
+
+[COMMENTS]
+Comment 1:
+Data center growth alone is a significant demand driver.
+Comment 2:
+Electrification is a slow but durable trend.
+Comment 3:
+Efficiency gains moderate growth but rarely reverse it.
+Comment 4:
+Long-term demand visibility is a key strength here.

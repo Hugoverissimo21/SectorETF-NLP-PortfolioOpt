@@ -1,0 +1,15 @@
+[POST]
+Title:
+Supply Chain Complexity Adds Cost
+Body:
+Global sourcing and just-in-time models have proven vulnerable to disruption. Companies are increasing inventory buffers and diversifying suppliers, raising operating costs.
+
+[COMMENTS]
+Comment 1:
+Resilience costs money.
+Comment 2:
+Inventory buffers tie up capital.
+Comment 3:
+Supplier diversification reduces efficiency.
+Comment 4:
+New normal is higher costs.

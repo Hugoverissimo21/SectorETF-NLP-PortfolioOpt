@@ -1,0 +1,21 @@
+[POST]
+Title:
+Leverage metrics stable, but interest coverage trending lower
+Body:
+Aggregate leverage ratios remain within historical bands, but interest coverage has declined due to higher funding costs.
+
+If refinancing continues at elevated coupons, coverage deterioration could persist even without incremental borrowing. This dynamic may constrain capital deployment and increase equity issuance probability.
+
+Monitoring coverage ratios may be more informative than leverage alone.
+
+[COMMENTS]
+Comment 1:
+Coverage deterioration is the early signal.
+Comment 2:
+Leverage static, cost of debt rising.
+Comment 3:
+Refinancing cycle risk underpriced.
+Comment 4:
+Equity dilution probability increasing.
+Comment 5:
+Credit metrics lag market pricing.

@@ -1,0 +1,15 @@
+[POST]
+Title:
+Communication services benefit from switching costs in ecosystems
+Body:
+While individual services may be replaceable, integrated ecosystems — combining messaging, content, storage, and devices — create switching costs that improve retention.
+
+[COMMENTS]
+Comment 1:
+ecosystem lock-in is powerful.
+Comment 2:
+device integration helps.
+Comment 3:
+cross-service data adds stickiness.
+Comment 4:
+retention improves with bundles.

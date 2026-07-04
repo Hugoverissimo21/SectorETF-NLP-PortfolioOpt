@@ -1,0 +1,25 @@
+[POST]
+Title:
+I’m trying to learn sector rotations — where does Staples usually fit?
+Body:
+Working through sector rotation concepts and trying to map roles.
+
+My understanding is Staples is often treated as “defensive” because the products are non-discretionary and the cash flows can be more predictable. That said, it can still get hit by:
+- input cost spikes
+- competitive pricing (promos)
+- FX / international exposure
+- retailer bargaining power
+
+So it’s not risk-free, just a different set of risks than more cyclical sectors.
+
+If you’ve studied rotations, what signals do you associate with Staples doing relatively better or worse?
+
+[COMMENTS]
+Comment 1:
+Staples tends to look better when growth expectations are falling or volatility rises, but it’s not a rule.
+Comment 2:
+When commodities spike, staples margins can get ugly—worth tracking.
+Comment 3:
+Good post. More “how it works” and less “this is the play.”
+Comment 4:
+Also: valuations matter. Defensive can still be overbought.
