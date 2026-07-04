@@ -1,0 +1,55 @@
+SECTOR: Materials
+============================================================
+
+TRAIN CLASSIFICATION REPORT
+------------------------------------------------------------
+              precision    recall  f1-score   support
+
+    negative       0.84      0.87      0.86       149
+     neutral       0.81      0.69      0.74       122
+    positive       0.79      0.87      0.83       128
+
+    accuracy                           0.81       399
+   macro avg       0.81      0.81      0.81       399
+weighted avg       0.81      0.81      0.81       399
+
+
+TRAIN CONFUSION MATRIX (Counts + %)
+------------------------------------------------------------
+Pred →     negative   neutral  positive
+---------------------------------------
+True negative |      130         9        10
+           |    87.2%      6.0%      6.7%
+
+True neutral  |       18        84        20
+           |    14.8%     68.9%     16.4%
+
+True positive |        6        11       111
+           |     4.7%      8.6%     86.7%
+
+
+TEST CLASSIFICATION REPORT
+------------------------------------------------------------
+              precision    recall  f1-score   support
+
+    negative       0.89      0.84      0.86        19
+     neutral       0.77      0.67      0.71        30
+    positive       0.70      0.84      0.76        25
+
+    accuracy                           0.77        74
+   macro avg       0.79      0.78      0.78        74
+weighted avg       0.78      0.77      0.77        74
+
+
+TEST CONFUSION MATRIX (Counts + %)
+------------------------------------------------------------
+Pred →     negative   neutral  positive
+---------------------------------------
+True negative |       16         2         1
+           |    84.2%     10.5%      5.3%
+
+True neutral  |        2        20         8
+           |     6.7%     66.7%     26.7%
+
+True positive |        0         4        21
+           |     0.0%     16.0%     84.0%

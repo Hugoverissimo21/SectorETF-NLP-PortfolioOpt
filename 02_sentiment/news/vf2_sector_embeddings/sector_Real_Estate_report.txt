@@ -1,0 +1,55 @@
+SECTOR: Real Estate
+============================================================
+
+TRAIN CLASSIFICATION REPORT
+------------------------------------------------------------
+              precision    recall  f1-score   support
+
+    negative       0.87      0.92      0.89       133
+     neutral       0.88      0.73      0.80       133
+    positive       0.84      0.94      0.89       133
+
+    accuracy                           0.86       399
+   macro avg       0.86      0.86      0.86       399
+weighted avg       0.86      0.86      0.86       399
+
+
+TRAIN CONFUSION MATRIX (Counts + %)
+------------------------------------------------------------
+Pred →     negative   neutral  positive
+---------------------------------------
+True negative |      122         7         4
+           |    91.7%      5.3%      3.0%
+
+True neutral  |       16        97        20
+           |    12.0%     72.9%     15.0%
+
+True positive |        2         6       125
+           |     1.5%      4.5%     94.0%
+
+
+TEST CLASSIFICATION REPORT
+------------------------------------------------------------
+              precision    recall  f1-score   support
+
+    negative       0.83      0.76      0.79        33
+     neutral       0.79      0.70      0.74        33
+    positive       0.78      0.94      0.85        33
+
+    accuracy                           0.80        99
+   macro avg       0.80      0.80      0.79        99
+weighted avg       0.80      0.80      0.79        99
+
+
+TEST CONFUSION MATRIX (Counts + %)
+------------------------------------------------------------
+Pred →     negative   neutral  positive
+---------------------------------------
+True negative |       25         5         3
+           |    75.8%     15.2%      9.1%
+
+True neutral  |        4        23         6
+           |    12.1%     69.7%     18.2%
+
+True positive |        1         1        31
+           |     3.0%      3.0%     93.9%

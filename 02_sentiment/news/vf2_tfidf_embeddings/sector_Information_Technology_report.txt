@@ -1,0 +1,55 @@
+SECTOR: Information_Technology
+============================================================
+
+TRAIN CLASSIFICATION REPORT
+------------------------------------------------------------
+              precision    recall  f1-score   support
+
+    negative       0.81      0.87      0.84       119
+     neutral       0.83      0.72      0.77       148
+    positive       0.76      0.83      0.80       132
+
+    accuracy                           0.80       399
+   macro avg       0.80      0.81      0.80       399
+weighted avg       0.80      0.80      0.80       399
+
+
+TRAIN CONFUSION MATRIX (Counts + %)
+------------------------------------------------------------
+Pred →     negative   neutral  positive
+---------------------------------------
+True negative |      103         7         9
+           |    86.6%      5.9%      7.6%
+
+True neutral  |       17       106        25
+           |    11.5%     71.6%     16.9%
+
+True positive |        7        15       110
+           |     5.3%     11.4%     83.3%
+
+
+TEST CLASSIFICATION REPORT
+------------------------------------------------------------
+              precision    recall  f1-score   support
+
+    negative       0.88      0.84      0.86        25
+     neutral       0.74      0.92      0.82        25
+    positive       0.90      0.76      0.83        34
+
+    accuracy                           0.83        84
+   macro avg       0.84      0.84      0.83        84
+weighted avg       0.84      0.83      0.83        84
+
+
+TEST CONFUSION MATRIX (Counts + %)
+------------------------------------------------------------
+Pred →     negative   neutral  positive
+---------------------------------------
+True negative |       21         2         2
+           |    84.0%      8.0%      8.0%
+
+True neutral  |        1        23         1
+           |     4.0%     92.0%      4.0%
+
+True positive |        2         6        26
+           |     5.9%     17.6%     76.5%

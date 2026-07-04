@@ -1,0 +1,55 @@
+SECTOR: Consumer Staples
+============================================================
+
+TRAIN CLASSIFICATION REPORT
+------------------------------------------------------------
+              precision    recall  f1-score   support
+
+    negative       0.91      0.86      0.88       133
+     neutral       0.78      0.77      0.78       133
+    positive       0.76      0.83      0.79       133
+
+    accuracy                           0.82       399
+   macro avg       0.82      0.82      0.82       399
+weighted avg       0.82      0.82      0.82       399
+
+
+TRAIN CONFUSION MATRIX (Counts + %)
+------------------------------------------------------------
+Pred →     negative   neutral  positive
+---------------------------------------
+True negative |      114         8        11
+           |    85.7%      6.0%      8.3%
+
+True neutral  |        8       102        23
+           |     6.0%     76.7%     17.3%
+
+True positive |        3        20       110
+           |     2.3%     15.0%     82.7%
+
+
+TEST CLASSIFICATION REPORT
+------------------------------------------------------------
+              precision    recall  f1-score   support
+
+    negative       0.91      1.00      0.96        32
+     neutral       0.81      0.81      0.81        36
+    positive       0.87      0.79      0.83        34
+
+    accuracy                           0.86       102
+   macro avg       0.86      0.87      0.86       102
+weighted avg       0.86      0.86      0.86       102
+
+
+TEST CONFUSION MATRIX (Counts + %)
+------------------------------------------------------------
+Pred →     negative   neutral  positive
+---------------------------------------
+True negative |       32         0         0
+           |   100.0%      0.0%      0.0%
+
+True neutral  |        3        29         4
+           |     8.3%     80.6%     11.1%
+
+True positive |        0         7        27
+           |     0.0%     20.6%     79.4%

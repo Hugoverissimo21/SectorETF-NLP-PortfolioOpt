@@ -1,0 +1,55 @@
+SECTOR: Health Care
+============================================================
+
+TRAIN CLASSIFICATION REPORT
+------------------------------------------------------------
+              precision    recall  f1-score   support
+
+    negative       0.79      0.83      0.81       133
+     neutral       0.74      0.71      0.73       133
+    positive       0.82      0.80      0.81       133
+
+    accuracy                           0.78       399
+   macro avg       0.78      0.78      0.78       399
+weighted avg       0.78      0.78      0.78       399
+
+
+TRAIN CONFUSION MATRIX (Counts + %)
+------------------------------------------------------------
+Pred →     negative   neutral  positive
+---------------------------------------
+True negative |      111        16         6
+           |    83.5%     12.0%      4.5%
+
+True neutral  |       21        95        17
+           |    15.8%     71.4%     12.8%
+
+True positive |        9        18       106
+           |     6.8%     13.5%     79.7%
+
+
+TEST CLASSIFICATION REPORT
+------------------------------------------------------------
+              precision    recall  f1-score   support
+
+    negative       0.93      0.78      0.85        32
+     neutral       0.67      0.75      0.71        24
+    positive       0.75      0.80      0.77        30
+
+    accuracy                           0.78        86
+   macro avg       0.78      0.78      0.78        86
+weighted avg       0.79      0.78      0.78        86
+
+
+TEST CONFUSION MATRIX (Counts + %)
+------------------------------------------------------------
+Pred →     negative   neutral  positive
+---------------------------------------
+True negative |       25         4         3
+           |    78.1%     12.5%      9.4%
+
+True neutral  |        1        18         5
+           |     4.2%     75.0%     20.8%
+
+True positive |        1         5        24
+           |     3.3%     16.7%     80.0%

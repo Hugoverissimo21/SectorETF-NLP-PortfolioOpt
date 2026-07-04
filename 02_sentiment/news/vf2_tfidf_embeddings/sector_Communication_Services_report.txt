@@ -1,0 +1,55 @@
+SECTOR: Communication_Services
+============================================================
+
+TRAIN CLASSIFICATION REPORT
+------------------------------------------------------------
+              precision    recall  f1-score   support
+
+    negative       0.79      0.83      0.81       127
+     neutral       0.71      0.74      0.73       124
+    positive       0.86      0.79      0.82       148
+
+    accuracy                           0.79       399
+   macro avg       0.79      0.79      0.79       399
+weighted avg       0.79      0.79      0.79       399
+
+
+TRAIN CONFUSION MATRIX (Counts + %)
+------------------------------------------------------------
+Pred →     negative   neutral  positive
+---------------------------------------
+True negative |      106        16         5
+           |    83.5%     12.6%      3.9%
+
+True neutral  |       18        92        14
+           |    14.5%     74.2%     11.3%
+
+True positive |       10        21       117
+           |     6.8%     14.2%     79.1%
+
+
+TEST CLASSIFICATION REPORT
+------------------------------------------------------------
+              precision    recall  f1-score   support
+
+    negative       0.91      1.00      0.95        21
+     neutral       0.96      0.74      0.84        35
+    positive       0.72      0.95      0.82        19
+
+    accuracy                           0.87        75
+   macro avg       0.87      0.90      0.87        75
+weighted avg       0.89      0.87      0.87        75
+
+
+TEST CONFUSION MATRIX (Counts + %)
+------------------------------------------------------------
+Pred →     negative   neutral  positive
+---------------------------------------
+True negative |       21         0         0
+           |   100.0%      0.0%      0.0%
+
+True neutral  |        2        26         7
+           |     5.7%     74.3%     20.0%
+
+True positive |        0         1        18
+           |     0.0%      5.3%     94.7%

@@ -1,0 +1,55 @@
+SECTOR: Consumer_Discretionary
+============================================================
+
+TRAIN CLASSIFICATION REPORT
+------------------------------------------------------------
+              precision    recall  f1-score   support
+
+    negative       0.81      0.88      0.84       145
+     neutral       0.80      0.69      0.74       131
+    positive       0.79      0.82      0.80       123
+
+    accuracy                           0.80       399
+   macro avg       0.80      0.80      0.80       399
+weighted avg       0.80      0.80      0.80       399
+
+
+TRAIN CONFUSION MATRIX (Counts + %)
+------------------------------------------------------------
+Pred →     negative   neutral  positive
+---------------------------------------
+True negative |      128         7        10
+           |    88.3%      4.8%      6.9%
+
+True neutral  |       24        90        17
+           |    18.3%     68.7%     13.0%
+
+True positive |        6        16       101
+           |     4.9%     13.0%     82.1%
+
+
+TEST CLASSIFICATION REPORT
+------------------------------------------------------------
+              precision    recall  f1-score   support
+
+    negative       0.82      0.82      0.82        33
+     neutral       0.70      0.79      0.74        33
+    positive       0.86      0.73      0.79        26
+
+    accuracy                           0.78        92
+   macro avg       0.79      0.78      0.78        92
+weighted avg       0.79      0.78      0.78        92
+
+
+TEST CONFUSION MATRIX (Counts + %)
+------------------------------------------------------------
+Pred →     negative   neutral  positive
+---------------------------------------
+True negative |       27         6         0
+           |    81.8%     18.2%      0.0%
+
+True neutral  |        4        26         3
+           |    12.1%     78.8%      9.1%
+
+True positive |        2         5        19
+           |     7.7%     19.2%     73.1%

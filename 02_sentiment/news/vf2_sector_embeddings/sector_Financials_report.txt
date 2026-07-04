@@ -1,0 +1,55 @@
+SECTOR: Financials
+============================================================
+
+TRAIN CLASSIFICATION REPORT
+------------------------------------------------------------
+              precision    recall  f1-score   support
+
+    negative       0.79      0.89      0.84       133
+     neutral       0.83      0.72      0.77       133
+    positive       0.84      0.85      0.85       133
+
+    accuracy                           0.82       399
+   macro avg       0.82      0.82      0.82       399
+weighted avg       0.82      0.82      0.82       399
+
+
+TRAIN CONFUSION MATRIX (Counts + %)
+------------------------------------------------------------
+Pred →     negative   neutral  positive
+---------------------------------------
+True negative |      118         9         6
+           |    88.7%      6.8%      4.5%
+
+True neutral  |       22        96        15
+           |    16.5%     72.2%     11.3%
+
+True positive |        9        11       113
+           |     6.8%      8.3%     85.0%
+
+
+TEST CLASSIFICATION REPORT
+------------------------------------------------------------
+              precision    recall  f1-score   support
+
+    negative       0.80      0.83      0.81        29
+     neutral       0.87      0.75      0.81        36
+    positive       0.79      0.92      0.85        25
+
+    accuracy                           0.82        90
+   macro avg       0.82      0.83      0.82        90
+weighted avg       0.83      0.82      0.82        90
+
+
+TEST CONFUSION MATRIX (Counts + %)
+------------------------------------------------------------
+Pred →     negative   neutral  positive
+---------------------------------------
+True negative |       24         3         2
+           |    82.8%     10.3%      6.9%
+
+True neutral  |        5        27         4
+           |    13.9%     75.0%     11.1%
+
+True positive |        1         1        23
+           |     4.0%      4.0%     92.0%
